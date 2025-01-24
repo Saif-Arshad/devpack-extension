@@ -1,0 +1,10 @@
+{
+  "name": "DevPac",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "A starter code for your resource-rich extension",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": []
+}
