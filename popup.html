@@ -1,15 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Resource Extension</title>
+    <title>DevPack : Your Development Resources in One Pack</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        body.light {
+            background-color: #f4f4f4;
+            color: #121212;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header.light {
+            background-color: #e3dede;
+            color: #333;
+        }
+
+        header img {
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+        }
+
+        header #headerContent {
+            display: flex;
+            /* align-items: flex-start; */
+            flex-direction: column;
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        header h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 3px 0;
+            font-size: 12px;
+            /* width: %; */
+        }
+
+        #toggleThemeBtn {
+            cursor: pointer;
+            border: none;
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 48px;
+            width: 48px;
+            border-radius: 8px;
+            padding: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        #toggleThemeBtn:hover {
+            transform: scale(1.05);
+        }
+
+        #toggleThemeBtn svg {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Welcome to Your Extension!</h1>
-    <p>Click the button below to see if everything is working.</p>
-    <button id="testBtn">Click me</button>
+<body class="dark">
+
+    <header id="header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="./Assets/logo.png" alt="DevPack Logo">
+            <div id="headerContent">
+                <h3>DevPack</h3>
+                <p>Your Development Resources in One Pack</p>
+            </div>
+        </div>
+        <button id="toggleThemeBtn" aria-label="Toggle Theme">
+            <svg id="moonIcon" fill="#73AADE" viewBox="0 0 20 20">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="sunIcon" class=" hidden" fill="#f59e0b" viewBox="0 0 20 20">
+                <path
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
+    </header>
+
+    <main style="padding: 20px;">
+        <h1>Welcome to Your Extension!</h1>
+        <p>Click the button below to see if everything is working.</p>
+        <button id="testBtn">Click me</button>
+    </main>
 
     <script src="popup.js"></script>
 </body>
