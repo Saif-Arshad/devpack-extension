@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Bootstrap",
+        "description": "CSS framework for building responsive, mobile-first sites.",
+        "link": "https://getbootstrap.com",
+        "tags": [
+            "css",
+            "framework",
+            "components"
+        ]
+    },
+    {
+        "name": "Material UI",
+        "description": "React components for faster and easier web development.",
+        "link": "https://mui.com",
+        "tags": [
+            "react",
+            "ui",
+            "components"
+        ]
+    }
+]

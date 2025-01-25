@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>DevPack : Your Development Resources in One Pack</title>
     <style>
+        /* ===========================
+      Base & Theme
+    ============================ */
         body {
             margin: 0;
             padding: 0;
@@ -22,15 +25,26 @@
             color: #121212;
         }
 
+        /* ===========================
+      Sticky Header Container
+    ============================ */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        /* ===========================
+      Header + Theme Toggle
+    ============================ */
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 20px 10px;
+            padding: 10px;
             background-color: #333;
             color: #fff;
-            border-radius: 8px;
-            transition: background-color 0.3s, color 0.3s;
+            border-radius: 0;
         }
 
         header.light {
@@ -44,9 +58,8 @@
             object-fit: cover;
         }
 
-        header #headerContent {
+        #headerContent {
             display: flex;
-            /* align-items: flex-start; */
             flex-direction: column;
             line-height: 1.2;
             text-align: left;
@@ -54,14 +67,13 @@
 
         header h3 {
             margin: 0;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
         }
 
         header p {
-            margin: 3px 0;
-            font-size: 12px;
-            /* width: %; */
+            margin: 2px 0;
+            font-size: 10px;
         }
 
         #toggleThemeBtn {
@@ -71,10 +83,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 48px;
-            width: 48px;
+            height: 32px;
+            width: 32px;
             border-radius: 8px;
-            padding: 8px;
+            padding: 0;
             transition: transform 0.3s ease;
         }
 
@@ -83,39 +95,199 @@
         }
 
         #toggleThemeBtn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* ===========================
+      Title Bar (Back arrow + Title)
+    ============================ */
+        #titleBar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 10px;
+            background: inherit;
+            /* inherits from body or header background if needed */
+            /* You can style or add borders if you want */
+        }
+
+        #backButton {
+            display: none;
+            /* hidden by default */
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 14px;
+        }
+
+        #pageTitle {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* ===========================
+      Search Bar
+    ============================ */
+        #searchContainer {
+            display: flex;
+            padding: 8px 10px;
+            background: inherit;
+            /* or pick your background color */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #searchBar {
+            flex: 1;
+            padding: 6px 8px;
+            font-size: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        /* ===========================
+      Main Content
+    ============================ */
+        main {
+            padding: 10px;
+        }
+
+        /* -----------
+      Home View
+    ------------ */
+        #homeView {
+            /* By default, home is visible */
+        }
+
+        #categoriesList {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .categoryItem {
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .categoryItem:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* -----------
+      Category & Search Views
+    ------------ */
+        #categoryView,
+        #searchResultsView {
+            display: none;
+            /* hidden by default */
+        }
+
+        .resource-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .resource-item:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .resource-favicon {
             width: 24px;
             height: 24px;
+            object-fit: contain;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        .resource-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resource-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .resource-description {
+            font-size: 12px;
+            opacity: 0.8;
         }
     </style>
 </head>
 
 <body class="dark">
-
-    <header id="header">
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="./Assets/logo.png" alt="DevPack Logo">
-            <div id="headerContent">
-                <h3>DevPack</h3>
-                <p>Your Development Resources in One Pack</p>
+    <!-- Sticky container to hold everything above main -->
+    <div class="sticky-header">
+        <!-- Original header with theme toggle -->
+        <header id="header">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="./Assets/logo.png" alt="DevPack Logo" />
+                <div id="headerContent">
+                    <h3>DevPack</h3>
+                    <p>Your Development Resources in One Pack</p>
+                </div>
             </div>
+            <button id="toggleThemeBtn" aria-label="Toggle Theme">
+                <svg id="moonIcon" fill="#73AADE" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg id="sunIcon" class="hidden" fill="#f59e0b" viewBox="0 0 20 20">
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 011.414 1.414zM6.464 13.536l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </header>
+
+        <!-- Title Bar (Back arrow + dynamic title) -->
+        <div id="titleBar">
+            <button id="backButton">←</button>
+            <h3 id="pageTitle">Home</h3>
         </div>
-        <button id="toggleThemeBtn" aria-label="Toggle Theme">
-            <svg id="moonIcon" fill="#73AADE" viewBox="0 0 20 20">
-                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-            </svg>
-            <svg id="sunIcon" class=" hidden" fill="#f59e0b" viewBox="0 0 20 20">
-                <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    fill-rule="evenodd" clip-rule="evenodd"></path>
-            </svg>
-        </button>
 
-    </header>
+        <!-- Search Bar -->
+        <div id="searchContainer">
+            <input type="text" id="searchBar" placeholder="Search (all resources by name, description, tags)..." />
+        </div>
+    </div>
 
-    <main style="padding: 20px;">
-        <h1>Welcome to Your Extension!</h1>
-        <p>Click the button below to see if everything is working.</p>
-        <button id="testBtn">Click me</button>
+    <main>
+        <!-- HOME VIEW: Display categories only -->
+        <section id="homeView">
+            <ul id="categoriesList">
+                <li class="categoryItem" data-category="favorites">Favorites</li>
+                <li class="categoryItem" data-category="icons">Icons</li>
+                <li class="categoryItem" data-category="components">Components</li>
+            </ul>
+        </section>
+
+        <!-- CATEGORY VIEW: Display items of a chosen category -->
+        <section id="categoryView">
+            <div class="resource-list" id="categoryItems"></div>
+        </section>
+
+        <!-- SEARCH RESULTS VIEW: Display global search results -->
+        <section id="searchResultsView">
+            <div class="resource-list" id="searchResultsList"></div>
+        </section>
     </main>
 
     <script src="popup.js"></script>

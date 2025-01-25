@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Font Awesome",
+        "description": "Popular icon set and toolkit.",
+        "link": "https://fontawesome.com",
+        "tags": [
+            "icons",
+            "font awesome"
+        ]
+    },
+    {
+        "name": "Material Icons",
+        "description": "Google's official icon set.",
+        "link": "https://fonts.google.com/icons",
+        "tags": [
+            "icons",
+            "material",
+            "google"
+        ]
+    }
+]
