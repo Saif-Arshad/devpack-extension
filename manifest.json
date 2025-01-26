@@ -13,39 +13,14 @@
   "side_panel": {
     "default_path": "popup.html"
   },
-  "externally_connectable": {
-    "matches": [
-      "http://127.0.0.1:5500/*",
-      "https://quick-apply-ai-website.vercel.app/*"
-    ]
-  },
   "permissions": [
     "storage",
     "sidePanel",
     "scripting"
   ],
-  "host_permissions": [
-    "http://127.0.0.1:5500/*",
-    "https://quick-apply-ai-website.vercel.app/*",
-    "https://quickapplyai-backend-5b692ef10a6d.herokuapp.com/api/*"
-  ],
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "http://127.0.0.1:5500/*",
-        "https://quickapplyai-backend-5b692ef10a6d.herokuapp.com/api/*",
-        "https://quick-apply-ai-website.vercel.app/*"
-      ],
-      "js": [
-        "content.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": true
-    }
-  ],
   "icons": {
     "16": "Assets/logo.png",
     "64": "Assets/logo.png",

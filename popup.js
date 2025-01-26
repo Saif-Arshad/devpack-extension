@@ -1,11 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     // =========== DOM Elements ===========
-    const body = document.body;
-    const header = document.getElementById('header');
-    const toggleThemeBtn = document.getElementById('toggleThemeBtn');
-    const sunIcon = document.getElementById('sunIcon');
-    const moonIcon = document.getElementById('moonIcon');
-
     const backButton = document.getElementById('backButton');
     const pageTitle = document.getElementById('pageTitle');
 
@@ -29,36 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     let currentView = 'home'; // 'home' | 'category' | 'search'
     let currentCategory = ''; // e.g. 'favorites'
-    let previousView = 'home'; // track the previous view for going back from search, if needed
-
-    // =========== THEME TOGGLE ===========
-    chrome.storage.local.get('theme', (result) => {
-        const savedTheme = result.theme || 'dark'; // Default to dark theme
-        body.classList.add(savedTheme);
-        header.classList.toggle('light', savedTheme === 'light');
-        sunIcon.style.display = savedTheme === 'light' ? 'block' : 'none';
-        moonIcon.style.display = savedTheme === 'light' ? 'none' : 'block';
-    });
-
-    toggleThemeBtn.addEventListener('click', () => {
-        const isDark = body.classList.contains('dark');
-        const newTheme = isDark ? 'light' : 'dark';
-
-        body.classList.toggle('dark', !isDark);
-        body.classList.toggle('light', isDark);
-        header.classList.toggle('light', isDark);
-
-        sunIcon.style.display = isDark ? 'block' : 'none';
-        moonIcon.style.display = isDark ? 'none' : 'block';
-
-        chrome.storage.local.set({ theme: newTheme });
-    });
 
     // =========== FETCH DATA ===========
     Promise.all([
-        fetch(chrome.runtime.getURL('resources/favorites.json')).then((r) => r.json()),
-        fetch(chrome.runtime.getURL('resources/icons.json')).then((r) => r.json()),
-        fetch(chrome.runtime.getURL('resources/components.json')).then((r) => r.json())
+        fetch(chrome.runtime.getURL('Resources/favorites.json')).then((r) => r.json()),
+        fetch(chrome.runtime.getURL('Resources/icons.json')).then((r) => r.json()),
+        fetch(chrome.runtime.getURL('Resources/components.json')).then((r) => r.json())
     ])
         .then(([favoritesData, iconsData, componentsData]) => {
             allResources.favorites = favoritesData;
@@ -68,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch((error) => console.error('Error fetching JSON files:', error));
 
     // =========== VIEW TOGGLING HELPERS ===========
-
     function showHomeView() {
         homeView.style.display = 'block';
         categoryView.style.display = 'none';
@@ -119,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========== CREATE RESOURCE ITEM ELEMENT ===========
-
     function createResourceItemElement(item) {
         const resourceItem = document.createElement('div');
         resourceItem.className = 'resource-item';
@@ -127,15 +95,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
 
         resourceItem.innerHTML = `
-      <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
-      <div class="resource-info">
-        <div class="resource-name">${item.name}</div>
-        <div class="resource-description">${item.description}</div>
-      </div>
-    `;
+            <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
+            <div class="resource-info">
+                <div class="resource-name">${item.name}</div>
+                <div class="resource-description">${item.description}</div>
+            </div>
+        `;
 
         resourceItem.addEventListener('click', () => {
-            // Open link in new tab (or do something else if you want)
+            // Open link in new tab
             chrome.tabs.create({ url: item.link });
         });
 
@@ -153,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========== EVENT: BACK BUTTON ===========
     backButton.addEventListener('click', () => {
         if (currentView === 'category' || currentView === 'search') {
-            // Go back to home
             searchBar.value = ''; // clear search bar
             showHomeView();
         }
@@ -164,23 +131,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const query = searchBar.value.trim().toLowerCase();
 
         if (query === '') {
-            // If search is cleared, go back to whatever we were viewing before
-            // or just default to the home screen
+            // If search is cleared, return to home view (if we were in search)
             if (currentView === 'search') {
                 showHomeView();
             }
             return;
         }
 
-        // If there's a query, we do a global search across all categories
+        // Global search across all categories
         const allMatches = [];
-
         Object.keys(allResources).forEach((catKey) => {
             const items = allResources[catKey];
             items.forEach((item) => {
-                const textToSearch =
-                    (item.name + ' ' + item.description + ' ' + (item.tags || []).join(' '))
-                        .toLowerCase();
+                const textToSearch = (
+                    item.name +
+                    ' ' +
+                    item.description +
+                    ' ' +
+                    (item.tags || []).join(' ')
+                ).toLowerCase();
+
                 if (textToSearch.includes(query)) {
                     allMatches.push(item);
                 }
@@ -191,7 +161,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // =========== UTILITY ===========
-
     function capitalize(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
