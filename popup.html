@@ -14,41 +14,38 @@
             <div style="display: flex; align-items: center; gap: 8px;">
                 <img src="./Assets/logo.png" alt="DevPack Logo" />
                 <div id="headerContent">
-                    <h3>DevPack
-
-                        <!-- <p>/ BETA</p> -->
-
-                    </h3>
+                    <h3>DevPack</h3>
                     <p>Your Development Resources in One Pack</p>
                 </div>
             </div>
         </header>
 
         <div id="searchContainer">
-            <input type="text" id="searchBar" placeholder="Search with name, description, tags" />
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 0a4.5 4.5 0 1 1 9.001 0 4.5 4.5 0 0 1-9.001 0z" />
+            </svg>
+            <input type="text" id="searchBar" placeholder="Quick search" />
         </div>
 
         <div id="titleBar">
             <button id="backButton">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" style="margin-top: 3px;"
-                    fill="currentColor" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                </svg>
+                <img src="./Assets/back-arrow.png" style="height: 18px; width: 20px;" alt="">
+            </button>
+            <h3 id="pageTitle">
+                <img src="./Assets/home-button.png" style="height: 18px; width: 20px;" alt="">
 
-                Go Back</button>
-            <h3 id="pageTitle">Home</h3>
+            </h3>
         </div>
     </div>
 
     <main>
-
         <section id="homeView">
-            <ul id="categoriesList">
-                <li class="categoryItem" data-category="favorites">Favorites</li>
-                <li class="categoryItem" data-category="icons">Icons</li>
-                <li class="categoryItem" data-category="components">Components</li>
-            </ul>
+            <h3 id="my_fav">
+                My Favorites (<span id="favoriteCount">0</span>)
+            </h3>
+            <ul id="categoriesList"></ul>
         </section>
 
         <section id="categoryView">
@@ -57,6 +54,10 @@
 
         <section id="searchResultsView">
             <div class="resource-list" id="searchResultsList"></div>
+        </section>
+
+        <section id="favoritesView">
+            <div class="resource-list" id="favoritesList"></div>
         </section>
     </main>
 

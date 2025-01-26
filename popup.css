@@ -1,31 +1,39 @@
-body {
+/* RESET */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #ffffff;
+    min-width: 280px;
 }
 
+/* Sticky header to keep top elements fixed */
 .sticky-header {
     position: sticky;
     top: 0;
     z-index: 999;
+    background-color: #121212;
 }
 
+/* HEADER STYLES */
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
-    background-color: #333;
+    background: linear-gradient(135deg, #2B2B2B, #333333);
     color: #fff;
-    border-radius: 0;
 }
 
 header img {
     height: 40px;
     width: 40px;
     object-fit: cover;
+    border-radius: 4px;
 }
 
 #headerContent {
@@ -39,21 +47,49 @@ header h3 {
     margin: 0;
     font-size: 14px;
     font-weight: bold;
-    align-items: center;
-    display: flex;
 }
 
 header p {
     margin: 2px 0;
     font-size: 10px;
+    opacity: 0.8;
 }
 
-header h3 p {
-    margin: 0 2px;
-    font-size: 10px;
+/* SEARCH BAR STYLES */
+#searchContainer {
+    position: relative;
+    display: flex;
+    background-color: #2b2b2b;
+    padding: 8px 10px;
 }
 
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: #bbb;
+    pointer-events: none;
+}
 
+#searchBar {
+    flex: 1;
+    font-size: 12px;
+    color: #fff;
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 7px;
+    outline: none;
+    padding: 10px 10px 10px 40px;
+}
+
+#searchBar::placeholder {
+    color: #bbb;
+}
+
+/* TITLE BAR STYLES */
 #titleBar {
     display: flex;
     align-items: center;
@@ -67,12 +103,9 @@ header h3 p {
 #backButton {
     display: none;
     cursor: pointer;
-
-
     border: none;
     background: none;
     font-size: 12px;
-    /* margin-bottom: 20px; */
     color: #84D7FF;
 }
 
@@ -83,31 +116,10 @@ header h3 p {
     color: #84D7FF;
 }
 
-#searchContainer {
-    display: flex;
-    padding: 8px 10px;
-    background-color: #333;
-}
-
-#searchBar {
-    flex: 1;
-    padding: 14px 8px;
-    font-size: 12px;
-    background-color: #2b2b2b;
-    color: #ffffff;
-    border: 1px solid #444;
-    border-radius: 7px;
-    outline: none;
-}
-
-#searchBar::placeholder {
-    color: #bbb;
-}
-
+/* MAIN AREA */
 main {
     padding: 10px;
 }
-
 
 #homeView {}
 
@@ -117,38 +129,55 @@ main {
     padding: 0;
 }
 
+/* CATEGORY ITEM STYLES */
 .categoryItem {
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    text-transform: capitalize;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    background-color: #1f1f1f;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .categoryItem:hover {
     background-color: #2e2e2e;
 }
 
+.resource-count {
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+/* HIDING VIEWS */
 #categoryView,
-#searchResultsView {
+#searchResultsView,
+#favoritesView {
     display: none;
 }
 
+/* RESOURCE LIST & ITEM STYLES */
 .resource-list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .resource-item {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px;
-    border-radius: 4px;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    background-color: #1f1f1f;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .resource-item:hover {
@@ -166,14 +195,51 @@ main {
 .resource-info {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .resource-name {
     font-weight: bold;
     font-size: 14px;
+    margin-bottom: 2px;
 }
 
 .resource-description {
     font-size: 12px;
     opacity: 0.8;
+}
+
+/* STAR ICON STYLES */
+.star-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: auto;
+    color: #666;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.star-icon.favorited {
+    color: orange;
+}
+
+.star-icon.animate {
+    transform: scale(1.2);
+}
+
+#my_fav {
+    color: #FFD700;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: end;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#favoritesView.empty::before {
+    content: "Nothing yet. Add some favorites!";
+    color: #bbb;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    display: block;
 }
