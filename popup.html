@@ -16,7 +16,7 @@
                 <div id="headerContent">
                     <h3>DevPack
 
-                        <p>/ BETA</p>
+                        <!-- <p>/ BETA</p> -->
 
                     </h3>
                     <p>Your Development Resources in One Pack</p>
@@ -29,13 +29,20 @@
         </div>
 
         <div id="titleBar">
-            <button id="backButton">Go Back</button>
+            <button id="backButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" style="margin-top: 3px;"
+                    fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+
+                Go Back</button>
             <h3 id="pageTitle">Home</h3>
         </div>
     </div>
 
     <main>
-        <!-- HOME VIEW: Display categories only -->
+
         <section id="homeView">
             <ul id="categoriesList">
                 <li class="categoryItem" data-category="favorites">Favorites</li>
@@ -44,12 +51,10 @@
             </ul>
         </section>
 
-        <!-- CATEGORY VIEW: Display items of a chosen category -->
         <section id="categoryView">
             <div class="resource-list" id="categoryItems"></div>
         </section>
 
-        <!-- SEARCH RESULTS VIEW: Display global search results -->
         <section id="searchResultsView">
             <div class="resource-list" id="searchResultsList"></div>
         </section>

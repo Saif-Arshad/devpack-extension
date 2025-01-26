@@ -12,28 +12,87 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchResultsView = document.getElementById('searchResultsView');
     const searchResultsList = document.getElementById('searchResultsList');
 
-    // Category list items
     const categoriesList = document.getElementById('categoriesList');
 
-    // =========== State Variables ===========
-    let allResources = {
-        favorites: [],
-        icons: [],
-        components: []
-    };
+    const categories = [
+        {
+            name: 'favorites',
+            label: 'Favorites',
+            filePath: 'Resources/favorites.json',
+            icon: `
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 12.026l-3.995 2.178.763-4.444L1.07 6.691l4.456-.647L8 2l2.473 4.044 4.456.647-3.698 3.069.763 4.444L8 12.026z"/>
+                </svg>
+            `
+        },
+        {
+            name: 'icons',
+            label: 'Icons',
+            filePath: 'Resources/icons.json',
+            icon: `
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M2 2h12v12H2z" fill="none" stroke="currentColor" stroke-width="1"/>
+                    <text x="50%" y="55%" text-anchor="middle" font-size="9" fill="currentColor">ICN</text>
+                </svg>
+            `
+        },
+        {
+            name: 'components',
+            label: 'Components',
+            filePath: 'Resources/components.json',
+            icon: `
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <rect x="1" y="1" width="14" height="6" rx="1" ry="1" fill="currentColor" opacity="0.3"/>
+                    <rect x="1" y="9" width="14" height="6" rx="1" ry="1" fill="currentColor"/>
+                </svg>
+            `
+        }
+    ];
+
+    let allResources = {};
     let currentView = 'home'; // 'home' | 'category' | 'search'
     let currentCategory = ''; // e.g. 'favorites'
 
-    // =========== FETCH DATA ===========
-    Promise.all([
-        fetch(chrome.runtime.getURL('Resources/favorites.json')).then((r) => r.json()),
-        fetch(chrome.runtime.getURL('Resources/icons.json')).then((r) => r.json()),
-        fetch(chrome.runtime.getURL('Resources/components.json')).then((r) => r.json())
-    ])
-        .then(([favoritesData, iconsData, componentsData]) => {
-            allResources.favorites = favoritesData;
-            allResources.icons = iconsData;
-            allResources.components = componentsData;
+    // =========== DYNAMIC CATEGORY LIST CREATION ===========
+    // Build the <li> elements for each category and append them to #categoriesList
+    function renderCategoryList() {
+        // Clear any existing <li> items (if needed)
+        categoriesList.innerHTML = '';
+
+        categories.forEach(category => {
+            const li = document.createElement('li');
+            li.classList.add('categoryItem');
+            li.setAttribute('data-category', category.name);
+
+            // Optional: add an icon + label
+            // If you want the icon inline, you can just set innerHTML to icon + label:
+            li.innerHTML = `
+                <span class="category-icon" style="margin-right: 6px;">
+                    ${category.icon}
+                </span>
+                <span class="category-label">${category.label}</span>
+            `;
+
+            categoriesList.appendChild(li);
+        });
+    }
+
+    // Call it once on DOMContentLoaded, so the category list is visible
+    renderCategoryList();
+
+    // =========== FETCH DATA for All Categories ===========
+    // We map over categories, fetch each JSON, then store them in allResources[name].
+    Promise.all(
+        categories.map(cat =>
+            fetch(chrome.runtime.getURL(cat.filePath)).then(r => r.json())
+        )
+    )
+        .then(dataArray => {
+            // dataArray is an array of JSON results in the same order as categories
+            dataArray.forEach((jsonData, i) => {
+                const catName = categories[i].name;
+                allResources[catName] = jsonData;
+            });
         })
         .catch((error) => console.error('Error fetching JSON files:', error));
 
@@ -92,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const resourceItem = document.createElement('div');
         resourceItem.className = 'resource-item';
 
+        // Use Google's favicon service (or your own icon logic)
         const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
 
         resourceItem.innerHTML = `
@@ -112,10 +172,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // =========== EVENT: CLICK ON A CATEGORY (HOME SCREEN) ===========
     categoriesList.addEventListener('click', (e) => {
-        if (e.target.classList.contains('categoryItem')) {
-            const categoryName = e.target.getAttribute('data-category');
-            showCategoryView(categoryName);
-        }
+        // Make sure we're clicking on the .categoryItem (li)
+        const li = e.target.closest('.categoryItem');
+        if (!li) return;
+
+        const categoryName = li.getAttribute('data-category');
+        showCategoryView(categoryName);
     });
 
     // =========== EVENT: BACK BUTTON ===========
@@ -141,13 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Global search across all categories
         const allMatches = [];
         Object.keys(allResources).forEach((catKey) => {
-            const items = allResources[catKey];
+            const items = allResources[catKey] || [];
             items.forEach((item) => {
                 const textToSearch = (
                     item.name +
                     ' ' +
-                    item.description +
-                    ' ' +
+
                     (item.tags || []).join(' ')
                 ).toLowerCase();
 

@@ -57,6 +57,7 @@ header h3 p {
 #titleBar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     background-color: #333;
     border-bottom: 1px solid #444;
@@ -66,21 +67,22 @@ header h3 p {
 #backButton {
     display: none;
     cursor: pointer;
+
+
     border: none;
     background: none;
-    font-size: 10px;
-    color: #fff;
+    font-size: 12px;
+    /* margin-bottom: 20px; */
+    color: #84D7FF;
 }
 
 #pageTitle {
     margin: 0;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    color: #84D7FF;
 }
 
-/* ===========================
-  Search Bar
-=========================== */
 #searchContainer {
     display: flex;
     padding: 8px 10px;
@@ -107,8 +109,7 @@ main {
 }
 
 
-#homeView {
-}
+#homeView {}
 
 #categoriesList {
     list-style: none;
@@ -129,13 +130,9 @@ main {
     background-color: #2e2e2e;
 }
 
-/* -----------
-  Category & Search Views
------------- */
 #categoryView,
 #searchResultsView {
     display: none;
-    /* hidden by default */
 }
 
 .resource-list {
@@ -159,11 +156,11 @@ main {
 }
 
 .resource-favicon {
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 27px;
     object-fit: contain;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: white;
 }
 
 .resource-info {
