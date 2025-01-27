@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
             filePath: 'Resources/icons.json',
         },
         {
+            name: '3d',
+            label: '3D',
+            filePath: 'Resources/3d.json',
+        },
+        {
             name: 'components',
             label: 'Components',
             filePath: 'Resources/components.json',

@@ -1,0 +1,213 @@
+[
+    {
+        "name": "Poly Haven",
+        "description": "A collection of free HDRIs, textures, and 3D models under CC0 license.",
+        "link": "https://polyhaven.com",
+        "tags": [
+            "HDRIs",
+            "Textures",
+            "Models"
+        ]
+    },
+    {
+        "name": "Itchio",
+        "description": "A marketplace for indie game developers offering free and paid assets with various licenses.",
+        "link": "https://itch.io/game-assets/free",
+        "tags": [
+            "Store"
+        ]
+    },
+    {
+        "name": "Kenney",
+        "description": "A vast library of free game assets, including 3D models, textures, and more, under CC0 license.",
+        "link": "https://kenney.nl",
+        "tags": [
+            "Models",
+            "Textures"
+        ]
+    },
+    {
+        "name": "ambientCG",
+        "description": "High-quality CC0-licensed textures, HDRIs, and 3D models for creative projects.",
+        "link": "https://ambientcg.com",
+        "tags": [
+            "HDRIs",
+            "Textures",
+            "Models"
+        ]
+    },
+    {
+        "name": "Share Textures",
+        "description": "A collection of free CC0-licensed textures and 3D models for commercial and personal use.",
+        "link": "https://www.sharetextures.com",
+        "tags": [
+            "Atlases",
+            "Textures",
+            "Models"
+        ]
+    },
+    {
+        "name": "BlenderKit",
+        "description": "A library of free and paid textures, models, HDRIs, and brushes for Blender users.",
+        "link": "https://www.blenderkit.com",
+        "tags": [
+            "Textures",
+            "Models",
+            "HDRIs",
+            "Brushes"
+        ]
+    },
+    {
+        "name": "CG Bookcase",
+        "description": "A collection of free CC0-licensed textures for 3D artists and designers.",
+        "link": "https://www.cgbookcase.com",
+        "tags": [
+            "Textures"
+        ]
+    },
+    {
+        "name": "3Dassets.one",
+        "description": "A curated collection of free HDRIs, textures, and 3D models with multiple licenses.",
+        "link": "https://3dassets.one",
+        "tags": [
+            "HDRIs",
+            "Textures",
+            "Models"
+        ]
+    },
+    {
+        "name": "Quaternius",
+        "description": "A collection of free CC0-licensed 3D models for game development and other projects.",
+        "link": "https://quaternius.com/",
+        "tags": [
+            "Models"
+        ]
+    },
+    {
+        "name": "Turbosquid",
+        "description": "A marketplace for 3D models with both free and paid assets under various licenses.",
+        "link": "https://www.turbosquid.com/",
+        "tags": [
+            "Models"
+        ]
+    },
+    {
+        "name": "Game Art 2D",
+        "description": "Free CC0-licensed sprites, tilesets, and GUI assets for game developers.",
+        "link": "https://www.gameart2d.com/freebies.html",
+        "tags": [
+            "Sprites",
+            "Tileset",
+            "GUI"
+        ]
+    },
+    {
+        "name": "textures.com",
+        "description": "A library of free and premium textures for 3D artists and designers.",
+        "link": "https://www.textures.com/free",
+        "tags": [
+            "Textures"
+        ]
+    },
+    {
+        "name": "Quixel",
+        "description": "A collection of free and premium textures, decals, and 3D models for game and film production.",
+        "link": "https://quixel.com/megascans/free",
+        "tags": [
+            "Decals",
+            "Textures",
+            "Models"
+        ]
+    },
+    {
+        "name": "Poliigon",
+        "description": "A library of free and premium HDRIs, textures, and 3D models for 3D artists.",
+        "link": "https://www.poliigon.com/search/free",
+        "tags": [
+            "HDRIs",
+            "Textures",
+            "Models"
+        ]
+    },
+    {
+        "name": "CGTrader",
+        "description": "A marketplace for free and paid 3D models with various licensing options.",
+        "link": "https://www.cgtrader.com/free-3d-models",
+        "tags": [
+            "Models"
+        ]
+    },
+    {
+        "name": "3DExport",
+        "description": "A marketplace for 3D models with both free and paid assets under multiple licenses.",
+        "link": "https://3dexport.com/",
+        "tags": [
+            "Models"
+        ]
+    },
+    {
+        "name": "ArtStation Marketplace",
+        "description": "A marketplace for free and premium 3D assets, including models and textures.",
+        "link": "https://www.artstation.com/marketplace/game-dev?section=trending&price_to=0",
+        "tags": [
+            "Store"
+        ]
+    },
+    {
+        "name": "Sketchfab",
+        "description": "A platform for sharing and discovering free and paid 3D models with various licenses.",
+        "link": "https://sketchfab.com/features/free-3d-models",
+        "tags": [
+            "Store"
+        ]
+    },
+    {
+        "name": "NormalMap-Online",
+        "description": "An online tool for generating normal maps from textures.",
+        "link": "https://cpetry.github.io/NormalMap-Online/",
+        "tags": [
+            "Tool"
+        ]
+    },
+    {
+        "name": "Online 3D Viewer",
+        "description": "A web-based tool for viewing and interacting with 3D models.",
+        "link": "https://3dviewer.net/",
+        "tags": [
+            "Tool"
+        ]
+    },
+    {
+        "name": "3dsky",
+        "description": "A marketplace for free and premium 3D models for architectural visualization.",
+        "link": "https://3dsky.org/3dmodels?types=free",
+        "tags": [
+            "Store"
+        ]
+    },
+    {
+        "name": "Dimensiva",
+        "description": "A collection of free 3D models for various creative projects.",
+        "link": "https://dimensiva.com/free-3d-models/",
+        "tags": [
+            "Models"
+        ]
+    },
+    {
+        "name": "3D model collection",
+        "description": "A collection of CC0-licensed 3D models available on Sketchfab.",
+        "link": "https://sketchfab.com/nebulousflynn/collections/cc0-9e9b8c5442ab4b59ba16b6fa5e43b8da",
+        "tags": [
+            "Models",
+            "Heritage"
+        ]
+    },
+    {
+        "name": "Blend Swap",
+        "description": "A community-driven platform for sharing free and paid Blender models.",
+        "link": "https://www.blendswap.com/",
+        "tags": [
+            "Models"
+        ]
+    }
+]
