@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
             filePath: 'Resources/3d.json',
         },
         {
+            name: 'background',
+            label: 'Background',
+            filePath: 'Resources/background.json',
+        },
+        {
             name: 'components',
             label: 'Components',
             filePath: 'Resources/components.json',
