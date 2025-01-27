@@ -1,0 +1,195 @@
+[
+    {
+        "name": "Josh Comeau",
+        "description": "A blog by Josh Comeau focusing on web development.",
+        "link": "https://www.joshwcomeau.com",
+        "tags": [
+            "Web"
+        ]
+    },
+    {
+        "name": "DEV",
+        "description": "A community-driven platform for developers to share knowledge and connect.",
+        "link": "https://dev.to",
+        "tags": []
+    },
+    {
+        "name": "Modern CSS",
+        "description": "A blog dedicated to modern CSS techniques and best practices.",
+        "link": "https://moderncss.dev",
+        "tags": [
+            "CSS"
+        ]
+    },
+    {
+        "name": "Medium",
+        "description": "A platform for writers and readers to share and discover stories on various topics.",
+        "link": "https://www.medium.com",
+        "tags": [
+            "Community"
+        ]
+    },
+    {
+        "name": "Rauno Craft",
+        "description": "A blog by Rauno focusing on UI design and development.",
+        "link": "https://rauno.me/craft",
+        "tags": [
+            "UI"
+        ]
+    },
+    {
+        "name": "Not a Number",
+        "description": "A blog focusing on animation and SVG techniques.",
+        "link": "https://www.nan.fyi",
+        "tags": [
+            "Animation",
+            "SVG"
+        ]
+    },
+    {
+        "name": "Maximeheckel",
+        "description": "A blog by Maxime Heckel focusing on Three.js, React, and 3D development.",
+        "link": "https://blog.maximeheckel.com",
+        "tags": [
+            "Three.js",
+            "React",
+            "3D"
+        ]
+    },
+    {
+        "name": "Varun Vachhar",
+        "description": "A blog by Varun Vachhar focusing on Three.js and 3D development.",
+        "link": "https://varun.ca/writing/",
+        "tags": [
+            "Three.js",
+            "3D"
+        ]
+    },
+    {
+        "name": "Overreacted",
+        "description": "A blog by Dan Abramov focusing on React and JavaScript.",
+        "link": "https://overreacted.io",
+        "tags": [
+            "React",
+            "JavaScript"
+        ]
+    },
+    {
+        "name": "CSS-Tricks",
+        "description": "A blog dedicated to CSS tips, tricks, and techniques.",
+        "link": "https://css-tricks.com",
+        "tags": [
+            "CSS"
+        ]
+    },
+    {
+        "name": "Smashing Magazine",
+        "description": "A magazine for web designers and developers, offering articles on various topics.",
+        "link": "https://www.smashingmagazine.com",
+        "tags": []
+    },
+    {
+        "name": "web.dev",
+        "description": "A blog by Google focusing on web development best practices and updates.",
+        "link": "https://web.dev/blog",
+        "tags": []
+    },
+    {
+        "name": "Design Systems",
+        "description": "A blog dedicated to design systems and their implementation.",
+        "link": "https://www.designsystems.com",
+        "tags": [
+            "Design system"
+        ]
+    },
+    {
+        "name": "Hashnode",
+        "description": "A community-driven platform for developers to share knowledge and connect.",
+        "link": "https://www.hashnode.com",
+        "tags": [
+            "Community"
+        ]
+    },
+    {
+        "name": "Design good practices",
+        "description": "A blog focusing on UI/UX design best practices.",
+        "link": "https://goodpractices.design",
+        "tags": [
+            "UI/UX"
+        ]
+    },
+    {
+        "name": "Paul Scanlon Articles",
+        "description": "A blog by Paul Scanlon focusing on Three.js and web development.",
+        "link": "https://www.paulie.dev/articles/",
+        "tags": [
+            "Three.js"
+        ]
+    },
+    {
+        "name": "Patterns.dev",
+        "description": "A blog dedicated to design and development patterns.",
+        "link": "https://www.patterns.dev",
+        "tags": [
+            "Patterns"
+        ]
+    },
+    {
+        "name": "A List Apart",
+        "description": "A blog focusing on web design, development, and content strategy.",
+        "link": "https://www.alistapart.com",
+        "tags": [
+            "Community"
+        ]
+    },
+    {
+        "name": "Sitepoint",
+        "description": "A blog offering tutorials and articles on web development and design.",
+        "link": "https://www.sitepoint.com",
+        "tags": [
+            "Learning"
+        ]
+    },
+    {
+        "name": "Delba Blog",
+        "description": "A blog by Delba focusing on web development and design.",
+        "link": "https://delba.dev/blog",
+        "tags": []
+    },
+    {
+        "name": "Zajno Digital Studio",
+        "description": "A blog focusing on animation and design techniques.",
+        "link": "https://motion.zajno.com/",
+        "tags": [
+            "Animation",
+            "Design"
+        ]
+    },
+    {
+        "name": "Emil Kowalski",
+        "description": "A blog by Emil Kowalski focusing on animation and design.",
+        "link": "https://emilkowal.ski/",
+        "tags": [
+            "Animation",
+            "Design"
+        ]
+    },
+    {
+        "name": "Codrops",
+        "description": "A blog offering demos and tutorials on web development, including Three.js and WebGL.",
+        "link": "https://tympanus.net/codrops/demos/",
+        "tags": [
+            "Three.js",
+            "WebGL"
+        ]
+    },
+    {
+        "name": "The Shape of AI",
+        "description": "A blog focusing on AI and patterns in design and development.",
+        "link": "https://www.shapeof.ai/",
+        "tags": [
+            "AI",
+            "Patterns"
+        ]
+    }
+]

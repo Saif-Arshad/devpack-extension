@@ -31,6 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
             filePath: 'Resources/background.json',
         },
         {
+            name: 'blog',
+            label: 'Blog',
+            filePath: 'Resources/blog.json',
+        },
+        {
+            name: 'colors',
+            label: 'Colors',
+            filePath: 'Resources/colors.json',
+        },
+        {
             name: 'components',
             label: 'Components',
             filePath: 'Resources/components.json',
