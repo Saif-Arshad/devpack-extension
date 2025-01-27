@@ -160,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return resourceItem;
     }
 
-    // =========== TOGGLE FAVORITE ===========
     function toggleFavorite(resourceName) {
         chrome.storage.sync.get(['favorites'], (result) => {
             const favorites = result.favorites || [];
@@ -180,7 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // =========== UPDATE FAVORITES VIEW ===========
     function updateFavoritesView() {
         chrome.storage.sync.get(['favorites'], (result) => {
             const favorites = result.favorites || [];
@@ -201,7 +199,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // =========== FIND RESOURCE BY NAME ===========
     function findResourceByName(resourceName) {
         for (const category of Object.values(allResources)) {
             const item = category.find(res => res.name === resourceName);
@@ -210,12 +207,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return null;
     }
 
-    // =========== EVENT: CLICK ON MY FAVORITES ===========
     myFav.addEventListener('click', () => {
         showFavoritesView();
     });
 
-    // =========== EVENT: BACK BUTTON ===========
     backButton.addEventListener('click', () => {
         if (currentView === 'category' || currentView === 'search' || currentView === 'favorites') {
             searchBar.value = '';
@@ -223,7 +218,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // =========== EVENT: SEARCH BAR ===========
     searchBar.addEventListener('input', () => {
         const query = searchBar.value.trim().toLowerCase();
         if (query === '') {
@@ -245,11 +239,9 @@ document.addEventListener('DOMContentLoaded', () => {
         showSearchResultsView(query, allMatches);
     });
 
-    // =========== UTILITY ===========
     function capitalize(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
 
-    // Start on home view by default
     showHomeView();
 });

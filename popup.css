@@ -185,11 +185,12 @@ main {
 }
 
 .resource-favicon {
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     border-radius: 4px;
-    background-color: white;
+    background-color: black;
+    /* background-color: white; */
 }
 
 .resource-info {
@@ -199,13 +200,13 @@ main {
 }
 
 .resource-name {
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 .resource-description {
-    font-size: 12px;
+    margin-top: 4px;
+    font-size: 11px;
     opacity: 0.8;
 }
 
