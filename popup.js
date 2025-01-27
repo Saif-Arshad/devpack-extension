@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentView = 'home';
     let currentCategory = '';
 
-    // =========== FETCH DATA for All Categories ===========
     Promise.all(
         categories.map(cat =>
             fetch(chrome.runtime.getURL(cat.filePath)).then(r => r.json())
@@ -44,11 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 allResources[catName] = jsonData.sort((a, b) => a.name.localeCompare(b.name));
             });
             renderCategoryList();
-            updateFavoritesView(); // Initialize favorites view
+            updateFavoritesView();
         })
         .catch((error) => console.error('Error fetching JSON files:', error));
 
-    // =========== RENDER CATEGORIES LIST ===========
     function renderCategoryList() {
         categoriesList.innerHTML = '';
         categories.forEach(category => {
@@ -67,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // =========== VIEW TOGGLING HELPERS ===========
     function showHomeView() {
         homeView.style.display = 'block';
         categoryView.style.display = 'none';
@@ -119,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentView = 'favorites';
     }
 
-    // =========== CREATE RESOURCE ITEM ELEMENT ===========
     function createResourceItemElement(item) {
         const resourceItem = document.createElement('div');
         resourceItem.className = 'resource-item';

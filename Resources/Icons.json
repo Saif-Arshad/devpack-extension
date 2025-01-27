@@ -9,13 +9,364 @@
         ]
     },
     {
-        "name": "Material Icons",
-        "description": "Google's official icon set.",
+        "name": "Iconify",
+        "description": "A huge collection of free icons across multiple formats.",
+        "link": "https://icon-sets.iconify.design",
+        "tags": [
+            "icons",
+            "collection",
+            "design"
+        ]
+    },
+    {
+        "name": "Google Icons",
+        "description": "Google's official Material Icons collection.",
         "link": "https://fonts.google.com/icons",
         "tags": [
             "icons",
             "material",
             "google"
+        ]
+    },
+    {
+        "name": "Simple Icons",
+        "description": "High-quality icons for popular brands.",
+        "link": "https://simpleicons.org",
+        "tags": [
+            "icons",
+            "brands",
+            "design"
+        ]
+    },
+    {
+        "name": "Tabler Icons",
+        "description": "A set of open-source, MIT-licensed SVG icons.",
+        "link": "https://tabler-icons.io",
+        "tags": [
+            "icons",
+            "open-source",
+            "svg"
+        ]
+    },
+    {
+        "name": "SVG Repo",
+        "description": "A repository of free SVG icons and illustrations.",
+        "link": "https://www.svgrepo.com",
+        "tags": [
+            "icons",
+            "svg",
+            "illustrations"
+        ]
+    },
+    {
+        "name": "Reshot",
+        "description": "Free SVG icons and other graphic resources.",
+        "link": "https://www.reshot.com/free-svg-icons/",
+        "tags": [
+            "icons",
+            "free",
+            "graphics"
+        ]
+    },
+    {
+        "name": "Radix Icons",
+        "description": "A crisp and open-source icon set by Radix UI.",
+        "link": "https://www.radix-ui.com/icons",
+        "tags": [
+            "icons",
+            "open-source",
+            "ui"
+        ]
+    },
+    {
+        "name": "Iconoir",
+        "description": "A versatile open-source icon library.",
+        "link": "https://iconoir.com",
+        "tags": [
+            "icons",
+            "open-source",
+            "design"
+        ]
+    },
+    {
+        "name": "Hero Icons",
+        "description": "Tailwind Labs' collection of free icons.",
+        "link": "https://heroicons.com/",
+        "tags": [
+            "icons",
+            "tailwind",
+            "free"
+        ]
+    },
+    {
+        "name": "Lucide",
+        "description": "An open-source replacement for Feather icons.",
+        "link": "https://lucide.dev",
+        "tags": [
+            "icons",
+            "open-source",
+            "feather"
+        ]
+    },
+    {
+        "name": "svgl",
+        "description": "A curated collection of SVG icons for designers.",
+        "link": "https://svgl.app",
+        "tags": [
+            "icons",
+            "svg",
+            "design"
+        ]
+    },
+    {
+        "name": "Phosphor",
+        "description": "A flexible and customizable icon library.",
+        "link": "https://phosphoricons.com",
+        "tags": [
+            "icons",
+            "customizable",
+            "design"
+        ]
+    },
+    {
+        "name": "React Icons",
+        "description": "Include popular icons as React components.",
+        "link": "https://react-icons.github.io/react-icons/",
+        "tags": [
+            "icons",
+            "react",
+            "components"
+        ]
+    },
+    {
+        "name": "Mage Icons",
+        "description": "A unique and modern icon collection.",
+        "link": "https://mageicons.com/",
+        "tags": [
+            "icons",
+            "modern",
+            "design"
+        ]
+    },
+    {
+        "name": "Remix Icon",
+        "description": "A set of open-source, neutral-style icons.",
+        "link": "https://remixicon.com/",
+        "tags": [
+            "icons",
+            "neutral",
+            "open-source"
+        ]
+    },
+    {
+        "name": "Feather Icons",
+        "description": "Simply beautiful open-source icons.",
+        "link": "https://feathericons.com/",
+        "tags": [
+            "icons",
+            "simple",
+            "open-source"
+        ]
+    },
+    {
+        "name": "Ionicons",
+        "description": "Beautifully crafted open-source icons for web apps.",
+        "link": "https://ionic.io/ionicons",
+        "tags": [
+            "icons",
+            "web apps",
+            "open-source"
+        ]
+    },
+    {
+        "name": "Eva Icons",
+        "description": "A pack of beautifully crafted open-source icons.",
+        "link": "https://akveo.github.io/eva-icons/",
+        "tags": [
+            "icons",
+            "pack",
+            "open-source"
+        ]
+    },
+    {
+        "name": "Font Awesome",
+        "description": "Popular icon set and toolkit.",
+        "link": "https://fontawesome.com/icons",
+        "tags": [
+            "icons",
+            "toolkit",
+            "font awesome"
+        ]
+    },
+    {
+        "name": "useAnimations",
+        "description": "Free animated icons for web projects.",
+        "link": "https://useanimations.com",
+        "tags": [
+            "icons",
+            "animated",
+            "web"
+        ]
+    },
+    {
+        "name": "CSS Icons",
+        "description": "Lightweight CSS-based icon library.",
+        "link": "https://css.gg/",
+        "tags": [
+            "icons",
+            "css"
+        ]
+    },
+    {
+        "name": "Boxicons",
+        "description": "Simple and customizable vector icons.",
+        "link": "https://boxicons.com/",
+        "tags": [
+            "icons",
+            "vector"
+        ]
+    },
+    {
+        "name": "Ikonate",
+        "description": "Customizable and accessible SVG icons.",
+        "link": "https://ikonate.com/",
+        "tags": [
+            "icons",
+            "svg",
+            "accessible"
+        ]
+    },
+    {
+        "name": "ManyPixels",
+        "description": "Free illustrations for personal and commercial use.",
+        "link": "https://www.manypixels.co/gallery",
+        "tags": [
+            "illustrations",
+            "icons",
+            "free"
+        ]
+    },
+    {
+        "name": "Zondicons",
+        "description": "Free and customizable vector icons.",
+        "link": "http://www.zondicons.com/",
+        "tags": [
+            "icons",
+            "vector"
+        ]
+    },
+    {
+        "name": "Streamline Icons",
+        "description": "Beautifully crafted icons with multiple styles.",
+        "link": "https://www.streamlinehq.com",
+        "tags": [
+            "icons",
+            "streamline",
+            "styles"
+        ]
+    },
+    {
+        "name": "TDesign Icons",
+        "description": "Modern and minimalist icon set.",
+        "link": "https://tdesign.tencent.com/design/icon",
+        "tags": [
+            "icons",
+            "minimalist"
+        ]
+    },
+    {
+        "name": "3D Icons",
+        "description": "High-quality 3D icons for various projects.",
+        "link": "https://3dicons.co/",
+        "tags": [
+            "icons",
+            "3d"
+        ]
+    },
+    {
+        "name": "Sargam Icons",
+        "description": "Unique and customizable icons for design.",
+        "link": "https://sargamicons.com",
+        "tags": [
+            "icons",
+            "customizable"
+        ]
+    },
+    {
+        "name": "Iconmonstr",
+        "description": "Hundreds of free and simple icons.",
+        "link": "https://iconmonstr.com",
+        "tags": [
+            "icons",
+            "simple",
+            "free"
+        ]
+    },
+    {
+        "name": "Drawkit",
+        "description": "Beautiful 3D and flat illustrations.",
+        "link": "https://www.drawkit.com/illustration-types/icons",
+        "tags": [
+            "illustrations",
+            "3d",
+            "icons"
+        ]
+    },
+    {
+        "name": "Basicons",
+        "description": "Basic and easy-to-use icon set.",
+        "link": "https://basicons.xyz",
+        "tags": [
+            "icons",
+            "basic"
+        ]
+    },
+    {
+        "name": "Clarity",
+        "description": "Open-source and customizable icons.",
+        "link": "https://clarity.design/documentation/icons/shapes",
+        "tags": [
+            "icons",
+            "customizable",
+            "open-source"
+        ]
+    },
+    {
+        "name": "Core UI Icons",
+        "description": "Versatile icons for Bootstrap and beyond.",
+        "link": "https://coreui.io/icons/",
+        "tags": [
+            "icons",
+            "bootstrap"
+        ]
+    },
+    {
+        "name": "Unicorn Icons",
+        "description": "Animated icons for creative projects.",
+        "link": "https://unicornicons.com",
+        "tags": [
+            "icons",
+            "animated"
+        ]
+    },
+    {
+        "name": "ICONSVG",
+        "description": "Free and customizable SVG icons.",
+        "link": "https://iconsvg.xyz",
+        "tags": [
+            "icons",
+            "svg",
+            "free"
+        ]
+    },
+    {
+        "name": "Bootstrap Icons",
+        "description": "Official Bootstrap icon library.",
+        "link": "https://icons.getbootstrap.com/",
+        "tags": [
+            "icons",
+            "bootstrap",
+            "official"
         ]
     }
 ]
