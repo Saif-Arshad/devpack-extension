@@ -15,8 +15,12 @@
   },
   "permissions": [
     "storage",
+    "contextMenus",
     "sidePanel",
-    "scripting"
+    "scripting",
+    "bookmarks",
+    "notifications",
+    "tabs"
   ],
   "background": {
     "service_worker": "background.js"

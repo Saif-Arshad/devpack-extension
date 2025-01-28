@@ -59,7 +59,7 @@ header p {
 #searchContainer {
     position: relative;
     display: flex;
-    background-color: #2b2b2b;
+    background-color: #1c1c1c;
     padding: 8px 10px;
 }
 
@@ -95,7 +95,7 @@ header p {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    background-color: #333;
+    background-color: #2b2b2b;
     border-bottom: 1px solid #444;
     padding: 8px 10px;
 }
@@ -114,6 +114,9 @@ header p {
     font-size: 12px;
     font-weight: 600;
     color: #84D7FF;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 /* MAIN AREA */
@@ -132,25 +135,49 @@ main {
 /* CATEGORY ITEM STYLES */
 .categoryItem {
     padding: 12px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     border-radius: 6px;
     text-transform: capitalize;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.2s, box-shadow 0.2s;
-    background-color: #1f1f1f;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #ffffff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
+    /* We'll set background dynamically in JS. */
 }
 
 .categoryItem:hover {
-    background-color: #2e2e2e;
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.category-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.category-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    /* Force white color by inverting (assuming the icon is originally dark). */
+    filter: invert(1);
+}
+
+.category-label {
+    font-size: 13px;
 }
 
 .resource-count {
-    color: #bbb;
+    margin-left: auto;
+    color: #ffffffcc;
     font-size: 0.9em;
 }
 
@@ -190,7 +217,6 @@ main {
     object-fit: contain;
     border-radius: 4px;
     background-color: black;
-    /* background-color: white; */
 }
 
 .resource-info {
@@ -210,23 +236,32 @@ main {
     opacity: 0.8;
 }
 
-/* STAR ICON STYLES */
-.star-icon {
+/* FAVORITE ICON / REMOVE ICON */
+.star-icon,
+.remove-icon {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: auto;
-    color: #666;
     transition: color 0.3s ease, transform 0.3s ease;
+    color: #666;
 }
 
 .star-icon.favorited {
     color: orange;
 }
 
-.star-icon.animate {
+.star-icon.animate,
+.remove-icon.animate {
     transform: scale(1.2);
 }
 
+/* Adjust the remove icon (cross) style */
+.remove-icon {
+    font-weight: bold;
+    color: #ff5e5e;
+}
+
+/* Misc */
 #my_fav {
     color: #FFD700;
     font-weight: 400;
