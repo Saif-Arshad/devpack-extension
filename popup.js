@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: '3d',
             label: '3D',
             filePath: 'Resources/3d.json',
+            icon: `<img src="./Assets/3d-icon.png" alt="3D" />         `,
         },
         {
             name: 'background',
@@ -44,6 +45,36 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'components',
             label: 'Components',
             filePath: 'Resources/components.json',
+        },
+        {
+            name: 'illustrations',
+            label: 'Illustrations',
+            filePath: 'Resources/illustrations.json',
+        },
+        {
+            name: 'libaries',
+            label: 'Libaries',
+            filePath: 'Resources/libraries.json',
+        },
+        {
+            name: 'photos',
+            label: 'Photos',
+            filePath: 'Resources/photos.json',
+        },
+        {
+            name: 'tools',
+            label: 'Tools',
+            filePath: 'Resources/tools.json',
+        },
+        {
+            name: 'font',
+            label: 'Fonts',
+            filePath: 'Resources/fonts.json',
+        },
+        {
+            name: 'video',
+            label: 'Video',
+            filePath: 'Resources/video.json',
         },
 
     ];
@@ -76,8 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const resourceCount = allResources[category.name]?.length || 0;
             li.innerHTML = `
-                <span class="category-label">${category.label}</span>
-                <span class="resource-count">(${resourceCount} resources)</span>
+        < span class= "category-label" > ${ category.label }</span >
+        <span class="resource-count">(${resourceCount} resources)</span>
             `;
 
             li.addEventListener('click', () => showCategoryView(category.name));
@@ -151,30 +182,30 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="star-icon" data-resource-id="${item.name}">★</span>
         `;
 
-        resourceItem.addEventListener('click', (e) => {
-            if (!e.target.classList.contains('star-icon')) {
-                chrome.tabs.create({ url: item.link });
-            }
-        });
+    resourceItem.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('star-icon')) {
+            chrome.tabs.create({ url: item.link });
+        }
+    });
 
-        const starIcon = resourceItem.querySelector('.star-icon');
-        starIcon.addEventListener('click', (e) => {
-            e.stopPropagation();
-            toggleFavorite(item.name);
-            starIcon.classList.add('animate');
-            setTimeout(() => starIcon.classList.remove('animate'), 300);
-        });
+    const starIcon = resourceItem.querySelector('.star-icon');
+    starIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleFavorite(item.name);
+        starIcon.classList.add('animate');
+        setTimeout(() => starIcon.classList.remove('animate'), 300);
+    });
 
-        // Check if the item is already a favorite
-        chrome.storage.sync.get(['favorites'], (result) => {
-            const favorites = result.favorites || [];
-            if (favorites.includes(item.name)) {
-                starIcon.classList.add('favorited');
-            }
-        });
+    // Check if the item is already a favorite
+    chrome.storage.sync.get(['favorites'], (result) => {
+        const favorites = result.favorites || [];
+        if (favorites.includes(item.name)) {
+            starIcon.classList.add('favorited');
+        }
+    });
 
-        return resourceItem;
-    }
+    return resourceItem;
+}
 
     function toggleFavorite(resourceName) {
         chrome.storage.sync.get(['favorites'], (result) => {
@@ -227,37 +258,37 @@ document.addEventListener('DOMContentLoaded', () => {
         showFavoritesView();
     });
 
-    backButton.addEventListener('click', () => {
-        if (currentView === 'category' || currentView === 'search' || currentView === 'favorites') {
-            searchBar.value = '';
+backButton.addEventListener('click', () => {
+    if (currentView === 'category' || currentView === 'search' || currentView === 'favorites') {
+        searchBar.value = '';
+        showHomeView();
+    }
+});
+
+searchBar.addEventListener('input', () => {
+    const query = searchBar.value.trim().toLowerCase();
+    if (query === '') {
+        if (currentView === 'search') {
             showHomeView();
         }
-    });
-
-    searchBar.addEventListener('input', () => {
-        const query = searchBar.value.trim().toLowerCase();
-        if (query === '') {
-            if (currentView === 'search') {
-                showHomeView();
-            }
-            return;
-        }
-        const allMatches = [];
-        Object.keys(allResources).forEach((catKey) => {
-            const items = allResources[catKey] || [];
-            items.forEach((item) => {
-                const textToSearch = (item.name + ' ' + (item.tags || []).join(' ')).toLowerCase();
-                if (textToSearch.includes(query)) {
-                    allMatches.push(item);
-                }
-            });
-        });
-        showSearchResultsView(query, allMatches);
-    });
-
-    function capitalize(str) {
-        return str.charAt(0).toUpperCase() + str.slice(1);
+        return;
     }
+    const allMatches = [];
+    Object.keys(allResources).forEach((catKey) => {
+        const items = allResources[catKey] || [];
+        items.forEach((item) => {
+            const textToSearch = (item.name + ' ' + (item.tags || []).join(' ')).toLowerCase();
+            if (textToSearch.includes(query)) {
+                allMatches.push(item);
+            }
+        });
+    });
+    showSearchResultsView(query, allMatches);
+});
 
-    showHomeView();
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+showHomeView();
 });

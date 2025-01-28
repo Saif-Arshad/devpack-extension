@@ -1,22 +1,694 @@
 [
     {
-        "name": "Bootstrap",
-        "description": "CSS framework for building responsive, mobile-first sites.",
-        "link": "https://getbootstrap.com",
+        "name": "shadcn/ui",
+        "description": "A set of accessible and customizable React components built with Tailwind CSS and Chart.js integration.",
+        "link": "https://ui.shadcn.com",
         "tags": [
-            "css",
-            "framework",
-            "components"
+            "React",
+            "Tailwind",
+            "Chart"
+        ]
+    },
+    {
+        "name": "Radix UI",
+        "description": "Primitives for building high-quality, accessible UI components in React.",
+        "link": "https://www.radix-ui.com",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "NextUI",
+        "description": "A modern and responsive UI library for React applications, styled with Tailwind CSS.",
+        "link": "https://nextui.org",
+        "tags": [
+            "Tailwind",
+            "React"
+        ]
+    },
+    {
+        "name": "Float UI",
+        "description": "A versatile UI kit supporting multiple frameworks including React, Vue, Svelte, and Alpine.",
+        "link": "https://floatui.com",
+        "tags": [
+            "Tailwind",
+            "React",
+            "Vue",
+            "Svelte",
+            "HTML",
+            "Alpine"
+        ]
+    },
+    {
+        "name": "Tailblocks",
+        "description": "Ready-to-use Tailwind CSS blocks for building responsive web interfaces quickly.",
+        "link": "https://tailblocks.cc",
+        "tags": [
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "name": "Component Gallery",
+        "description": "A comprehensive gallery showcasing a variety of UI components for different frameworks.",
+        "link": "https://component.gallery/components/",
+        "tags": []
+    },
+    {
+        "name": "Headless UI",
+        "description": "Unstyled, accessible UI components designed to integrate seamlessly with Tailwind CSS.",
+        "link": "https://headlessui.com",
+        "tags": [
+            "Tailwind",
+            "React",
+            "Vue"
+        ]
+    },
+    {
+        "name": "Mantine UI",
+        "description": "A React components and hooks library that emphasizes usability and customization.",
+        "link": "https://ui.mantine.dev",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "Tailus UI",
+        "description": "Beautifully crafted UI components built with Tailwind CSS for rapid development.",
+        "link": "https://tailus.io",
+        "tags": [
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "name": "Rewind-UI",
+        "description": "Accessible React UI components powered by Tailwind CSS, focusing on performance and ease of use.",
+        "link": "https://rewind-ui.dev",
+        "tags": [
+            "React",
+            "Tailwind"
+        ]
+    },
+    {
+        "name": "Preline UI",
+        "description": "Tailwind-based UI components designed for modern and responsive web applications.",
+        "link": "https://preline.co/",
+        "tags": [
+            "Tailwind",
+            "HTML",
+            "React",
+            "Vue"
+        ]
+    },
+    {
+        "name": "HyperUI",
+        "description": "Free Tailwind CSS components for building modern and responsive websites effortlessly.",
+        "link": "https://www.hyperui.dev",
+        "tags": [
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "name": "LangUI",
+        "description": "Tailwind CSS components tailored for efficient web development and design.",
+        "link": "https://www.langui.dev",
+        "tags": [
+            "HTML",
+            "Tailwind"
+        ]
+    },
+    {
+        "name": "Shadcn for Vue",
+        "description": "Vue.js adaptation of the Shadcn UI library, leveraging Tailwind CSS for styling.",
+        "link": "https://www.shadcn-vue.com",
+        "tags": [
+            "Vue",
+            "Tailwind"
+        ]
+    },
+    {
+        "name": "daisyUI",
+        "description": "Tailwind CSS components that simplify the process of building beautiful user interfaces.",
+        "link": "https://daisyui.com",
+        "tags": [
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "name": "Windstatic",
+        "description": "A Tailwind CSS UI library enhanced with Alpine.js for interactive elements.",
+        "link": "https://windstatic.com",
+        "tags": [
+            "Tailwind",
+            "Alpine"
+        ]
+    },
+    {
+        "name": "UIverse",
+        "description": "Interactive HTML components designed to enhance website aesthetics and functionality.",
+        "link": "https://uiverse.io",
+        "tags": [
+            "HTML"
         ]
     },
     {
         "name": "Material UI",
-        "description": "React components for faster and easier web development.",
-        "link": "https://mui.com",
+        "description": "A React UI framework implementing Google's Material Design for building responsive applications.",
+        "link": "https://mui.com/material-ui/",
         "tags": [
-            "react",
-            "ui",
-            "components"
+            "React"
+        ]
+    },
+    {
+        "name": "Material Tailwind",
+        "description": "Combines Material Design principles with Tailwind CSS for versatile and stylish UI components.",
+        "link": "https://www.material-tailwind.com",
+        "tags": [
+            "React",
+            "HTML",
+            "Remix",
+            "Gatsby",
+            "Tailwind"
+        ]
+    },
+    {
+        "name": "Ark UI",
+        "description": "A headless UI component library that is accessible and framework-agnostic, supporting React, Solid, and Vue.",
+        "link": "https://ark-ui.com",
+        "tags": [
+            "Headless",
+            "React",
+            "Solid",
+            "Vue"
+        ]
+    },
+    {
+        "name": "Park UI",
+        "description": "A React-based UI library with support for Solid, Panda, and Tailwind, focusing on flexibility and performance.",
+        "link": "https://park-ui.com",
+        "tags": [
+            "React",
+            "Solid",
+            "Panda",
+            "Tailwind"
+        ]
+    },
+    {
+        "name": "Wedges",
+        "description": "A React library offering a collection of UI components for enhanced user experiences.",
+        "link": "https://www.lemonsqueezy.com/wedges",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "Melt UI",
+        "description": "A Svelte-based UI library focused on accessibility and seamless integration.",
+        "link": "https://melt-ui.com",
+        "tags": [
+            "Svelte",
+            "Accessible"
+        ]
+    },
+    {
+        "name": "Tremor",
+        "description": "A React library specializing in creating interactive charts and data visualizations.",
+        "link": "https://www.tremor.so",
+        "tags": [
+            "Chart",
+            "React"
+        ]
+    },
+    {
+        "name": "Vuesax",
+        "description": "A Vue.js UI framework offering a wide range of customizable components.",
+        "link": "https://vuesax.com",
+        "tags": [
+            "Vue"
+        ]
+    },
+    {
+        "name": "Chart.js",
+        "description": "A versatile JavaScript library for creating responsive and interactive charts in various frameworks.",
+        "link": "https://www.chartjs.org",
+        "tags": [
+            "Chart",
+            "React",
+            "Vue",
+            "Svelte",
+            "Angular"
+        ]
+    },
+    {
+        "name": "Sonner",
+        "description": "A React library for creating customizable toast notifications.",
+        "link": "https://sonner.emilkowal.ski",
+        "tags": [
+            "Toast",
+            "React"
+        ]
+    },
+    {
+        "name": "Aceternity UI",
+        "description": "A React-based UI library that integrates Tailwind CSS and motion animations for dynamic interfaces.",
+        "link": "https://ui.aceternity.com",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Motion"
+        ]
+    },
+    {
+        "name": "LayerChart",
+        "description": "A Svelte library designed for building layered and interactive charts.",
+        "link": "https://www.layerchart.com",
+        "tags": [
+            "Svelte",
+            "Chart"
+        ]
+    },
+    {
+        "name": "Bits UI",
+        "description": "A headless UI library for Svelte, offering flexible and accessible components.",
+        "link": "https://www.bits-ui.com/",
+        "tags": [
+            "Svelte",
+            "Headless"
+        ]
+    },
+    {
+        "name": "Angular Material",
+        "description": "A comprehensive UI component library for Angular, implementing Material Design specifications.",
+        "link": "https://material.angular.io",
+        "tags": [
+            "Angular"
+        ]
+    },
+    {
+        "name": "Svelte UX",
+        "description": "A Svelte-based UI library focused on user experience and intuitive design.",
+        "link": "https://svelte-ux.techniq.dev",
+        "tags": [
+            "Svelte"
+        ]
+    },
+    {
+        "name": "buttons.ibelick",
+        "description": "A collection of customizable button components styled with Tailwind CSS and HTML.",
+        "link": "https://buttons.ibelick.com",
+        "tags": [
+            "Buttons",
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "name": "3D buttons",
+        "description": "A showcase of CSS-driven 3D button designs for interactive user interfaces.",
+        "link": "https://csspro.com/css-3d-buttons/",
+        "tags": [
+            "3D",
+            "Buttons",
+            "HTML"
+        ]
+    },
+    {
+        "name": "Zag",
+        "description": "A UI library supporting React, Vue, and Solid frameworks, offering a variety of interactive components.",
+        "link": "https://zagjs.com",
+        "tags": [
+            "React",
+            "Vue",
+            "Solid"
+        ]
+    },
+    {
+        "name": "Chakra UI",
+        "description": "A simple, modular, and accessible component library for React applications.",
+        "link": "https://chakra-ui.com",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "Pines",
+        "description": "Tailwind CSS and Alpine.js-powered components for building interactive UIs.",
+        "link": "https://devdojo.com/pines",
+        "tags": [
+            "Tailwind",
+            "Alpine"
+        ]
+    },
+    {
+        "name": "TW Elements",
+        "description": "A set of UI components built with Tailwind CSS for rapid web development.",
+        "link": "https://tw-elements.com",
+        "tags": [
+            "Tailwind"
+        ]
+    },
+    {
+        "name": "CSS checkboxes",
+        "description": "Examples and styles for creating custom checkboxes using CSS and HTML.",
+        "link": "https://getcssscan.com/css-checkboxes-examples?ref=css-3d-buttons-bottom",
+        "tags": [
+            "HTML",
+            "Checkboxes"
+        ]
+    },
+    {
+        "name": "CSS box-shadow",
+        "description": "A collection of creative box-shadow examples implemented with CSS.",
+        "link": "https://getcssscan.com/css-box-shadow-examples",
+        "tags": [
+            "HTML",
+            "Shadows"
+        ]
+    },
+    {
+        "name": "LoaderShip",
+        "description": "A variety of customizable loaders implemented with HTML and CSS.",
+        "link": "https://www.loadership.com",
+        "tags": [
+            "Loaders",
+            "HTML"
+        ]
+    },
+    {
+        "name": "Flowbite",
+        "description": "Tailwind CSS components and interactive elements for building modern web interfaces.",
+        "link": "https://flowbite.com",
+        "tags": [
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "name": "Lightweight charts",
+        "description": "A lightweight charting library for integrating responsive charts into web applications.",
+        "link": "https://www.tradingview.com/lightweight-charts/",
+        "tags": [
+            "Chart"
+        ]
+    },
+    {
+        "name": "Toggles",
+        "description": "A collection of toggle switches implemented with HTML and customizable styles.",
+        "link": "https://toggles.dev",
+        "tags": [
+            "Toggles",
+            "HTML"
+        ]
+    },
+    {
+        "name": "tailwindUI",
+        "description": "Premium Tailwind CSS components and templates for building responsive websites and applications.",
+        "link": "https://tailwindui.com",
+        "tags": [
+            "Tailwind",
+            "HTML",
+            "React",
+            "Vue"
+        ]
+    },
+    {
+        "name": "Tailwind UI KIT",
+        "description": "A collection of Tailwind CSS UI components and templates for quick project setups.",
+        "link": "https://www.tailwind-kit.com",
+        "tags": [
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "name": "Hola svg",
+        "description": "A library of SVG-based loaders and animations for enhancing web interfaces.",
+        "link": "https://loaders.holasvg.com",
+        "tags": [
+            "Loaders"
+        ]
+    },
+    {
+        "name": "LDRS",
+        "description": "A collection of CSS-based loaders for integrating into web projects.",
+        "link": "https://uiball.com/loaders/",
+        "tags": [
+            "Loaders"
+        ]
+    },
+    {
+        "name": "10015 Tools",
+        "description": "A set of CSS loader generators and tools for creating custom loading animations.",
+        "link": "https://10015.io/tools/css-loader-generator",
+        "tags": [
+            "Loaders"
+        ]
+    },
+    {
+        "name": "React Responsive Pagination",
+        "description": "A React library for creating responsive and customizable pagination components.",
+        "link": "https://react-responsive-pagination.elantha.com",
+        "tags": [
+            "Pagination",
+            "React"
+        ]
+    },
+    {
+        "name": "SVG Loaders",
+        "description": "A collection of SVG-based loaders and spinners for enhancing user interfaces.",
+        "link": "https://samherbert.net/svg-loaders/",
+        "tags": [
+            "Loaders"
+        ]
+    },
+    {
+        "name": "CSS loaders",
+        "description": "A variety of CSS-based loading animations and spinners for web projects.",
+        "link": "https://css-loaders.com",
+        "tags": [
+            "Loaders"
+        ]
+    },
+    {
+        "name": "CSS loaders and spinners",
+        "description": "An extensive collection of CSS loaders and spinners for easy integration.",
+        "link": "https://cssloaders.github.io",
+        "tags": [
+            "Loaders"
+        ]
+    },
+    {
+        "name": "ui.ibelick",
+        "description": "A collection of React and Tailwind CSS effects for enhancing web interfaces.",
+        "link": "https://ui.ibelick.com",
+        "tags": [
+            "Effects",
+            "React",
+            "Tailwind"
+        ]
+    },
+    {
+        "name": "Lobe UI",
+        "description": "A Tailwind CSS and React-based UI library focused on design flexibility and ease of use.",
+        "link": "https://ui.lobehub.com",
+        "tags": [
+            "Tailwind",
+            "React"
+        ]
+    },
+    {
+        "name": "Drams",
+        "description": "A Framer-based design tool for creating dynamic and interactive UI components.",
+        "link": "https://drams.framer.website",
+        "tags": [
+            "Framer"
+        ]
+    },
+    {
+        "name": "enhanced-button",
+        "description": "A collection of advanced button components with enhanced styles and interactions.",
+        "link": "https://enhanced-button.vercel.app/",
+        "tags": [
+            "Buttons"
+        ]
+    },
+    {
+        "name": "Variant Vault",
+        "description": "A repository of animated and text-based UI variants built with Framer.",
+        "link": "https://variantvault.chrisabdo.dev/",
+        "tags": [
+            "Animations",
+            "Framer",
+            "Texts"
+        ]
+    },
+    {
+        "name": "PrimeReact",
+        "description": "A rich set of React UI components for building responsive and feature-rich applications.",
+        "link": "https://primereact.org/",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "cult/ui",
+        "description": "A Tailwind CSS and React-based UI library offering a variety of customizable components.",
+        "link": "https://www.cult-ui.com/",
+        "tags": [
+            "Tailwind",
+            "React"
+        ]
+    },
+    {
+        "name": "Magic UI",
+        "description": "A Tailwind CSS and React-based UI library with TypeScript support and Framer integrations.",
+        "link": "https://magicui.design/",
+        "tags": [
+            "Tailwind",
+            "React",
+            "Typescript",
+            "Framer"
+        ]
+    },
+    {
+        "name": "AnimatiSS",
+        "description": "A CSS-based animation library for creating smooth and engaging UI transitions.",
+        "link": "https://xsgames.co/animatiss/",
+        "tags": [
+            "Animations",
+            "CSS"
+        ]
+    },
+    {
+        "name": "Codrops",
+        "description": "A resource hub offering tutorials and demos on modern web development techniques like Three.js and WebGL.",
+        "link": "https://tympanus.net/codrops/demos/",
+        "tags": [
+            "Three.js",
+            "Webgl"
+        ]
+    },
+    {
+        "name": "Just D",
+        "description": "An accessible and ARIA-compliant UI library built with React and Tailwind CSS.",
+        "link": "https://justd.co/",
+        "tags": [
+            "Accessible",
+            "Aria",
+            "React",
+            "Tailwind"
+        ]
+    },
+    {
+        "name": "Tailbits",
+        "description": "Tailwind CSS templates and components designed for rapid website and application development.",
+        "link": "https://www.tailbits.com",
+        "tags": [
+            "Templates",
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "name": "React Bits",
+        "description": "A collection of React components focused on animations and interactive UI elements.",
+        "link": "https://www.reactbits.dev",
+        "tags": [
+            "React",
+            "Animations"
+        ]
+    },
+    {
+        "name": "Cuicui",
+        "description": "A TypeScript and Tailwind CSS-based React library emphasizing motion and dynamic UI elements.",
+        "link": "https://cuicui.day",
+        "tags": [
+            "React",
+            "Typescript",
+            "Motion",
+            "Tailwind"
+        ]
+    },
+    {
+        "name": "Eldora UI",
+        "description": "A Tailwind CSS and React-based UI library with TypeScript support and Framer integrations.",
+        "link": "https://eldoraui.site/",
+        "tags": [
+            "Tailwind",
+            "React",
+            "Typescript",
+            "Framer"
+        ]
+    },
+    {
+        "name": "Justd",
+        "description": "A Tailwind CSS and React-based UI library focused on accessibility and ARIA compliance.",
+        "link": "https://getjustd.com/",
+        "tags": [
+            "Tailwind",
+            "React",
+            "Accessible",
+            "Aria"
+        ]
+    },
+    {
+        "name": "TW Components",
+        "description": "A collection of Tailwind CSS components designed for easy integration into web projects.",
+        "link": "https://www.creative-tim.com/twcomponents",
+        "tags": [
+            "Tailwind",
+            "HTML"
+        ]
+    },
+    {
+        "name": "React Hot Toast",
+        "description": "A React library for creating customizable and responsive toast notifications.",
+        "link": "https://react-hot-toast.com/",
+        "tags": [
+            "React",
+            "Toast"
+        ]
+    },
+    {
+        "name": "Motion-Primitives",
+        "description": "A Framer and React-based library for building motion-driven UI components.",
+        "link": "https://motion-primitives.com",
+        "tags": [
+            "Framer",
+            "React"
+        ]
+    },
+    {
+        "name": "Fulldev UI",
+        "description": "An Astro-based UI library designed for full-stack development with a focus on performance.",
+        "link": "https://ui.full.dev",
+        "tags": [
+            "Astro"
+        ]
+    },
+    {
+        "name": "Origin UI",
+        "description": "A React and Tailwind CSS-based UI library optimized for Next.js applications.",
+        "link": "https://originui.com/",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Next.js",
+            "HTML"
+        ]
+    },
+    {
+        "name": "Fancy Components",
+        "description": "A Tailwind CSS and React-based UI library with TypeScript support and motion animations.",
+        "link": "https://www.fancycomponents.dev/",
+        "tags": [
+            "React",
+            "Tailwind",
+            "TypeScript",
+            "Motion"
         ]
     }
 ]

@@ -1,0 +1,153 @@
+[
+    {
+        "name": "Pexels",
+        "description": "A vast collection of free stock photos and videos available for personal and commercial use.",
+        "link": "https://www.pexels.com",
+        "tags": []
+    },
+    {
+        "name": "PixaBay",
+        "description": "A comprehensive library of free images and videos, perfect for any project without the need for attribution.",
+        "link": "https://pixabay.com/photos/",
+        "tags": []
+    },
+    {
+        "name": "Unsplash",
+        "description": "A curated collection of high-resolution photos available for free use in both commercial and non-commercial projects.",
+        "link": "https://unsplash.com",
+        "tags": []
+    },
+    {
+        "name": "Picography",
+        "description": "A free collection of stunning, high-quality photographs for personal and commercial use.",
+        "link": "https://picography.co",
+        "tags": []
+    },
+    {
+        "name": "BURST",
+        "description": "Shopify's free stock photo platform offering a wide range of high-resolution images for commercial use.",
+        "link": "https://www.shopify.com/stock-photos",
+        "tags": []
+    },
+    {
+        "name": "ISO Republic",
+        "description": "A rich source of free stock photos and videos for creative and commercial projects.",
+        "link": "https://isorepublic.com",
+        "tags": []
+    },
+    {
+        "name": "Foodiesfeed",
+        "description": "A free collection of high-quality food-related stock photos, perfect for culinary and lifestyle projects.",
+        "link": "https://www.foodiesfeed.com",
+        "tags": [
+            "Food",
+            "IA"
+        ]
+    },
+    {
+        "name": "Foca stock",
+        "description": "A diverse library of free stock photos available for personal and commercial use without attribution.",
+        "link": "https://focastock.com",
+        "tags": []
+    },
+    {
+        "name": "Librestock",
+        "description": "A search engine that aggregates free stock photos from various sources, making it easy to find the perfect image.",
+        "link": "https://librestock.com/",
+        "tags": []
+    },
+    {
+        "name": "StockSnap",
+        "description": "A large selection of high-resolution stock photos added weekly, free for both personal and commercial use.",
+        "link": "https://stocksnap.io",
+        "tags": []
+    },
+    {
+        "name": "Little Visuals",
+        "description": "A free collection of charming illustrations and photos to enhance your creative projects.",
+        "link": "https://littlevisuals.co",
+        "tags": []
+    },
+    {
+        "name": "Barnimages",
+        "description": "A free stock photo site offering a wide range of high-quality images for various creative needs.",
+        "link": "https://barnimages.com",
+        "tags": []
+    },
+    {
+        "name": "Shotstash",
+        "description": "A curated collection of free stock photos available for personal and commercial use.",
+        "link": "https://shotstash.com",
+        "tags": []
+    },
+    {
+        "name": "Nappy",
+        "description": "Free high-resolution photos of people for commercial use, ideal for startups and bloggers.",
+        "link": "https://nappy.co",
+        "tags": []
+    },
+    {
+        "name": "Gratisography",
+        "description": "A unique collection of free high-resolution photos with a quirky and creative flair.",
+        "link": "https://gratisography.com",
+        "tags": [
+            "IA"
+        ]
+    },
+    {
+        "name": "Picjumbo",
+        "description": "A free stock photo site offering a wide variety of high-quality images for personal and commercial use.",
+        "link": "https://picjumbo.com/",
+        "tags": []
+    },
+    {
+        "name": "Noun Project",
+        "description": "A vast collection of free and premium icons and illustrations, perfect for enhancing your designs.",
+        "link": "https://thenounproject.com/photos/",
+        "tags": [
+            "Placeholder logos"
+        ]
+    },
+    {
+        "name": "Openverse",
+        "description": "An open platform offering a wide range of free images and media for creative projects.",
+        "link": "https://openverse.org",
+        "tags": []
+    },
+    {
+        "name": "Lummi Photos",
+        "description": "AI-generated free stock photos available for a variety of creative and commercial uses.",
+        "link": "https://www.lummi.ai/",
+        "tags": [
+            "AI"
+        ]
+    },
+    {
+        "name": "Neurascapes",
+        "description": "AI-driven free stock photos designed for modern and innovative projects.",
+        "link": "https://www.neurascapes.com",
+        "tags": [
+            "AI"
+        ]
+    },
+    {
+        "name": "Skitterphoto",
+        "description": "A free stock photo site offering high-quality images under the CC0 license for unrestricted use.",
+        "link": "https://skitterphoto.com",
+        "tags": []
+    },
+    {
+        "name": "Freepik",
+        "description": "A comprehensive resource for free and premium vector graphics, illustrations, and photos.",
+        "link": "https://www.freepik.com/",
+        "tags": []
+    },
+    {
+        "name": "Public Work by Cosmos",
+        "description": "A collection of vintage-style illustrations available for various creative uses.",
+        "link": "https://public.work/",
+        "tags": [
+            "Vintage"
+        ]
+    }
+]

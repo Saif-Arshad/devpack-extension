@@ -1,0 +1,235 @@
+[
+    {
+        "name": "Squoosh",
+        "description": "A powerful image optimizer tool for compressing and enhancing images to improve web performance.",
+        "link": "https://squoosh.app",
+        "tags": [
+            "Image optimizer"
+        ]
+    },
+    {
+        "name": "Shots",
+        "description": "A platform offering free mockup templates to showcase your designs in realistic settings.",
+        "link": "https://shots.so",
+        "tags": [
+            "Mockups"
+        ]
+    },
+    {
+        "name": "Layoutit Grid",
+        "description": "An intuitive grid generator tool that helps you create responsive layouts with ease.",
+        "link": "https://grid.layoutit.com",
+        "tags": [
+            "Grid generator"
+        ]
+    },
+    {
+        "name": "Monkeytype",
+        "description": "An engaging typing test platform designed to improve your typing speed and accuracy.",
+        "link": "https://monkeytype.com",
+        "tags": [
+            "Typing test"
+        ]
+    },
+    {
+        "name": "RapidAPI",
+        "description": "A comprehensive API marketplace that offers a wide range of API collections for various applications.",
+        "link": "https://rapidapi.com/collections",
+        "tags": [
+            "API Collections"
+        ]
+    },
+    {
+        "name": "JS Benchmark",
+        "description": "A benchmarking tool to measure and compare the performance of JavaScript code snippets.",
+        "link": "https://jsbenchmark.com",
+        "tags": [
+            "Benchmark"
+        ]
+    },
+    {
+        "name": "Chalk.ist",
+        "description": "A service for creating beautiful code screenshots with customizable styles.",
+        "link": "https://chalk.ist",
+        "tags": [
+            "Code screenshots"
+        ]
+    },
+    {
+        "name": "CodeImage",
+        "description": "A tool for generating stunning code screenshots to enhance your documentation and presentations.",
+        "link": "https://app.codeimage.dev",
+        "tags": [
+            "Code screenshots"
+        ]
+    },
+    {
+        "name": "Excalidraw",
+        "description": "A virtual whiteboard tool for creating collaborative drawings and diagrams.",
+        "link": "https://excalidraw.com",
+        "tags": [
+            "Whiteboard"
+        ]
+    },
+    {
+        "name": "Tally",
+        "description": "A simple and effective form builder that helps you create and manage forms effortlessly.",
+        "link": "https://tally.so",
+        "tags": [
+            "Forms"
+        ]
+    },
+    {
+        "name": "Component Party",
+        "description": "A framework comparator tool that helps you choose the right UI framework for your projects.",
+        "link": "https://component-party.dev",
+        "tags": [
+            "Framework comparator"
+        ]
+    },
+    {
+        "name": "React Skeleton",
+        "description": "A React library for implementing skeleton loaders to enhance user experience during data fetching.",
+        "link": "https://skeletonreact.com",
+        "tags": [
+            "Skeleton loader"
+        ]
+    },
+    {
+        "name": "Slidev",
+        "description": "A tool for converting code into interactive slides, perfect for developer presentations.",
+        "link": "https://sli.dev",
+        "tags": [
+            "Code to slides"
+        ]
+    },
+    {
+        "name": "Glyphy",
+        "description": "A font generator that allows you to create custom fonts tailored to your design needs.",
+        "link": "https://glyphy.io",
+        "tags": [
+            "Font generator"
+        ]
+    },
+    {
+        "name": "CSS Code Quality",
+        "description": "An analyzer tool for evaluating and improving the quality of your CSS code.",
+        "link": "https://www.projectwallace.com/css-code-quality",
+        "tags": [
+            "CSS analyzer"
+        ]
+    },
+    {
+        "name": "Transform tools",
+        "description": "A suite of tools designed to help you transform and manipulate data efficiently.",
+        "link": "https://transform.tools/",
+        "tags": [
+            "Transform data"
+        ]
+    },
+    {
+        "name": "Favicon Generator",
+        "description": "A simple tool for creating custom favicons for your website with ease.",
+        "link": "https://www.favicon-generator.org/",
+        "tags": [
+            "Favicon generator"
+        ]
+    },
+    {
+        "name": "Real Favicon Generator",
+        "description": "A comprehensive favicon generator that ensures your website icons look great across all devices.",
+        "link": "https://realfavicongenerator.net/",
+        "tags": [
+            "Favicon generator"
+        ]
+    },
+    {
+        "name": "readme.so",
+        "description": "A user-friendly readme generator that helps you create professional documentation effortlessly.",
+        "link": "https://readme.so/",
+        "tags": [
+            "Readme generator"
+        ]
+    },
+    {
+        "name": "eraser.io",
+        "description": "A canvas-based tool for creating and editing drawings directly in your browser.",
+        "link": "https://www.eraser.io/",
+        "tags": [
+            "Canvas"
+        ]
+    },
+    {
+        "name": "draw.io",
+        "description": "A versatile diagramming tool for creating flowcharts, network diagrams, and more.",
+        "link": "https://www.draw.io/",
+        "tags": [
+            "Flowcharts"
+        ]
+    },
+    {
+        "name": "SVGOMG",
+        "description": "An online SVG optimizer that helps you compress and clean up your SVG files for better performance.",
+        "link": "https://svgomg.net/",
+        "tags": [
+            "SVG optimizer"
+        ]
+    },
+    {
+        "name": "Freeter",
+        "description": "An organizer tool designed to help you manage your tasks and projects efficiently.",
+        "link": "https://freeter.io/",
+        "tags": [
+            "Organizer"
+        ]
+    },
+    {
+        "name": "ray.so",
+        "description": "A stylish code screenshot generator that enhances your code snippets with beautiful backgrounds.",
+        "link": "https://ray.so",
+        "tags": [
+            "Code screenshots"
+        ]
+    },
+    {
+        "name": "Responsively App",
+        "description": "A responsive design tool that helps you test and develop your websites across multiple viewports simultaneously.",
+        "link": "https://responsively.app/",
+        "tags": [
+            "Responsive design",
+            "App"
+        ]
+    },
+    {
+        "name": "UptoSite",
+        "description": "A link shortener tool that helps you create concise and manageable URLs for your websites.",
+        "link": "https://upto.site/",
+        "tags": [
+            "Link shortener"
+        ]
+    },
+    {
+        "name": "imgto.xyz",
+        "description": "An image optimizer tool that compresses and enhances your images for faster loading times.",
+        "link": "https://imgto.xyz/",
+        "tags": [
+            "Image optimizer"
+        ]
+    },
+    {
+        "name": "og.new",
+        "description": "A tool for generating Open Graph images to improve your website's social media sharing previews.",
+        "link": "https://og.new/",
+        "tags": [
+            "Generate Open Graph images"
+        ]
+    },
+    {
+        "name": "gleam.so",
+        "description": "A versatile tool for generating Open Graph images with customizable templates.",
+        "link": "https://gleam.so/",
+        "tags": [
+            "Generate Open Graph images"
+        ]
+    }
+]
