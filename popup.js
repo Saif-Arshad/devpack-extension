@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const favoriteCount = document.getElementById('favoriteCount');
     const myFav = document.getElementById('my_fav');
 
-    // Predefined categories with icon and background color
+    // Predefined categories
     const categories = [
         {
             name: 'icons',
@@ -103,10 +103,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let allResources = {};
-    let currentView = 'home';
+    let totalResources = 0;    // Will hold the combined count
+    let currentView = 'home';  // Tracks which view is active
     let currentCategory = '';
 
-    // Fetch all categories' JSON data
+    // ============= Fetch Data & Initialize =============
     Promise.all(
         categories.map(cat =>
             fetch(chrome.runtime.getURL(cat.filePath)).then(r => r.json())
@@ -115,55 +116,53 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(dataArray => {
             dataArray.forEach((jsonData, i) => {
                 const catName = categories[i].name;
-                // Sort resources alphabetically by name
-                allResources[catName] = jsonData.sort((a, b) => a.name.localeCompare(b.name));
+                // Sort each category's data
+                const sortedData = jsonData.sort((a, b) => a.name.localeCompare(b.name));
+                allResources[catName] = sortedData;
+
+                // Accumulate total resources
+                totalResources += sortedData.length;
             });
+
+            // Render categories, favorites, then show home view with correct total
             renderCategoryList();
             updateFavoritesView();
+
+            // Now that data is ready, show the Home View (correct total)
+            showHomeView();
         })
-        .catch((error) => console.error('Error fetching JSON files:', error));
+        .catch(error => console.error('Error fetching JSON files:', error));
 
-    // =========== Render Category List ===========
-    function renderCategoryList() {
-        categoriesList.innerHTML = '';
-
-        categories.forEach(category => {
-            const li = document.createElement('li');
-            li.classList.add('categoryItem');
-            li.setAttribute('data-category', category.name);
-
-            // Set the entire background color
-            li.style.backgroundColor = category.background;
-
-            // We want the text/icon to be white, so let's ensure color is white
-            li.style.color = '#ffffff';
-
-            const resourceCount = allResources[category.name]?.length || 0;
-
-            li.innerHTML = `
-        <div class="category-icon">
-          ${category.icon}
-        </div>
-        <span class="category-label">${category.label}</span>
-        <span class="resource-count">(${resourceCount} resources)</span>
-      `;
-
-            li.addEventListener('click', () => showCategoryView(category.name));
-            categoriesList.appendChild(li);
-        });
+    // =========== View Functions ===========
+    // Scroll to top when switching views
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // =========== View Handlers ===========
+    // Show the Home view
     function showHomeView() {
+        // Switch view states
         homeView.style.display = 'block';
         categoryView.style.display = 'none';
         searchResultsView.style.display = 'none';
         favoritesView.style.display = 'none';
-        pageTitle.innerHTML = `<img src="./Assets/home-button.png" style="height: 18px; width: 20px;" alt="">`;
+
+        // Update pageTitle to display total resources
+        pageTitle.innerHTML = `
+        <div style="display:flex; align-item:center; width:100%; justify-content:space-between">
+           
+            <span style="margin-left: 8px;">Total resources: ${totalResources}</span>
+        </div>
+            `;
+
+        // Hide back button on home
         backButton.style.display = 'none';
         currentView = 'home';
+
+        scrollToTop();
     }
 
+    // Show the selected Category view
     function showCategoryView(categoryName) {
         homeView.style.display = 'none';
         categoryView.style.display = 'block';
@@ -171,21 +170,27 @@ document.addEventListener('DOMContentLoaded', () => {
         favoritesView.style.display = 'none';
 
         const catObj = categories.find(cat => cat.name === categoryName);
-        pageTitle.innerHTML = `${catObj.icon} <span>${catObj.label}</span>`;
+        pageTitle.innerHTML = `
+            <div class="title-page">
+                ${catObj.icon}
+                <span>${catObj.label}</span>
+            </div>
+        `;
         backButton.style.display = 'inline-block';
 
         categoryItems.innerHTML = '';
         const items = allResources[categoryName] || [];
         items.forEach((item) => {
-            // "isFavorite" = false here, because we show the star icon
-            // "isCustom" = false as well (these are from categories)
             categoryItems.appendChild(createResourceItemElement(item, false, false));
         });
 
         currentView = 'category';
         currentCategory = categoryName;
+
+        scrollToTop();
     }
 
+    // Show Search Results view
     function showSearchResultsView(query, matchedItems) {
         homeView.style.display = 'none';
         categoryView.style.display = 'none';
@@ -196,13 +201,15 @@ document.addEventListener('DOMContentLoaded', () => {
         backButton.style.display = 'inline-block';
 
         searchResultsList.innerHTML = '';
-        matchedItems.forEach((item) => {
+        matchedItems.forEach(item => {
             searchResultsList.appendChild(createResourceItemElement(item, false, false));
         });
 
         currentView = 'search';
+        scrollToTop();
     }
 
+    // Show Favorites view
     function showFavoritesView() {
         homeView.style.display = 'none';
         categoryView.style.display = 'none';
@@ -214,37 +221,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateFavoritesView();
         currentView = 'favorites';
+
+        scrollToTop();
     }
 
-    // =========== Create Resource Item Element ===========
-    // isFavorite => whether we are rendering an item in the favorites list (then we show the cross)
-    // isCustom   => whether it's from "customFavorites" or from "predefined categories"
+    // =========== Render Category List ===========
+    function renderCategoryList() {
+        categoriesList.innerHTML = '';
+
+        categories.forEach(category => {
+            const li = document.createElement('li');
+            li.classList.add('categoryItem');
+            li.style.color = '#ffffff';
+
+            const resourceCount = allResources[category.name]?.length || 0;
+            li.innerHTML = `
+                <div class="category-icon" style="background-color: ${category.background};">
+                    ${category.icon}
+                </div>
+                <span class="category-label">${category.label}</span>
+                <span class="resource-count">${resourceCount} resources</span>
+            `;
+
+            li.addEventListener('click', () => showCategoryView(category.name));
+            categoriesList.appendChild(li);
+        });
+    }
+
+    // =========== Resource Item Creation ===========
     function createResourceItemElement(item, isFavorite = false, isCustom = false) {
         const resourceItem = document.createElement('div');
         resourceItem.className = 'resource-item';
 
-        // We'll use the domain's favicon
         const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
 
-        // If it's in favorites, show an 'X' to remove. Otherwise show a star icon.
+
+
         const iconHTML = isFavorite
             ? `<span class="remove-icon" data-is-custom="${isCustom}">×</span>`
             : `<span class="star-icon" data-resource-id="${item.name}">★</span>`;
 
-        // Hide description if isFavorite
         resourceItem.innerHTML = `
-      <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
-      <div class="resource-info">
-          <div class="resource-name">${item.name}</div>
-          ${!isFavorite
+            <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
+            <div class="resource-info">
+                <div class="resource-name">${item.name}</div>
+                ${!isFavorite
                 ? `<div class="resource-description">${item.description}</div>`
                 : ''
             }
-      </div>
-      ${iconHTML}
-    `;
+            </div>
+            ${iconHTML}
+        `;
 
-        // If user clicks anywhere (except the star/remove), open the link
+        // Click opens the link (unless clicking the star/remove icon)
         resourceItem.addEventListener('click', (e) => {
             const target = e.target;
             if (
@@ -255,23 +284,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Handle icon click (star => add/remove favorite, cross => remove favorite)
+        // If it's a favorite item, handle removing from favorites
         if (isFavorite) {
-            // Removing from favorites
             const removeIcon = resourceItem.querySelector('.remove-icon');
             removeIcon.addEventListener('click', (e) => {
                 e.stopPropagation();
                 removeIcon.classList.add('animate');
                 setTimeout(() => removeIcon.classList.remove('animate'), 300);
 
+                // If it's a custom domain favorite, remove from customFavorites
                 if (isCustom) {
                     removeCustomFavorite(item.name);
                 } else {
+                    // Otherwise, remove from normal favorites
                     toggleFavorite(item.name, true); // pass "forceRemove" = true
                 }
             });
-        } else {
-            // Toggling star
+        }
+        // If not favorite, handle toggling "add to favorite"
+        else {
             const starIcon = resourceItem.querySelector('.star-icon');
             starIcon.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -280,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 toggleFavorite(item.name);
             });
 
-            // Check if the item is already a favorite, highlight star if so
+            // Check if already in favorites, visually mark
             chrome.storage.sync.get(['favorites'], (result) => {
                 const favorites = result.favorites || [];
                 if (favorites.includes(item.name)) {
@@ -292,42 +323,35 @@ document.addEventListener('DOMContentLoaded', () => {
         return resourceItem;
     }
 
-    // =========== Toggle Favorite (Predefined Category Items) ===========
-    // If "forceRemove" is true, we remove the item from favorites.
+    // =========== Favorites Logic ===========
     function toggleFavorite(resourceName, forceRemove = false) {
         chrome.storage.sync.get(['favorites'], (result) => {
             let favorites = result.favorites || [];
             const index = favorites.indexOf(resourceName);
 
             if (forceRemove) {
-                // Force removal
                 if (index !== -1) {
                     favorites.splice(index, 1);
                 }
             } else {
-                // Normal toggle
                 if (index === -1) {
-                    // Add to favorites
                     favorites.push(resourceName);
                 } else {
-                    // Remove from favorites
                     favorites.splice(index, 1);
                 }
             }
 
             chrome.storage.sync.set({ favorites }, () => {
                 updateFavoritesView();
-
-                // Also update any star icons in the DOM
                 const starIcon = document.querySelector(`.star-icon[data-resource-id="${resourceName}"]`);
                 if (starIcon) {
+                    // If we added the favorite (index was -1) => add .favorited
                     starIcon.classList.toggle('favorited', index === -1 && !forceRemove);
                 }
             });
         });
     }
 
-    // =========== Remove from Custom Favorites (User-Added Websites) ===========
     function removeCustomFavorite(domain) {
         chrome.storage.sync.get(['customFavorites'], (result) => {
             let customFavorites = result.customFavorites || [];
@@ -341,7 +365,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // =========== Update Favorites View ===========
     function updateFavoritesView() {
         chrome.storage.sync.get(['favorites', 'customFavorites'], (result) => {
             const favorites = result.favorites || [];
@@ -350,7 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
             favoriteCount.textContent = favorites.length + customFavorites.length;
             favoritesList.innerHTML = '';
 
-            // 1) Show category-based favorites
+            // Render normal favorites
             favorites.forEach(resourceName => {
                 const item = findResourceByName(resourceName);
                 if (item) {
@@ -358,9 +381,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // 2) Show user-added (custom) favorites
+            // Render custom domain favorites
             customFavorites.forEach(domain => {
-                // We'll treat domain as the 'name'. We'll pass link as https://domain
                 const customItem = {
                     name: domain,
                     link: `https://${domain}`,
@@ -369,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 favoritesList.appendChild(createResourceItemElement(customItem, true, true));
             });
 
-            // If no favorites at all
+            // If empty, add 'empty' class for styling a "No favorites" message
             if (favorites.length === 0 && customFavorites.length === 0) {
                 favoritesView.classList.add('empty');
             } else {
@@ -378,10 +400,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // =========== Find Resource By Name ===========
     function findResourceByName(resourceName) {
-        for (const category of Object.values(allResources)) {
-            const item = category.find(res => res.name === resourceName);
+        for (const categoryData of Object.values(allResources)) {
+            const item = categoryData.find(res => res.name === resourceName);
             if (item) return item;
         }
         return null;
@@ -393,34 +414,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     backButton.addEventListener('click', () => {
-        if (['category', 'search', 'favorites'].includes(currentView)) {
-            searchBar.value = '';
-            showHomeView();
-        }
+        // Clicking back always goes home in this setup
+        showHomeView();
     });
 
-    // Simple search logic
     searchBar.addEventListener('input', () => {
         const query = searchBar.value.trim().toLowerCase();
-        if (query === '') {
-            if (currentView === 'search') {
-                showHomeView();
-            }
+        if (!query) {
+            // If empty search, go back to home
+            showHomeView();
             return;
         }
-        const allMatches = [];
-        Object.keys(allResources).forEach((catKey) => {
-            const items = allResources[catKey] || [];
-            items.forEach((item) => {
+        // Search all categories
+        const matched = [];
+        for (const categoryData of Object.values(allResources)) {
+            categoryData.forEach(item => {
                 const textToSearch = (item.name + ' ' + (item.tags || []).join(' ')).toLowerCase();
                 if (textToSearch.includes(query)) {
-                    allMatches.push(item);
+                    matched.push(item);
                 }
             });
-        });
-        showSearchResultsView(query, allMatches);
+        }
+        showSearchResultsView(query, matched);
     });
 
-    // Start at home
-    showHomeView();
+    // NOTE: We do NOT call showHomeView() here,
+    // because we only show the real home view AFTER data loads
 });
