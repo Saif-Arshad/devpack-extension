@@ -14,7 +14,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const favoriteCount = document.getElementById('favoriteCount');
     const myFav = document.getElementById('my_fav');
 
-    // Predefined categories
+    // Collections
+    const myCollectionsBtn = document.getElementById('my_collections');
+    const collectionsView = document.getElementById('collectionsView');
+    const collectionsList = document.getElementById('collectionsList');
+    const createCollectionBtn = document.getElementById('createCollectionBtn');
+
+    // Collection Detail
+    const collectionDetailView = document.getElementById('collectionDetailView');
+    const collectionDetailTitle = document.getElementById('collectionDetailTitle');
+    const collectionResourcesList = document.getElementById('collectionResourcesList');
+    const closeCollectionDetailViewBtn = document.getElementById('closeCollectionDetailViewBtn');
+
+    // Add Resource Modal
+    const addResourceModal = document.getElementById('addResourceModal');
+    const addResourceCollectionNameSpan = document.getElementById('addResourceCollectionName');
+    const newResourceNameInput = document.getElementById('newResourceNameInput');
+    const newResourceLinkInput = document.getElementById('newResourceLinkInput');
+    const saveNewResourceBtn = document.getElementById('saveNewResourceBtn');
+    const closeAddResourceModalBtn = document.getElementById('closeAddResourceModalBtn');
+
     const categories = [
         {
             name: 'icons',
@@ -103,11 +122,13 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let allResources = {};
-    let totalResources = 0;    // Will hold the combined count
-    let currentView = 'home';  // Tracks which view is active
-    let currentCategory = '';
+    let totalResources = 0;
+    let currentView = 'home';
 
-    // ============= Fetch Data & Initialize =============
+    // { [collectionName]: [ {name, link, description}, ... ] }
+    let collections = {};
+
+    // ============= FETCH DATA & INIT =============
     Promise.all(
         categories.map(cat =>
             fetch(chrome.runtime.getURL(cat.filePath)).then(r => r.json())
@@ -116,86 +137,78 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(dataArray => {
             dataArray.forEach((jsonData, i) => {
                 const catName = categories[i].name;
-                // Sort each category's data
                 const sortedData = jsonData.sort((a, b) => a.name.localeCompare(b.name));
                 allResources[catName] = sortedData;
-
-                // Accumulate total resources
                 totalResources += sortedData.length;
             });
 
-            // Render categories, favorites, then show home view with correct total
-            renderCategoryList();
-            updateFavoritesView();
-
-            // Now that data is ready, show the Home View (correct total)
-            showHomeView();
+            // Load existing collections
+            chrome.storage.sync.get(['collections'], (res) => {
+                collections = res.collections || {};
+                renderCategoryList();
+                updateFavoritesView();
+                showHomeView();
+            });
         })
         .catch(error => console.error('Error fetching JSON files:', error));
 
-    // =========== View Functions ===========
-    // Scroll to top when switching views
+    // =================== VIEW FUNCTIONS ===================
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Show the Home view
     function showHomeView() {
-        // Switch view states
         homeView.style.display = 'block';
         categoryView.style.display = 'none';
         searchResultsView.style.display = 'none';
         favoritesView.style.display = 'none';
+        collectionsView.style.display = 'none';
+        collectionDetailView.style.display = 'none';
 
-        // Update pageTitle to display total resources
         pageTitle.innerHTML = `
-        <div style="display:flex; align-item:center; width:100%; justify-content:space-between">
-           
-            <span style="margin-left: 8px;">Total resources: ${totalResources}</span>
-        </div>
-            `;
-
-        // Hide back button on home
+      <div style="display:flex; align-items:center; width:100%; justify-content:space-between">
+        <span style="margin-left: 8px;">Total resources: ${totalResources}</span>
+      </div>
+    `;
         backButton.style.display = 'none';
         currentView = 'home';
-
         scrollToTop();
     }
 
-    // Show the selected Category view
     function showCategoryView(categoryName) {
         homeView.style.display = 'none';
         categoryView.style.display = 'block';
         searchResultsView.style.display = 'none';
         favoritesView.style.display = 'none';
+        collectionsView.style.display = 'none';
+        collectionDetailView.style.display = 'none';
 
         const catObj = categories.find(cat => cat.name === categoryName);
         pageTitle.innerHTML = `
-            <div class="title-page">
-                ${catObj.icon}
-                <span>${catObj.label}</span>
-            </div>
-        `;
+      <div class="title-page">
+        ${catObj.icon}
+        <span>${catObj.label}</span>
+      </div>
+    `;
         backButton.style.display = 'inline-block';
 
         categoryItems.innerHTML = '';
         const items = allResources[categoryName] || [];
-        items.forEach((item) => {
+        items.forEach(item => {
             categoryItems.appendChild(createResourceItemElement(item, false, false));
         });
 
         currentView = 'category';
-        currentCategory = categoryName;
-
         scrollToTop();
     }
 
-    // Show Search Results view
     function showSearchResultsView(query, matchedItems) {
         homeView.style.display = 'none';
         categoryView.style.display = 'none';
         searchResultsView.style.display = 'block';
         favoritesView.style.display = 'none';
+        collectionsView.style.display = 'none';
+        collectionDetailView.style.display = 'none';
 
         pageTitle.textContent = `Search: "${query}"`;
         backButton.style.display = 'inline-block';
@@ -209,26 +222,41 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollToTop();
     }
 
-    // Show Favorites view
     function showFavoritesView() {
         homeView.style.display = 'none';
         categoryView.style.display = 'none';
         searchResultsView.style.display = 'none';
         favoritesView.style.display = 'block';
+        collectionsView.style.display = 'none';
+        collectionDetailView.style.display = 'none';
 
         pageTitle.textContent = 'My Favorites';
         backButton.style.display = 'inline-block';
 
         updateFavoritesView();
         currentView = 'favorites';
-
         scrollToTop();
     }
 
-    // =========== Render Category List ===========
+    function showCollectionsView() {
+        homeView.style.display = 'none';
+        categoryView.style.display = 'none';
+        searchResultsView.style.display = 'none';
+        favoritesView.style.display = 'none';
+        collectionDetailView.style.display = 'none';
+
+        collectionsView.style.display = 'block';
+        pageTitle.textContent = 'My Collections';
+        backButton.style.display = 'inline-block';
+        currentView = 'collections';
+
+        renderCollectionsList();
+        scrollToTop();
+    }
+
+    // ================= CATEGORY LIST =================
     function renderCategoryList() {
         categoriesList.innerHTML = '';
-
         categories.forEach(category => {
             const li = document.createElement('li');
             li.classList.add('categoryItem');
@@ -236,73 +264,71 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const resourceCount = allResources[category.name]?.length || 0;
             li.innerHTML = `
-                <div class="category-icon" style="background-color: ${category.background};">
-                    ${category.icon}
-                </div>
-                <span class="category-label">${category.label}</span>
-                <span class="resource-count">${resourceCount} resources</span>
-            `;
-
+        <div class="category-icon" style="background-color: ${category.background};">
+          ${category.icon}
+        </div>
+        <span class="category-label">${category.label}</span>
+        <span class="resource-count">${resourceCount} resources</span>
+      `;
             li.addEventListener('click', () => showCategoryView(category.name));
             categoriesList.appendChild(li);
         });
     }
 
-    // =========== Resource Item Creation ===========
+    // ================= RESOURCE ITEM =================
     function createResourceItemElement(item, isFavorite = false, isCustom = false) {
         const resourceItem = document.createElement('div');
         resourceItem.className = 'resource-item';
 
         const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
-
-
-
         const iconHTML = isFavorite
             ? `<span class="remove-icon" data-is-custom="${isCustom}">×</span>`
             : `<span class="star-icon" data-resource-id="${item.name}">★</span>`;
 
         resourceItem.innerHTML = `
-            <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
-            <div class="resource-info">
-                <div class="resource-name">${item.name}</div>
-                ${!isFavorite
-                ? `<div class="resource-description">${item.description}</div>`
+      <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
+      <div class="resource-info">
+          <div class="resource-name">${item.name}</div>
+          ${!isFavorite
+                ? `<div class="resource-description">${item.description || ''}</div>`
                 : ''
             }
-            </div>
-            ${iconHTML}
-        `;
+      </div>
+      ${iconHTML}
+    `;
 
-        // Click opens the link (unless clicking the star/remove icon)
+        // Draggable if in favorites
+        if (isFavorite) {
+            resourceItem.setAttribute('draggable', 'true');
+            resourceItem.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('application/json', JSON.stringify(item));
+            });
+        }
+
+        // Clicking => open link (unless star/remove)
         resourceItem.addEventListener('click', (e) => {
             const target = e.target;
-            if (
-                !target.classList.contains('star-icon') &&
-                !target.classList.contains('remove-icon')
-            ) {
+            if (!target.classList.contains('star-icon') && !target.classList.contains('remove-icon')) {
                 chrome.tabs.create({ url: item.link });
             }
         });
 
-        // If it's a favorite item, handle removing from favorites
         if (isFavorite) {
+            // Remove from favorites
             const removeIcon = resourceItem.querySelector('.remove-icon');
             removeIcon.addEventListener('click', (e) => {
                 e.stopPropagation();
                 removeIcon.classList.add('animate');
                 setTimeout(() => removeIcon.classList.remove('animate'), 300);
 
-                // If it's a custom domain favorite, remove from customFavorites
                 if (isCustom) {
                     removeCustomFavorite(item.name);
                 } else {
-                    // Otherwise, remove from normal favorites
-                    toggleFavorite(item.name, true); // pass "forceRemove" = true
+                    toggleFavorite(item.name, true);
                 }
             });
-        }
-        // If not favorite, handle toggling "add to favorite"
-        else {
+        } else {
+            // Add to favorites
             const starIcon = resourceItem.querySelector('.star-icon');
             starIcon.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -311,10 +337,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 toggleFavorite(item.name);
             });
 
-            // Check if already in favorites, visually mark
+            // If already in favorites => visually mark
             chrome.storage.sync.get(['favorites'], (result) => {
-                const favorites = result.favorites || [];
-                if (favorites.includes(item.name)) {
+                const favs = result.favorites || [];
+                if (favs.includes(item.name)) {
                     starIcon.classList.add('favorited');
                 }
             });
@@ -323,29 +349,23 @@ document.addEventListener('DOMContentLoaded', () => {
         return resourceItem;
     }
 
-    // =========== Favorites Logic ===========
+    // ================== FAVORITES ==================
     function toggleFavorite(resourceName, forceRemove = false) {
         chrome.storage.sync.get(['favorites'], (result) => {
             let favorites = result.favorites || [];
             const index = favorites.indexOf(resourceName);
 
             if (forceRemove) {
-                if (index !== -1) {
-                    favorites.splice(index, 1);
-                }
+                if (index !== -1) favorites.splice(index, 1);
             } else {
-                if (index === -1) {
-                    favorites.push(resourceName);
-                } else {
-                    favorites.splice(index, 1);
-                }
+                if (index === -1) favorites.push(resourceName);
+                else favorites.splice(index, 1);
             }
 
             chrome.storage.sync.set({ favorites }, () => {
                 updateFavoritesView();
                 const starIcon = document.querySelector(`.star-icon[data-resource-id="${resourceName}"]`);
                 if (starIcon) {
-                    // If we added the favorite (index was -1) => add .favorited
                     starIcon.classList.toggle('favorited', index === -1 && !forceRemove);
                 }
             });
@@ -373,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
             favoriteCount.textContent = favorites.length + customFavorites.length;
             favoritesList.innerHTML = '';
 
-            // Render normal favorites
+            // Normal favorites
             favorites.forEach(resourceName => {
                 const item = findResourceByName(resourceName);
                 if (item) {
@@ -381,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Render custom domain favorites
+            // Custom domain favorites
             customFavorites.forEach(domain => {
                 const customItem = {
                     name: domain,
@@ -391,7 +411,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 favoritesList.appendChild(createResourceItemElement(customItem, true, true));
             });
 
-            // If empty, add 'empty' class for styling a "No favorites" message
             if (favorites.length === 0 && customFavorites.length === 0) {
                 favoritesView.classList.add('empty');
             } else {
@@ -401,43 +420,325 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function findResourceByName(resourceName) {
-        for (const categoryData of Object.values(allResources)) {
-            const item = categoryData.find(res => res.name === resourceName);
+        // Search all predefined categories
+        for (const catData of Object.values(allResources)) {
+            const item = catData.find(res => res.name === resourceName);
             if (item) return item;
         }
         return null;
     }
 
-    // =========== Event Listeners ===========
-    myFav.addEventListener('click', () => {
-        showFavoritesView();
+    // ================== COLLECTIONS ==================
+    function renderCollectionsList() {
+        collectionsList.innerHTML = '';
+
+        const collNames = Object.keys(collections);
+        if (!collNames.length) {
+            collectionsList.innerHTML = `<p style="opacity:0.7; margin-left:4px;">No collections yet.</p>`;
+            return;
+        }
+
+        // Some random background colors
+        const bgColors = ["#5548EB", "#FF45A9", "#32CD6B", "#C22246", "#F97316", "#E79B1C", "#1F8B26", "#FF006E"];
+        let colorIndex = 0;
+
+        collNames.forEach(name => {
+            const resourcesCount = collections[name].length;
+            const li = document.createElement('li');
+            li.classList.add('categoryItem'); // reuse style
+            li.style.color = '#ffffff';
+
+            const firstLetter = name.charAt(0).toUpperCase();
+            const bgColor = bgColors[colorIndex % bgColors.length];
+            colorIndex++;
+
+            li.innerHTML = `
+        <div class="category-icon" style="background-color:${bgColor};">
+          ${firstLetter}
+        </div>
+        <span class="category-label">${name}</span>
+        <span class="resource-count">${resourcesCount} resources</span>
+        <span style="margin-left:auto; display:flex; align-items:center; gap:6px;">
+          <span class="add-resource-icon" style="cursor:pointer; font-weight:bold;">➕</span>
+          <span class="delete-collection" style="cursor:pointer; color:#ff5e5e; font-weight:bold;">×</span>
+        </span>
+      `;
+
+            // Make entire li a drop target
+            li.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                li.classList.add('drag-over');
+            });
+            li.addEventListener('dragleave', () => {
+                li.classList.remove('drag-over');
+            });
+            li.addEventListener('drop', (e) => {
+                e.preventDefault();
+                li.classList.remove('drag-over');
+                try {
+                    const resourceData = JSON.parse(e.dataTransfer.getData('application/json'));
+                    addResourceToCollection(name, resourceData);
+                } catch (err) {
+                    console.error('Invalid drag data', err);
+                }
+            });
+
+            // Clicking li => open detail (unless user clicked add/delete icons)
+            li.addEventListener('click', (evt) => {
+                if (
+                    evt.target.classList.contains('add-resource-icon') ||
+                    evt.target.classList.contains('delete-collection')
+                ) {
+                    return;
+                }
+                openCollectionDetailView(name);
+            });
+
+            // plus => add resource
+            const plusIcon = li.querySelector('.add-resource-icon');
+            plusIcon.addEventListener('click', (evt) => {
+                evt.stopPropagation();
+                openAddResourceModal(name);
+            });
+
+            // cross => delete entire collection
+            const crossIcon = li.querySelector('.delete-collection');
+            crossIcon.addEventListener('click', (evt) => {
+                evt.stopPropagation();
+                if (!confirm(`Delete entire collection "${name}"?`)) return;
+                delete collections[name];
+                saveCollections();
+            });
+
+            collectionsList.appendChild(li);
+        });
+    }
+
+    function openAddResourceModal(collectionName) {
+        addResourceCollectionNameSpan.textContent = collectionName;
+        newResourceNameInput.value = '';
+        newResourceLinkInput.value = '';
+        addResourceModal.style.display = 'block';
+    }
+
+    saveNewResourceBtn.addEventListener('click', () => {
+        const collName = addResourceCollectionNameSpan.textContent;
+        const rName = newResourceNameInput.value.trim();
+        const rLink = newResourceLinkInput.value.trim() || "https://";
+        if (!rName || !collName) return;
+
+        const resourceObj = {
+            name: rName,
+            link: rLink,
+            description: ''
+        };
+        addResourceToCollection(collName, resourceObj);
+
+        addResourceModal.style.display = 'none';
     });
+
+    closeAddResourceModalBtn.addEventListener('click', () => {
+        addResourceModal.style.display = 'none';
+    });
+
+    function createNewCollection(name) {
+        if (!collections[name]) {
+            collections[name] = [];
+            saveCollections();
+        }
+    }
+
+    function saveCollections() {
+        chrome.storage.sync.set({ collections }, () => {
+            renderCollectionsList();
+            // If a detail view is open, re-render it
+            if (collectionDetailView.style.display === 'block') {
+                const openName = collectionDetailTitle.getAttribute('data-collection-name');
+                if (openName) {
+                    renderCollectionDetail(openName);
+                }
+            }
+        });
+    }
+
+    function addResourceToCollection(collName, resourceObj) {
+        if (!collections[collName]) return;
+        // avoid duplicates by name
+        const exists = collections[collName].some(r => r.name === resourceObj.name);
+        if (!exists) {
+            collections[collName].push(resourceObj);
+            saveCollections();
+        }
+    }
+
+    // =========== COLLECTION DETAIL VIEW ===========
+    function openCollectionDetailView(name) {
+        homeView.style.display = 'none';
+        categoryView.style.display = 'none';
+        searchResultsView.style.display = 'none';
+        favoritesView.style.display = 'none';
+        collectionsView.style.display = 'none';
+
+        collectionDetailView.style.display = 'block';
+
+        pageTitle.textContent = `Collection: ${name}`;
+        backButton.style.display = 'inline-block';
+        currentView = 'collectionDetail';
+
+        collectionDetailTitle.textContent = name;
+        collectionDetailTitle.setAttribute('data-collection-name', name);
+
+        renderCollectionDetail(name);
+        scrollToTop();
+    }
+
+    function renderCollectionDetail(name) {
+        collectionResourcesList.innerHTML = '';
+        const items = collections[name] || [];
+
+        if (!items.length) {
+            collectionResourcesList.innerHTML = `
+        <li style="opacity:0.7; margin:6px 0;">No resources in this collection.</li>
+      `;
+            return;
+        }
+
+        items.forEach((item, idx) => {
+            const li = document.createElement('li');
+            li.style.marginBottom = '6px';
+            li.style.listStyle = 'none';
+            li.style.cursor = 'pointer';
+
+            const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
+            li.innerHTML = `
+        <div style="display:flex; align-items:center; gap:8px;">
+          <img src="${faviconUrl}" alt="favicon" style="width:16px; height:16px;" />
+          <span style="flex:1;">${item.name}</span>
+          <span class="remove-icon" style="color:#ff5e5e; cursor:pointer; font-weight:bold;">×</span>
+        </div>
+      `;
+
+            // clicking => open the link
+            li.addEventListener('click', (e) => {
+                if (!e.target.classList.contains('remove-icon')) {
+                    chrome.tabs.create({ url: item.link });
+                }
+            });
+
+            // remove item from collection
+            const removeIcon = li.querySelector('.remove-icon');
+            removeIcon.addEventListener('click', (e) => {
+                e.stopPropagation();
+                collections[name].splice(idx, 1);
+                saveCollections(); // re-renders
+            });
+
+            collectionResourcesList.appendChild(li);
+        });
+    }
+
+    closeCollectionDetailViewBtn.addEventListener('click', () => {
+        showCollectionsView();
+    });
+
+    // =========== EVENT LISTENERS ===========
+    myFav.addEventListener('click', showFavoritesView);
+
+    // *** THIS LINE FIXES THE "My Collections" BUTTON CLICK ***
+    myCollectionsBtn.addEventListener('click', showCollectionsView);
 
     backButton.addEventListener('click', () => {
-        // Clicking back always goes home in this setup
-        showHomeView();
+        if (['category', 'search', 'favorites', 'collections', 'collectionDetail'].includes(currentView)) {
+            showHomeView();
+        }
     });
 
-    searchBar.addEventListener('input', () => {
+    createCollectionBtn.addEventListener('click', () => {
+        const newName = prompt("Enter collection name:");
+        if (!newName) return;
+        createNewCollection(newName.trim());
+    });
+
+    // =========== UNIFIED SEARCH LOGIC ===========
+    searchBar.addEventListener('input', async () => {
         const query = searchBar.value.trim().toLowerCase();
         if (!query) {
-            // If empty search, go back to home
             showHomeView();
             return;
         }
-        // Search all categories
-        const matched = [];
-        for (const categoryData of Object.values(allResources)) {
-            categoryData.forEach(item => {
-                const textToSearch = (item.name + ' ' + (item.tags || []).join(' ')).toLowerCase();
-                if (textToSearch.includes(query)) {
-                    matched.push(item);
+
+        // We'll gather items from:
+        // 1) allResources
+        // 2) favorites + customFavorites
+        // 3) all collections
+        // then filter them by `query`.
+
+        const finalList = [];
+        const seen = new Set();
+
+        // 1) All Predefined
+        for (const catData of Object.values(allResources)) {
+            catData.forEach(item => {
+                if (!seen.has(item.name)) {
+                    seen.add(item.name);
+                    finalList.push(item);
                 }
             });
         }
+
+        // 2) Favorites & custom
+        let { favorites = [], customFavorites = [] } = await getStorage(['favorites', 'customFavorites']);
+        // Normal favorites => find in allResources
+        favorites.forEach(favName => {
+            if (!seen.has(favName)) {
+                const found = findResourceByName(favName);
+                if (found) {
+                    seen.add(favName);
+                    finalList.push(found);
+                }
+            }
+        });
+        // custom domain => build item obj
+        customFavorites.forEach(domain => {
+            if (!seen.has(domain)) {
+                seen.add(domain);
+                finalList.push({
+                    name: domain,
+                    link: `https://${domain}`,
+                    description: ''
+                });
+            }
+        });
+
+        // 3) Collections
+        Object.keys(collections).forEach(collName => {
+            const resources = collections[collName];
+            resources.forEach(r => {
+                if (!seen.has(r.name)) {
+                    seen.add(r.name);
+                    finalList.push(r);
+                }
+            });
+        });
+
+        // filter finalList by query
+        const matched = finalList.filter(item => {
+            // search in name + description + tags
+            const text = (
+                item.name + ' ' +
+                (item.description || '') + ' ' +
+                (item.tags || []).join(' ')
+            ).toLowerCase();
+            return text.includes(query);
+        });
+
         showSearchResultsView(query, matched);
     });
 
-    // NOTE: We do NOT call showHomeView() here,
-    // because we only show the real home view AFTER data loads
+    // helper for storage
+    function getStorage(keys) {
+        return new Promise(resolve => {
+            chrome.storage.sync.get(keys, res => resolve(res));
+        });
+    }
 });

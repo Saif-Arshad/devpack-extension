@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <title>DevPack : Your Development Resources in One Pack</title>
+    <!-- Your CSS -->
     <link rel="stylesheet" href="popup.css" />
 </head>
 
 <body>
+    <!-- ========== STICKY HEADER ========== -->
     <div class="sticky-header">
         <header id="header">
             <div style="display: flex; align-items: center; gap: 8px;">
@@ -19,46 +21,94 @@
             </div>
         </header>
 
+        <!-- ===== SEARCH CONTAINER ===== -->
         <div id="searchContainer">
             <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 viewBox="0 0 16 16">
-                <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 0a4.5 4.5 0 1 1 9.001 0 4.5 4.5 0 0 1-9.001 0z" />
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85
+            a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 0a4.5
+            4.5 0 1 1 9.001 0 4.5 4.5 0 0 1-9.001 0z" />
             </svg>
             <input type="text" id="searchBar" placeholder="Quick search" />
         </div>
 
+        <!-- ===== TITLE BAR ===== -->
         <div id="titleBar">
             <button id="backButton">
                 <img src="./Assets/back-arrow.png" style="height: 18px; width: 20px;" alt="">
             </button>
             <h3 id="pageTitle">
+                <!-- Default Home Icon -->
                 <img src="./Assets/home-button.png" style="height: 18px; width: 20px;" alt="">
             </h3>
         </div>
     </div>
 
+    <!-- ========== MAIN CONTENT ========== -->
     <main>
+        <!-- ===== HOME VIEW ===== -->
         <section id="homeView">
-            <h3 id="my_fav">
-                My Favorites (<span id="favoriteCount">0</span>)
-            </h3>
+            <div style="display:flex; justify-content: space-between; align-items:center; margin-bottom:8px;">
+                <h3 id="my_fav" style="margin:0;">
+                    My Favorites (<span id="favoriteCount">0</span>)
+                </h3>
+                <!-- Button to open Collections view -->
+                <button id="my_collections" class="collections-btn">My Collections</button>
+            </div>
+            <!-- List of all categories -->
             <ul id="categoriesList"></ul>
         </section>
 
+        <!-- ===== CATEGORY VIEW ===== -->
         <section id="categoryView">
             <div class="resource-list" id="categoryItems"></div>
         </section>
 
+        <!-- ===== SEARCH RESULTS VIEW ===== -->
         <section id="searchResultsView">
             <div class="resource-list" id="searchResultsList"></div>
         </section>
 
+        <!-- ===== FAVORITES VIEW ===== -->
         <section id="favoritesView">
             <div class="resource-list" id="favoritesList"></div>
         </section>
+
+        <!-- ===== COLLECTIONS LIST VIEW ===== -->
+        <section id="collectionsView" style="display:none;">
+            <div id="collectionsHeader" style="margin-bottom:10px; display:flex; align-items:center;">
+                <h3 style="margin:0;">My Collections</h3>
+                <!-- + Collection Button -->
+                <button id="createCollectionBtn" class="collections-btn" style="margin-left:auto;">+ Collection</button>
+            </div>
+            <ul id="collectionsList"></ul>
+        </section>
+
+        <!-- ===== COLLECTION DETAIL VIEW ===== -->
+        <section id="collectionDetailView" style="display:none;">
+            <div id="collectionDetailHeader" style="display:flex; align-items:center; justify-content:space-between;">
+                <h3 id="collectionDetailTitle" style="margin:0;"></h3>
+                <button id="closeCollectionDetailViewBtn"
+                    style="background:none; border:none; color:#fff; font-size:16px; cursor:pointer;">
+                    ×
+                </button>
+            </div>
+            <ul id="collectionResourcesList" style="margin-top:10px; padding:0; list-style:none;"></ul>
+        </section>
+
+        <!-- ===== ADD RESOURCE MODAL ===== -->
+        <div id="addResourceModal" class="modal">
+            <div class="modal-content">
+                <h3>Add Resource to <span id="addResourceCollectionName"></span></h3>
+                <input type="text" id="newResourceNameInput" placeholder="Resource Name" />
+                <input type="text" id="newResourceLinkInput" placeholder="https://..." />
+                <button id="saveNewResourceBtn">Save</button>
+                <button id="closeAddResourceModalBtn">Cancel</button>
+            </div>
+        </div>
     </main>
 
+    <!-- ========== SCRIPT ========== -->
     <script src="popup.js"></script>
 </body>
 

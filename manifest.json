@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "DevPack",
   "version": "1.0",
-  "description": "A Chrome extension packed with resources to simplify development and boost productivity.",
+  "description": "A Chrome extension packed with dev resources to boost productivity.",
   "action": {
     "default_icon": {
       "16": "Assets/logo.png",
