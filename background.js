@@ -7,18 +7,16 @@ chrome.sidePanel
 chrome.runtime.onInstalled.addListener(() => {
     console.log("DevPack extension installed and side panel behavior set.");
 
-    // Create a top-level "Add to DevPack Favorites" context menu
     chrome.contextMenus.create({
         id: "devpackAddFavorite",
         title: "Add to DevPack Favorites",
-        contexts: ["link"] // Ensure it appears only when right-clicking a link
+        contexts: ["link"] 
     });
 
-    // Create a top-level "Add to DevPack Collection" context menu
     chrome.contextMenus.create({
         id: "devpackAddToCollection",
         title: "Add to DevPack Collection",
-        contexts: ["link"] // Ensure it appears only when right-clicking a link
+        contexts: ["link"] 
     });
 
     // Build submenus for existing collections
@@ -40,11 +38,19 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
         if (exactLink) {
             // Retrieve existing favorites from storage
             chrome.storage.sync.get(['favorites'], (res) => {
-                let favorites = res.favorites || [];
+                let favorites = res.favorites || []; 
+                // favorites is now an array of objects: [{name, link}, ...]
 
                 // Check if the exact link is already in favorites
-                if (!favorites.includes(exactLink)) {
-                    favorites.push(exactLink); // Add the exact link
+                const exists = favorites.some(item => item.link === exactLink);
+                if (!exists) {
+                    // Build the new favorite object
+                    const newFav = {
+                        name: extractResourceName(exactLink), // A friendly name from the URL
+                        link: exactLink
+                    };
+                    favorites.push(newFav);
+
                     chrome.storage.sync.set({ favorites }, () => {
                         console.log(`Added to DevPack Favorites: ${exactLink}`);
                         // Notify the user
@@ -77,9 +83,9 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
         if (exactLink) {
             const resourceObj = {
-                name: extractResourceName(exactLink), // Extract a friendly name from the URL
+                name: extractResourceName(exactLink), 
                 link: exactLink,
-                description: '' // Optional: You can add a description field if needed
+                description: '' 
             };
 
             // Retrieve existing collections from storage
@@ -94,7 +100,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
                 // Check for duplicates based on the exact link
                 const exists = collections[collectionName].some(item => item.link === exactLink);
                 if (!exists) {
-                    collections[collectionName].push(resourceObj); // Add the resource to the collection
+                    collections[collectionName].push(resourceObj); 
                     chrome.storage.sync.set({ collections }, () => {
                         console.log(`Added to collection "${collectionName}": ${exactLink}`);
                         // Notify the user
@@ -167,8 +173,8 @@ function buildCollectionSubmenus() {
 
 /**
  * Helper function to extract a friendly name from a URL
- * You can customize this function based on your requirements
- * For now, it extracts the hostname without 'www.'
+ * You can customize this function based on your requirements.
+ * For now, it extracts the hostname without 'www.'.
  */
 function extractResourceName(url) {
     try {
@@ -193,7 +199,8 @@ chrome.bookmarks.onCreated.addListener((id, bookmark) => {
         let favorites = res.favorites || [];
 
         // Check if the exact link is already in favorites
-        if (!favorites.includes(exactLink)) {
+        const exists = favorites.some(item => item.link === exactLink);
+        if (!exists) {
             // Store the last bookmarked link in local storage to reference in notification
             chrome.storage.local.set({ lastBookmarkedLink: exactLink }, () => {
                 // Create a notification asking the user to add the bookmark to favorites
@@ -229,10 +236,13 @@ chrome.notifications.onButtonClicked.addListener((notifId, btnIdx) => {
                 // Retrieve existing favorites from storage
                 chrome.storage.sync.get(['favorites'], (res) => {
                     let favorites = res.favorites || [];
+                    const exists = favorites.some(item => item.link === exactLink);
 
-                    // Check if the exact link is already in favorites
-                    if (!favorites.includes(exactLink)) {
-                        favorites.push(exactLink); // Add the exact link
+                    if (!exists) {
+                        favorites.push({
+                            name: extractResourceName(exactLink),
+                            link: exactLink
+                        });
                         chrome.storage.sync.set({ favorites }, () => {
                             console.log(`Added to DevPack Favorites from bookmark: ${exactLink}`);
                             // Notify the user
@@ -258,6 +268,6 @@ chrome.notifications.onButtonClicked.addListener((notifId, btnIdx) => {
                 });
             });
         }
-        // btnIdx === 1 corresponds to "No" button, do nothing
+        // btnIdx === 1 => "No" button; do nothing
     }
 });

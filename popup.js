@@ -275,102 +275,87 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ================= RESOURCE ITEM =================
-    function createResourceItemElement(item, isFavorite = false, isCustom = false) {
+    function createResourceItemElement(item, isFavorite = false) {
         const resourceItem = document.createElement('div');
         resourceItem.className = 'resource-item';
 
         const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
-        const iconHTML = isFavorite
-            ? `<span class="remove-icon" data-is-custom="${isCustom}">×</span>`
-            : `<span class="star-icon" data-resource-id="${item.name}">★</span>`;
+
+        // Always show the star icon
+        // If it's in favorites, also add .favorited
+        const starIconClass = isFavorite ? 'star-icon favorited' : 'star-icon';
 
         resourceItem.innerHTML = `
-      <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
-      <div class="resource-info">
-          <div class="resource-name">${item.name}</div>
-          ${!isFavorite
-                ? `<div class="resource-description">${item.description || ''}</div>`
-                : ''
-            }
-      </div>
-      ${iconHTML}
-    `;
+    <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
+    <div class="resource-info">
+      <div class="resource-name">${item.name}</div>
+    </div>
+    <!-- Always display the star -->
+    <span class="${starIconClass}" data-resource-id="${item.link}">★</span>
+  `;
 
-        // Draggable if in favorites
-        if (isFavorite) {
-            resourceItem.setAttribute('draggable', 'true');
-            resourceItem.addEventListener('dragstart', (e) => {
-                e.dataTransfer.setData('application/json', JSON.stringify(item));
-            });
-        }
-
-        // Clicking => open link (unless star/remove)
+        // Clicking anywhere except the star => open link
         resourceItem.addEventListener('click', (e) => {
-            const target = e.target;
-            if (!target.classList.contains('star-icon') && !target.classList.contains('remove-icon')) {
+            if (!e.target.classList.contains('star-icon')) {
                 chrome.tabs.create({ url: item.link });
             }
         });
 
-        if (isFavorite) {
-            // Remove from favorites
-            const removeIcon = resourceItem.querySelector('.remove-icon');
-            removeIcon.addEventListener('click', (e) => {
-                e.stopPropagation();
-                removeIcon.classList.add('animate');
-                setTimeout(() => removeIcon.classList.remove('animate'), 300);
-
-                if (isCustom) {
-                    removeCustomFavorite(item.name);
-                } else {
-                    toggleFavorite(item.name, true);
-                }
-            });
-        } else {
-            // Add to favorites
-            const starIcon = resourceItem.querySelector('.star-icon');
-            starIcon.addEventListener('click', (e) => {
-                e.stopPropagation();
-                starIcon.classList.add('animate');
-                setTimeout(() => starIcon.classList.remove('animate'), 300);
-                toggleFavorite(item.name);
-            });
-
-            // If already in favorites => visually mark
-            chrome.storage.sync.get(['favorites'], (result) => {
-                const favs = result.favorites || [];
-                if (favs.includes(item.name)) {
-                    starIcon.classList.add('favorited');
-                }
-            });
-        }
+        // Click star to add/remove favorites
+        const starIcon = resourceItem.querySelector('.star-icon');
+        starIcon.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // If it's already favorited, remove it
+            // Otherwise, add it
+            if (starIcon.classList.contains('favorited')) {
+                toggleFavorite(item, true);
+            } else {
+                toggleFavorite(item);
+            }
+        });
 
         return resourceItem;
     }
 
-    // ================== FAVORITES ==================
-    function toggleFavorite(resourceName, forceRemove = false) {
+
+
+    function toggleFavorite(resource, forceRemove = false) {
         chrome.storage.sync.get(['favorites'], (result) => {
             let favorites = result.favorites || [];
-            const index = favorites.indexOf(resourceName);
+            const index = favorites.findIndex(fav => fav.link === resource.link);
 
+            // If forceRemove or item is found in favorites => remove it
             if (forceRemove) {
                 if (index !== -1) favorites.splice(index, 1);
             } else {
-                if (index === -1) favorites.push(resourceName);
-                else favorites.splice(index, 1);
+                if (index === -1) {
+                    favorites.push(resource);
+                } else {
+                    favorites.splice(index, 1);
+                }
             }
 
             chrome.storage.sync.set({ favorites }, () => {
+                // Re-render favorites
                 updateFavoritesView();
-                const starIcon = document.querySelector(`.star-icon[data-resource-id="${resourceName}"]`);
+
+                // Find the star icon for this resource
+                const starIcon = document.querySelector(`.star-icon[data-resource-id="${resource.link}"]`);
                 if (starIcon) {
-                    starIcon.classList.toggle('favorited', index === -1 && !forceRemove);
+                    // If it’s now favorited => add .favorited
+                    const isFavoritedNow = (index === -1 && !forceRemove);
+                    starIcon.classList.toggle('favorited', isFavoritedNow);
+
+                    // Animate the star icon
+                    starIcon.classList.add('animate');
+                    setTimeout(() => starIcon.classList.remove('animate'), 300);
                 }
             });
         });
     }
+
+
+
 
     function removeCustomFavorite(domain) {
         chrome.storage.sync.get(['customFavorites'], (result) => {
@@ -386,38 +371,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateFavoritesView() {
-        chrome.storage.sync.get(['favorites', 'customFavorites'], (result) => {
+        chrome.storage.sync.get(['favorites'], (result) => {
             const favorites = result.favorites || [];
-            const customFavorites = result.customFavorites || [];
-
-            favoriteCount.textContent = favorites.length + customFavorites.length;
+            favoriteCount.textContent = favorites.length;
             favoritesList.innerHTML = '';
 
-            // Normal favorites
-            favorites.forEach(resourceName => {
-                const item = findResourceByName(resourceName);
-                if (item) {
-                    favoritesList.appendChild(createResourceItemElement(item, true, false));
-                }
-            });
-
-            // Custom domain favorites
-            customFavorites.forEach(domain => {
-                const customItem = {
-                    name: domain,
-                    link: `https://${domain}`,
-                    description: ''
-                };
-                favoritesList.appendChild(createResourceItemElement(customItem, true, true));
-            });
-
-            if (favorites.length === 0 && customFavorites.length === 0) {
+            // Check if there are no favorites
+            if (favorites.length === 0) {
                 favoritesView.classList.add('empty');
+                return;
             } else {
                 favoritesView.classList.remove('empty');
             }
+
+            // Loop through favorite objects and create elements
+            favorites.forEach(item => {
+                const resourceItem = createResourceItemElement(item, true, false);
+                favoritesList.appendChild(resourceItem);
+            });
         });
     }
+
 
     function findResourceByName(resourceName) {
         // Search all predefined categories
