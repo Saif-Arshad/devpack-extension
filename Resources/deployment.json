@@ -20,6 +20,16 @@
         ]
     },
     {
+        "id": 2,
+        "name": "Coolify",
+        "link": "https://coolify.io/",
+        "tags": [
+            "deployment",
+            "selfhost",
+            "serverless"
+        ]
+    },
+    {
         "id": 3,
         "name": "Heroku",
         "link": "https://www.heroku.com",

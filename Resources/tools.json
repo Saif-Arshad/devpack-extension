@@ -201,6 +201,44 @@
         ]
     },
     {
+        "name": "Facncy Border Radius",
+        "link": "https://9elements.github.io/fancy-border-radius/#31.30.36.46--318.228",
+        "tags": [
+            "Responsive design",
+            "App"
+        ]
+    },
+    {
+        "name": "Get Waves",
+        "link": "https://getwaves.io/",
+        "tags": [
+            "Responsive design",
+            "App"
+        ]
+    },
+    {
+        "name": "Clippy",
+        "link": "https://bennettfeely.com/clippy/",
+        "tags": [
+            "Responsive design",
+            "App"
+        ]
+    },
+    {
+        "name": "Box Shadows",
+        "link": "https://getcssscan.com/css-box-shadow-examples",
+        "tags": [
+            "App"
+        ]
+    },
+    {
+        "name": "SVGator",
+        "link": "https://www.svgator.com/",
+        "tags": [
+            "App"
+        ]
+    },
+    {
         "name": "UptoSite",
         "description": "A link shortener tool that helps you create concise and manageable URLs for your websites.",
         "link": "https://upto.site/",

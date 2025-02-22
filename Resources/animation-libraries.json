@@ -115,5 +115,21 @@
             "animation Libraries",
             "Web Development"
         ]
+    },
+    {
+        "name": "Rombo",
+        "link": "https://rombo.co/tailwind/",
+        "tags": [
+            "animation Libraries",
+            "Web Development"
+        ]
+    },
+    {
+        "name": "Varient Valtd",
+        "link": "https://variantvault.chrisabdo.dev/",
+        "tags": [
+            "animation Libraries",
+            "Web Development"
+        ]
     }
 ]

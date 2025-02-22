@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "name": "Upwork",
+        "link": "https://www.upwork.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "remote"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Freelancer",
+        "link": "https://www.freelancer.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "projects"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Fiverr",
+        "link": "https://www.fiverr.com",
+        "tags": [
+            "freelance",
+            "gigs",
+            "services"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Guru",
+        "link": "https://www.guru.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "platform"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "PeoplePerHour",
+        "link": "https://www.peopleperhour.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "remote"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Toptal",
+        "link": "https://www.toptal.com",
+        "tags": [
+            "freelance",
+            "tech",
+            "talent"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "99designs",
+        "link": "https://99designs.com",
+        "tags": [
+            "design",
+            "freelance",
+            "creative"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Simply Hired",
+        "link": "https://www.simplyhired.com",
+        "tags": [
+            "jobs",
+            "freelance",
+            "platform"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "FlexJobs",
+        "link": "https://www.flexjobs.com",
+        "tags": [
+            "remote",
+            "freelance",
+            "jobs"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "TaskRabbit",
+        "link": "https://www.taskrabbit.com",
+        "tags": [
+            "freelance",
+            "tasks",
+            "local"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "FreelancerMap",
+        "link": "https://www.freelancermap.com",
+        "tags": [
+            "IT",
+            "freelance",
+            "jobs"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "SolidGigs",
+        "link": "https://solidgigs.com",
+        "tags": [
+            "freelance",
+            "gigs",
+            "curated"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Bark",
+        "link": "https://www.bark.com",
+        "tags": [
+            "services",
+            "freelance",
+            "local"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Crowded",
+        "link": "https://www.crowded.com",
+        "tags": [
+            "freelance",
+            "aggregator",
+            "jobs"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Worksome",
+        "link": "https://www.worksome.com",
+        "tags": [
+            "freelance",
+            "tech",
+            "jobs"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "We Work Remotely",
+        "link": "https://weworkremotely.com",
+        "tags": [
+            "remote",
+            "jobs",
+            "freelance"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Remote OK",
+        "link": "https://remoteok.io",
+        "tags": [
+            "remote",
+            "jobs",
+            "freelance"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "AngelList",
+        "link": "https://angel.co/jobs",
+        "tags": [
+            "startups",
+            "freelance",
+            "tech"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Hirable",
+        "link": "https://www.hirable.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "tech"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Moonlighting",
+        "link": "https://www.moonlighting.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "part-time"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Gigster",
+        "link": "https://gigster.com",
+        "tags": [
+            "freelance",
+            "tech",
+            "projects"
+        ]
+    },
+    {
+        "id": 22,
+        "name": "CloudPeeps",
+        "link": "https://www.cloudpeeps.com",
+        "tags": [
+            "freelance",
+            "community",
+            "jobs"
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Codeable",
+        "link": "https://codeable.io",
+        "tags": [
+            "WordPress",
+            "freelance",
+            "development"
+        ]
+    },
+    {
+        "id": 24,
+        "name": "DesignCrowd",
+        "link": "https://www.designcrowd.com",
+        "tags": [
+            "design",
+            "freelance",
+            "creative"
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Envato Studio",
+        "link": "https://studio.envato.com",
+        "tags": [
+            "creative",
+            "freelance",
+            "design"
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Catalant",
+        "link": "https://gocatalant.com",
+        "tags": [
+            "consulting",
+            "freelance",
+            "projects"
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Outsourcely",
+        "link": "https://www.outsourcely.com",
+        "tags": [
+            "remote",
+            "freelance",
+            "jobs"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Hubstaff Talent",
+        "link": "https://talent.hubstaff.com",
+        "tags": [
+            "freelance",
+            "remote",
+            "jobs"
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Remotive",
+        "link": "https://remotive.com",
+        "tags": [
+            "remote",
+            "jobs",
+            "freelance"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "ProBlogger",
+        "link": "https://problogger.com/jobs",
+        "tags": [
+            "writing",
+            "freelance",
+            "jobs"
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Freelance Writing Gigs",
+        "link": "https://www.freelancewritinggigs.com",
+        "tags": [
+            "writing",
+            "freelance",
+            "jobs"
+        ]
+    },
+    {
+        "id": 32,
+        "name": "TaskShift",
+        "link": "https://www.taskshift.com",
+        "tags": [
+            "tasks",
+            "freelance",
+            "jobs"
+        ]
+    },
+    {
+        "id": 33,
+        "name": "ClearVoice",
+        "link": "https://www.clearvoice.com",
+        "tags": [
+            "content",
+            "freelance",
+            "writing"
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Project4Hire",
+        "link": "https://www.project4hire.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "projects"
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Zeerk",
+        "link": "https://zeerk.com",
+        "tags": [
+            "micro-jobs",
+            "freelance",
+            "gigs"
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Truelancer",
+        "link": "https://www.truelancer.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "projects"
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Workana",
+        "link": "https://www.workana.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "latam"
+        ]
+    },
+    {
+        "id": 38,
+        "name": "Bidvine",
+        "link": "https://www.bidvine.com",
+        "tags": [
+            "services",
+            "freelance",
+            "local"
+        ]
+    },
+    {
+        "id": 39,
+        "name": "FreelanceMyWay",
+        "link": "https://www.freelancemyway.com",
+        "tags": [
+            "freelance",
+            "jobs",
+            "design"
+        ]
+    },
+    {
+        "id": 40,
+        "name": "DesignContest",
+        "link": "https://www.designcontest.com",
+        "tags": [
+            "design",
+            "freelance",
+            "contest"
+        ]
+    }
+]

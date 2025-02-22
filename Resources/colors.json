@@ -298,5 +298,14 @@
         ],
         "license": "MIT",
         "licenseLink": "https://github.com/jordihales/hypercolor/blob/main/LICENSE"
+    },
+    {
+        "name": "SheCode Gradient",
+        "link": "https://www.shecodes.io/gradients/",
+        "tags": [
+            "Generator",
+            "Gradients",
+            "Tailwind"
+        ]
     }
 ]

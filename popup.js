@@ -188,6 +188,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         },
+        {
+            name: 'freelance',
+            label: 'Freelance Platforms',
+            filePath: 'Resources/freelance.json',
+            background: "#1ABC9C",
+            icon: `<img src="./Assets/coin.svg" alt="icons" />`,
+
+
+        },
 
     ];
 

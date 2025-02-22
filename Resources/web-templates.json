@@ -117,6 +117,16 @@
         ]
     },
     {
+        "id": 13,
+        "name": "Free Frontend",
+        "link": "https://freefrontend.com/",
+        "tags": [
+            "free templates",
+            "html",
+            "css"
+        ]
+    },
+    {
         "id": 14,
         "name": "HTML templates",
         "link": "https://htmlrev.com/",
