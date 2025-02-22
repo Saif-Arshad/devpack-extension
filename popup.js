@@ -542,7 +542,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="resource-count">${resourcesCount} resources</span>
         <span style="margin-left:auto; display:flex; align-items:center; gap:6px;">
           <span class="add-resource-icon" style="cursor:pointer; font-weight:bold;">➕</span>
-          <span class="delete-collection" style="cursor:pointer; color:#ff5e5e; font-weight:bold;">×</span>
+          <span class="delete-collection" style="cursor:pointer; color:#ff5e5e; font-weight:bold;">X</span>
         </span>
       `;
 
@@ -693,12 +693,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
             li.innerHTML = `
-        <div style="display:flex; align-items:center; gap:8px;">
-          <img src="${faviconUrl}" alt="favicon" style="width:16px; height:16px;" />
-          <span style="flex:1;">${item.name}</span>
-          <span class="remove-icon" style="color:#ff5e5e; cursor:pointer; font-weight:bold;">×</span>
-        </div>
+            <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
+  <div class="resource-info">
+    <div class="resource-name">${item.name}</div>
+    <span class="resource-link">
+      ${item.link}
+    </span>
+  </div>
+  <div class="resource-actions">
+    <span class="remove-icon" style="color:#ff5e5e; cursor:pointer; font-weight:bold;">X</span>
+ 
+  </div>
+       
       `;
+
 
             // clicking => open the link
             li.addEventListener('click', (e) => {

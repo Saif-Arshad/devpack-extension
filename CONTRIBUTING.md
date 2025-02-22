@@ -57,8 +57,6 @@ Finally, open a pull request for your changes to be reviewed and merged.
 
 When adding a new resource, please follow this structure:
 
-- **id** (number; optional)  
-  It's recommended to append new resources at the end and maintain sequential ordering with previous IDs.  
 - **name** (string; required)  
   The name of the resource.  
 - **link** (string; required)  
@@ -70,7 +68,6 @@ When adding a new resource, please follow this structure:
 
 ```json
 {
-  "id": 23,
   "name": "Resource Name",
   "link": "https://resource.com",
   "tags": ["IA", "React", "Library", "3D"]

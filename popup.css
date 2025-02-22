@@ -24,7 +24,7 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(135deg, #2B2B2B, #333333);
+    background: #2b2b2b;
     color: #fff;
 }
 
@@ -60,6 +60,7 @@ header p {
     display: flex;
     background-color: #1c1c1c;
     padding: 8px 10px;
+
 }
 
 .search-icon {
@@ -79,7 +80,7 @@ header p {
     color: #fff;
     background-color: #2b2b2b;
     border: 1px solid #444;
-    border-radius: 7px;
+    border-radius: 30px;
     outline: none;
     padding: 10px 10px 10px 40px;
 }
