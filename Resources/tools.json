@@ -239,6 +239,27 @@
         ]
     },
     {
+        "name": "HTTP Pie",
+        "link": "https://httpie.io/app",
+        "tags": [
+            "App"
+        ]
+    },
+    {
+        "name": "COde SandBox",
+        "link": "https://codesandbox.io/",
+        "tags": [
+            "App"
+        ]
+    },
+    {
+        "name": "Readme",
+        "link": "https://readme.so/",
+        "tags": [
+            "App"
+        ]
+    },
+    {
         "name": "UptoSite",
         "description": "A link shortener tool that helps you create concise and manageable URLs for your websites.",
         "link": "https://upto.site/",

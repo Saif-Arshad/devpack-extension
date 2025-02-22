@@ -1,0 +1,412 @@
+[
+    {
+        "id": 1,
+        "name": "freeCodeCamp",
+        "link": "https://www.freecodecamp.org",
+        "tags": [
+            "learning",
+            "coding",
+            "free"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Codecademy",
+        "link": "https://www.codecademy.com",
+        "tags": [
+            "learning",
+            "interactive",
+            "coding"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Coursera",
+        "link": "https://www.coursera.org",
+        "tags": [
+            "learning",
+            "courses",
+            "MOOC"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Udemy",
+        "link": "https://www.udemy.com",
+        "tags": [
+            "learning",
+            "courses",
+            "video"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "edX",
+        "link": "https://www.edx.org",
+        "tags": [
+            "learning",
+            "courses",
+            "MOOC"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Pluralsight",
+        "link": "https://www.pluralsight.com",
+        "tags": [
+            "learning",
+            "technology",
+            "courses"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Khan Academy",
+        "link": "https://www.khanacademy.org",
+        "tags": [
+            "learning",
+            "free",
+            "courses"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "MIT OpenCourseWare",
+        "link": "https://ocw.mit.edu",
+        "tags": [
+            "learning",
+            "courses",
+            "free"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "The Odin Project",
+        "link": "https://www.theodinproject.com",
+        "tags": [
+            "learning",
+            "web development",
+            "free"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "W3Schools",
+        "link": "https://www.w3schools.com",
+        "tags": [
+            "learning",
+            "web development",
+            "tutorials"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "MDN Web Docs",
+        "link": "https://developer.mozilla.org",
+        "tags": [
+            "learning",
+            "documentation",
+            "web development"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Udacity",
+        "link": "https://www.udacity.com",
+        "tags": [
+            "learning",
+            "nanodegree",
+            "tech"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Code.org",
+        "link": "https://code.org",
+        "tags": [
+            "learning",
+            "coding",
+            "education"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Treehouse",
+        "link": "https://teamtreehouse.com",
+        "tags": [
+            "learning",
+            "tech",
+            "video"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "LeetCode",
+        "link": "https://leetcode.com",
+        "tags": [
+            "learning",
+            "coding challenges",
+            "algorithms"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "HackerRank",
+        "link": "https://www.hackerrank.com",
+        "tags": [
+            "learning",
+            "coding challenges",
+            "algorithms"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Exercism",
+        "link": "https://exercism.io",
+        "tags": [
+            "learning",
+            "practice",
+            "coding"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Codewars",
+        "link": "https://www.codewars.com",
+        "tags": [
+            "learning",
+            "coding challenges",
+            "practice"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org",
+        "tags": [
+            "learning",
+            "programming",
+            "tutorials"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "TutorialsPoint",
+        "link": "https://www.tutorialspoint.com",
+        "tags": [
+            "learning",
+            "tutorials",
+            "programming"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "SoloLearn",
+        "link": "https://www.sololearn.com",
+        "tags": [
+            "learning",
+            "mobile",
+            "coding"
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Scrimba",
+        "link": "https://scrimba.com",
+        "tags": [
+            "learning",
+            "interactive",
+            "coding"
+        ]
+    },
+    {
+        "id": 23,
+        "name": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning",
+        "tags": [
+            "learning",
+            "video",
+            "courses"
+        ]
+    },
+    {
+        "id": 24,
+        "name": "GitHub Learning Lab",
+        "link": "https://lab.github.com",
+        "tags": [
+            "learning",
+            "GitHub",
+            "code"
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Google Developers Training",
+        "link": "https://developers.google.com/training",
+        "tags": [
+            "learning",
+            "developers",
+            "training"
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Microsoft Learn",
+        "link": "https://docs.microsoft.com/en-us/learn",
+        "tags": [
+            "learning",
+            "developers",
+            "training"
+        ]
+    },
+    {
+        "id": 27,
+        "name": "IBM Developer",
+        "link": "https://developer.ibm.com",
+        "tags": [
+            "learning",
+            "developers",
+            "resources"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "edabit",
+        "link": "https://edabit.com",
+        "tags": [
+            "learning",
+            "coding challenges",
+            "practice"
+        ]
+    },
+    {
+        "id": 29,
+        "name": "CodeSignal",
+        "link": "https://codesignal.com",
+        "tags": [
+            "learning",
+            "coding challenges",
+            "assessment"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Frontend Mentor",
+        "link": "https://www.frontendmentor.io",
+        "tags": [
+            "learning",
+            "web development",
+            "challenges"
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Real Python",
+        "link": "https://realpython.com",
+        "tags": [
+            "learning",
+            "python",
+            "tutorials"
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Dev.to",
+        "link": "https://dev.to",
+        "tags": [
+            "learning",
+            "community",
+            "blog"
+        ]
+    },
+    {
+        "id": 33,
+        "name": "CodeProject",
+        "link": "https://www.codeproject.com",
+        "tags": [
+            "learning",
+            "articles",
+            "development"
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Ray Wenderlich",
+        "link": "https://www.raywenderlich.com",
+        "tags": [
+            "learning",
+            "mobile development",
+            "tutorials"
+        ]
+    },
+    {
+        "id": 35,
+        "name": "CodeNewbie",
+        "link": "https://www.codenewbie.org",
+        "tags": [
+            "learning",
+            "community",
+            "beginners"
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Hackr.io",
+        "link": "https://hackr.io",
+        "tags": [
+            "learning",
+            "reviews",
+            "courses"
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Educative.io",
+        "link": "https://www.educative.io",
+        "tags": [
+            "learning",
+            "interactive",
+            "coding"
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Class Central",
+        "link": "https://www.classcentral.com/",
+        "tags": [
+            "learning",
+            "interactive",
+            "coding"
+        ]
+    },
+    {
+        "id": 38,
+        "name": "CodeChef",
+        "link": "https://www.codechef.com",
+        "tags": [
+            "learning",
+            "coding challenges",
+            "competitive programming"
+        ]
+    },
+    {
+        "id": 39,
+        "name": "HackerEarth",
+        "link": "https://www.hackerearth.com",
+        "tags": [
+            "learning",
+            "coding challenges",
+            "competitions"
+        ]
+    },
+    {
+        "id": 40,
+        "name": "Programiz",
+        "link": "https://www.programiz.com",
+        "tags": [
+            "learning",
+            "tutorials",
+            "programming"
+        ]
+    }
+]

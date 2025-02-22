@@ -197,6 +197,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         },
+        {
+            name: 'learning',
+            label: 'Learning Platform',
+            filePath: 'Resources/learning-resources.json',
+            background: "#E74C3C",
+            icon: `<img src="./Assets/book.svg" alt="icons" />`,
+
+
+        },
+        {
+            name: 'web',
+            label: 'Web Builder Platform',
+            filePath: 'Resources/builder.json',
+            background: "#27AE60",
+            icon: `<img src="./Assets/ai.svg" alt="icons" />`,
+
+
+
+        },
 
     ];
 

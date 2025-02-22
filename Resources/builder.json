@@ -1,0 +1,173 @@
+[
+    {
+        "id": 1,
+        "name": "Wix ADI",
+        "link": "https://www.wix.com/adi",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Bookmark (AIDA)",
+        "link": "https://www.bookmark.com/ai-website-builder",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Zyro AI Website Builder",
+        "link": "https://zyro.com/ai-website-builder",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Firedrop",
+        "link": "https://firedrop.ai",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Jimdo Dolphin",
+        "link": "https://www.jimdo.com/dolphin",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "SITE123",
+        "link": "https://www.site123.com",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+
+    {
+        "id": 7,
+        "name": "Claude",
+        "link": "https://claude.ai/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "ChatGBT",
+        "link": "http://chat.openai.com/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "V0",
+        "link": "https://v0.dev/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "UI Builder",
+        "link": "https://www.uibuilder.app/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Fly.dev",
+        "link": "https://openui.fly.dev/ai/new",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Bolt.new",
+        "link": "https://bolt.new/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Napkin.AI",
+        "link": "https://app.napkin.ai/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Uizard.IO",
+        "link": "https://uizard.io/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Reweb.SO",
+        "link": "https://www.reweb.so/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Uizard.IO",
+        "link": "https://app.uizard.io/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Deepseek",
+        "link": "https://chat.deepseek.com/",
+        "tags": [
+            "free",
+            "AI",
+            "website builder"
+        ]
+    }
+]
