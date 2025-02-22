@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Vercel",
         "link": "https://vercel.com",
         "tags": [
@@ -10,7 +9,6 @@
         ]
     },
     {
-        "id": 2,
         "name": "Netlify",
         "link": "https://www.netlify.com",
         "tags": [
@@ -20,7 +18,6 @@
         ]
     },
     {
-        "id": 2,
         "name": "Coolify",
         "link": "https://coolify.io/",
         "tags": [
@@ -30,7 +27,6 @@
         ]
     },
     {
-        "id": 3,
         "name": "Heroku",
         "link": "https://www.heroku.com",
         "tags": [
@@ -40,7 +36,6 @@
         ]
     },
     {
-        "id": 4,
         "name": "AWS Amplify",
         "link": "https://aws.amazon.com/amplify/",
         "tags": [
@@ -50,7 +45,6 @@
         ]
     },
     {
-        "id": 5,
         "name": "Firebase",
         "link": "https://firebase.google.com",
         "tags": [
@@ -60,7 +54,6 @@
         ]
     },
     {
-        "id": 6,
         "name": "GitHub Pages",
         "link": "https://pages.github.com",
         "tags": [
@@ -70,7 +63,6 @@
         ]
     },
     {
-        "id": 7,
         "name": "Surge",
         "link": "https://surge.sh",
         "tags": [
@@ -80,7 +72,6 @@
         ]
     },
     {
-        "id": 8,
         "name": "DigitalOcean App Platform",
         "link": "https://www.digitalocean.com/products/app-platform/",
         "tags": [
@@ -90,7 +81,6 @@
         ]
     },
     {
-        "id": 9,
         "name": "Render",
         "link": "https://render.com",
         "tags": [
@@ -100,7 +90,6 @@
         ]
     },
     {
-        "id": 10,
         "name": "Google Cloud Platform",
         "link": "https://cloud.google.com",
         "tags": [

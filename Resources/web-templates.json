@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Template Mo",
         "link": "https://templatemo.com/",
         "tags": [
@@ -10,7 +9,6 @@
         ]
     },
     {
-        "id": 2,
         "name": "Start Bootstrap",
         "link": "https://startbootstrap.com/templates",
         "tags": [
@@ -21,7 +19,6 @@
         ]
     },
     {
-        "id": 3,
         "name": "HTML5 UP",
         "link": "https://html5up.net/",
         "tags": [
@@ -32,7 +29,6 @@
         ]
     },
     {
-        "id": 4,
         "name": "BootstrapMade",
         "link": "https://bootstrapmade.com/",
         "tags": [
@@ -43,7 +39,6 @@
         ]
     },
     {
-        "id": 5,
         "name": "Colorlib",
         "link": "https://colorlib.com/wp/templates/",
         "tags": [
@@ -54,7 +49,6 @@
         ]
     },
     {
-        "id": 6,
         "name": "Free Css",
         "link": "https://www.free-css.com/free-css-templates",
         "tags": [
@@ -65,7 +59,6 @@
         ]
     },
     {
-        "id": 7,
         "name": "GetNextJs Themes",
         "link": "https://getnextjsthemes.com/",
         "tags": [
@@ -76,7 +69,6 @@
         ]
     },
     {
-        "id": 8,
         "name": "Tailwind CSS Templates",
         "link": "https://tailwindcsstemplates.com/",
         "tags": [
@@ -87,7 +79,6 @@
         ]
     },
     {
-        "id": 9,
         "name": "ZenUI Templates",
         "link": "https://zenui.net/templates",
         "tags": [
@@ -97,9 +88,7 @@
         ]
     },
     {
-        "id": 11,
         "name": "React Templates",
-        "link": "https://dev.to/davidepacilio/35-free-react-templates-and-themes-32ci",
         "tags": [
             "free templates",
             "html",
@@ -107,7 +96,6 @@
         ]
     },
     {
-        "id": 13,
         "name": "ShadCN Templates",
         "link": "https://shadcnui-templates.com/",
         "tags": [
@@ -117,7 +105,6 @@
         ]
     },
     {
-        "id": 13,
         "name": "Free Frontend",
         "link": "https://freefrontend.com/",
         "tags": [
@@ -127,7 +114,6 @@
         ]
     },
     {
-        "id": 14,
         "name": "HTML templates",
         "link": "https://htmlrev.com/",
         "tags": [
@@ -137,7 +123,6 @@
         ]
     },
     {
-        "id": 15,
         "name": "Nuxt templates",
         "link": "https://orion.barbapapazes.dev/templates#templates",
         "tags": [
@@ -147,7 +132,6 @@
         ]
     },
     {
-        "id": 16,
         "name": "Next Js Starters",
         "link": "https://nextjs.batchtool.com/",
         "tags": [
@@ -157,7 +141,6 @@
         ]
     },
     {
-        "id": 17,
         "name": "Template0",
         "link": "https://template0.com/",
         "tags": [

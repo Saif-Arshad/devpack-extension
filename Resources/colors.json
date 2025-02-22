@@ -1,7 +1,6 @@
 [
     {
         "name": "Realtime Colors",
-        "description": "A tool for previewing and selecting colors in real-time.",
         "link": "https://www.realtimecolors.com",
         "tags": [
             "Preview"
@@ -9,7 +8,6 @@
     },
     {
         "name": "AI Colors",
-        "description": "A tool for generating color palettes using AI.",
         "link": "https://tintmint.net",
         "tags": [
             "AI",
@@ -18,7 +16,6 @@
     },
     {
         "name": "Color selector",
-        "description": "A tool for selecting and cataloging colors.",
         "link": "https://www.color-selector.com",
         "tags": [
             "Catalogue"
@@ -26,7 +23,6 @@
     },
     {
         "name": "Coolors",
-        "description": "A tool for generating color palettes from images.",
         "link": "https://coolors.co",
         "tags": [
             "Image"
@@ -34,7 +30,6 @@
     },
     {
         "name": "Grabient",
-        "description": "A tool for creating and exploring gradients.",
         "link": "https://www.grabient.com",
         "tags": [
             "Gradients"
@@ -42,37 +37,31 @@
     },
     {
         "name": "hue.tools",
-        "description": "A tool for working with hues and colors.",
         "link": "https://hue.tools/",
         "tags": []
     },
     {
         "name": "Picular",
-        "description": "A tool for generating colors based on keywords.",
         "link": "https://picular.co",
         "tags": []
     },
     {
         "name": "Color Leap",
-        "description": "A tool for exploring historical color palettes.",
         "link": "https://colorleap.app/",
         "tags": []
     },
     {
         "name": "Pigment",
-        "description": "A tool for generating color palettes.",
         "link": "https://pigment.shapefactory.co",
         "tags": []
     },
     {
         "name": "Colormind",
-        "description": "A tool for generating color palettes using AI.",
         "link": "http://colormind.io/",
         "tags": []
     },
     {
         "name": "Werner",
-        "description": "A catalog of historical color palettes.",
         "link": "https://www.c82.net/werner/",
         "tags": [
             "Catalogue"
@@ -80,7 +69,6 @@
     },
     {
         "name": "HueSnap",
-        "description": "A tool for generating color palettes from images.",
         "link": "https://www.huesnap.com",
         "tags": [
             "Image"
@@ -88,7 +76,6 @@
     },
     {
         "name": "Adobe Color",
-        "description": "A tool for creating and exploring color wheels and palettes.",
         "link": "https://color.adobe.com/es/create/color-wheel",
         "tags": [
             "Images"
@@ -96,7 +83,6 @@
     },
     {
         "name": "Palette Maker",
-        "description": "A tool for creating and previewing color palettes.",
         "link": "https://palettemaker.com/app",
         "tags": [
             "Preview"
@@ -104,13 +90,11 @@
     },
     {
         "name": "Randoma11y",
-        "description": "A tool for generating random accessible color palettes.",
         "link": "https://randoma11y.com",
         "tags": []
     },
     {
         "name": "WebGradients",
-        "description": "A collection of free gradient backgrounds.",
         "link": "https://webgradients.com",
         "tags": [
             "Gradients"
@@ -118,55 +102,46 @@
     },
     {
         "name": "Palette",
-        "description": "A tool for creating and exploring color palettes.",
         "link": "https://palettte.app/",
         "tags": []
     },
     {
         "name": "Flat UI Colors",
-        "description": "A collection of flat UI colors.",
         "link": "https://flatuicolors.com",
         "tags": []
     },
     {
         "name": "Material UI",
-        "description": "A collection of colors based on Material Design.",
         "link": "https://materialui.co/colors",
         "tags": []
     },
     {
         "name": "Happy Hues",
-        "description": "A tool for exploring color palettes.",
         "link": "https://www.happyhues.co",
         "tags": []
     },
     {
         "name": "tints.dev",
-        "description": "A tool for generating tints and shades of a color.",
         "link": "https://www.tints.dev/brand/8C1AE5",
         "tags": []
     },
     {
         "name": "Color Hunt",
-        "description": "A collection of trendy color palettes.",
         "link": "https://colorhunt.co",
         "tags": []
     },
     {
         "name": "Shaper",
-        "description": "A tool for creating and exploring color shapes.",
         "link": "https://hihayk.github.io/shaper/",
         "tags": []
     },
     {
         "name": "Toptal",
-        "description": "A tool for building and previewing color schemes.",
         "link": "https://www.toptal.com/designers/colourcode/freebuild-color-builder",
         "tags": []
     },
     {
         "name": "UI Colors",
-        "description": "A tool for creating and previewing UI color palettes.",
         "link": "https://uicolors.app/create",
         "tags": [
             "Preview"
@@ -174,7 +149,6 @@
     },
     {
         "name": "Poline",
-        "description": "A library for generating color palettes.",
         "link": "https://meodai.github.io/poline/",
         "tags": [
             "Library"
@@ -182,31 +156,26 @@
     },
     {
         "name": "Khroma",
-        "description": "A tool for generating color palettes using AI.",
         "link": "https://www.khroma.co",
         "tags": []
     },
     {
         "name": "Paletton",
-        "description": "A tool for creating and exploring color schemes.",
         "link": "https://www.paletton.com",
         "tags": []
     },
     {
         "name": "M.D. Palette Generator",
-        "description": "A tool for generating Material Design color palettes.",
         "link": "https://materialpalettes.com",
         "tags": []
     },
     {
         "name": "Scale",
-        "description": "A tool for creating and exploring color scales.",
         "link": "https://hihayk.github.io/scale/",
         "tags": []
     },
     {
         "name": "uiGradients",
-        "description": "A collection of beautiful UI gradients.",
         "link": "https://uigradients.com/",
         "tags": [
             "Gradients"
@@ -214,7 +183,6 @@
     },
     {
         "name": "Inspotype",
-        "description": "A tool for previewing and selecting colors.",
         "link": "https://www.inspotype.com",
         "tags": [
             "Preview"
@@ -222,7 +190,6 @@
     },
     {
         "name": "CSS Gradient",
-        "description": "A tool for creating CSS gradients.",
         "link": "https://cssgradient.io",
         "tags": [
             "Gradients"
@@ -230,7 +197,6 @@
     },
     {
         "name": "Colorable",
-        "description": "A tool for testing color contrast and accessibility.",
         "link": "https://colorable.jxnblk.com",
         "tags": [
             "Preview"
@@ -238,7 +204,6 @@
     },
     {
         "name": "Culrs",
-        "description": "A tool for exploring and creating color palettes.",
         "link": "https://culrs.com",
         "tags": [
             "Palettes"
@@ -246,7 +211,6 @@
     },
     {
         "name": "Cool Contrast",
-        "description": "A tool for previewing and testing color contrast.",
         "link": "https://coolcontrast.vercel.app/",
         "tags": [
             "Preview",
@@ -255,7 +219,6 @@
     },
     {
         "name": "ColorBeta",
-        "description": "A tool for exploring gradients.",
         "link": "https://colorbeta.com/",
         "tags": [
             "Gradients"
@@ -263,13 +226,11 @@
     },
     {
         "name": "ColorHexa",
-        "description": "A comprehensive color encyclopedia.",
         "link": "https://www.colorhexa.com/",
         "tags": []
     },
     {
         "name": "ColorMagic",
-        "description": "A tool for generating color palettes using AI.",
         "link": "https://colormagic.app/",
         "tags": [
             "Generator",
@@ -278,7 +239,6 @@
     },
     {
         "name": "Material Theme Builder",
-        "description": "A tool for generating Material Design themes.",
         "link": "https://material-foundation.github.io/material-theme-builder/",
         "tags": [
             "Generator",
@@ -289,7 +249,6 @@
     },
     {
         "name": "Hypercolor",
-        "description": "A tool for generating gradients for Tailwind CSS.",
         "link": "https://hypercolor.dev/",
         "tags": [
             "Generator",

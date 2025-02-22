@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Cursify",
         "link": "https://cursify.vercel.app/",
         "tags": [
@@ -9,7 +8,6 @@
         ]
     },
     {
-        "id": 2,
         "name": "UI-SNIPPETS",
         "link": "https://app.ui-snippets.com/",
         "tags": [
@@ -18,7 +16,6 @@
         ]
     },
     {
-        "id": 3,
         "name": "Magic UI",
         "link": "https://magicui.design/",
         "tags": [
@@ -27,7 +24,6 @@
         ]
     },
     {
-        "id": 4,
         "name": "Eldora UI",
         "link": "https://www.eldoraui.site/",
         "tags": [
@@ -36,7 +32,6 @@
         ]
     },
     {
-        "id": 5,
         "name": "Aceternity UI",
         "link": "https://ui.aceternity.com/",
         "tags": [
@@ -45,7 +40,6 @@
         ]
     },
     {
-        "id": 6,
         "name": "Bossadizenith UI",
         "link": "https://ground.bossadizenith.me/",
         "tags": [
@@ -54,7 +48,6 @@
         ]
     },
     {
-        "id": 7,
         "name": "C UI",
         "link": "https://cuicui.day/",
         "tags": [
@@ -63,7 +56,6 @@
         ]
     },
     {
-        "id": 8,
         "name": "Bits UI",
         "link": "https://www.reactbits.dev/",
         "tags": [
@@ -72,7 +64,6 @@
         ]
     },
     {
-        "id": 9,
         "name": "Vanta UI",
         "link": "https://www.vantajs.com/",
         "tags": [
@@ -81,7 +72,6 @@
         ]
     },
     {
-        "id": 10,
         "name": "UI Layouts",
         "link": "https://www.ui-layouts.com/",
         "tags": [
@@ -90,7 +80,6 @@
         ]
     },
     {
-        "id": 11,
         "name": "Motion Primitives",
         "link": "https://motion-primitives.com/",
         "tags": [
@@ -99,7 +88,6 @@
         ]
     },
     {
-        "id": 12,
         "name": "Dyna UI",
         "link": "https://www.dynaui.design/",
         "tags": [
@@ -108,7 +96,6 @@
         ]
     },
     {
-        "id": 13,
         "name": "Universe UI",
         "link": "https://uiverse.io/",
         "tags": [

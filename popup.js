@@ -234,8 +234,14 @@ document.addEventListener('DOMContentLoaded', () => {
     )
         .then(dataArray => {
             dataArray.forEach((jsonData, i) => {
+                console.log(Array.isArray(jsonData), jsonData);
                 const catName = categories[i].name;
-                const sortedData = jsonData.sort((a, b) => a.name.localeCompare(b.name));
+                const sortedData = jsonData.sort((a, b) => {
+                    const aName = a.name || "";
+                    const bName = b.name || "";
+                    return aName.localeCompare(bName);
+                });
+
                 allResources[catName] = sortedData;
                 totalResources += sortedData.length;
             });
@@ -264,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
         collectionDetailView.style.display = 'none';
 
         pageTitle.innerHTML = `
-      <div style="display:flex; align-items:center; width:100%; justify-content:space-between">
+      <div style="display:flex; align-items:center; width:100%; justify-content:end">
         <span style="margin-left: 8px;">Total resources: ${totalResources}</span>
       </div>
     `;
@@ -385,8 +391,8 @@ document.addEventListener('DOMContentLoaded', () => {
   <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
   <div class="resource-info">
     <div class="resource-name">${item.name}</div>
-    <span style="flex:1; font-size:10px; margin-top:4px">
-      ${item.description ? item.description : ""}
+    <span class="resource-link">
+      ${item.link}
     </span>
   </div>
   <div class="resource-actions">

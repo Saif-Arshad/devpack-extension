@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Upwork",
         "link": "https://www.upwork.com",
         "tags": [
@@ -10,7 +9,6 @@
         ]
     },
     {
-        "id": 2,
         "name": "Freelancer",
         "link": "https://www.freelancer.com",
         "tags": [
@@ -20,7 +18,6 @@
         ]
     },
     {
-        "id": 3,
         "name": "Fiverr",
         "link": "https://www.fiverr.com",
         "tags": [
@@ -30,7 +27,6 @@
         ]
     },
     {
-        "id": 4,
         "name": "Guru",
         "link": "https://www.guru.com",
         "tags": [
@@ -40,7 +36,6 @@
         ]
     },
     {
-        "id": 5,
         "name": "PeoplePerHour",
         "link": "https://www.peopleperhour.com",
         "tags": [
@@ -50,7 +45,6 @@
         ]
     },
     {
-        "id": 6,
         "name": "Toptal",
         "link": "https://www.toptal.com",
         "tags": [
@@ -60,7 +54,6 @@
         ]
     },
     {
-        "id": 7,
         "name": "99designs",
         "link": "https://99designs.com",
         "tags": [
@@ -70,7 +63,6 @@
         ]
     },
     {
-        "id": 8,
         "name": "Simply Hired",
         "link": "https://www.simplyhired.com",
         "tags": [
@@ -80,7 +72,6 @@
         ]
     },
     {
-        "id": 9,
         "name": "FlexJobs",
         "link": "https://www.flexjobs.com",
         "tags": [
@@ -90,7 +81,6 @@
         ]
     },
     {
-        "id": 10,
         "name": "TaskRabbit",
         "link": "https://www.taskrabbit.com",
         "tags": [
@@ -100,7 +90,6 @@
         ]
     },
     {
-        "id": 11,
         "name": "FreelancerMap",
         "link": "https://www.freelancermap.com",
         "tags": [
@@ -110,9 +99,6 @@
         ]
     },
     {
-        "id": 12,
-        "name": "SolidGigs",
-        "link": "https://solidgigs.com",
         "tags": [
             "freelance",
             "gigs",
@@ -120,7 +106,6 @@
         ]
     },
     {
-        "id": 13,
         "name": "Bark",
         "link": "https://www.bark.com",
         "tags": [
@@ -130,7 +115,6 @@
         ]
     },
     {
-        "id": 14,
         "name": "Crowded",
         "link": "https://www.crowded.com",
         "tags": [
@@ -140,7 +124,6 @@
         ]
     },
     {
-        "id": 15,
         "name": "Worksome",
         "link": "https://www.worksome.com",
         "tags": [
@@ -150,7 +133,6 @@
         ]
     },
     {
-        "id": 16,
         "name": "We Work Remotely",
         "link": "https://weworkremotely.com",
         "tags": [
@@ -160,7 +142,6 @@
         ]
     },
     {
-        "id": 17,
         "name": "Remote OK",
         "link": "https://remoteok.io",
         "tags": [
@@ -170,7 +151,6 @@
         ]
     },
     {
-        "id": 18,
         "name": "AngelList",
         "link": "https://angel.co/jobs",
         "tags": [
@@ -180,7 +160,6 @@
         ]
     },
     {
-        "id": 19,
         "name": "Hirable",
         "link": "https://www.hirable.com",
         "tags": [
@@ -190,7 +169,6 @@
         ]
     },
     {
-        "id": 20,
         "name": "Moonlighting",
         "link": "https://www.moonlighting.com",
         "tags": [
@@ -200,7 +178,6 @@
         ]
     },
     {
-        "id": 21,
         "name": "Gigster",
         "link": "https://gigster.com",
         "tags": [
@@ -210,7 +187,6 @@
         ]
     },
     {
-        "id": 22,
         "name": "CloudPeeps",
         "link": "https://www.cloudpeeps.com",
         "tags": [
@@ -220,7 +196,6 @@
         ]
     },
     {
-        "id": 23,
         "name": "Codeable",
         "link": "https://codeable.io",
         "tags": [
@@ -230,7 +205,6 @@
         ]
     },
     {
-        "id": 24,
         "name": "DesignCrowd",
         "link": "https://www.designcrowd.com",
         "tags": [
@@ -240,7 +214,6 @@
         ]
     },
     {
-        "id": 25,
         "name": "Envato Studio",
         "link": "https://studio.envato.com",
         "tags": [
@@ -250,7 +223,6 @@
         ]
     },
     {
-        "id": 26,
         "name": "Catalant",
         "link": "https://gocatalant.com",
         "tags": [
@@ -260,7 +232,6 @@
         ]
     },
     {
-        "id": 27,
         "name": "Outsourcely",
         "link": "https://www.outsourcely.com",
         "tags": [
@@ -270,7 +241,6 @@
         ]
     },
     {
-        "id": 28,
         "name": "Hubstaff Talent",
         "link": "https://talent.hubstaff.com",
         "tags": [
@@ -280,7 +250,6 @@
         ]
     },
     {
-        "id": 29,
         "name": "Remotive",
         "link": "https://remotive.com",
         "tags": [
@@ -290,7 +259,6 @@
         ]
     },
     {
-        "id": 30,
         "name": "ProBlogger",
         "link": "https://problogger.com/jobs",
         "tags": [
@@ -300,7 +268,6 @@
         ]
     },
     {
-        "id": 31,
         "name": "Freelance Writing Gigs",
         "link": "https://www.freelancewritinggigs.com",
         "tags": [
@@ -310,7 +277,6 @@
         ]
     },
     {
-        "id": 32,
         "name": "TaskShift",
         "link": "https://www.taskshift.com",
         "tags": [
@@ -320,7 +286,6 @@
         ]
     },
     {
-        "id": 33,
         "name": "ClearVoice",
         "link": "https://www.clearvoice.com",
         "tags": [
@@ -330,7 +295,6 @@
         ]
     },
     {
-        "id": 34,
         "name": "Project4Hire",
         "link": "https://www.project4hire.com",
         "tags": [
@@ -340,7 +304,6 @@
         ]
     },
     {
-        "id": 35,
         "name": "Zeerk",
         "link": "https://zeerk.com",
         "tags": [
@@ -350,7 +313,6 @@
         ]
     },
     {
-        "id": 36,
         "name": "Truelancer",
         "link": "https://www.truelancer.com",
         "tags": [
@@ -360,7 +322,6 @@
         ]
     },
     {
-        "id": 37,
         "name": "Workana",
         "link": "https://www.workana.com",
         "tags": [
@@ -370,9 +331,6 @@
         ]
     },
     {
-        "id": 38,
-        "name": "Bidvine",
-        "link": "https://www.bidvine.com",
         "tags": [
             "services",
             "freelance",
@@ -380,7 +338,6 @@
         ]
     },
     {
-        "id": 39,
         "name": "FreelanceMyWay",
         "link": "https://www.freelancemyway.com",
         "tags": [
@@ -390,7 +347,6 @@
         ]
     },
     {
-        "id": 40,
         "name": "DesignContest",
         "link": "https://www.designcontest.com",
         "tags": [

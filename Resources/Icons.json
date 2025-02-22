@@ -1,7 +1,6 @@
 [
     {
         "name": "Iconify",
-        "description": "Universal icon framework with a wide range of icon sets.",
         "link": "https://icon-sets.iconify.design",
         "tags": [
             "icons",
@@ -10,7 +9,6 @@
     },
     {
         "name": "Google icons",
-        "description": "Material design icons by Google.",
         "link": "https://fonts.google.com/icons",
         "tags": [
             "icons",
@@ -19,7 +17,6 @@
     },
     {
         "name": "Simple Icons",
-        "description": "SVG icons for popular brands.",
         "link": "https://simpleicons.org",
         "tags": [
             "icons",
@@ -28,7 +25,6 @@
     },
     {
         "name": "Tabler icons",
-        "description": "Highly customizable and free SVG icons.",
         "link": "https://tabler-icons.io",
         "tags": [
             "icons",
@@ -37,7 +33,6 @@
     },
     {
         "name": "SVG Repo",
-        "description": "Large collection of free SVG vectors and icons.",
         "link": "https://www.svgrepo.com",
         "tags": [
             "icons",
@@ -46,7 +41,6 @@
     },
     {
         "name": "Reshot",
-        "description": "Free SVG icons for commercial and non-commercial use.",
         "link": "https://www.reshot.com/free-svg-icons/",
         "tags": [
             "icons",
@@ -55,7 +49,6 @@
     },
     {
         "name": "Radix Icons",
-        "description": "A crisp set of 15×15 icons designed by the Modulz team.",
         "link": "https://www.radix-ui.com/icons",
         "tags": [
             "icons",
@@ -64,7 +57,6 @@
     },
     {
         "name": "Iconoir",
-        "description": "Simple and open-source icons library.",
         "link": "https://iconoir.com",
         "tags": [
             "icons",
@@ -73,7 +65,6 @@
     },
     {
         "name": "Hero Icons",
-        "description": "Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.",
         "link": "https://heroicons.com/",
         "tags": [
             "icons",
@@ -82,7 +73,6 @@
     },
     {
         "name": "Lucide",
-        "description": "A clean and consistent icon toolkit.",
         "link": "https://lucide.dev",
         "tags": [
             "icons",
@@ -91,7 +81,6 @@
     },
     {
         "name": "Phosphor",
-        "description": "Flexible icon family for interfaces, diagrams, presentations.",
         "link": "https://phosphoricons.com",
         "tags": [
             "icons",
@@ -100,7 +89,6 @@
     },
     {
         "name": "React Icons",
-        "description": "Include popular icons in your React projects easily.",
         "link": "https://react-icons.github.io/react-icons/",
         "tags": [
             "icons",
@@ -110,7 +98,6 @@
     },
     {
         "name": "Remix Icon",
-        "description": "Open-source neutral-style system icons.",
         "link": "https://remixicon.com/",
         "tags": [
             "icons",
@@ -119,7 +106,6 @@
     },
     {
         "name": "Feather Icons",
-        "description": "Simply beautiful open-source icons.",
         "link": "https://feathericons.com/",
         "tags": [
             "icons",
@@ -128,7 +114,6 @@
     },
     {
         "name": "Ionicons",
-        "description": "Premium designed icons for use in web, iOS, Android, and desktop apps.",
         "link": "https://ionic.io/ionicons",
         "tags": [
             "icons",
@@ -137,7 +122,6 @@
     },
     {
         "name": "Eva Icons",
-        "description": "A pack of more than 480 beautifully crafted Open Source icons.",
         "link": "https://akveo.github.io/eva-icons/",
         "tags": [
             "icons",
@@ -146,7 +130,6 @@
     },
     {
         "name": "svgl",
-        "description": "A collection of well-optimized SVG logos.",
         "link": "https://svgl.app",
         "tags": [
             "icons",
@@ -155,7 +138,6 @@
     },
     {
         "name": "Font Awesome Icons",
-        "description": "The iconic font and CSS toolkit.",
         "link": "https://fontawesome.com/icons",
         "tags": [
             "icons",
@@ -164,7 +146,6 @@
     },
     {
         "name": "useAnimations",
-        "description": "A collection of free animated icons.",
         "link": "https://useanimations.com",
         "tags": [
             "icons",
@@ -173,7 +154,6 @@
     },
     {
         "name": "MingCute Design",
-        "description": "A set of simple and elegant icons.",
         "link": "https://www.mingcute.com",
         "tags": [
             "icons",
@@ -182,7 +162,6 @@
     },
     {
         "name": "Carbon",
-        "description": "A set of clean and modern icons.",
         "link": "https://carbondesignsystem.com/elements/icons/library/",
         "tags": [
             "icons",
@@ -191,7 +170,6 @@
     },
     {
         "name": "Iconbuddy",
-        "description": "A large collection of free icons.",
         "link": "https://iconbuddy.app",
         "tags": [
             "icons",
@@ -200,7 +178,6 @@
     },
     {
         "name": "Animatedicons",
-        "description": "Free animated icons for personal and commercial use.",
         "link": "https://animatedicons.co/icons",
         "tags": [
             "icons",
@@ -209,7 +186,6 @@
     },
     {
         "name": "CSS Icons",
-        "description": "A collection of pure CSS icons.",
         "link": "https://css.gg/",
         "tags": [
             "icons",
@@ -218,7 +194,6 @@
     },
     {
         "name": "Boxicons",
-        "description": "Simple vector icons carefully crafted for designers and developers.",
         "link": "https://boxicons.com/",
         "tags": [
             "icons",
@@ -227,7 +202,6 @@
     },
     {
         "name": "Ikonate",
-        "description": "Fully customisable and accessible vector icons.",
         "link": "https://ikonate.com",
         "tags": [
             "icons",
@@ -236,7 +210,6 @@
     },
     {
         "name": "ManyPixels",
-        "description": "Free illustrations and icons for your projects.",
         "link": "https://www.manypixels.co/gallery",
         "tags": [
             "icons",
@@ -245,7 +218,6 @@
     },
     {
         "name": "Zondicons",
-        "description": "A set of free premium SVG icons.",
         "link": "http://www.zondicons.com/",
         "tags": [
             "icons",
@@ -254,7 +226,6 @@
     },
     {
         "name": "ICONSVG",
-        "description": "Quick customizable SVG icons for your projects.",
         "link": "https://iconsvg.xyz",
         "tags": [
             "icons",
@@ -263,7 +234,6 @@
     },
     {
         "name": "Streamline Icons",
-        "description": "A large collection of free icons.",
         "link": "https://www.streamlinehq.com",
         "tags": [
             "icons",
@@ -272,7 +242,6 @@
     },
     {
         "name": "TDesign Icons",
-        "description": "A set of icons designed by Tencent.",
         "link": "https://tdesign.tencent.com/design/icon",
         "tags": [
             "icons",
@@ -281,7 +250,6 @@
     },
     {
         "name": "3D Icons",
-        "description": "A collection of 3D icons for modern designs.",
         "link": "https://3dicons.co/",
         "tags": [
             "icons",
@@ -290,7 +258,6 @@
     },
     {
         "name": "Mage Icons",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://mageicons.com/",
         "tags": [
             "icons",
@@ -299,7 +266,6 @@
     },
     {
         "name": "Iconmonstr",
-        "description": "A large collection of free simple icons.",
         "link": "https://iconmonstr.com",
         "tags": [
             "icons",
@@ -308,7 +274,6 @@
     },
     {
         "name": "Drawkit",
-        "description": "Free illustrations and icons for personal and commercial use.",
         "link": "https://www.drawkit.com/illustration-types/icons",
         "tags": [
             "icons",
@@ -317,7 +282,6 @@
     },
     {
         "name": "Basicons",
-        "description": "A set of basic icons for web and mobile applications.",
         "link": "https://basicons.xyz",
         "tags": [
             "icons",
@@ -326,7 +290,6 @@
     },
     {
         "name": "Clarity",
-        "description": "A set of icons designed for clarity and simplicity.",
         "link": "https://clarity.design/documentation/icons/shapes",
         "tags": [
             "icons",
@@ -335,7 +298,6 @@
     },
     {
         "name": "Core UI Icons",
-        "description": "A set of premium icons for web and mobile applications.",
         "link": "https://coreui.io/icons/",
         "tags": [
             "icons",
@@ -344,7 +306,6 @@
     },
     {
         "name": "Unicorn icons",
-        "description": "A set of free animated icons.",
         "link": "https://unicornicons.com",
         "tags": [
             "icons",
@@ -353,7 +314,6 @@
     },
     {
         "name": "Bootstrap Icons",
-        "description": "Official open-source SVG icon library for Bootstrap.",
         "link": "https://icons.getbootstrap.com/",
         "tags": [
             "icons",
@@ -362,7 +322,6 @@
     },
     {
         "name": "Teenyicons",
-        "description": "A set of tiny minimal 1px icons.",
         "link": "https://teenyicons.com/",
         "tags": [
             "icons",
@@ -371,7 +330,6 @@
     },
     {
         "name": "Sargam Icons",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://sargamicons.com",
         "tags": [
             "icons",
@@ -380,7 +338,6 @@
     },
     {
         "name": "Keyicons",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://keyicons.com",
         "tags": [
             "icons",
@@ -389,7 +346,6 @@
     },
     {
         "name": "Zwicon",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "http://zwicon.com",
         "tags": [
             "icons",
@@ -398,7 +354,6 @@
     },
     {
         "name": "Notion-style Icons",
-        "description": "A set of free icons inspired by Notion.",
         "link": "https://maryamato88.gumroad.com/l/pbmkt",
         "tags": [
             "icons",
@@ -407,7 +362,6 @@
     },
     {
         "name": "Flagpack",
-        "description": "A set of free flag icons for web and mobile applications.",
         "link": "https://flagpack.xyz",
         "tags": [
             "icons",
@@ -416,7 +370,6 @@
     },
     {
         "name": "Grumpyicons",
-        "description": "A set of free scribble-style icons.",
         "link": "https://www.petrbilek.com/products/grumpyicons",
         "tags": [
             "icons",
@@ -425,7 +378,6 @@
     },
     {
         "name": "Icon Freebies Glimsy",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://orenjistudio.gumroad.com/l/glimsy",
         "tags": [
             "icons",
@@ -434,7 +386,6 @@
     },
     {
         "name": "Line Icon Pack",
-        "description": "A set of free line-style icons.",
         "link": "https://www.petrbilek.com/products/line-icon-pack",
         "tags": [
             "icons",
@@ -443,7 +394,6 @@
     },
     {
         "name": "Tilda Icons",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://tilda.cc/free-icons/",
         "tags": [
             "icons",
@@ -452,7 +402,6 @@
     },
     {
         "name": "Noun Project",
-        "description": "A large collection of icons created by a global community.",
         "link": "https://thenounproject.com/icons/",
         "tags": [
             "icons",
@@ -461,7 +410,6 @@
     },
     {
         "name": "IconaMoon",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://www.figma.com/community/file/1014143897459418663",
         "tags": [
             "icons",
@@ -470,7 +418,6 @@
     },
     {
         "name": "Solar",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://www.figma.com/community/file/1166831539721848736",
         "tags": [
             "icons",
@@ -479,7 +426,6 @@
     },
     {
         "name": "Icon Icons",
-        "description": "A large collection of free icons for web and mobile applications.",
         "link": "https://icon-icons.com",
         "tags": [
             "icons",
@@ -488,7 +434,6 @@
     },
     {
         "name": "FlatIcon",
-        "description": "A large collection of free icons for web and mobile applications.",
         "link": "https://www.flaticon.com/",
         "tags": [
             "icons",
@@ -497,7 +442,6 @@
     },
     {
         "name": "Iconscout",
-        "description": "A large collection of free icons for web and mobile applications.",
         "link": "https://iconscout.com/icons",
         "tags": [
             "icons",
@@ -506,7 +450,6 @@
     },
     {
         "name": "Untitled UI Icons",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://www.untitledui.com/icons",
         "tags": [
             "icons",
@@ -515,7 +458,6 @@
     },
     {
         "name": "Majesticons",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://www.majesticons.com",
         "tags": [
             "icons",
@@ -524,7 +466,6 @@
     },
     {
         "name": "Gravity UI",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://preview.gravity-ui.com/icons/",
         "tags": [
             "icons",
@@ -534,7 +475,6 @@
     },
     {
         "name": "Octicons",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://primer.style/foundations/icons",
         "tags": [
             "icons",
@@ -543,7 +483,6 @@
     },
     {
         "name": "SVG Flag Icons",
-        "description": "A set of free flag icons for web and mobile applications.",
         "link": "https://nucleoapp.com/svg-flag-icons",
         "tags": [
             "icons",
@@ -552,7 +491,6 @@
     },
     {
         "name": "Unicons",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://iconscout.com/unicons",
         "tags": [
             "icons",
@@ -561,7 +499,6 @@
     },
     {
         "name": "Iconic",
-        "description": "A set of free icons for web and mobile applications.",
         "link": "https://iconic.app/",
         "tags": [
             "icons",
@@ -570,7 +507,6 @@
     },
     {
         "name": "Isocons",
-        "description": "A set of free 3D icons for web and mobile applications.",
         "link": "https://www.isocons.app/",
         "tags": [
             "icons",

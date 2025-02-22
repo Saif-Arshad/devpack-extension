@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Wix ADI",
         "link": "https://www.wix.com/adi",
         "tags": [
@@ -10,8 +9,6 @@
         ]
     },
     {
-        "id": 2,
-        "name": "Bookmark (AIDA)",
         "link": "https://www.bookmark.com/ai-website-builder",
         "tags": [
             "free",
@@ -20,7 +17,6 @@
         ]
     },
     {
-        "id": 3,
         "name": "Zyro AI Website Builder",
         "link": "https://zyro.com/ai-website-builder",
         "tags": [
@@ -30,7 +26,6 @@
         ]
     },
     {
-        "id": 4,
         "name": "Firedrop",
         "link": "https://firedrop.ai",
         "tags": [
@@ -40,7 +35,6 @@
         ]
     },
     {
-        "id": 5,
         "name": "Jimdo Dolphin",
         "link": "https://www.jimdo.com/dolphin",
         "tags": [
@@ -50,7 +44,6 @@
         ]
     },
     {
-        "id": 6,
         "name": "SITE123",
         "link": "https://www.site123.com",
         "tags": [
@@ -61,7 +54,6 @@
     },
 
     {
-        "id": 7,
         "name": "Claude",
         "link": "https://claude.ai/",
         "tags": [
@@ -71,7 +63,6 @@
         ]
     },
     {
-        "id": 8,
         "name": "ChatGBT",
         "link": "http://chat.openai.com/",
         "tags": [
@@ -81,7 +72,6 @@
         ]
     },
     {
-        "id": 9,
         "name": "V0",
         "link": "https://v0.dev/",
         "tags": [
@@ -91,7 +81,6 @@
         ]
     },
     {
-        "id": 10,
         "name": "UI Builder",
         "link": "https://www.uibuilder.app/",
         "tags": [
@@ -101,7 +90,6 @@
         ]
     },
     {
-        "id": 11,
         "name": "Fly.dev",
         "link": "https://openui.fly.dev/ai/new",
         "tags": [
@@ -111,7 +99,6 @@
         ]
     },
     {
-        "id": 12,
         "name": "Bolt.new",
         "link": "https://bolt.new/",
         "tags": [
@@ -121,7 +108,6 @@
         ]
     },
     {
-        "id": 14,
         "name": "Napkin.AI",
         "link": "https://app.napkin.ai/",
         "tags": [
@@ -131,7 +117,6 @@
         ]
     },
     {
-        "id": 15,
         "name": "Uizard.IO",
         "link": "https://uizard.io/",
         "tags": [
@@ -141,7 +126,6 @@
         ]
     },
     {
-        "id": 15,
         "name": "Reweb.SO",
         "link": "https://www.reweb.so/",
         "tags": [
@@ -151,7 +135,6 @@
         ]
     },
     {
-        "id": 16,
         "name": "Uizard.IO",
         "link": "https://app.uizard.io/",
         "tags": [
@@ -161,7 +144,6 @@
         ]
     },
     {
-        "id": 18,
         "name": "llamacoder",
         "link": "https://llamacoder.together.ai/",
         "tags": [
@@ -171,7 +153,6 @@
         ]
     },
     {
-        "id": 17,
         "name": "Deepseek",
         "link": "https://chat.deepseek.com/",
         "tags": [

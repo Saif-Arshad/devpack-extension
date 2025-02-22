@@ -218,6 +218,7 @@ main {
 
 .resource-info {
     display: flex;
+    max-width: 75%;
     flex-direction: column;
     flex: 1;
 }
@@ -304,6 +305,18 @@ main {
     display: flex;
     gap: 2px;
     align-items: center;
+}
+
+.resource-link {
+    display: block;
+    flex: 1;
+    max-width: 90%;
+    color: #bbb;
+    font-size: 10px;
+    margin-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .title-page img {

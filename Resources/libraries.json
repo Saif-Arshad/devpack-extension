@@ -1,7 +1,6 @@
 [
     {
         "name": "Matter.js",
-        "description": "A JavaScript physics engine for creating interactive and dynamic web applications.",
         "link": "https://brm.io/matter-js/",
         "tags": [
             "Physics"
@@ -9,7 +8,6 @@
     },
     {
         "name": "react-magic-motion",
-        "description": "A React library offering magic-like motion animations to enhance user interactions.",
         "link": "https://www.react-magic-motion.com",
         "tags": [
             "Animation",
@@ -18,7 +16,6 @@
     },
     {
         "name": "useHooks",
-        "description": "A collection of custom React hooks to simplify state management and side effects.",
         "link": "https://usehooks.com",
         "tags": [
             "Hooks"
@@ -26,7 +23,6 @@
     },
     {
         "name": "AutoAnimate",
-        "description": "A React library that automatically adds smooth animations to your components.",
         "link": "https://auto-animate.formkit.com",
         "tags": [
             "Animations"
@@ -34,7 +30,6 @@
     },
     {
         "name": "Mousetrap",
-        "description": "A simple library for handling keyboard shortcuts in JavaScript applications.",
         "link": "https://craig.is/killing/mice",
         "tags": [
             "Keyboard shortcuts"
@@ -42,7 +37,6 @@
     },
     {
         "name": "next-video",
-        "description": "A video component library built for Next.js to seamlessly integrate video content.",
         "link": "https://next-video.dev",
         "tags": [
             "Video",
@@ -51,7 +45,6 @@
     },
     {
         "name": "Luxon",
-        "description": "A powerful library for working with dates and times in JavaScript.",
         "link": "https://moment.github.io/luxon/",
         "tags": [
             "Time",
@@ -60,7 +53,6 @@
     },
     {
         "name": "GSAP",
-        "description": "The GreenSock Animation Platform for creating high-performance animations in JavaScript.",
         "link": "https://gsap.com",
         "tags": [
             "Animations"
@@ -293,7 +285,6 @@
     },
     {
         "name": "react-spring",
-        "description": "A spring-physics based animation library for React applications.",
         "link": "https://www.react-spring.dev",
         "tags": [
             "Animations",
@@ -302,7 +293,6 @@
     },
     {
         "name": "Locomotive Scroll",
-        "description": "A smooth scrolling library with parallax effects for modern web experiences.",
         "link": "https://locomotivemtl.github.io/locomotive-scroll/",
         "tags": [
             "Scroll"
@@ -310,7 +300,6 @@
     },
     {
         "name": "Vaul",
-        "description": "A React-based drawer component library for building side navigation and menus.",
         "link": "https://vaul.emilkowal.ski",
         "tags": [
             "Drawer",
@@ -319,7 +308,6 @@
     },
     {
         "name": "Atropos",
-        "description": "A lightweight library for creating interactive parallax hover effects.",
         "link": "https://atroposjs.com",
         "tags": [
             "Parallax"
@@ -327,7 +315,6 @@
     },
     {
         "name": "Sandpack",
-        "description": "A live coding environment for embedding sandboxes and interactive code in web projects.",
         "link": "https://sandpack.codesandbox.io",
         "tags": [
             "Live coding"
@@ -335,7 +322,6 @@
     },
     {
         "name": "Framer Motion",
-        "description": "A production-ready motion library for React, offering simple yet powerful animation tools.",
         "link": "https://www.framer.com/motion/",
         "tags": [
             "Animations",
@@ -344,7 +330,6 @@
     },
     {
         "name": "RoughNotation",
-        "description": "A library for adding sketchy, hand-drawn annotations to web content.",
         "link": "https://roughnotation.com",
         "tags": [
             "Annotations"
@@ -352,7 +337,6 @@
     },
     {
         "name": "lightGallery",
-        "description": "A lightweight and modular JavaScript library for creating image galleries.",
         "link": "https://www.lightgalleryjs.com",
         "tags": [
             "Image gallery"
@@ -360,7 +344,6 @@
     },
     {
         "name": "PhotoSwipe",
-        "description": "A JavaScript image gallery for mobile and desktop with touch gestures support.",
         "link": "https://photoswipe.com",
         "tags": [
             "Image gallery"
@@ -368,7 +351,6 @@
     },
     {
         "name": "Plyr",
-        "description": "A simple, customizable, accessible media player for the web.",
         "link": "https://plyr.io",
         "tags": [
             "Media player"
@@ -376,7 +358,6 @@
     },
     {
         "name": "FilePond",
-        "description": "A flexible JavaScript file upload library with drag-and-drop functionality.",
         "link": "https://pqina.nl/filepond/",
         "tags": [
             "Uploads"
@@ -384,7 +365,6 @@
     },
     {
         "name": "yup",
-        "description": "A JavaScript schema builder for value parsing and validation.",
         "link": "https://github.com/jquense/yup",
         "tags": [
             "Form validation"
@@ -392,7 +372,6 @@
     },
     {
         "name": "Tempo",
-        "description": "A React library for handling time and date functionalities with ease.",
         "link": "https://tempo.formkit.com",
         "tags": [
             "Time",
@@ -401,7 +380,6 @@
     },
     {
         "name": "Editor.js",
-        "description": "A block-styled editor that enables developers to create rich content with a clean API.",
         "link": "https://editorjs.io",
         "tags": [
             "Block-style editor"
@@ -409,7 +387,6 @@
     },
     {
         "name": "tldraw SDK",
-        "description": "A toolkit for building interactive infinite canvas applications with custom drawings.",
         "link": "https://editorjs.io",
         "tags": [
             "Infinite canvas"
@@ -417,7 +394,6 @@
     },
     {
         "name": "Driver.js",
-        "description": "A lightweight, feature-rich library for creating guided tours and driving user focus on web pages.",
         "link": "https://driverjs.com",
         "tags": [
             "Drive user's focus"
@@ -425,7 +401,6 @@
     },
     {
         "name": "Tilt",
-        "description": "A lightweight parallax tilt effect library for creating interactive 3D effects on hover.",
         "link": "https://jdion.xyz/tilt",
         "tags": [
             "Parallax"
@@ -433,7 +408,6 @@
     },
     {
         "name": "swup",
-        "description": "A JavaScript library for adding smooth transitions to server-rendered pages.",
         "link": "https://swup.js.org/",
         "tags": [
             "Transitions for server-rendered pages"
@@ -441,7 +415,6 @@
     },
     {
         "name": "React Google Maps",
-        "description": "A React library for integrating Google Maps into your applications with ease.",
         "link": "https://visgl.github.io/react-google-maps/",
         "tags": [
             "Maps"
@@ -449,7 +422,6 @@
     },
     {
         "name": "Mapbox",
-        "description": "A powerful mapping and location platform for creating custom maps and location-based applications.",
         "link": "https://www.mapbox.com/",
         "tags": [
             "Maps"
@@ -457,7 +429,6 @@
     },
     {
         "name": "Draggable JS",
-        "description": "A JavaScript library for enabling drag-and-drop functionality in your web projects.",
         "link": "https://shopify.github.io/draggable/",
         "tags": [
             "Drag and drop"
@@ -465,7 +436,6 @@
     },
     {
         "name": "ipad-cursor",
-        "description": "A JavaScript library that emulates the iPad's mouse effect for enhanced user interactions.",
         "link": "https://cursor.oooo.so/",
         "tags": [
             "iPad's mouse effect"
@@ -473,7 +443,6 @@
     },
     {
         "name": "PDFSlick",
-        "description": "A library for viewing and interacting with PDFs directly within your web applications.",
         "link": "https://pdfslick.dev/",
         "tags": [
             "View and Interact with PDFs"
@@ -481,7 +450,6 @@
     },
     {
         "name": "Swiper",
-        "description": "A modern touch slider library for creating responsive and customizable sliders.",
         "link": "https://swiperjs.com/",
         "tags": [
             "Sliders"
@@ -489,7 +457,6 @@
     },
     {
         "name": "Haiku",
-        "description": "A React library providing hooks and utilities for building animated and interactive components.",
         "link": "https://www.reacthaiku.dev",
         "tags": [
             "React",
@@ -499,7 +466,6 @@
     },
     {
         "name": "COBE",
-        "description": "A WebGL globe visualization library for creating interactive 3D globes on the web.",
         "link": "https://cobe.vercel.app/",
         "tags": [
             "WebGL globe"
@@ -507,7 +473,6 @@
     },
     {
         "name": "MotionNumber for Framer Motion",
-        "description": "A utility for transitioning, formatting, and localizing numbers within Framer Motion animations.",
         "link": "https://motion-number.barvian.me/",
         "tags": [
             "Transition, format, and localize numbers"
@@ -515,7 +480,6 @@
     },
     {
         "name": "Tweakpane",
-        "description": "A GUI library for building developer-friendly controls and parameter tweaking interfaces.",
         "link": "https://tweakpane.github.io/docs/",
         "tags": [
             "GUI"
@@ -523,7 +487,6 @@
     },
     {
         "name": "Yoopta-Editor",
-        "description": "A rich-text editor library for creating feature-rich text editing experiences in web applications.",
         "link": "https://yoopta.dev/",
         "tags": [
             "Rich-text editor"

@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "TailAdmin",
         "link": "https://tailadmin.com/",
         "tags": [
@@ -17,7 +16,6 @@
         ]
     },
     {
-        "id": 2,
         "name": "TailBlocks",
         "link": "https://tailblocks.cc/",
         "tags": [
@@ -34,7 +32,6 @@
         ]
     },
     {
-        "id": 3,
         "name": "Creative Tim",
         "link": "https://www.creative-tim.com/twcomponents/",
         "tags": [
@@ -51,7 +48,6 @@
         ]
     },
     {
-        "id": 4,
         "name": "Tailwind templates",
         "link": "https://www.tailwindawesome.com/",
         "tags": [
@@ -68,7 +64,6 @@
         ]
     },
     {
-        "id": 5,
         "name": "Tailwind Elements",
         "link": "https://tw-elements.com/",
         "tags": [
@@ -85,7 +80,6 @@
         ]
     },
     {
-        "id": 6,
         "name": "Headless Ui",
         "link": "https://headlessui.com/",
         "tags": [
@@ -102,7 +96,6 @@
         ]
     },
     {
-        "id": 7,
         "name": "Tailwind Flex",
         "link": "https://tailwindflex.com/",
         "tags": [
@@ -119,7 +112,6 @@
         ]
     },
     {
-        "id": 8,
         "name": "Dev UI",
         "link": "https://www.devui.io/",
         "tags": [
@@ -136,7 +128,6 @@
         ]
     },
     {
-        "id": 9,
         "name": "ReadyMade UI",
         "link": "https://readymadeui.com/",
         "tags": [
@@ -153,7 +144,6 @@
         ]
     },
     {
-        "id": 10,
         "name": "Flowbite UI",
         "link": "https://flowbite.com/blocks/",
         "tags": [
@@ -170,7 +160,6 @@
         ]
     },
     {
-        "id": 11,
         "name": "Float UI",
         "link": "https://floatui.com/",
         "tags": [
@@ -187,7 +176,6 @@
         ]
     },
     {
-        "id": 12,
         "name": "Tailus UI",
         "link": "https://tailus.io/blocks",
         "tags": [
@@ -204,7 +192,6 @@
         ]
     },
     {
-        "id": 13,
         "name": "Oxbow UI",
         "link": "https://oxbowui.com/",
         "tags": [
@@ -221,7 +208,6 @@
         ]
     },
     {
-        "id": 14,
         "name": "Meraki UI",
         "link": "https://merakiui.com/",
         "tags": [
@@ -238,7 +224,6 @@
         ]
     },
     {
-        "id": 15,
         "name": "Tailbits UI",
         "link": "https://www.tailbits.com/kits/celebration",
         "tags": [
@@ -255,7 +240,6 @@
         ]
     },
     {
-        "id": 15,
         "name": "Mamba UI",
         "link": "https://mambaui.com/",
         "tags": [
@@ -272,7 +256,6 @@
         ]
     },
     {
-        "id": 15,
         "name": "Mamba UI",
         "link": "https://mambaui.com/",
         "tags": [
@@ -289,7 +272,6 @@
         ]
     },
     {
-        "id": 16,
         "name": "Devdojo UI",
         "link": "https://devdojo.com/tailwindcss/buttons",
         "tags": [
@@ -306,7 +288,6 @@
         ]
     },
     {
-        "id": 17,
         "name": "Pines UI",
         "link": "https://devdojo.com/pines/docs",
         "tags": [
@@ -323,7 +304,6 @@
         ]
     },
     {
-        "id": 18,
         "name": "Pagedone UI",
         "link": "https://pagedone.io/",
         "tags": [
@@ -340,7 +320,6 @@
         ]
     },
     {
-        "id": 19,
         "name": "Flash UI",
         "link": "https://flashui.site/blocks",
         "tags": [
@@ -357,7 +336,6 @@
         ]
     },
     {
-        "id": 20,
         "name": "Components.work UI",
         "link": "https://components.work/",
         "tags": [
@@ -374,7 +352,6 @@
         ]
     },
     {
-        "id": 21,
         "name": "Componets Land UI",
         "link": "https://componentland.com/",
         "tags": [

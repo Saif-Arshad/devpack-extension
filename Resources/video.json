@@ -1,73 +1,61 @@
 [
     {
         "name": "Pixabay",
-        "description": "A vast collection of free stock videos available for commercial and noncommercial use without requiring attribution.",
         "link": "https://pixabay.com/videos/",
         "tags": []
     },
     {
         "name": "Pexels",
-        "description": "A comprehensive library of free stock videos available for personal and commercial use without the need for attribution.",
         "link": "https://www.pexels.com/videos/",
         "tags": []
     },
     {
         "name": "Coverr",
-        "description": "A collection of free stock videos that can be used for both commercial and non-commercial projects without requiring attribution.",
         "link": "https://coverr.co",
         "tags": []
     },
     {
         "name": "ISO Republic",
-        "description": "A rich source of free stock videos available under the CC0 license for unrestricted use in your projects.",
         "link": "https://isorepublic.com",
         "tags": []
     },
     {
         "name": "Focastock",
-        "description": "A diverse collection of free stock videos available under the CC0 license, suitable for any project.",
         "link": "https://focastock.com/videos/",
         "tags": []
     },
     {
         "name": "Videezy",
-        "description": "A platform offering a wide range of free and premium stock videos with various licensing options to suit your needs.",
         "link": "https://www.videezy.com",
         "tags": []
     },
     {
         "name": "Mixkit",
-        "description": "A free stock video site providing high-quality videos for personal and commercial use under the Mixkit Stock Video Free License.",
         "link": "https://mixkit.co/free-stock-video/",
         "tags": []
     },
     {
         "name": "Vidsplay",
-        "description": "A collection of free stock videos available with attribution, suitable for both personal and commercial projects.",
         "link": "https://www.vidsplay.com/",
         "tags": []
     },
     {
         "name": "Dareful",
-        "description": "A source of free stock videos available under the CC BY 4.0 DEED license, allowing for creative use with attribution.",
         "link": "https://dareful.com",
         "tags": []
     },
     {
         "name": "Mazwai",
-        "description": "A platform offering free stock videos with multiple licensing options, including CC-BY 3.0 with attribution and Mazwai License without attribution.",
         "link": "https://mazwai.com",
         "tags": []
     },
     {
         "name": "Vimeo",
-        "description": "A community group on Vimeo providing free HD stock videos for use in various projects.",
         "link": "https://vimeo.com/groups/freehd/",
         "tags": []
     },
     {
         "name": "Videvo",
-        "description": "A resource for free stock videos available under multiple licenses, including Videvo Attribution License and CC BY 3.0.",
         "link": "https://www.videvo.net",
         "tags": []
     }

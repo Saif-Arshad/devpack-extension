@@ -1,19 +1,16 @@
 [
     {
         "name": "Google fonts",
-        "description": "A comprehensive library of free and open-source fonts available for web and graphic design projects.",
         "link": "https://fonts.google.com/",
         "tags": []
     },
     {
         "name": "Fontsource",
-        "description": "A repository offering self-hosted open-source fonts with easy integration into your projects.",
         "link": "https://fontsource.org",
         "tags": []
     },
     {
         "name": "Typewolf",
-        "description": "A curated typography resource providing inspiration and recommendations for beautiful fonts.",
         "link": "https://www.typewolf.com/",
         "tags": [
             "Inspiration"
@@ -21,7 +18,6 @@
     },
     {
         "name": "Typo/graphic",
-        "description": "A collection of typographic and graphic designs to inspire your creative projects.",
         "link": "https://www.typographicposters.com",
         "tags": [
             "Inspiration"
@@ -29,31 +25,26 @@
     },
     {
         "name": "Fontshare",
-        "description": "A platform offering a wide selection of free fonts for personal and commercial use.",
         "link": "https://www.fontshare.com",
         "tags": []
     },
     {
         "name": "Fontpair",
-        "description": "A resource for pairing fonts effectively to create visually appealing designs.",
         "link": "https://www.fontpair.co",
         "tags": []
     },
     {
         "name": "Free Faces",
-        "description": "A free collection of unique and stylish fonts for various design needs.",
         "link": "https://www.freefaces.gallery",
         "tags": []
     },
     {
         "name": "Font Meme",
-        "description": "A tool for creating custom text graphics and memes using a variety of fonts.",
         "link": "https://fontmeme.com",
         "tags": []
     },
     {
         "name": "Fontjoy",
-        "description": "A tool for generating harmonious font pairings to enhance your design projects.",
         "link": "https://fontjoy.com",
         "tags": [
             "Tool"
@@ -61,7 +52,6 @@
     },
     {
         "name": "Font style matcher",
-        "description": "A utility for matching and selecting font styles to achieve the desired aesthetic.",
         "link": "https://meowni.ca/font-style-matcher/",
         "tags": [
             "Tool"
@@ -69,13 +59,11 @@
     },
     {
         "name": "Fonts In Use",
-        "description": "A comprehensive database showcasing how different fonts are utilized in real-world projects.",
         "link": "https://fontsinuse.com",
         "tags": []
     },
     {
         "name": "Fluid typography",
-        "description": "A tool for creating responsive and scalable typography that adapts to different screen sizes.",
         "link": "https://modern-fluid-typography.vercel.app",
         "tags": [
             "Tool"
@@ -83,25 +71,21 @@
     },
     {
         "name": "DaFont",
-        "description": "A popular platform offering a vast collection of free and downloadable fonts for personal use.",
         "link": "https://www.dafont.com",
         "tags": []
     },
     {
         "name": "OnlineWebFonts.COM",
-        "description": "A resource for downloading a wide variety of free fonts for web and graphic design projects.",
         "link": "https://www.onlinewebfonts.com/fonts",
         "tags": []
     },
     {
         "name": "UNCUT.wtf",
-        "description": "A creative platform offering unique and unconventional font designs for your projects.",
         "link": "https://uncut.wtf/",
         "tags": []
     },
     {
         "name": "Beautiful web type",
-        "description": "An inspirational collection of beautiful typography examples for modern web design.",
         "link": "https://beautifulwebtype.com/",
         "tags": [
             "Inspiration"
@@ -109,7 +93,6 @@
     },
     {
         "name": "Font Brief",
-        "description": "A tool for generating detailed font pairings and combinations to enhance your design workflow.",
         "link": "https://www.fontbrief.com/home",
         "tags": [
             "Tool"
@@ -117,7 +100,6 @@
     },
     {
         "name": "Font Pairings",
-        "description": "A freemium tool that helps you find the perfect font pairings for your design projects.",
         "link": "https://fontpairings.bypeople.com/",
         "tags": [
             "Tool"
@@ -125,13 +107,11 @@
     },
     {
         "name": "Fonts in the Wild",
-        "description": "A curated collection of fonts used in real-world projects, showcasing their versatility and application.",
         "link": "https://www.fontsinthewild.com/free",
         "tags": []
     },
     {
         "name": "Archetype",
-        "description": "A tool for creating and managing custom font archetypes to streamline your typography workflow.",
         "link": "https://archetypeapp.com/",
         "tags": [
             "Tool"
@@ -139,7 +119,6 @@
     },
     {
         "name": "Typescale",
-        "description": "A plugin for designing scalable and responsive type systems effortlessly.",
         "link": "https://typescale.io/",
         "tags": [
             "Plugin"
@@ -147,13 +126,11 @@
     },
     {
         "name": "Font.Download",
-        "description": "A platform offering a wide range of free fonts available for download and use in your projects.",
         "link": "https://font.download/",
         "tags": []
     },
     {
         "name": "Modern Font Stacks",
-        "description": "A resource for creating modern and efficient CSS font stacks for web development.",
         "link": "https://modernfontstacks.com/",
         "tags": [
             "CSS"
@@ -161,7 +138,6 @@
     },
     {
         "name": "Typefaces.today",
-        "description": "A curated selection of modern typefaces available for various design needs.",
         "link": "https://typefaces.today/",
         "tags": []
     }

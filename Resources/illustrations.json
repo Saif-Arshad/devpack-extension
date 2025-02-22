@@ -1,67 +1,56 @@
 [
     {
         "name": "transhumans",
-        "description": "A collection of futuristic illustrations available for various creative projects.",
         "link": "https://www.transhumans.xyz",
         "tags": []
     },
     {
         "name": "Open Doodles",
-        "description": "A free set of customizable, hand-drawn illustrations perfect for enhancing your designs.",
         "link": "https://www.opendoodles.com",
         "tags": []
     },
     {
         "name": "Open Peeps",
-        "description": "A hand-drawn illustration library that allows you to customize characters for your projects.",
         "link": "https://www.openpeeps.com",
         "tags": []
     },
     {
         "name": "Reshot",
-        "description": "A curated collection of free illustrations for commercial and non-commercial use.",
         "link": "https://www.reshot.com/free-vector-illustrations/",
         "tags": []
     },
     {
         "name": "IllustrationKit",
-        "description": "A versatile set of illustrations available for personal and client projects without requiring attribution.",
         "link": "https://illustrationkit.com",
         "tags": []
     },
     {
         "name": "Humaaans",
-        "description": "A library of mix-and-match illustrations of people, ideal for creating diverse and dynamic designs.",
         "link": "https://www.humaaans.com/",
         "tags": []
     },
     {
         "name": "CocoMaterial",
-        "description": "A collection of free, customizable illustrations perfect for various design needs.",
         "link": "https://cocomaterial.com",
         "tags": []
     },
     {
         "name": "DrawKit",
-        "description": "A free resource offering a wide range of illustrations suitable for both personal and commercial projects.",
         "link": "https://www.drawkit.com/?pricing-type=Free",
         "tags": []
     },
     {
         "name": "Iradesign",
-        "description": "A comprehensive library of free illustrations available for use in diverse design projects.",
         "link": "https://iradesign.io",
         "tags": []
     },
     {
         "name": "SVG Repo",
-        "description": "A vast repository of free SVG illustrations and icons for use in web and graphic design.",
         "link": "https://www.svgrepo.com",
         "tags": []
     },
     {
         "name": "Scribbles",
-        "description": "A playful collection of doodle-style illustrations to add a creative touch to your projects.",
         "link": "https://illustrations.run",
         "tags": [
             "Doodles"
@@ -69,13 +58,11 @@
     },
     {
         "name": "Illlustrations",
-        "description": "A diverse set of free illustrations available for personal and commercial use.",
         "link": "https://illlustrations.co/",
         "tags": []
     },
     {
         "name": "Big Heads",
-        "description": "A customizable avatar package offering a variety of head illustrations for personal branding.",
         "link": "https://bigheads.io",
         "tags": [
             "Avatars",
@@ -84,7 +71,6 @@
     },
     {
         "name": "Notion Avatar Maker",
-        "description": "Create personalized avatars easily with this intuitive avatar maker tool.",
         "link": "https://notion-avatar.vercel.app",
         "tags": [
             "Avatars"
@@ -92,19 +78,16 @@
     },
     {
         "name": "Pixabay",
-        "description": "A comprehensive collection of free illustrations and vectors available for any project.",
         "link": "https://pixabay.com/illustrations/",
         "tags": []
     },
     {
         "name": "Pixelsmarket",
-        "description": "A gallery of free illustrations suitable for both commercial and personal use without attribution.",
         "link": "https://pixels.market/",
         "tags": []
     },
     {
         "name": "Shapes",
-        "description": "A set of logo-style illustrations perfect for branding and design projects.",
         "link": "https://shapes.framer.website",
         "tags": [
             "Logos"
@@ -112,13 +95,11 @@
     },
     {
         "name": "Freeillustrations",
-        "description": "A versatile collection of free illustrations catering to various design needs.",
         "link": "https://www.freeillustrations.club",
         "tags": []
     },
     {
         "name": "Doodle Ipsum",
-        "description": "Generate placeholder doodle illustrations for your design mockups and prototypes.",
         "link": "https://doodleipsum.com",
         "tags": [
             "Doodles"
@@ -126,37 +107,31 @@
     },
     {
         "name": "Flexiple illustrations",
-        "description": "A set of free illustrations available for both commercial and personal projects without the need for attribution.",
         "link": "https://flexiple.com/illustrations/",
         "tags": []
     },
     {
         "name": "unDraw",
-        "description": "A constantly updated collection of beautiful svg images that you can use completely free and without attribution.",
         "link": "https://undraw.co/illustrations",
         "tags": []
     },
     {
         "name": "Theme Isle",
-        "description": "Free illustrations designed to enhance your website's visual appeal, suitable for various themes.",
         "link": "https://themeisle.com/illustrations/",
         "tags": []
     },
     {
         "name": "Surface Pack",
-        "description": "A collection of free illustrations available for download and use in your design projects.",
         "link": "https://www.figma.com/community/file/883778082594341562",
         "tags": []
     },
     {
         "name": "Ultima",
-        "description": "A set of free illustrations suitable for any commercial and personal projects.",
         "link": "https://ultima.storytale.io",
         "tags": []
     },
     {
         "name": "Heritage Library",
-        "description": "Vintage-style illustrations available for commercial and personal use with specific licensing terms.",
         "link": "https://www.heritagetype.com/pages/free-vintage-illustrations",
         "tags": [
             "Vintage"
@@ -164,7 +139,6 @@
     },
     {
         "name": "Svg Doodle",
-        "description": "A playful collection of SVG doodles perfect for adding character to your designs.",
         "link": "https://svgicon.net",
         "tags": [
             "Doodles"
@@ -172,13 +146,11 @@
     },
     {
         "name": "Open Stickers",
-        "description": "A free collection of sticker-style illustrations for enhancing your creative projects.",
         "link": "https://openstickers.craftwork.design/",
         "tags": []
     },
     {
         "name": "Highlights",
-        "description": "A set of free vintage-style illustrations suitable for various design applications.",
         "link": "https://www.highlights.design",
         "tags": [
             "Vintage"
@@ -186,7 +158,6 @@
     },
     {
         "name": "Comic Book Illustrations",
-        "description": "A collection of comic-style illustrations available for use in your creative projects.",
         "link": "https://oblikstudio.gumroad.com/l/lmYSZ",
         "tags": [
             "Comic"
@@ -194,25 +165,21 @@
     },
     {
         "name": "Illustrations vol.1",
-        "description": "A free set of illustrations available for both personal and commercial projects without the need for attribution.",
         "link": "https://petrbilek.gumroad.com/l/illustrations-vol-1",
         "tags": []
     },
     {
         "name": "Halftone Illustrations",
-        "description": "A set of unique halftone-style illustrations perfect for modern design projects.",
         "link": "https://oblikstudio.gumroad.com/l/QZlSv",
         "tags": []
     },
     {
         "name": "404 Illustrations",
-        "description": "Creative illustrations specifically designed for 404 error pages to enhance user experience.",
         "link": "https://error404.fun/",
         "tags": []
     },
     {
         "name": "LottieFiles",
-        "description": "A vast library of animated illustrations and vector animations for enhancing your web and mobile projects.",
         "link": "https://lottiefiles.com/featured",
         "tags": [
             "Animated"
@@ -220,7 +187,6 @@
     },
     {
         "name": "Public Work by Cosmos",
-        "description": "A collection of vintage-style illustrations available for various creative uses.",
         "link": "https://public.work/",
         "tags": [
             "Vintage"
@@ -228,19 +194,16 @@
     },
     {
         "name": "Remote Work Illustrations",
-        "description": "A set of illustrations depicting remote work scenarios, ideal for modern workplace designs.",
         "link": "https://oblikstudio.gumroad.com/l/remote-work-illustrations-by-oblik-studio",
         "tags": []
     },
     {
         "name": "Sneakers Vector Set",
-        "description": "A vector set of sneakers illustrations perfect for fashion and retail projects.",
         "link": "https://oblikstudio.gumroad.com/l/sneakers-vector-set",
         "tags": []
     },
     {
         "name": "Avatar U",
-        "description": "A free collection of customizable avatars available for various design needs.",
         "link": "https://avatar-u.webflow.io",
         "tags": [
             "Avatars"
@@ -248,13 +211,11 @@
     },
     {
         "name": "Flower Patterns",
-        "description": "A set of beautiful flower pattern illustrations suitable for various design projects.",
         "link": "https://www.figma.com/community/file/998877405686984862",
         "tags": []
     },
     {
         "name": "SVG DOODLES",
-        "description": "A playful collection of SVG doodles perfect for adding charm to your designs.",
         "link": "https://svgdoodles.com",
         "tags": [
             "Doodles"
@@ -262,19 +223,16 @@
     },
     {
         "name": "Fresh Folk",
-        "description": "A set of free illustrations available for use in various personal and commercial projects.",
         "link": "https://kapustinco.gumroad.com/l/IRkNK",
         "tags": []
     },
     {
         "name": "Humanities",
-        "description": "A collection of free illustrations focused on humanities themes, available for use with attribution.",
         "link": "https://levinunnink.gumroad.com/l/humanities-illustrations",
         "tags": []
     },
     {
         "name": "Logoipsum",
-        "description": "A placeholder logo generator offering a variety of logo-style illustrations for mockups.",
         "link": "https://logoipsum.com/",
         "tags": [
             "Placeholder logos"
@@ -282,43 +240,36 @@
     },
     {
         "name": "Sketchvalley",
-        "description": "A free resource offering sketch-style illustrations for creative projects.",
         "link": "https://sketchvalley.com",
         "tags": []
     },
     {
         "name": "Designs AI",
-        "description": "An AI-powered graphic maker providing free illustrations with attribution requirements.",
         "link": "https://designs.ai/graphicmaker",
         "tags": []
     },
     {
         "name": "Iconfinder",
-        "description": "A vast collection of free and premium icons and illustrations suitable for various design needs.",
         "link": "https://www.iconfinder.com/search?q=&price=free",
         "tags": []
     },
     {
         "name": "Streamline Illustrations",
-        "description": "A comprehensive set of free illustrations available for both personal and commercial use with attribution.",
         "link": "https://www.streamlinehq.com/illustrations",
         "tags": []
     },
     {
         "name": "Cartoon Hands",
-        "description": "A collection of hand-drawn cartoon hand illustrations perfect for adding personality to your designs.",
         "link": "https://www.figma.com/community/file/990218169140929445",
         "tags": []
     },
     {
         "name": "Porto Illustrations",
-        "description": "A diverse set of free illustrations available for use in various creative projects.",
         "link": "https://kapustinco.gumroad.com/l/xHIbD",
         "tags": []
     },
     {
         "name": "Notion Avatar",
-        "description": "A set of avatar illustrations designed specifically for use with Notion and other platforms.",
         "link": "https://www.figma.com/community/file/1159777445438667306",
         "tags": [
             "Avatars"
@@ -326,13 +277,11 @@
     },
     {
         "name": "Lifestyle Illustrations",
-        "description": "A collection of lifestyle-themed illustrations perfect for blogs, websites, and marketing materials.",
         "link": "https://kapustinco.gumroad.com/l/IRkNK",
         "tags": []
     },
     {
         "name": "Storyset",
-        "description": "A free library of customizable illustrations for enhancing your stories and presentations.",
         "link": "https://storyset.com",
         "tags": [],
         "license": "Free with attribution.",
@@ -340,7 +289,6 @@
     },
     {
         "name": "SVG Hub",
-        "description": "A repository of free SVG illustrations and icons available for various design projects.",
         "link": "https://svghub.vercel.app",
         "tags": [
             "Doodles"
@@ -348,7 +296,6 @@
     },
     {
         "name": "Free Userpics Pack",
-        "description": "A pack of free user avatar illustrations ideal for profiles and user interfaces.",
         "link": "https://userpics.craftwork.design/",
         "tags": [
             "Avatars"
@@ -356,7 +303,6 @@
     },
     {
         "name": "Memojis",
-        "description": "A collection of customizable memoji-style avatars for personal and professional use.",
         "link": "https://www.figma.com/community/plugin/1090391796325905912/memojis",
         "tags": [
             "Avatars",
@@ -365,7 +311,6 @@
     },
     {
         "name": "Shapefest",
-        "description": "A set of 3D illustrations available for commercial use under the Shapefest™ Commercial License.",
         "link": "https://www.shapefest.com",
         "tags": [
             "3D"
@@ -373,7 +318,6 @@
     },
     {
         "name": "Items.Design",
-        "description": "A collection of free and premium 3D and AI-driven illustrations for various design needs.",
         "link": "https://items.design/category/free",
         "tags": [
             "3D",
@@ -382,31 +326,26 @@
     },
     {
         "name": "LukaszAdam Illustrations",
-        "description": "A free set of illustrations available for personal and commercial use without attribution.",
         "link": "https://lukaszadam.com/illustrations",
         "tags": []
     },
     {
         "name": "Personas by Draftbit",
-        "description": "A collection of persona illustrations designed to enhance user profiles and interfaces.",
         "link": "https://personas.draftbit.com/",
         "tags": []
     },
     {
         "name": "Khagwal 3D",
-        "description": "A free collection of 3D illustrations available for use in various creative projects.",
         "link": "https://3d.khagwal.com/",
         "tags": []
     },
     {
         "name": "GEE! ME",
-        "description": "A set of free illustrations available for use in personal and commercial projects.",
         "link": "https://geeme.vercel.app/",
         "tags": []
     },
     {
         "name": "Kapwing",
-        "description": "A free set of 404 illustrations perfect for enhancing error pages and user experiences.",
         "link": "https://www.kapwing.com/404-illustrations",
         "tags": [
             "404"
@@ -414,7 +353,6 @@
     },
     {
         "name": "coolshapes",
-        "description": "A collection of logo and package illustrations designed to add flair to your branding.",
         "link": "https://coolshap.es/",
         "tags": [
             "Package",
@@ -423,7 +361,6 @@
     },
     {
         "name": "uilogos",
-        "description": "A diverse set of placeholder logos available for use in design mockups and prototypes.",
         "link": "https://www.uilogos.co/",
         "tags": [
             "Placeholder logos"
@@ -431,7 +368,6 @@
     },
     {
         "name": "illustrations universe",
-        "description": "An inspirational collection of illustrations catering to various creative needs.",
         "link": "https://illustrationsuniverse.com/",
         "tags": [
             "Inspiration"
@@ -439,7 +375,6 @@
     },
     {
         "name": "Hand Drawn Arrows",
-        "description": "A free collection of hand-drawn arrow illustrations perfect for enhancing your designs.",
         "link": "https://handyarrows.com/",
         "tags": []
     }
