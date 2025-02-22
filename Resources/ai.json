@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "name": "OpenAI",
+        "link": "https://openai.com",
+        "tags": [
+            "ai",
+            "machine learning",
+            "nlp"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Hugging Face",
+        "link": "https://huggingface.co",
+        "tags": [
+            "ai",
+            "machine learning",
+            "transformers"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "IBM Watson",
+        "link": "https://www.ibm.com/watson",
+        "tags": [
+            "ai",
+            "machine learning",
+            "cloud"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Google Cloud AI Platform",
+        "link": "https://cloud.google.com/ai-platform",
+        "tags": [
+            "ai",
+            "machine learning",
+            "cloud"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Microsoft Azure AI",
+        "link": "https://azure.microsoft.com/en-us/services/cognitive-services/",
+        "tags": [
+            "ai",
+            "machine learning",
+            "cognitive services"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Amazon SageMaker",
+        "link": "https://aws.amazon.com/sagemaker/",
+        "tags": [
+            "ai",
+            "machine learning",
+            "cloud"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "DataRobot",
+        "link": "https://www.datarobot.com/",
+        "tags": [
+            "ai",
+            "automation",
+            "machine learning"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "H2O.ai",
+        "link": "https://www.h2o.ai/",
+        "tags": [
+            "ai",
+            "machine learning",
+            "open-source"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "RapidMiner",
+        "link": "https://rapidminer.com/",
+        "tags": [
+            "ai",
+            "data science",
+            "machine learning"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "KNIME",
+        "link": "https://www.knime.com/",
+        "tags": [
+            "ai",
+            "data science",
+            "machine learning"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Peltarion",
+        "link": "https://peltarion.com/",
+        "tags": [
+            "ai",
+            "deep learning",
+            "cloud"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Lobe",
+        "link": "https://www.lobe.ai/",
+        "tags": [
+            "ai",
+            "machine learning",
+            "visual"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Clarifai",
+        "link": "https://www.clarifai.com/",
+        "tags": [
+            "ai",
+            "computer vision",
+            "machine learning"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "BigML",
+        "link": "https://bigml.com/",
+        "tags": [
+            "ai",
+            "machine learning",
+            "data science"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Algorithmia",
+        "link": "https://algorithmia.com/",
+        "tags": [
+            "ai",
+            "machine learning",
+            "deployment"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "C3.ai",
+        "link": "https://c3.ai/",
+        "tags": [
+            "ai",
+            "enterprise",
+            "cloud"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Seldon",
+        "link": "https://www.seldon.io/",
+        "tags": [
+            "ai",
+            "machine learning",
+            "deployment"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Viso Suite",
+        "link": "https://viso.ai/",
+        "tags": [
+            "ai",
+            "computer vision",
+            "machine learning"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Spell",
+        "link": "https://spell.run/",
+        "tags": [
+            "ai",
+            "machine learning",
+            "experimentation"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Weights & Biases",
+        "link": "https://www.wandb.com/",
+        "tags": [
+            "ai",
+            "machine learning",
+            "tracking"
+        ]
+    }
+]

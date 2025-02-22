@@ -1,15 +1,5 @@
 [
     {
-        "name": "shadcn/ui",
-        "description": "A set of accessible and customizable React components built with Tailwind CSS and Chart.js integration.",
-        "link": "https://ui.shadcn.com",
-        "tags": [
-            "React",
-            "Tailwind",
-            "Chart"
-        ]
-    },
-    {
         "name": "Radix UI",
         "description": "Primitives for building high-quality, accessible UI components in React.",
         "link": "https://www.radix-ui.com",
@@ -17,6 +7,63 @@
             "React"
         ]
     },
+    {
+        "name": "FLyon UI",
+        "link": "https://flyonui.com/",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "prismane UI",
+        "link": "https://www.prismane.io/docs/getting-started/introduction",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "Ant Design",
+        "link": "https://ant.design/",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "Semantic Ui",
+        "link": "https://react.semantic-ui.com/",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "Blueprintjs Ui",
+        "link": "https://blueprintjs.com/",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "Ripple Ui",
+        "link": "https://www.ripple-ui.com/",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "Grommet Ui",
+        "link": "https://v2.grommet.io/",
+        "tags": [
+            "React"
+        ]
+    },
+    {
+        "name": "Atlassian Ui",
+        "link": "https://atlassian.design/components",
+        "tags": [
+            "React"
+        ]
+    },
+
     {
         "name": "NextUI",
         "description": "A modern and responsive UI library for React applications, styled with Tailwind CSS.",
@@ -54,16 +101,7 @@
         "link": "https://component.gallery/components/",
         "tags": []
     },
-    {
-        "name": "Headless UI",
-        "description": "Unstyled, accessible UI components designed to integrate seamlessly with Tailwind CSS.",
-        "link": "https://headlessui.com",
-        "tags": [
-            "Tailwind",
-            "React",
-            "Vue"
-        ]
-    },
+
     {
         "name": "Mantine UI",
         "description": "A React components and hooks library that emphasizes usability and customization.",
@@ -377,15 +415,7 @@
             "HTML"
         ]
     },
-    {
-        "name": "Flowbite",
-        "description": "Tailwind CSS components and interactive elements for building modern web interfaces.",
-        "link": "https://flowbite.com",
-        "tags": [
-            "Tailwind",
-            "HTML"
-        ]
-    },
+  
     {
         "name": "Lightweight charts",
         "description": "A lightweight charting library for integrating responsive charts into web applications.",
@@ -542,17 +572,7 @@
             "React"
         ]
     },
-    {
-        "name": "Magic UI",
-        "description": "A Tailwind CSS and React-based UI library with TypeScript support and Framer integrations.",
-        "link": "https://magicui.design/",
-        "tags": [
-            "Tailwind",
-            "React",
-            "Typescript",
-            "Framer"
-        ]
-    },
+ 
     {
         "name": "AnimatiSS",
         "description": "A CSS-based animation library for creating smooth and engaging UI transitions.",
@@ -582,16 +602,7 @@
             "Tailwind"
         ]
     },
-    {
-        "name": "Tailbits",
-        "description": "Tailwind CSS templates and components designed for rapid website and application development.",
-        "link": "https://www.tailbits.com",
-        "tags": [
-            "Templates",
-            "Tailwind",
-            "HTML"
-        ]
-    },
+
     {
         "name": "React Bits",
         "description": "A collection of React components focused on animations and interactive UI elements.",
@@ -602,27 +613,15 @@
         ]
     },
     {
-        "name": "Cuicui",
-        "description": "A TypeScript and Tailwind CSS-based React library emphasizing motion and dynamic UI elements.",
-        "link": "https://cuicui.day",
+        "name": "React Keep",
+        "link": "https://react.keepdesign.io/",
         "tags": [
             "React",
-            "Typescript",
-            "Motion",
-            "Tailwind"
+            "Animations"
         ]
     },
-    {
-        "name": "Eldora UI",
-        "description": "A Tailwind CSS and React-based UI library with TypeScript support and Framer integrations.",
-        "link": "https://eldoraui.site/",
-        "tags": [
-            "Tailwind",
-            "React",
-            "Typescript",
-            "Framer"
-        ]
-    },
+ 
+
     {
         "name": "Justd",
         "description": "A Tailwind CSS and React-based UI library focused on accessibility and ARIA compliance.",

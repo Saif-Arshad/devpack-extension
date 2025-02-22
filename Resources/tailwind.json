@@ -1,0 +1,393 @@
+[
+    {
+        "id": 1,
+        "name": "TailAdmin",
+        "link": "https://tailadmin.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "TailBlocks",
+        "link": "https://tailblocks.cc/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Creative Tim",
+        "link": "https://www.creative-tim.com/twcomponents/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Tailwind templates",
+        "link": "https://www.tailwindawesome.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Tailwind Elements",
+        "link": "https://tw-elements.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Headless Ui",
+        "link": "https://headlessui.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Tailwind Flex",
+        "link": "https://tailwindflex.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Dev UI",
+        "link": "https://www.devui.io/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "ReadyMade UI",
+        "link": "https://readymadeui.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Flowbite UI",
+        "link": "https://flowbite.com/blocks/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Float UI",
+        "link": "https://floatui.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Tailus UI",
+        "link": "https://tailus.io/blocks",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Oxbow UI",
+        "link": "https://oxbowui.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Meraki UI",
+        "link": "https://merakiui.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Tailbits UI",
+        "link": "https://www.tailbits.com/kits/celebration",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Mamba UI",
+        "link": "https://mambaui.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Mamba UI",
+        "link": "https://mambaui.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Devdojo UI",
+        "link": "https://devdojo.com/tailwindcss/buttons",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Pines UI",
+        "link": "https://devdojo.com/pines/docs",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Pagedone UI",
+        "link": "https://pagedone.io/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Flash UI",
+        "link": "https://flashui.site/blocks",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Components.work UI",
+        "link": "https://components.work/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Componets Land UI",
+        "link": "https://componentland.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    }
+]

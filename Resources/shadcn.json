@@ -1,0 +1,65 @@
+[
+    {
+        "name": "shadcn/ui",
+        "link": "https://ui.shadcn.com",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Chart"
+        ]
+    },
+    {
+        "name": "AwesomeShadcn UI",
+        "link": "https://shadcn.batchtool.com/",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Chart"
+        ]
+    },
+    {
+        "name": "awesome-shadcn/ui",
+        "link": "https://awesome-shadcn-ui.vercel.app/",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Chart"
+        ]
+    },
+    {
+        "name": "Shadcn Extension",
+        "link": "https://shadcn-extension.vercel.app/",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Chart"
+        ]
+    },
+    {
+        "name": "Shadcn additional resources",
+        "link": "https://jidefr.medium.com/shadcn-ui-add-components-and-resources-0846b0f57596",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Chart"
+        ]
+    },
+    {
+        "name": "Shadcn additional resources",
+        "link": "https://www.shadcnblocks.com/",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Chart"
+        ]
+    },
+    {
+        "name": "Shadcn Blocks",
+        "link": "https://www.shadcnblocks.com/",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Chart"
+        ]
+    }
+]

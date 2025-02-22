@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: 'components',
-            label: 'Components',
+            label: 'Components Libraries',
             filePath: 'Resources/components.json',
             background: "#F1C40F",
             icon: `<img src="./Assets/components.svg" alt="components" />`,
@@ -161,6 +161,31 @@ document.addEventListener('DOMContentLoaded', () => {
             filePath: 'Resources/database.json',
             background: "#8E44AD",
             icon: `<img src="./Assets/database.svg" alt="icons" />`,
+
+        },
+        {
+            name: 'ai',
+            label: 'AI Builders',
+            filePath: 'Resources/ai.json',
+            background: "#D35400",
+            icon: `<img src="./Assets/ai.svg" alt="icons" />`,
+
+        },
+        {
+            name: 'tailwind',
+            label: 'Tailwind Components',
+            filePath: 'Resources/tailwind.json',
+            background: "#27AE60",
+            icon: `<img src="./Assets/tailwind.svg" alt="icons" />`,
+
+        },
+        {
+            name: 'shadcn',
+            label: 'ShadCN Components',
+            filePath: 'Resources/shadcn.json',
+            background: "#2980B9",
+            icon: `<img src="./Assets/code.svg" alt="icons" />`,
+
 
         },
 
