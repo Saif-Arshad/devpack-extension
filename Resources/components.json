@@ -63,7 +63,6 @@
             "React"
         ]
     },
-
     {
         "name": "NextUI",
         "description": "A modern and responsive UI library for React applications, styled with Tailwind CSS.",
@@ -101,7 +100,6 @@
         "link": "https://component.gallery/components/",
         "tags": []
     },
-
     {
         "name": "Mantine UI",
         "description": "A React components and hooks library that emphasizes usability and customization.",
@@ -290,16 +288,6 @@
         ]
     },
     {
-        "name": "Aceternity UI",
-        "description": "A React-based UI library that integrates Tailwind CSS and motion animations for dynamic interfaces.",
-        "link": "https://ui.aceternity.com",
-        "tags": [
-            "React",
-            "Tailwind",
-            "Motion"
-        ]
-    },
-    {
         "name": "LayerChart",
         "description": "A Svelte library designed for building layered and interactive charts.",
         "link": "https://www.layerchart.com",
@@ -415,7 +403,6 @@
             "HTML"
         ]
     },
-  
     {
         "name": "Lightweight charts",
         "description": "A lightweight charting library for integrating responsive charts into web applications.",
@@ -572,7 +559,6 @@
             "React"
         ]
     },
- 
     {
         "name": "AnimatiSS",
         "description": "A CSS-based animation library for creating smooth and engaging UI transitions.",
@@ -592,6 +578,22 @@
         ]
     },
     {
+        "name": "Three Js",
+        "link": "https://threejs.org/",
+        "tags": [
+            "Three.js",
+            "Webgl"
+        ]
+    },
+    {
+        "name": "Particles Js",
+        "link": "https://particles.js.org/",
+        "tags": [
+            "Three.js",
+            "Webgl"
+        ]
+    },
+    {
         "name": "Just D",
         "description": "An accessible and ARIA-compliant UI library built with React and Tailwind CSS.",
         "link": "https://justd.co/",
@@ -602,7 +604,6 @@
             "Tailwind"
         ]
     },
-
     {
         "name": "React Bits",
         "description": "A collection of React components focused on animations and interactive UI elements.",
@@ -620,8 +621,6 @@
             "Animations"
         ]
     },
- 
-
     {
         "name": "Justd",
         "description": "A Tailwind CSS and React-based UI library focused on accessibility and ARIA compliance.",

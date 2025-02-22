@@ -67,6 +67,231 @@
         ]
     },
     {
+        "name": "Animate On Scroll",
+        "link": "https://michalsnik.github.io/aos/",
+        "tags": [
+            "Animations"
+        ]
+    },
+    {
+        "name": "Sweet Alert",
+        "link": "https://sweetalert2.github.io/",
+        "tags": [
+            "alert"
+        ]
+    },
+    {
+        "name": "Minimamente",
+        "link": "https://www.minimamente.com/project/magic/",
+        "tags": [
+            "alert"
+        ]
+    },
+    {
+        "name": "Minimamente",
+        "link": "https://www.minimamente.com/project/magic/",
+        "tags": [
+            "alert"
+        ]
+    },
+    {
+        "name": "Langchain",
+        "link": "https://www.langchain.com/",
+        "tags": [
+            "ai"
+        ]
+    },
+    {
+        "name": "Autoprefixer",
+        "link": "https://autoprefixer.github.io/",
+        "tags": [
+            "Autoprefixer"
+        ]
+    },
+    {
+        "name": "SheryJS",
+        "link": "https://github.com/sheryianscodingschool/sheryjs",
+        "tags": [
+            "Animation"
+        ]
+    },
+    {
+        "name": "React Konva",
+        "link": "https://konvajs.org/react-konva/",
+        "tags": [
+            "canva base"
+        ]
+    },
+    {
+        "name": "Full Page",
+        "link": "https://alvarotrigo.com/fullPage/",
+        "tags": [
+            "Animation"
+        ]
+    },
+    {
+        "name": "Next Auth",
+        "link": "https://next-auth.js.org/",
+        "tags": [
+            "authentication"
+        ]
+    },
+    {
+        "name": "Next Auth",
+        "link": "https://next-auth.js.org/",
+        "tags": [
+            "authentication"
+        ]
+    },
+    {
+        "name": "Tanstack",
+        "link": "https://tanstack.com/",
+        "tags": [
+            "authentication"
+        ]
+    },
+    {
+        "name": "Embla Carousel",
+        "link": "https://www.embla-carousel.com/",
+        "tags": [
+            "carousel"
+        ]
+    },
+    {
+        "name": "React Email",
+        "link": "https://react.email/",
+        "tags": [
+            "Email"
+        ]
+    },
+    {
+        "name": "Cal.com",
+        "link": "https://cal.com/",
+        "tags": [
+            "calling"
+        ]
+    },
+    {
+        "name": "lightweight Charts",
+        "link": "https://www.tradingview.com/lightweight-charts/",
+        "tags": [
+            "charts"
+        ]
+    },
+    {
+        "name": "Magic Motion",
+        "link": "https://www.react-magic-motion.com/",
+        "tags": [
+            "Animation"
+        ]
+    },
+    {
+        "name": "Auto Animate",
+        "link": "https://auto-animate.formkit.com/",
+        "tags": [
+            "Animation"
+        ]
+    },
+    {
+        "name": "DND Kit",
+        "link": "https://drag-and-drop.formkit.com/",
+        "tags": [
+            "drag"
+        ]
+    },
+    {
+        "name": "Swapy",
+        "link": "https://swapy.tahazsh.com/",
+        "tags": [
+            "drag"
+        ]
+    },
+    {
+        "name": "Apexcharts",
+        "link": "https://apexcharts.com/",
+        "tags": [
+            "charts"
+        ]
+    },
+    {
+        "name": "Polotno",
+        "link": "https://polotno.com/",
+        "tags": [
+            "graphic"
+        ]
+    },
+    {
+        "name": "Lenis",
+        "link": "https://lenis.darkroom.engineering/",
+        "tags": [
+            "aos"
+        ]
+    },
+    {
+        "name": "Plate JS",
+        "link": "https://platejs.org/",
+        "tags": [
+            "Editor"
+        ]
+    },
+    
+    {
+        "name": "Upload JS",
+        "link": "https://github.com/pqina/filepond?tab=readme-ov-file",
+        "tags": [
+            "upload"
+        ]
+    },
+    {
+        "name": "Shots",
+        "link": "https://shots.so/",
+        "tags": [
+            "mockups"
+        ]
+    },
+    {
+        "name": "Intercom",
+        "link": "https://www.intercom.com/",
+        "tags": [
+            "intercom"
+        ]
+    },
+    {
+        "name": "Mail Trap",
+        "link": "https://mailtrap.io/",
+        "tags": [
+            "mail"
+        ]
+    },
+    {
+        "name": "TensoFlow",
+        "link": "https://www.tensorflow.org/",
+        "tags": [
+            "ai"
+        ]
+    },
+    {
+        "name": "Splide Js",
+        "link": "https://splidejs.com/",
+        "tags": [
+            "slider"
+        ]
+    },
+    {
+        "name": "Next Js Video",
+        "link": "https://next-video.dev/",
+        "tags": [
+            "video"
+        ]
+    },
+    {
+        "name": "Zod",
+        "link": "https://zod.dev/",
+        "tags": [
+            "authentication"
+        ]
+    },
+    {
         "name": "react-spring",
         "description": "A spring-physics based animation library for React applications.",
         "link": "https://www.react-spring.dev",
