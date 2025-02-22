@@ -36,99 +36,144 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const categories = [
         {
+            name: 'Animation Libraries',
+            label: 'Animated Components',
+            filePath: 'Resources/animation-libraries.json',
+            background: "#1ABC9C",
+            icon: `<img src="./Assets/animation.svg" alt="icons" />`,
+        },
+        {
+            name: 'free web templates',
+            label: 'Free Web Templates',
+            filePath: 'Resources/web-templates.json',
+            background: "#E74C3C",
+            icon: `<img src="./Assets/web.svg" alt="icons" />`,
+        },
+        {
             name: 'icons',
             label: 'Icons',
             filePath: 'Resources/icons.json',
-            background: "#2B6DFF",
+            background: "#4A90E2",
             icon: `<img src="./Assets/icons.svg" alt="icons" />`,
         },
         {
             name: '3d',
             label: '3D',
             filePath: 'Resources/3d.json',
-            background: "#8935FF",
+            background: "#9B59B6",
             icon: `<img src="./Assets/3d.svg" alt="3D" />`,
         },
         {
             name: 'background',
             label: 'Background',
             filePath: 'Resources/background.json',
-            background: "#5548EB",
+            background: "#3498DB",
             icon: `<img src="./Assets/backgrounds.svg" alt="background" />`,
         },
         {
             name: 'blog',
             label: 'Blog',
             filePath: 'Resources/blog.json',
-            background: "#058CDB",
+            background: "#2ECC71",
             icon: `<img src="./Assets/blogs.svg" alt="blog" />`,
         },
         {
             name: 'colors',
             label: 'Colors',
             filePath: 'Resources/colors.json',
-            background: "#FF45A9",
+            background: "#E74C3C",
             icon: `<img src="./Assets/colors.svg" alt="colors" />`,
         },
         {
             name: 'components',
             label: 'Components',
             filePath: 'Resources/components.json',
-            background: "#32CD6B",
+            background: "#F1C40F",
             icon: `<img src="./Assets/components.svg" alt="components" />`,
         },
         {
             name: 'illustrations',
             label: 'Illustrations',
             filePath: 'Resources/illustrations.json',
-            background: "#1F8B26",
+            background: "#1ABC9C",
             icon: `<img src="./Assets/illustrations.svg" alt="illustrations" />`,
         },
         {
-            name: 'libaries',
+            name: 'libraries',
             label: 'Libraries',
             filePath: 'Resources/libraries.json',
-            background: "#FF006E",
+            background: "#D35400",
             icon: `<img src="./Assets/libraries.svg" alt="libraries" />`,
         },
         {
             name: 'photos',
             label: 'Photos',
             filePath: 'Resources/photos.json',
-            background: "#A81DBF",
+            background: "#8E44AD",
             icon: `<img src="./Assets/photos.svg" alt="photos" />`,
         },
         {
             name: 'tools',
             label: 'Tools',
             filePath: 'Resources/tools.json',
-            background: "#F97316",
+            background: "#C0392B",
             icon: `<img src="./Assets/tools.svg" alt="tools" />`,
         },
         {
             name: 'font',
             label: 'Fonts',
             filePath: 'Resources/fonts.json',
-            background: "#E79B1C",
+            background: "#27AE60",
             icon: `<img src="./Assets/typography.svg" alt="fonts" />`,
         },
         {
             name: 'video',
             label: 'Video',
             filePath: 'Resources/video.json',
-            background: "#C22246",
+            background: "#2980B9",
             icon: `<img src="./Assets/videos.svg" alt="video" />`,
         },
+        {
+            name: 'low-code/no-code',
+            label: 'low-code/no-code tools',
+            filePath: 'Resources/low-code.json',
+            background: "#E67E22",
+            icon: `<img src="./Assets/code.svg" alt="icons" />`,
+        },
+        {
+            name: 'design inspiration',
+            label: 'Design Inspirations',
+            filePath: 'Resources/design.json',
+            background: "#16A085",
+            icon: `<img src="./Assets/design.svg" alt="icons" />`,
+        },
+        {
+            name: 'deployments',
+            label: 'Deployments',
+            filePath: 'Resources/deployment.json',
+            background: "#C0392B",
+            icon: `<img src="./Assets/web.svg" alt="icons" />`,
+
+        },
+        {
+            name: 'database',
+            label: 'Database',
+            filePath: 'Resources/database.json',
+            background: "#8E44AD",
+            icon: `<img src="./Assets/database.svg" alt="icons" />`,
+
+        },
+
     ];
+
+
 
     let allResources = {};
     let totalResources = 0;
     let currentView = 'home';
 
-    // { [collectionName]: [ {name, link, description}, ... ] }
     let collections = {};
 
-    // ============= FETCH DATA & INIT =============
     Promise.all(
         categories.map(cat =>
             fetch(chrome.runtime.getURL(cat.filePath)).then(r => r.json())
@@ -281,18 +326,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
 
-        // Always show the star icon
-        // If it's in favorites, also add .favorited
-        const starIconClass = isFavorite ? 'star-icon favorited' : 'star-icon';
 
+        const starIconClass = isFavorite ? 'star-icon favorited' : 'star-icon';
         resourceItem.innerHTML = `
-    <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
-    <div class="resource-info">
-      <div class="resource-name">${item.name}</div>
-    </div>
-    <!-- Always display the star -->
-    <span class="${starIconClass}" data-resource-id="${item.link}">★</span>
-  `;
+  <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
+  <div class="resource-info">
+    <div class="resource-name">${item.name}</div>
+    <span style="flex:1; font-size:10px; margin-top:4px">
+      ${item.description ? item.description : ""}
+    </span>
+  </div>
+  <div class="resource-actions">
+    <span class="${starIconClass}" data-resource-id="${item.link}">❤</span>
+ 
+  </div>
+`;
+
 
         // Clicking anywhere except the star => open link
         resourceItem.addEventListener('click', (e) => {

@@ -249,7 +249,20 @@ main {
 }
 
 .star-icon.favorited {
-    color: orange;
+    color: red;
+    /* color: orange; */
+}
+
+.link-icon svg {
+    stroke: #666;
+    cursor: pointer;
+    transition: fill 0.3s ease, transform 0.3s ease;
+    height: 19px;
+}
+
+.link-icon:hover svg {
+    fill: orange;
+    transform: scale(1.1);
 }
 
 .star-icon.animate,
@@ -264,7 +277,7 @@ main {
 
 /* MY_FAV */
 #my_fav {
-    color: #FFD700;
+    color: #84D7FF;
     font-weight: 400;
     font-size: 12px;
     text-align: end;
@@ -279,6 +292,12 @@ main {
     text-align: center;
     width: 100%;
     display: block;
+}
+
+.resource-actions {
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
 .title-page {

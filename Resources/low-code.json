@@ -1,0 +1,179 @@
+[
+    {
+        "id": 1,
+        "name": "Bubble",
+        "link": "https://bubble.io",
+        "tags": [
+            "No-Code",
+            "Web Development"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Webflow",
+        "link": "https://webflow.com",
+        "tags": [
+            "No-Code",
+            "Design",
+            "CMS"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Adalo",
+        "link": "https://www.adalo.com",
+        "tags": [
+            "No-Code",
+            "Mobile Apps"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Airtable",
+        "link": "https://airtable.com",
+        "tags": [
+            "No-Code",
+            "Database",
+            "Collaboration"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Zapier",
+        "link": "https://zapier.com",
+        "tags": [
+            "No-Code",
+            "Automation"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Glide",
+        "link": "https://www.glideapps.com",
+        "tags": [
+            "No-Code",
+            "Mobile Apps"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "OutSystems",
+        "link": "https://www.outsystems.com",
+        "tags": [
+            "Low-Code",
+            "Enterprise"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Mendix",
+        "link": "https://www.mendix.com",
+        "tags": [
+            "Low-Code",
+            "Enterprise"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Betty Blocks",
+        "link": "https://www.bettyblocks.com",
+        "tags": [
+            "No-Code",
+            "Enterprise"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Microsoft PowerApps",
+        "link": "https://powerapps.microsoft.com",
+        "tags": [
+            "Low-Code",
+            "Enterprise",
+            "Microsoft"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "AppGyver",
+        "link": "https://www.appgyver.com",
+        "tags": [
+            "No-Code",
+            "Mobile",
+            "Web"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Wappler",
+        "link": "https://wappler.io",
+        "tags": [
+            "Low-Code",
+            "Web",
+            "Desktop"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Unqork",
+        "link": "https://www.unqork.com",
+        "tags": [
+            "No-Code",
+            "Enterprise"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Quick Base",
+        "link": "https://www.quickbase.com",
+        "tags": [
+            "Low-Code",
+            "Database",
+            "Enterprise"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Parabola",
+        "link": "https://parabola.io",
+        "tags": [
+            "No-Code",
+            "Automation"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Knack",
+        "link": "https://www.knack.com",
+        "tags": [
+            "No-Code",
+            "Database"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Zoho Creator",
+        "link": "https://www.zoho.com/creator",
+        "tags": [
+            "Low-Code",
+            "Business"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Caspio",
+        "link": "https://www.caspio.com",
+        "tags": [
+            "Low-Code",
+            "Database"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "BuildFire",
+        "link": "https://buildfire.com",
+        "tags": [
+            "No-Code",
+            "Mobile Apps"
+        ]
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "Vercel",
+        "link": "https://vercel.com",
+        "tags": [
+            "deployment",
+            "serverless",
+            "frontend"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Netlify",
+        "link": "https://www.netlify.com",
+        "tags": [
+            "deployment",
+            "jamstack",
+            "serverless"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Heroku",
+        "link": "https://www.heroku.com",
+        "tags": [
+            "deployment",
+            "paas",
+            "cloud"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "AWS Amplify",
+        "link": "https://aws.amazon.com/amplify/",
+        "tags": [
+            "deployment",
+            "cloud",
+            "mobile"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Firebase",
+        "link": "https://firebase.google.com",
+        "tags": [
+            "deployment",
+            "backend",
+            "realtime"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "GitHub Pages",
+        "link": "https://pages.github.com",
+        "tags": [
+            "deployment",
+            "static",
+            "free"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Surge",
+        "link": "https://surge.sh",
+        "tags": [
+            "deployment",
+            "static",
+            "cli"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "DigitalOcean App Platform",
+        "link": "https://www.digitalocean.com/products/app-platform/",
+        "tags": [
+            "deployment",
+            "cloud",
+            "scalable"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Render",
+        "link": "https://render.com",
+        "tags": [
+            "deployment",
+            "cloud",
+            "serverless"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Google Cloud Platform",
+        "link": "https://cloud.google.com",
+        "tags": [
+            "deployment",
+            "cloud",
+            "infrastructure"
+        ]
+    }
+]

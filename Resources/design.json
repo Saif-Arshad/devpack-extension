@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "name": "Dribbble",
+        "link": "https://dribbble.com",
+        "tags": [
+            "Design",
+            "Inspiration",
+            "Community"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Behance",
+        "link": "https://www.behance.net",
+        "tags": [
+            "Portfolio",
+            "Design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Awwwards",
+        "link": "https://www.awwwards.com",
+        "tags": [
+            "Web Design",
+            "Awards",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Designspiration",
+        "link": "https://www.designspiration.com",
+        "tags": [
+            "Design",
+            "Inspiration",
+            "Moodboard"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "SiteInspire",
+        "link": "https://www.siteinspire.com",
+        "tags": [
+            "Web Design",
+            "Inspiration",
+            "Gallery"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Pinterest",
+        "link": "https://www.pinterest.com",
+        "tags": [
+            "Inspiration",
+            "Design",
+            "Moodboard"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Muzli",
+        "link": "https://muz.li",
+        "tags": [
+            "Design",
+            "Trends",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "CSS Design Awards",
+        "link": "https://www.cssdesignawards.com",
+        "tags": [
+            "Web Design",
+            "Awards",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Page Flows",
+        "link": "https://pageflows.com/",
+        "tags": [
+            "Web Design",
+            "Awards",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Pretty Folio",
+        "link": "https://www.prettyfolio.com/",
+        "tags": [
+            "Web Design",
+            "Portfolio design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Landing Gallery",
+        "link": "https://www.landing.gallery/",
+        "tags": [
+            "Web Design",
+            "Portfolio design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Footer Design",
+        "link": "https://www.footer.design/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Designs Spells",
+        "link": "https://www.designspells.com/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "SaaS Web Design",
+        "link": "https://www.saaspo.com/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Checklist Design",
+        "link": "https://www.checklist.design/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Landing Folio",
+        "link": "https://www.landingfolio.com/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Dark Mode Design",
+        "link": "https://www.darkmodedesign.com/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Bento Grids",
+        "link": "https://bentogrids.com/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Call to Inspiration",
+        "link": "https://calltoinspiration.com/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Website Hero Section",
+        "link": "https://www.supahero.io/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Landing Page",
+        "link": "https://landings.dev/",
+        "tags": [
+            "Web Design",
+            "Footer design",
+            "Inspiration"
+        ]
+    }
+]

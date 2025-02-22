@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "MongoDB Atlas",
+        "link": "https://www.mongodb.com/cloud/atlas",
+        "tags": [
+            "database",
+            "NoSQL",
+            "cloud"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Firebase Realtime Database",
+        "link": "https://firebase.google.com/products/realtime-database/",
+        "tags": [
+            "database",
+            "realtime",
+            "NoSQL"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Amazon RDS",
+        "link": "https://aws.amazon.com/rds/",
+        "tags": [
+            "database",
+            "SQL",
+            "cloud"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Google Cloud SQL",
+        "link": "https://cloud.google.com/sql",
+        "tags": [
+            "database",
+            "SQL",
+            "cloud"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "PostgreSQL",
+        "link": "https://www.postgresql.org/",
+        "tags": [
+            "database",
+            "SQL",
+            "open-source"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "MySQL",
+        "link": "https://www.mysql.com/",
+        "tags": [
+            "database",
+            "SQL",
+            "open-source"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Microsoft Azure SQL Database",
+        "link": "https://azure.microsoft.com/en-us/services/sql-database/",
+        "tags": [
+            "database",
+            "SQL",
+            "cloud"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Oracle Database Cloud",
+        "link": "https://www.oracle.com/database/",
+        "tags": [
+            "database",
+            "SQL",
+            "cloud"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Redis Enterprise",
+        "link": "https://redis.com/redis-enterprise-cloud/",
+        "tags": [
+            "database",
+            "NoSQL",
+            "in-memory"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Couchbase",
+        "link": "https://www.couchbase.com/",
+        "tags": [
+            "database",
+            "NoSQL",
+            "cloud"
+        ]
+    }
+]
