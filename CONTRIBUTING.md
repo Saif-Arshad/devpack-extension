@@ -10,7 +10,7 @@ You can add new resources to DevPack by:
 **Before proposing a resource, please ensure that:**
 
 - The resource is not already included in our database.
-- There is an appropriate category available for the resource. If none exists, you can add one by modifying the category array in [popup.js](https://github.com/Saif-Arshad/devpack-extension/blob/main/popup.js).
+- There is an appropriate category available for the resource. If none exists, you can add one by modifying the category array in categories.js.
 - The resource meets the [defined structure](#resource-structure).
 
 ## Submitting a Pull Request
