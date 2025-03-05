@@ -1,4 +1,4 @@
-// Set up the side panel behavior (Ensure this API is supported and permissions are set)
+// Set up the side panel behavior
 chrome.sidePanel
     .setPanelBehavior({ openPanelOnActionClick: true })
     .catch((error) => console.error("Error setting side panel behavior:", error));
@@ -6,157 +6,110 @@ chrome.sidePanel
 // On installation, set up context menus
 chrome.runtime.onInstalled.addListener(() => {
     console.log("DevPack extension installed and side panel behavior set.");
-
-    chrome.contextMenus.create({
-        id: "devpackAddFavorite",
-        title: "Add to DevPack Favorites",
-        contexts: ["link"] 
-    });
-
-    chrome.contextMenus.create({
-        id: "devpackAddToCollection",
-        title: "Add to DevPack Collection",
-        contexts: ["link"] 
-    });
-
-    // Build submenus for existing collections
     buildCollectionSubmenus();
 });
 
 // Handle context menu clicks
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-    // Ensure that the clicked context has a link URL
-    if (!info.linkUrl) {
-        console.warn("No link URL found. Operation aborted.");
+    const urlToAdd = info.linkUrl || info.pageUrl;
+    if (!urlToAdd) {
+        console.warn("No URL found. Operation aborted.");
         return;
     }
 
-    const exactLink = info.linkUrl; // Get the exact clicked link
-
-    // **Add to Favorites**
+    // Add to Favorites
     if (info.menuItemId === "devpackAddFavorite") {
-        if (exactLink) {
-            // Retrieve existing favorites from storage
-            chrome.storage.sync.get(['favorites'], (res) => {
-                let favorites = res.favorites || []; 
-                // favorites is now an array of objects: [{name, link}, ...]
-
-                // Check if the exact link is already in favorites
-                const exists = favorites.some(item => item.link === exactLink);
-                if (!exists) {
-                    // Build the new favorite object
-                    const newFav = {
-                        name: extractResourceName(exactLink), // A friendly name from the URL
-                        link: exactLink
-                    };
-                    favorites.push(newFav);
-
-                    chrome.storage.sync.set({ favorites }, () => {
-                        console.log(`Added to DevPack Favorites: ${exactLink}`);
-                        // Notify the user
-                        chrome.notifications.create({
-                            type: 'basic',
-                            iconUrl: 'Assets/logo.png',
-                            title: 'Added to Favorites',
-                            message: `Added to DevPack Favorites:\n${exactLink}`,
-                            priority: 1
-                        });
-                    });
-                } else {
-                    console.log(`Already in DevPack Favorites: ${exactLink}`);
-                    // Notify the user
+        chrome.storage.sync.get(['favorites'], (res) => {
+            let favorites = res.favorites || [];
+            const exists = favorites.some(item => item.link === urlToAdd);
+            if (!exists) {
+                const newFav = {
+                    name: extractResourceName(urlToAdd),
+                    link: urlToAdd
+                };
+                favorites.push(newFav);
+                chrome.storage.sync.set({ favorites }, () => {
+                    console.log(`Added to DevPack Favorites: ${urlToAdd}`);
                     chrome.notifications.create({
                         type: 'basic',
                         iconUrl: 'Assets/logo.png',
-                        title: 'Already a Favorite',
-                        message: `This link is already in your favorites:\n${exactLink}`,
+                        title: 'Added to Favorites',
+                        message: `Added to DevPack Favorites:\n${urlToAdd}`,
                         priority: 1
                     });
-                }
-            });
-        }
+                });
+            } else {
+                chrome.notifications.create({
+                    type: 'basic',
+                    iconUrl: 'Assets/logo.png',
+                    title: 'Already a Favorite',
+                    message: `This URL is already in your favorites:\n${urlToAdd}`,
+                    priority: 1
+                });
+            }
+        });
     }
 
-    // **Add to Collection**
+    // Add to Collection
     else if (info.menuItemId.startsWith("collection_")) {
         const collectionName = info.menuItemId.replace("collection_", "");
+        const resourceObj = {
+            name: extractResourceName(urlToAdd),
+            link: urlToAdd,
+            description: ''
+        };
 
-        if (exactLink) {
-            const resourceObj = {
-                name: extractResourceName(exactLink), 
-                link: exactLink,
-                description: '' 
-            };
-
-            // Retrieve existing collections from storage
-            chrome.storage.sync.get(['collections'], (res) => {
-                let collections = res.collections || {};
-
-                // Initialize the collection array if it doesn't exist
-                if (!collections[collectionName]) {
-                    collections[collectionName] = [];
-                }
-
-                // Check for duplicates based on the exact link
-                const exists = collections[collectionName].some(item => item.link === exactLink);
-                if (!exists) {
-                    collections[collectionName].push(resourceObj); 
-                    chrome.storage.sync.set({ collections }, () => {
-                        console.log(`Added to collection "${collectionName}": ${exactLink}`);
-                        // Notify the user
-                        chrome.notifications.create({
-                            type: 'basic',
-                            iconUrl: 'Assets/logo.png',
-                            title: 'Added to Collection',
-                            message: `Added to "${collectionName}":\n${exactLink}`,
-                            priority: 1
-                        });
-                    });
-                } else {
-                    console.log(`Already in collection "${collectionName}": ${exactLink}`);
-                    // Notify the user
+        chrome.storage.sync.get(['collections'], (res) => {
+            let collections = res.collections || {};
+            if (!collections[collectionName]) collections[collectionName] = [];
+            const exists = collections[collectionName].some(item => item.link === urlToAdd);
+            if (!exists) {
+                collections[collectionName].push(resourceObj);
+                chrome.storage.sync.set({ collections }, () => {
+                    console.log(`Added to collection "${collectionName}": ${urlToAdd}`);
                     chrome.notifications.create({
                         type: 'basic',
                         iconUrl: 'Assets/logo.png',
-                        title: 'Already in Collection',
-                        message: `This link is already in "${collectionName}":\n${exactLink}`,
+                        title: 'Added to Collection',
+                        message: `Added to "${collectionName}":\n${urlToAdd}`,
                         priority: 1
                     });
-                }
-            });
-        }
+                });
+            } else {
+                chrome.notifications.create({
+                    type: 'basic',
+                    iconUrl: 'Assets/logo.png',
+                    title: 'Already in Collection',
+                    message: `This URL is already in "${collectionName}":\n${urlToAdd}`,
+                    priority: 1
+                });
+            }
+        });
     }
 });
 
-// Listen to changes in storage to rebuild context menus if collections are updated
+// Rebuild submenus on storage changes
 chrome.storage.onChanged.addListener((changes, areaName) => {
     if (areaName === 'sync' && changes.collections) {
-        // Rebuild submenus
         buildCollectionSubmenus();
     }
 });
 
-/**
- * Function to build collection submenus under "Add to DevPack Collection"
- */
+// Build collection submenus
 function buildCollectionSubmenus() {
-    // First, remove all context menus to prevent duplicates
     chrome.contextMenus.removeAll(() => {
-        // Recreate top-level "Add to DevPack Favorites"
         chrome.contextMenus.create({
             id: "devpackAddFavorite",
             title: "Add to DevPack Favorites",
-            contexts: ["link"]
+            contexts: ["page", "link"]
         });
 
-        // Recreate top-level "Add to DevPack Collection"
         chrome.contextMenus.create({
             id: "devpackAddToCollection",
             title: "Add to DevPack Collection",
-            contexts: ["link"]
+            contexts: ["page", "link"]
         });
 
-        // Now create submenus for each existing collection
         chrome.storage.sync.get(['collections'], (res) => {
             const collections = res.collections || {};
             Object.keys(collections).forEach(collName => {
@@ -164,88 +117,64 @@ function buildCollectionSubmenus() {
                     id: `collection_${collName}`,
                     parentId: "devpackAddToCollection",
                     title: collName,
-                    contexts: ["link"]
+                    contexts: ["page", "link"]
                 });
             });
         });
     });
 }
 
-/**
- * Helper function to extract a friendly name from a URL
- * You can customize this function based on your requirements.
- * For now, it extracts the hostname without 'www.'.
- */
+// Extract a friendly name from a URL
 function extractResourceName(url) {
     try {
         const urlObj = new URL(url);
         return urlObj.hostname.replace(/^www\./, '');
     } catch (e) {
         console.error("Invalid URL:", url);
-        return url; // Fallback to the full URL if parsing fails
+        return url;
     }
 }
 
-/**
- * Optional: Handle bookmark additions
- * Automatically add bookmarked URLs to favorites with user confirmation
- */
+// Handle bookmark additions
 chrome.bookmarks.onCreated.addListener((id, bookmark) => {
     if (!bookmark.url) return;
-
-    const exactLink = bookmark.url; // Get the exact bookmark URL
+    const exactLink = bookmark.url;
 
     chrome.storage.sync.get(['favorites'], (res) => {
         let favorites = res.favorites || [];
-
-        // Check if the exact link is already in favorites
         const exists = favorites.some(item => item.link === exactLink);
         if (!exists) {
-            // Store the last bookmarked link in local storage to reference in notification
             chrome.storage.local.set({ lastBookmarkedLink: exactLink }, () => {
-                // Create a notification asking the user to add the bookmark to favorites
                 chrome.notifications.create('devpack-bookmark-notification', {
                     type: 'basic',
                     iconUrl: 'Assets/logo.png',
                     title: 'Add to DevPack Favorites?',
                     message: `You just bookmarked:\n${exactLink}\nWould you like to add it to DevPack Favorites?`,
                     priority: 2,
-                    buttons: [
-                        { title: 'Yes' },
-                        { title: 'No' }
-                    ]
+                    buttons: [{ title: 'Yes' }, { title: 'No' }]
                 });
             });
-        } else {
-            console.log(`${exactLink} is already in DevPack Favorites.`);
         }
     });
 });
 
-/**
- * Handle notification button clicks
- * Specifically handle the "Add to DevPack Favorites?" notification buttons
- */
+// Handle notification button clicks
 chrome.notifications.onButtonClicked.addListener((notifId, btnIdx) => {
     if (notifId === 'devpack-bookmark-notification') {
-        if (btnIdx === 0) { // User clicked "Yes"
+        if (btnIdx === 0) { // Yes
             chrome.storage.local.get(['lastBookmarkedLink'], (res) => {
                 const exactLink = res.lastBookmarkedLink;
                 if (!exactLink) return;
 
-                // Retrieve existing favorites from storage
                 chrome.storage.sync.get(['favorites'], (res) => {
                     let favorites = res.favorites || [];
                     const exists = favorites.some(item => item.link === exactLink);
-
                     if (!exists) {
                         favorites.push({
                             name: extractResourceName(exactLink),
                             link: exactLink
                         });
                         chrome.storage.sync.set({ favorites }, () => {
-                            console.log(`Added to DevPack Favorites from bookmark: ${exactLink}`);
-                            // Notify the user
                             chrome.notifications.create({
                                 type: 'basic',
                                 iconUrl: 'Assets/logo.png',
@@ -254,20 +183,9 @@ chrome.notifications.onButtonClicked.addListener((notifId, btnIdx) => {
                                 priority: 1
                             });
                         });
-                    } else {
-                        console.log(`Already in DevPack Favorites: ${exactLink}`);
-                        // Notify the user
-                        chrome.notifications.create({
-                            type: 'basic',
-                            iconUrl: 'Assets/logo.png',
-                            title: 'Already a Favorite',
-                            message: `This link is already in your favorites:\n${exactLink}`,
-                            priority: 1
-                        });
                     }
                 });
             });
         }
-        // btnIdx === 1 => "No" button; do nothing
     }
 });

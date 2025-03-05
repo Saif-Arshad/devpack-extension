@@ -1,834 +1,583 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // =========== DOM Elements ===========
+import { categories } from './categories.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+    // DOM Elements
     const backButton = document.getElementById('backButton');
-    const pageTitle = document.getElementById('pageTitle');
-    const searchBar = document.getElementById('searchBar');
+    const viewTitle = document.getElementById('viewTitle');
+    const searchInput = document.getElementById('searchInput');
+    const favoritesButton = document.getElementById('favoritesButton');
+    const favoritesCount = document.getElementById('favoritesCount');
+    const favCount = document.getElementById('favCount');
+    const favoritesTotal = document.getElementById('favoritesTotal');
+    const collectionsButton = document.getElementById('collectionsButton');
+
+    // Views
     const homeView = document.getElementById('homeView');
     const categoryView = document.getElementById('categoryView');
-    const categoryItems = document.getElementById('categoryItems');
-    const searchResultsView = document.getElementById('searchResultsView');
-    const searchResultsList = document.getElementById('searchResultsList');
-    const categoriesList = document.getElementById('categoriesList');
     const favoritesView = document.getElementById('favoritesView');
-    const favoritesList = document.getElementById('favoritesList');
-    const favoriteCount = document.getElementById('favoriteCount');
-    const myFav = document.getElementById('my_fav');
-
-    // Collections
-    const myCollectionsBtn = document.getElementById('my_collections');
     const collectionsView = document.getElementById('collectionsView');
-    const collectionsList = document.getElementById('collectionsList');
-    const createCollectionBtn = document.getElementById('createCollectionBtn');
-
-    // Collection Detail
     const collectionDetailView = document.getElementById('collectionDetailView');
+    const searchResultsView = document.getElementById('searchResultsView');
+
+    // Lists
+    const categoriesList = document.getElementById('categoriesList');
+    const categoryResources = document.getElementById('categoryResources');
+    const favoritesList = document.getElementById('favoritesList');
+    const collectionsList = document.getElementById('collectionsList');
+    const collectionResources = document.getElementById('collectionResources');
+    const searchResultsList = document.getElementById('searchResultsList');
+
+    // Empty states
+    const emptyFavorites = document.getElementById('emptyFavorites');
+    const emptyCollection = document.getElementById('emptyCollection');
+    const emptySearchResults = document.getElementById('emptySearchResults');
+
+    // Collection detail
     const collectionDetailTitle = document.getElementById('collectionDetailTitle');
-    const collectionResourcesList = document.getElementById('collectionResourcesList');
-    const closeCollectionDetailViewBtn = document.getElementById('closeCollectionDetailViewBtn');
+    const addResourceBtn = document.getElementById('addResourceBtn');
 
-    // Add Resource Modal
+    // Modals
+    const newCollectionModal = document.getElementById('newCollectionModal');
+    const createCollectionBtn = document.getElementById('createCollectionBtn');
+    const createCollectionConfirm = document.getElementById('createCollectionConfirm');
+    const createCollectionCancel = document.getElementById('createCollectionCancel');
+    const newCollectionName = document.getElementById('newCollectionName');
+
     const addResourceModal = document.getElementById('addResourceModal');
-    const addResourceCollectionNameSpan = document.getElementById('addResourceCollectionName');
-    const newResourceNameInput = document.getElementById('newResourceNameInput');
-    const newResourceLinkInput = document.getElementById('newResourceLinkInput');
-    const saveNewResourceBtn = document.getElementById('saveNewResourceBtn');
-    const closeAddResourceModalBtn = document.getElementById('closeAddResourceModalBtn');
+    const currentCollectionName = document.getElementById('currentCollectionName');
+    const newResourceName = document.getElementById('newResourceName');
+    const newResourceLink = document.getElementById('newResourceLink');
+    const addResourceConfirm = document.getElementById('addResourceConfirm');
+    const addResourceCancel = document.getElementById('addResourceCancel');
 
-    const categories = [
-        {
-            name: 'Animation Libraries',
-            label: 'Animated Components',
-            filePath: 'Resources/animation-libraries.json',
-            background: "#1ABC9C",
-            icon: `<img src="./Assets/animation.svg" alt="icons" />`,
-        },
-        {
-            name: 'free web templates',
-            label: 'Free Web Templates',
-            filePath: 'Resources/web-templates.json',
-            background: "#E74C3C",
-            icon: `<img src="./Assets/web.svg" alt="icons" />`,
-        },
-        {
-            name: 'icons',
-            label: 'Icons',
-            filePath: 'Resources/icons.json',
-            background: "#4A90E2",
-            icon: `<img src="./Assets/icons.svg" alt="icons" />`,
-        },
-        {
-            name: '3d',
-            label: '3D',
-            filePath: 'Resources/3d.json',
-            background: "#9B59B6",
-            icon: `<img src="./Assets/3d.svg" alt="3D" />`,
-        },
-        {
-            name: 'background',
-            label: 'Background',
-            filePath: 'Resources/background.json',
-            background: "#3498DB",
-            icon: `<img src="./Assets/backgrounds.svg" alt="background" />`,
-        },
-        {
-            name: 'blog',
-            label: 'Blog',
-            filePath: 'Resources/blog.json',
-            background: "#2ECC71",
-            icon: `<img src="./Assets/blogs.svg" alt="blog" />`,
-        },
-        {
-            name: 'colors',
-            label: 'Colors',
-            filePath: 'Resources/colors.json',
-            background: "#E74C3C",
-            icon: `<img src="./Assets/colors.svg" alt="colors" />`,
-        },
-        {
-            name: 'components',
-            label: 'Components Libraries',
-            filePath: 'Resources/components.json',
-            background: "#F1C40F",
-            icon: `<img src="./Assets/components.svg" alt="components" />`,
-        },
-        {
-            name: 'illustrations',
-            label: 'Illustrations',
-            filePath: 'Resources/illustrations.json',
-            background: "#1ABC9C",
-            icon: `<img src="./Assets/illustrations.svg" alt="illustrations" />`,
-        },
-        {
-            name: 'libraries',
-            label: 'Libraries',
-            filePath: 'Resources/libraries.json',
-            background: "#D35400",
-            icon: `<img src="./Assets/libraries.svg" alt="libraries" />`,
-        },
-        {
-            name: 'photos',
-            label: 'Photos',
-            filePath: 'Resources/photos.json',
-            background: "#8E44AD",
-            icon: `<img src="./Assets/photos.svg" alt="photos" />`,
-        },
-        {
-            name: 'tools',
-            label: 'Tools',
-            filePath: 'Resources/tools.json',
-            background: "#C0392B",
-            icon: `<img src="./Assets/tools.svg" alt="tools" />`,
-        },
-        {
-            name: 'font',
-            label: 'Fonts',
-            filePath: 'Resources/fonts.json',
-            background: "#27AE60",
-            icon: `<img src="./Assets/typography.svg" alt="fonts" />`,
-        },
-        {
-            name: 'video',
-            label: 'Video',
-            filePath: 'Resources/video.json',
-            background: "#2980B9",
-            icon: `<img src="./Assets/videos.svg" alt="video" />`,
-        },
-        {
-            name: 'low-code/no-code',
-            label: 'low-code/no-code tools',
-            filePath: 'Resources/low-code.json',
-            background: "#E67E22",
-            icon: `<img src="./Assets/code.svg" alt="icons" />`,
-        },
-        {
-            name: 'design inspiration',
-            label: 'Design Inspirations',
-            filePath: 'Resources/design.json',
-            background: "#16A085",
-            icon: `<img src="./Assets/design.svg" alt="icons" />`,
-        },
-        {
-            name: 'deployments',
-            label: 'Deployments',
-            filePath: 'Resources/deployment.json',
-            background: "#C0392B",
-            icon: `<img src="./Assets/web.svg" alt="icons" />`,
+    // Loading indicator
+    const loadingIndicator = document.getElementById('loadingIndicator');
 
-        },
-        {
-            name: 'database',
-            label: 'Database',
-            filePath: 'Resources/database.json',
-            background: "#8E44AD",
-            icon: `<img src="./Assets/database.svg" alt="icons" />`,
-
-        },
-        {
-            name: 'ai',
-            label: 'AI Builders',
-            filePath: 'Resources/ai.json',
-            background: "#D35400",
-            icon: `<img src="./Assets/ai.svg" alt="icons" />`,
-
-        },
-        {
-            name: 'tailwind',
-            label: 'Tailwind Components',
-            filePath: 'Resources/tailwind.json',
-            background: "#27AE60",
-            icon: `<img src="./Assets/tailwind.svg" alt="icons" />`,
-
-        },
-        {
-            name: 'shadcn',
-            label: 'ShadCN Components',
-            filePath: 'Resources/shadcn.json',
-            background: "#2980B9",
-            icon: `<img src="./Assets/code.svg" alt="icons" />`,
-
-
-        },
-        {
-            name: 'freelance',
-            label: 'Freelance Platforms',
-            filePath: 'Resources/freelance.json',
-            background: "#1ABC9C",
-            icon: `<img src="./Assets/coin.svg" alt="icons" />`,
-
-
-        },
-        {
-            name: 'learning',
-            label: 'Learning Platform',
-            filePath: 'Resources/learning-resources.json',
-            background: "#E74C3C",
-            icon: `<img src="./Assets/book.svg" alt="icons" />`,
-
-
-        },
-        {
-            name: 'web',
-            label: 'Web Builder Platform',
-            filePath: 'Resources/builder.json',
-            background: "#27AE60",
-            icon: `<img src="./Assets/ai.svg" alt="icons" />`,
-
-
-
-        },
-
-    ];
-
-
-
-    let allResources = {};
-    let totalResources = 0;
+    // State variables
     let currentView = 'home';
-
+    let currentCategory = '';
+    let currentCollection = '';
+    let allResources = {}; // Will hold resource arrays keyed by category name
+    let favorites = [];
     let collections = {};
 
-    Promise.all(
-        categories.map(cat =>
-            fetch(chrome.runtime.getURL(cat.filePath)).then(r => r.json())
-        )
-    )
-        .then(dataArray => {
-            dataArray.forEach((jsonData, i) => {
-                console.log(Array.isArray(jsonData), jsonData);
-                const catName = categories[i].name;
-                const sortedData = jsonData.sort((a, b) => {
-                    const aName = a.name || "";
-                    const bName = b.name || "";
-                    return aName.localeCompare(bName);
-                });
+    // Show loading indicator
+    function showLoading() {
+        loadingIndicator.classList.remove('hidden');
+    }
 
-                allResources[catName] = sortedData;
-                totalResources += sortedData.length;
-            });
+    // Hide loading indicator
+    function hideLoading() {
+        loadingIndicator.classList.add('hidden');
+    }
 
-            // Load existing collections
-            chrome.storage.sync.get(['collections'], (res) => {
-                collections = res.collections || {};
-                renderCategoryList();
-                updateFavoritesView();
-                showHomeView();
-            });
-        })
-        .catch(error => console.error('Error fetching JSON files:', error));
+    // Load resources from JSON files for each category
+    async function loadResources() {
+        for (const category of categories) {
+            try {
+                const response = await fetch(category.filePath);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                // Use the category name as the key
+                // Also filter out any resource that does not have a valid name or link
+                allResources[category.name] = data.filter(
+                    resource => resource.name && resource.link
+                );
+            } catch (error) {
+                console.error(`Error loading resources for ${category.name}:`, error);
+                allResources[category.name] = [];
+            }
+        }
+    }
 
-    // =================== VIEW FUNCTIONS ===================
+    // Initialize: load resources and favorites/collections from storage
+    async function initialize() {
+        showLoading();
+        await loadResources();
+        chrome.storage.sync.get(['favorites'], (result) => {
+            favorites = result.favorites || [];
+            updateFavoriteCount();
+            renderCategories();
+        });
+        chrome.storage.sync.get(['collections'], (result) => {
+            collections = result.collections || {};
+        });
+        hideLoading();
+    }
+
+    // Helper function to close modals
+    function closeModal(modal) {
+        modal.classList.add('hidden');
+    }
+
+    // Smooth scroll to top when switching views
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    function showHomeView() {
-        homeView.style.display = 'block';
-        categoryView.style.display = 'none';
-        searchResultsView.style.display = 'none';
-        favoritesView.style.display = 'none';
-        collectionsView.style.display = 'none';
-        collectionDetailView.style.display = 'none';
+    // Close modals when clicking outside modal content
+    window.addEventListener('click', (e) => {
+        if (e.target === newCollectionModal) {
+            closeModal(newCollectionModal);
+        }
+        if (e.target === addResourceModal) {
+            closeModal(addResourceModal);
+        }
+    });
 
-        pageTitle.innerHTML = `
-      <div style="display:flex; align-items:center; width:100%; justify-content:end">
-        <span style="margin-left: 8px;">Total resources: ${totalResources}</span>
+    // Update UI counters for favorites
+    function updateFavoriteCount() {
+        const count = favorites.length;
+        favoritesCount.textContent = count;
+        favCount.textContent = count;
+        favoritesTotal.textContent = count;
+        emptyFavorites.style.display = count > 0 ? 'none' : 'block';
+    }
+
+    // Render the categories list using the imported categories data
+    function renderCategories() {
+        categoriesList.innerHTML = '';
+        categories.forEach(category => {
+            // Get the resources for the category (loaded via fetch)
+            const resources = allResources[category.name] || [];
+            const li = document.createElement('li');
+            li.className = 'category-item';
+            li.innerHTML = `
+        <div class="category-icon" style="background-color: ${category.background};">
+          ${category.icon}
+        </div>
+        <div class="category-info">
+          <div class="category-name">${category.label}</div>
+          <div class="category-count">${resources.length} resources</div>
+        </div>
+      `;
+            li.addEventListener('click', () => {
+                showCategoryView(category.name);
+            });
+            categoriesList.appendChild(li);
+        });
+    }
+
+    // Create a resource card element (skip if no name or link)
+    function createResourceElement(resource, isFavorite = false) {
+        if (!resource.name || !resource.link) return null;
+        const div = document.createElement('div');
+        div.className = 'resource-item';
+        const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${resource.link}`;
+        div.innerHTML = `
+      <div class="resource-favicon">
+        <img src="${faviconUrl}" alt="${resource.name}" onerror="this.src='assets/placeholder.svg'">
+      </div>
+      <div class="resource-info">
+        <div class="resource-name">${resource.name}</div>
+        <div class="resource-link">${resource.link}</div>
+      </div>
+      <div class="resource-actions">
+        <button class="heart-icon ${isFavorite ? 'active' : ''}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="${isFavorite ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+        </button>
+        <button class="link-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+          </svg>
+        </button>
       </div>
     `;
+
+        // Open resource link on click (unless clicking an icon)
+        div.addEventListener('click', (e) => {
+            if (!e.target.closest('.heart-icon') && !e.target.closest('.link-icon') && !e.target.closest('.remove-icon')) {
+                chrome.tabs.create({ url: resource.link });
+            }
+        });
+
+        // Toggle favorite on heart icon click
+        const heartIcon = div.querySelector('.heart-icon');
+        heartIcon.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleFavorite(resource);
+            heartIcon.classList.toggle('active');
+            heartIcon.classList.add('animate');
+            const svg = heartIcon.querySelector('svg');
+            svg.setAttribute('fill', heartIcon.classList.contains('active') ? 'currentColor' : 'none');
+            setTimeout(() => { heartIcon.classList.remove('animate'); }, 300);
+        });
+
+        // Open resource link in a new tab on link icon click
+        const linkIcon = div.querySelector('.link-icon');
+        linkIcon.addEventListener('click', (e) => {
+            e.stopPropagation();
+            chrome.tabs.create({ url: resource.link });
+        });
+
+        return div;
+    }
+
+    // Create resource element with remove button for collections
+    function createCollectionResourceElement(resource, collectionName) {
+        const element = createResourceElement(resource, isResourceInFavorites(resource));
+        if (!element) return null;
+        const actionsDiv = element.querySelector('.resource-actions');
+        const removeButton = document.createElement('button');
+        removeButton.className = 'remove-icon';
+        removeButton.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 6h18"/>
+        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>
+        <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+      </svg>
+    `;
+        removeButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            removeFromCollection(resource, collectionName);
+        });
+        actionsDiv.appendChild(removeButton);
+        return element;
+    }
+
+    // Toggle favorite for a resource
+    function toggleFavorite(resource) {
+        const index = favorites.findIndex(fav => fav.link === resource.link);
+        if (index === -1) {
+            favorites.push(resource);
+        } else {
+            favorites.splice(index, 1);
+        }
+        chrome.storage.sync.set({ favorites }, () => {
+            updateFavoriteCount();
+            if (currentView === 'favorites') renderFavorites();
+        });
+    }
+
+    // Check if a resource is in favorites
+    function isResourceInFavorites(resource) {
+        return favorites.some(fav => fav.link === resource.link);
+    }
+
+    // Add resource to a collection
+    function addToCollection(resource, collectionName) {
+        if (!collections[collectionName]) {
+            collections[collectionName] = [];
+        }
+        if (!collections[collectionName].some(r => r.link === resource.link)) {
+            collections[collectionName].push(resource);
+            chrome.storage.sync.set({ collections }, () => {
+                if (currentView === 'collectionDetail' && currentCollection === collectionName) {
+                    renderCollectionDetail(collectionName);
+                }
+            });
+        }
+    }
+
+    // Remove resource from a collection
+    function removeFromCollection(resource, collectionName) {
+        if (!collections[collectionName]) return;
+        const index = collections[collectionName].findIndex(r => r.link === resource.link);
+        if (index !== -1) {
+            collections[collectionName].splice(index, 1);
+            chrome.storage.sync.set({ collections }, () => {
+                renderCollectionDetail(collectionName);
+            });
+        }
+    }
+
+    // Create a new collection
+    function createCollection(name) {
+        if (!collections[name]) {
+            collections[name] = [];
+            chrome.storage.sync.set({ collections }, () => {
+                renderCollections();
+            });
+        }
+    }
+
+    // Delete a collection
+    function deleteCollection(name) {
+        if (collections[name]) {
+            delete collections[name];
+            chrome.storage.sync.set({ collections }, () => {
+                renderCollections();
+            });
+        }
+    }
+
+    // View switching functions with smooth scroll to top
+    function showHomeView() {
+        homeView.classList.remove('hidden');
+        categoryView.classList.add('hidden');
+        favoritesView.classList.add('hidden');
+        collectionsView.classList.add('hidden');
+        collectionDetailView.classList.add('hidden');
+        searchResultsView.classList.add('hidden');
+        viewTitle.textContent = 'Home';
         backButton.style.display = 'none';
         currentView = 'home';
         scrollToTop();
     }
 
     function showCategoryView(categoryName) {
-        homeView.style.display = 'none';
-        categoryView.style.display = 'block';
-        searchResultsView.style.display = 'none';
-        favoritesView.style.display = 'none';
-        collectionsView.style.display = 'none';
-        collectionDetailView.style.display = 'none';
-
-        const catObj = categories.find(cat => cat.name === categoryName);
-        pageTitle.innerHTML = `
-      <div class="title-page">
-        ${catObj.icon}
-        <span>${catObj.label}</span>
-      </div>
-    `;
+        homeView.classList.add('hidden');
+        categoryView.classList.remove('hidden');
+        favoritesView.classList.add('hidden');
+        collectionsView.classList.add('hidden');
+        collectionDetailView.classList.add('hidden');
+        searchResultsView.classList.add('hidden');
+        const category = categories.find(cat => cat.name === categoryName);
+        viewTitle.textContent = category ? category.label : 'Category';
         backButton.style.display = 'inline-block';
-
-        categoryItems.innerHTML = '';
-        const items = allResources[categoryName] || [];
-        items.forEach(item => {
-            categoryItems.appendChild(createResourceItemElement(item, false, false));
-        });
-
         currentView = 'category';
-        scrollToTop();
-    }
-
-    function showSearchResultsView(query, matchedItems) {
-        homeView.style.display = 'none';
-        categoryView.style.display = 'none';
-        searchResultsView.style.display = 'block';
-        favoritesView.style.display = 'none';
-        collectionsView.style.display = 'none';
-        collectionDetailView.style.display = 'none';
-
-        pageTitle.textContent = `Search: "${query}"`;
-        backButton.style.display = 'inline-block';
-
-        searchResultsList.innerHTML = '';
-        matchedItems.forEach(item => {
-            searchResultsList.appendChild(createResourceItemElement(item, false, false));
-        });
-
-        currentView = 'search';
+        currentCategory = categoryName;
+        renderCategoryResources(categoryName);
         scrollToTop();
     }
 
     function showFavoritesView() {
-        homeView.style.display = 'none';
-        categoryView.style.display = 'none';
-        searchResultsView.style.display = 'none';
-        favoritesView.style.display = 'block';
-        collectionsView.style.display = 'none';
-        collectionDetailView.style.display = 'none';
-
-        pageTitle.textContent = 'My Favorites';
+        homeView.classList.add('hidden');
+        categoryView.classList.add('hidden');
+        favoritesView.classList.remove('hidden');
+        collectionsView.classList.add('hidden');
+        collectionDetailView.classList.add('hidden');
+        searchResultsView.classList.add('hidden');
+        viewTitle.textContent = 'My Favorites';
         backButton.style.display = 'inline-block';
-
-        updateFavoritesView();
         currentView = 'favorites';
+        renderFavorites();
         scrollToTop();
     }
 
     function showCollectionsView() {
-        homeView.style.display = 'none';
-        categoryView.style.display = 'none';
-        searchResultsView.style.display = 'none';
-        favoritesView.style.display = 'none';
-        collectionDetailView.style.display = 'none';
-
-        collectionsView.style.display = 'block';
-        pageTitle.textContent = 'My Collections';
+        homeView.classList.add('hidden');
+        categoryView.classList.add('hidden');
+        favoritesView.classList.add('hidden');
+        collectionsView.classList.remove('hidden');
+        collectionDetailView.classList.add('hidden');
+        searchResultsView.classList.add('hidden');
+        viewTitle.textContent = 'My Collections';
         backButton.style.display = 'inline-block';
         currentView = 'collections';
-
-        renderCollectionsList();
+        renderCollections();
         scrollToTop();
     }
 
-    // ================= CATEGORY LIST =================
-    function renderCategoryList() {
-        categoriesList.innerHTML = '';
-        categories.forEach(category => {
-            const li = document.createElement('li');
-            li.classList.add('categoryItem');
-            li.style.color = '#ffffff';
+    function showCollectionDetailView(collectionName) {
+        homeView.classList.add('hidden');
+        categoryView.classList.add('hidden');
+        favoritesView.classList.add('hidden');
+        collectionsView.classList.add('hidden');
+        collectionDetailView.classList.remove('hidden');
+        searchResultsView.classList.add('hidden');
+        viewTitle.textContent = 'Collection';
+        backButton.style.display = 'inline-block';
+        currentView = 'collectionDetail';
+        currentCollection = collectionName;
+        renderCollectionDetail(collectionName);
+        scrollToTop();
+    }
 
-            const resourceCount = allResources[category.name]?.length || 0;
-            li.innerHTML = `
-        <div class="category-icon" style="background-color: ${category.background};">
-          ${category.icon}
-        </div>
-        <span class="category-label">${category.label}</span>
-        <span class="resource-count">${resourceCount} resources</span>
-      `;
-            li.addEventListener('click', () => showCategoryView(category.name));
-            categoriesList.appendChild(li);
+    function showSearchResultsView(query, results) {
+        homeView.classList.add('hidden');
+        categoryView.classList.add('hidden');
+        favoritesView.classList.add('hidden');
+        collectionsView.classList.add('hidden');
+        collectionDetailView.classList.add('hidden');
+        searchResultsView.classList.remove('hidden');
+        viewTitle.textContent = `Search: "${query}"`;
+        document.getElementById('searchResultsTitle').textContent = `Results for "${query}"`;
+        backButton.style.display = 'inline-block';
+        currentView = 'search';
+        renderSearchResults(results);
+        scrollToTop();
+    }
+
+    // Rendering functions for views
+    function renderCategoryResources(categoryName) {
+        categoryResources.innerHTML = '';
+        const resources = allResources[categoryName] || [];
+        resources.forEach(resource => {
+            const isFavorite = isResourceInFavorites(resource);
+            const element = createResourceElement(resource, isFavorite);
+            if (element) categoryResources.appendChild(element);
         });
     }
 
-    function createResourceItemElement(item, isFavorite = false) {
-        const resourceItem = document.createElement('div');
-        resourceItem.className = 'resource-item';
-
-        const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
-
-
-        const starIconClass = isFavorite ? 'star-icon favorited' : 'star-icon';
-        resourceItem.innerHTML = `
-  <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
-  <div class="resource-info">
-    <div class="resource-name">${item.name}</div>
-    <span class="resource-link">
-      ${item.link}
-    </span>
-  </div>
-  <div class="resource-actions">
-    <span class="${starIconClass}" data-resource-id="${item.link}">❤</span>
- 
-  </div>
-`;
-
-
-        // Clicking anywhere except the star => open link
-        resourceItem.addEventListener('click', (e) => {
-            if (!e.target.classList.contains('star-icon')) {
-                chrome.tabs.create({ url: item.link });
-            }
+    function renderFavorites() {
+        favoritesList.innerHTML = '';
+        favorites.forEach(resource => {
+            const element = createResourceElement(resource, true);
+            if (element) favoritesList.appendChild(element);
         });
-
-        // Click star to add/remove favorites
-        const starIcon = resourceItem.querySelector('.star-icon');
-        starIcon.addEventListener('click', (e) => {
-            e.stopPropagation();
-            // If it's already favorited, remove it
-            // Otherwise, add it
-            if (starIcon.classList.contains('favorited')) {
-                toggleFavorite(item, true);
-            } else {
-                toggleFavorite(item);
-            }
-        });
-
-        return resourceItem;
+        emptyFavorites.style.display = favorites.length > 0 ? 'none' : 'block';
     }
 
-
-
-    function toggleFavorite(resource, forceRemove = false) {
-        chrome.storage.sync.get(['favorites'], (result) => {
-            let favorites = result.favorites || [];
-            const index = favorites.findIndex(fav => fav.link === resource.link);
-
-            // If forceRemove or item is found in favorites => remove it
-            if (forceRemove) {
-                if (index !== -1) favorites.splice(index, 1);
-            } else {
-                if (index === -1) {
-                    favorites.push(resource);
-                } else {
-                    favorites.splice(index, 1);
-                }
-            }
-
-            chrome.storage.sync.set({ favorites }, () => {
-                // Re-render favorites
-                updateFavoritesView();
-
-                // Find the star icon for this resource
-                const starIcon = document.querySelector(`.star-icon[data-resource-id="${resource.link}"]`);
-                if (starIcon) {
-                    // If it’s now favorited => add .favorited
-                    const isFavoritedNow = (index === -1 && !forceRemove);
-                    starIcon.classList.toggle('favorited', isFavoritedNow);
-
-                    // Animate the star icon
-                    starIcon.classList.add('animate');
-                    setTimeout(() => starIcon.classList.remove('animate'), 300);
-                }
-            });
-        });
-    }
-
-
-
-
-    function removeCustomFavorite(domain) {
-        chrome.storage.sync.get(['customFavorites'], (result) => {
-            let customFavorites = result.customFavorites || [];
-            const idx = customFavorites.indexOf(domain);
-            if (idx !== -1) {
-                customFavorites.splice(idx, 1);
-            }
-            chrome.storage.sync.set({ customFavorites }, () => {
-                updateFavoritesView();
-            });
-        });
-    }
-
-    function updateFavoritesView() {
-        chrome.storage.sync.get(['favorites'], (result) => {
-            const favorites = result.favorites || [];
-            favoriteCount.textContent = favorites.length;
-            favoritesList.innerHTML = '';
-
-            // Check if there are no favorites
-            if (favorites.length === 0) {
-                favoritesView.classList.add('empty');
-                return;
-            } else {
-                favoritesView.classList.remove('empty');
-            }
-
-            // Loop through favorite objects and create elements
-            favorites.forEach(item => {
-                const resourceItem = createResourceItemElement(item, true, false);
-                favoritesList.appendChild(resourceItem);
-            });
-        });
-    }
-
-
-    function findResourceByName(resourceName) {
-        // Search all predefined categories
-        for (const catData of Object.values(allResources)) {
-            const item = catData.find(res => res.name === resourceName);
-            if (item) return item;
-        }
-        return null;
-    }
-
-    // ================== COLLECTIONS ==================
-    function renderCollectionsList() {
+    function renderCollections() {
         collectionsList.innerHTML = '';
-
-        const collNames = Object.keys(collections);
-        if (!collNames.length) {
-            collectionsList.innerHTML = `<p style="opacity:0.7; margin-left:4px;">No collections yet.</p>`;
+        const collectionNames = Object.keys(collections);
+        if (collectionNames.length === 0) {
+            const emptyMsg = document.createElement('p');
+            emptyMsg.className = 'empty-message';
+            emptyMsg.textContent = 'No collections yet. Create one to get started.';
+            collectionsList.appendChild(emptyMsg);
             return;
         }
-
-        // Some random background colors
         const bgColors = ["#5548EB", "#FF45A9", "#32CD6B", "#C22246", "#F97316", "#E79B1C", "#1F8B26", "#FF006E"];
-        let colorIndex = 0;
-
-        collNames.forEach(name => {
-            const resourcesCount = collections[name].length;
+        collectionNames.forEach((name, index) => {
+            const resources = collections[name] || [];
+            const bgColor = bgColors[index % bgColors.length];
             const li = document.createElement('li');
-            li.classList.add('categoryItem'); // reuse style
-            li.style.color = '#ffffff';
-
-            const firstLetter = name.charAt(0).toUpperCase();
-            const bgColor = bgColors[colorIndex % bgColors.length];
-            colorIndex++;
-
+            li.className = 'collection-item';
             li.innerHTML = `
-        <div class="category-icon" style="background-color:${bgColor};">
-          ${firstLetter}
+        <div class="collection-icon" style="background-color: ${bgColor};">
+          ${name.charAt(0).toUpperCase()}
         </div>
-        <span class="category-label">${name}</span>
-        <span class="resource-count">${resourcesCount} resources</span>
-        <span style="margin-left:auto; display:flex; align-items:center; gap:6px;">
-          <span class="add-resource-icon" style="cursor:pointer; font-weight:bold;">➕</span>
-          <span class="delete-collection" style="cursor:pointer; color:#ff5e5e; font-weight:bold;">X</span>
-        </span>
+        <div class="collection-info">
+          <div class="collection-name">${name}</div>
+          <div class="collection-count">${resources.length} resources</div>
+        </div>
+        <div class="collection-actions">
+          <button class="remove-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6h18"/>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>
+              <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+            </svg>
+          </button>
+        </div>
       `;
-
-            // Make entire li a drop target
-            li.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                li.classList.add('drag-over');
-            });
-            li.addEventListener('dragleave', () => {
-                li.classList.remove('drag-over');
-            });
-            li.addEventListener('drop', (e) => {
-                e.preventDefault();
-                li.classList.remove('drag-over');
-                try {
-                    const resourceData = JSON.parse(e.dataTransfer.getData('application/json'));
-                    addResourceToCollection(name, resourceData);
-                } catch (err) {
-                    console.error('Invalid drag data', err);
+            li.addEventListener('click', (e) => {
+                if (!e.target.closest('.remove-icon')) {
+                    showCollectionDetailView(name);
                 }
             });
-
-            // Clicking li => open detail (unless user clicked add/delete icons)
-            li.addEventListener('click', (evt) => {
-                if (
-                    evt.target.classList.contains('add-resource-icon') ||
-                    evt.target.classList.contains('delete-collection')
-                ) {
-                    return;
+            const deleteBtn = li.querySelector('.remove-icon');
+            deleteBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (confirm(`Delete collection "${name}"?`)) {
+                    deleteCollection(name);
                 }
-                openCollectionDetailView(name);
             });
-
-            // plus => add resource
-            const plusIcon = li.querySelector('.add-resource-icon');
-            plusIcon.addEventListener('click', (evt) => {
-                evt.stopPropagation();
-                openAddResourceModal(name);
-            });
-
-            // cross => delete entire collection
-            const crossIcon = li.querySelector('.delete-collection');
-            crossIcon.addEventListener('click', (evt) => {
-                evt.stopPropagation();
-                if (!confirm(`Delete entire collection "${name}"?`)) return;
-                delete collections[name];
-                saveCollections();
-            });
-
             collectionsList.appendChild(li);
         });
     }
 
-    function openAddResourceModal(collectionName) {
-        addResourceCollectionNameSpan.textContent = collectionName;
-        newResourceNameInput.value = '';
-        newResourceLinkInput.value = '';
-        addResourceModal.style.display = 'block';
-    }
-
-    saveNewResourceBtn.addEventListener('click', () => {
-        const collName = addResourceCollectionNameSpan.textContent;
-        const rName = newResourceNameInput.value.trim();
-        const rLink = newResourceLinkInput.value.trim() || "https://";
-        if (!rName || !collName) return;
-
-        const resourceObj = {
-            name: rName,
-            link: rLink,
-            description: ''
-        };
-        addResourceToCollection(collName, resourceObj);
-
-        addResourceModal.style.display = 'none';
-    });
-
-    closeAddResourceModalBtn.addEventListener('click', () => {
-        addResourceModal.style.display = 'none';
-    });
-
-    function createNewCollection(name) {
-        if (!collections[name]) {
-            collections[name] = [];
-            saveCollections();
-        }
-    }
-
-    function saveCollections() {
-        chrome.storage.sync.set({ collections }, () => {
-            renderCollectionsList();
-            // If a detail view is open, re-render it
-            if (collectionDetailView.style.display === 'block') {
-                const openName = collectionDetailTitle.getAttribute('data-collection-name');
-                if (openName) {
-                    renderCollectionDetail(openName);
-                }
-            }
+    function renderCollectionDetail(collectionName) {
+        collectionDetailTitle.textContent = collectionName;
+        collectionResources.innerHTML = '';
+        const resources = collections[collectionName] || [];
+        emptyCollection.style.display = resources.length > 0 ? 'none' : 'block';
+        resources.forEach(resource => {
+            const element = createCollectionResourceElement(resource, collectionName);
+            if (element) collectionResources.appendChild(element);
         });
     }
 
-    function addResourceToCollection(collName, resourceObj) {
-        if (!collections[collName]) return;
-        // avoid duplicates by name
-        const exists = collections[collName].some(r => r.name === resourceObj.name);
-        if (!exists) {
-            collections[collName].push(resourceObj);
-            saveCollections();
-        }
+    function renderSearchResults(results) {
+        searchResultsList.innerHTML = '';
+        emptySearchResults.style.display = results.length > 0 ? 'none' : 'block';
+        results.forEach(resource => {
+            const isFavorite = isResourceInFavorites(resource);
+            const element = createResourceElement(resource, isFavorite);
+            if (element) searchResultsList.appendChild(element);
+        });
     }
 
-    // =========== COLLECTION DETAIL VIEW ===========
-    function openCollectionDetailView(name) {
-        homeView.style.display = 'none';
-        categoryView.style.display = 'none';
-        searchResultsView.style.display = 'none';
-        favoritesView.style.display = 'none';
-        collectionsView.style.display = 'none';
-
-        collectionDetailView.style.display = 'block';
-
-        pageTitle.textContent = `Collection: ${name}`;
-        backButton.style.display = 'inline-block';
-        currentView = 'collectionDetail';
-
-        collectionDetailTitle.textContent = name;
-        collectionDetailTitle.setAttribute('data-collection-name', name);
-
-        renderCollectionDetail(name);
-        scrollToTop();
-    }
-
-    function renderCollectionDetail(name) {
-        collectionResourcesList.innerHTML = '';
-        const items = collections[name] || [];
-
-        if (!items.length) {
-            collectionResourcesList.innerHTML = `
-        <li style="opacity:0.7; margin:6px 0;">No resources in this collection.</li>
-      `;
+    // Search functionality: only include resources that have a valid name and link
+    function performSearch(query) {
+        if (!query.trim()) {
+            showHomeView();
             return;
         }
-
-        items.forEach((item, idx) => {
-            const li = document.createElement('li');
-            li.style.marginBottom = '6px';
-            li.style.listStyle = 'none';
-            li.style.cursor = 'pointer';
-
-            const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${item.link}`;
-            li.innerHTML = `
-            <img class="resource-favicon" src="${faviconUrl}" alt="favicon" />
-  <div class="resource-info">
-    <div class="resource-name">${item.name}</div>
-    <span class="resource-link">
-      ${item.link}
-    </span>
-  </div>
-  <div class="resource-actions">
-    <span class="remove-icon" style="color:#ff5e5e; cursor:pointer; font-weight:bold;">X</span>
- 
-  </div>
-       
-      `;
-
-
-            // clicking => open the link
-            li.addEventListener('click', (e) => {
-                if (!e.target.classList.contains('remove-icon')) {
-                    chrome.tabs.create({ url: item.link });
+        const results = [];
+        const lowerQuery = query.toLowerCase();
+        Object.values(allResources).forEach(categoryResources => {
+            categoryResources.forEach(resource => {
+                if (resource.name && resource.link) {
+                    if (
+                        resource.name.toLowerCase().includes(lowerQuery) ||
+                        resource.link.toLowerCase().includes(lowerQuery) ||
+                        (resource.description && resource.description.toLowerCase().includes(lowerQuery))
+                    ) {
+                        results.push(resource);
+                    }
                 }
             });
-
-            // remove item from collection
-            const removeIcon = li.querySelector('.remove-icon');
-            removeIcon.addEventListener('click', (e) => {
-                e.stopPropagation();
-                collections[name].splice(idx, 1);
-                saveCollections(); // re-renders
-            });
-
-            collectionResourcesList.appendChild(li);
         });
+        showSearchResultsView(query, results);
     }
 
-    closeCollectionDetailViewBtn.addEventListener('click', () => {
-        showCollectionsView();
-    });
-
-    // =========== EVENT LISTENERS ===========
-    myFav.addEventListener('click', showFavoritesView);
-
-    // *** THIS LINE FIXES THE "My Collections" BUTTON CLICK ***
-    myCollectionsBtn.addEventListener('click', showCollectionsView);
-
+    // Event Listeners
     backButton.addEventListener('click', () => {
-        if (['category', 'search', 'favorites', 'collections', 'collectionDetail'].includes(currentView)) {
-            showHomeView();
-        }
-    });
-
-    createCollectionBtn.addEventListener('click', () => {
-        const newName = prompt("Enter collection name:");
-        if (!newName) return;
-        createNewCollection(newName.trim());
-    });
-
-    // =========== UNIFIED SEARCH LOGIC ===========
-    searchBar.addEventListener('input', async () => {
-        const query = searchBar.value.trim().toLowerCase();
-        if (!query) {
-            showHomeView();
+        if (!newCollectionModal.classList.contains('hidden')) {
+            closeModal(newCollectionModal);
             return;
         }
-
-        // We'll gather items from:
-        // 1) allResources
-        // 2) favorites + customFavorites
-        // 3) all collections
-        // then filter them by `query`.
-
-        const finalList = [];
-        const seen = new Set();
-
-        // 1) All Predefined
-        for (const catData of Object.values(allResources)) {
-            catData.forEach(item => {
-                if (!seen.has(item.name)) {
-                    seen.add(item.name);
-                    finalList.push(item);
-                }
-            });
+        if (!addResourceModal.classList.contains('hidden')) {
+            closeModal(addResourceModal);
+            return;
         }
-
-        // 2) Favorites & custom
-        let { favorites = [], customFavorites = [] } = await getStorage(['favorites', 'customFavorites']);
-        // Normal favorites => find in allResources
-        favorites.forEach(favName => {
-            if (!seen.has(favName)) {
-                const found = findResourceByName(favName);
-                if (found) {
-                    seen.add(favName);
-                    finalList.push(found);
-                }
-            }
-        });
-        // custom domain => build item obj
-        customFavorites.forEach(domain => {
-            if (!seen.has(domain)) {
-                seen.add(domain);
-                finalList.push({
-                    name: domain,
-                    link: `https://${domain}`,
-                    description: ''
-                });
-            }
-        });
-
-        // 3) Collections
-        Object.keys(collections).forEach(collName => {
-            const resources = collections[collName];
-            resources.forEach(r => {
-                if (!seen.has(r.name)) {
-                    seen.add(r.name);
-                    finalList.push(r);
-                }
-            });
-        });
-
-        // filter finalList by query
-        const matched = finalList.filter(item => {
-            // search in name + description + tags
-            const text = (
-                item.name + ' ' +
-                (item.description || '') + ' ' +
-                (item.tags || []).join(' ')
-            ).toLowerCase();
-            return text.includes(query);
-        });
-
-        showSearchResultsView(query, matched);
+        if (currentView === 'collectionDetail') {
+            showCollectionsView();
+        } else {
+            showHomeView();
+        }
     });
 
-    // helper for storage
-    function getStorage(keys) {
-        return new Promise(resolve => {
-            chrome.storage.sync.get(keys, res => resolve(res));
-        });
-    }
+    favoritesButton.addEventListener('click', showFavoritesView);
+    collectionsButton.addEventListener('click', showCollectionsView);
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+        if (query) {
+            performSearch(query);
+        } else {
+            showHomeView();
+        }
+    });
+
+    // Collection Create Modal events
+    createCollectionBtn.addEventListener('click', () => {
+        newCollectionName.value = '';
+        newCollectionModal.classList.remove('hidden');
+    });
+
+    createCollectionConfirm.addEventListener('click', () => {
+        const name = newCollectionName.value.trim();
+        if (name) {
+            createCollection(name);
+            closeModal(newCollectionModal);
+        }
+    });
+
+    createCollectionCancel.addEventListener('click', () => {
+        closeModal(newCollectionModal);
+    });
+
+    // Add Resource Modal events
+    addResourceBtn.addEventListener('click', () => {
+        currentCollectionName.textContent = currentCollection;
+        newResourceName.value = '';
+        newResourceLink.value = 'https://';
+        addResourceModal.classList.remove('hidden');
+    });
+
+    addResourceConfirm.addEventListener('click', () => {
+        const name = newResourceName.value.trim();
+        const link = newResourceLink.value.trim();
+        if (name && link) {
+            const resource = { name, link, description: '' };
+            addToCollection(resource, currentCollection);
+            closeModal(addResourceModal);
+        }
+    });
+
+    addResourceCancel.addEventListener('click', () => {
+        closeModal(addResourceModal);
+    });
+
+    // Initialize the extension and show home view
+    await initialize();
+    showHomeView();
 });

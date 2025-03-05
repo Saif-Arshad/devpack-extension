@@ -2,116 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>DevPack : Your Development Resources in One Pack</title>
-    <!-- Your CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPack - Your Development Resources</title>
     <link rel="stylesheet" href="popup.css" />
 </head>
 
 <body>
-    <!-- ========== STICKY HEADER ========== -->
-    <div class="sticky-header">
+    <div class="app-container">
+        <!-- Loading Indicator (shown while resources load) -->
+        <div id="loadingIndicator" class="loading">
+            <div class="spinner"></div>
+        </div>
 
-
-        <header id="header">
-            <div style="display: flex; align-items: center; gap: 8px;">
-                <img src="./Assets/logo.png" alt="DevPack Logo" />
-                <div id="headerContent">
-                    <h3>DevPack</h3>
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="DevPack Logo" class="logo">
+                <div class="header-text">
+                    <h1>DevPack</h1>
                     <p>Your Development Resources in One Pack</p>
                 </div>
             </div>
         </header>
-        <!-- ===== TITLE BAR ===== -->
-        <div id="titleBar">
-            <button id="backButton">
-                <img src="./Assets/back-arrow.png" style="height: 18px; width: 20px;" alt="">
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <button id="backButton" class="back-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 18-6-6 6-6" />
+                </svg>
             </button>
-            <h3 id="pageTitle">
-                <!-- Default Home Icon -->
-                <img src="./Assets/home-button.png" style="height: 18px; width: 20px;" alt="">
-            </h3>
-        </div>
-        <!-- ===== SEARCH CONTAINER ===== -->
-        <div id="searchContainer">
-
-            <svg class="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                    d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
-            </svg>
-
-            <input type="text" id="searchBar" placeholder="Quick search" />
-        </div>
-
-    </div>
-
-    <!-- ========== MAIN CONTENT ========== -->
-    <main>
-        <!-- ===== HOME VIEW ===== -->
-        <section id="homeView">
-            <div style="display:flex; justify-content: space-between; align-items:center; margin-bottom:8px;">
-                <h3 id="my_fav" style="margin:0;">
-                    My Favorites (<span id="favoriteCount">0</span>)
-                </h3>
-                <!-- Button to open Collections view -->
-                <button id="my_collections" class="collections-btn">My Collections</button>
-            </div>
-            <!-- List of all categories -->
-            <ul id="categoriesList"></ul>
-        </section>
-
-        <!-- ===== CATEGORY VIEW ===== -->
-        <section id="categoryView">
-            <div class="resource-list" id="categoryItems"></div>
-        </section>
-
-        <!-- ===== SEARCH RESULTS VIEW ===== -->
-        <section id="searchResultsView">
-            <div class="resource-list" id="searchResultsList"></div>
-        </section>
-
-        <!-- ===== FAVORITES VIEW ===== -->
-        <section id="favoritesView">
-            <div class="resource-list" id="favoritesList"></div>
-        </section>
-
-        <!-- ===== COLLECTIONS LIST VIEW ===== -->
-        <section id="collectionsView" style="display:none;">
-            <div id="collectionsHeader" style="margin-bottom:10px; display:flex; align-items:center;">
-                <h3 style="margin:0;">My Collections</h3>
-                <!-- + Collection Button -->
-                <button id="createCollectionBtn" class="collections-btn" style="margin-left:auto;">+ Collection</button>
-            </div>
-            <ul id="collectionsList"></ul>
-        </section>
-
-        <!-- ===== COLLECTION DETAIL VIEW ===== -->
-        <section id="collectionDetailView" style="display:none;">
-            <div id="collectionDetailHeader" style="display:flex; align-items:center; justify-content:space-between;">
-                <h3 id="collectionDetailTitle" style="margin:0;"></h3>
-                <button id="closeCollectionDetailViewBtn"
-                    style="background:none; border:none; color:#fff; font-size:16px; cursor:pointer;">
-                    ×
+            <h2 id="viewTitle" class="view-title">Home</h2>
+            <div class="actions">
+                <button id="favoritesButton" class="favorites-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                    <span id="favoritesCount" class="favorites-count">0</span>
                 </button>
             </div>
-            <ul id="collectionResourcesList" style="margin-top:10px; padding:0; list-style:none;"></ul>
-        </section>
+        </nav>
 
-        <!-- ===== ADD RESOURCE MODAL ===== -->
-        <div id="addResourceModal" class="modal">
+        <!-- Search Bar -->
+        <div class="search-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="search-icon">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+            </svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search resources...">
+        </div>
+
+        <!-- Views -->
+        <main class="main-content">
+            <!-- Home View -->
+            <section id="homeView" class="view">
+                <div class="home-header">
+                    <h3>My Favorites (<span id="favCount">0</span>)</h3>
+                    <button id="collectionsButton" class="collections-button">My Collections</button>
+                </div>
+                <ul id="categoriesList" class="categories-list"></ul>
+            </section>
+
+            <!-- Category View -->
+            <section id="categoryView" class="view hidden">
+                <div id="categoryResources" class="resources-list"></div>
+            </section>
+
+            <!-- Favorites View -->
+            <section id="favoritesView" class="view hidden">
+                <div class="favorites-header">
+                    <h3>My Favorites</h3>
+                    <div class="favorites-counter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                        </svg>
+                        <span id="favoritesTotal">0</span> items
+                    </div>
+                </div>
+                <div id="favoritesList" class="resources-list"></div>
+                <div id="emptyFavorites" class="empty-state">
+                    <p>No favorites yet. Add some by clicking the heart icon on resources.</p>
+                </div>
+            </section>
+
+            <!-- Collections View -->
+            <section id="collectionsView" class="view hidden">
+                <div class="collections-header">
+                    <h3>My Collections</h3>
+                    <button id="createCollectionBtn" class="create-collection-btn">+ Collection</button>
+                </div>
+                <ul id="collectionsList" class="collections-list"></ul>
+            </section>
+
+            <!-- Collection Detail View -->
+            <section id="collectionDetailView" class="view hidden">
+                <div class="collection-detail-header">
+                    <h3 id="collectionDetailTitle"></h3>
+                    <button id="addResourceBtn" class="add-resource-btn">+ Add Resource</button>
+                </div>
+                <div id="collectionResources" class="resources-list"></div>
+                <div id="emptyCollection" class="empty-state">
+                    <p>No resources in this collection yet.</p>
+                </div>
+            </section>
+
+            <!-- Search Results View -->
+            <section id="searchResultsView" class="view hidden">
+                <h3 id="searchResultsTitle">Search Results</h3>
+                <div id="searchResultsList" class="resources-list"></div>
+                <div id="emptySearchResults" class="empty-state">
+                    <p>No results found. Try a different search term.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modals -->
+        <div id="newCollectionModal" class="modal hidden">
             <div class="modal-content">
-                <h3>Add Resource to <span id="addResourceCollectionName"></span></h3>
-                <input type="text" id="newResourceNameInput" placeholder="Resource Name" />
-                <input type="text" id="newResourceLinkInput" placeholder="https://..." />
-                <button id="saveNewResourceBtn">Save</button>
-                <button id="closeAddResourceModalBtn">Cancel</button>
+                <h3>Create New Collection</h3>
+                <input type="text" id="newCollectionName" placeholder="Collection name">
+                <div class="modal-actions">
+                    <button id="createCollectionConfirm" class="modal-btn confirm">Create</button>
+                    <button id="createCollectionCancel" class="modal-btn cancel">Cancel</button>
+                </div>
             </div>
         </div>
-    </main>
 
-    <!-- ========== SCRIPT ========== -->
-    <script src="popup.js"></script>
+        <div id="addResourceModal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Add Resource to <span id="currentCollectionName"></span></h3>
+                <input type="text" id="newResourceName" placeholder="Resource name">
+                <input type="text" id="newResourceLink" placeholder="https://...">
+                <div class="modal-actions">
+                    <button id="addResourceConfirm" class="modal-btn confirm">Add</button>
+                    <button id="addResourceCancel" class="modal-btn cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="popup.js"></script>
 </body>
 
 </html>
