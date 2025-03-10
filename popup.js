@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentView = 'home';
     let currentCategory = '';
     let currentCollection = '';
-    let allResources = {}; // Will hold resource arrays keyed by category name
+    let allResources = {}; // Will hold resource arrays keyed by category name (fetched on demand)
     let favorites = [];
     let collections = {};
 
@@ -71,43 +71,46 @@ document.addEventListener('DOMContentLoaded', async () => {
         loadingIndicator.classList.add('hidden');
     }
 
-    // Load resources from JSON files for each category
-    async function loadResources() {
-        for (const category of categories) {
-            try {
-                const response = await fetch(category.filePath);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
-                // Use the category name as the key
-                // Also filter out any resource that does not have a valid name or link
-                allResources[category.name] = data.filter(
-                    resource => resource.name && resource.link
-                );
-            } catch (error) {
-                console.error(`Error loading resources for ${category.name}:`, error);
-                allResources[category.name] = [];
+    // Fetch resources for a single category if not already loaded
+    async function fetchCategoryResources(category) {
+        if (allResources[category.name]) {
+            // Already fetched
+            return;
+        }
+        try {
+            showLoading();
+            const response = await fetch(category.filePath);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
+            const data = await response.json();
+            allResources[category.name] = data.filter(resource => resource.name && resource.link);
+        } catch (error) {
+            console.error(`Error loading resources for ${category.name}:`, error);
+            allResources[category.name] = [];
+        } finally {
+            hideLoading();
         }
     }
 
-    // Initialize: load resources and favorites/collections from storage
+    // Initialize: load favorites/collections from storage, render categories
     async function initialize() {
         showLoading();
-        await loadResources();
+        // Load favorites
         chrome.storage.sync.get(['favorites'], (result) => {
             favorites = result.favorites || [];
             updateFavoriteCount();
-            renderCategories();
         });
+        // Load collections
         chrome.storage.sync.get(['collections'], (result) => {
             collections = result.collections || {};
         });
+        // Render categories (just icons and labels, no fetching yet)
+        renderCategories();
         hideLoading();
     }
 
-    // Helper function to close modals
+    // Close a modal
     function closeModal(modal) {
         modal.classList.add('hidden');
     }
@@ -127,7 +130,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // Update UI counters for favorites
+    // Update favorites count in UI
     function updateFavoriteCount() {
         const count = favorites.length;
         favoritesCount.textContent = count;
@@ -136,67 +139,67 @@ document.addEventListener('DOMContentLoaded', async () => {
         emptyFavorites.style.display = count > 0 ? 'none' : 'block';
     }
 
-    // Render the categories list using the imported categories data
+    // Render the categories list with icon + label
     function renderCategories() {
         categoriesList.innerHTML = '';
         categories.forEach(category => {
-            // Get the resources for the category (loaded via fetch)
-            const resources = allResources[category.name] || [];
             const li = document.createElement('li');
             li.className = 'category-item';
             li.innerHTML = `
-        <div class="category-icon" style="background-color: ${category.background};">
-          ${category.icon}
-        </div>
-        <div class="category-info">
-          <div class="category-name">${category.label}</div>
-          <div class="category-count">${resources.length} resources</div>
-        </div>
-      `;
-            li.addEventListener('click', () => {
+                <div class="category-icon" style="background-color: ${category.background};">
+                  ${category.icon}
+                </div>
+                <div class="category-info">
+                  <div class="category-name">${category.label}</div>
+                  <!-- We won't show resource count until loaded, or remove entirely -->
+                </div>
+            `;
+            // On click, fetch the category if needed, then show category view
+            li.addEventListener('click', async () => {
+                await fetchCategoryResources(category);
                 showCategoryView(category.name);
             });
             categoriesList.appendChild(li);
         });
     }
 
-    // Create a resource card element (skip if no name or link)
+    // Create a resource card element
     function createResourceElement(resource, isFavorite = false) {
         if (!resource.name || !resource.link) return null;
         const div = document.createElement('div');
         div.className = 'resource-item';
         const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${resource.link}`;
         div.innerHTML = `
-      <div class="resource-favicon">
-        <img src="${faviconUrl}" alt="${resource.name}" onerror="this.src='assets/placeholder.svg'">
-      </div>
-      <div class="resource-info">
-        <div class="resource-name">${resource.name}</div>
-        <div class="resource-link">${resource.link}</div>
-      </div>
-      <div class="resource-actions">
-        <button class="heart-icon ${isFavorite ? 'active' : ''}">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="${isFavorite ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-          </svg>
-        </button>
-        <button class="link-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-        </button>
-      </div>
-    `;
+            <div class="resource-favicon">
+                <img src="${faviconUrl}" alt="${resource.name}" onerror="this.src='assets/placeholder.svg'">
+            </div>
+            <div class="resource-info">
+                <div class="resource-name">${resource.name}</div>
+                <div class="resource-link">${resource.link}</div>
+            </div>
+            <div class="resource-actions">
+                <button class="heart-icon ${isFavorite ? 'active' : ''}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="${isFavorite ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                </button>
+                <button class="link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                    </svg>
+                </button>
+            </div>
+        `;
 
-        // Open resource link on click (unless clicking an icon)
+        // Open resource link on main area click (not icons)
         div.addEventListener('click', (e) => {
             if (!e.target.closest('.heart-icon') && !e.target.closest('.link-icon') && !e.target.closest('.remove-icon')) {
                 chrome.tabs.create({ url: resource.link });
             }
         });
 
-        // Toggle favorite on heart icon click
+        // Toggle favorite
         const heartIcon = div.querySelector('.heart-icon');
         heartIcon.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -208,7 +211,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             setTimeout(() => { heartIcon.classList.remove('animate'); }, 300);
         });
 
-        // Open resource link in a new tab on link icon click
+        // Open link on link icon
         const linkIcon = div.querySelector('.link-icon');
         linkIcon.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -226,12 +229,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         const removeButton = document.createElement('button');
         removeButton.className = 'remove-icon';
         removeButton.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M3 6h18"/>
-        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>
-        <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
-      </svg>
-    `;
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 6h18"/>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>
+                <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+            </svg>
+        `;
         removeButton.addEventListener('click', (e) => {
             e.stopPropagation();
             removeFromCollection(resource, collectionName);
@@ -306,7 +310,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // View switching functions with smooth scroll to top
+    // View switching
     function showHomeView() {
         homeView.classList.remove('hidden');
         categoryView.classList.add('hidden');
@@ -394,7 +398,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         scrollToTop();
     }
 
-    // Rendering functions for views
+    // Rendering functions
     function renderCategoryResources(categoryName) {
         categoryResources.innerHTML = '';
         const resources = allResources[categoryName] || [];
@@ -431,23 +435,25 @@ document.addEventListener('DOMContentLoaded', async () => {
             const li = document.createElement('li');
             li.className = 'collection-item';
             li.innerHTML = `
-        <div class="collection-icon" style="background-color: ${bgColor};">
-          ${name.charAt(0).toUpperCase()}
-        </div>
-        <div class="collection-info">
-          <div class="collection-name">${name}</div>
-          <div class="collection-count">${resources.length} resources</div>
-        </div>
-        <div class="collection-actions">
-          <button class="remove-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 6h18"/>
-              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>
-              <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
-            </svg>
-          </button>
-        </div>
-      `;
+                <div class="collection-icon" style="background-color: ${bgColor};">
+                    ${name.charAt(0).toUpperCase()}
+                </div>
+                <div class="collection-info">
+                    <div class="collection-name">${name}</div>
+                    <div class="collection-count">${resources.length} resources</div>
+                </div>
+                <div class="collection-actions">
+                    <button class="remove-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 6h18"/>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>
+                            <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                        </svg>
+                    </button>
+                </div>
+            `;
             li.addEventListener('click', (e) => {
                 if (!e.target.closest('.remove-icon')) {
                     showCollectionDetailView(name);
@@ -485,7 +491,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Search functionality: only include resources that have a valid name and link
+    // Search functionality
     function performSearch(query) {
         if (!query.trim()) {
             showHomeView();
@@ -493,8 +499,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         const results = [];
         const lowerQuery = query.toLowerCase();
-        Object.values(allResources).forEach(categoryResources => {
-            categoryResources.forEach(resource => {
+        Object.values(allResources).forEach(catResources => {
+            catResources.forEach(resource => {
                 if (resource.name && resource.link) {
                     if (
                         resource.name.toLowerCase().includes(lowerQuery) ||
@@ -511,6 +517,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Event Listeners
     backButton.addEventListener('click', () => {
+        // Close modal if open
         if (!newCollectionModal.classList.contains('hidden')) {
             closeModal(newCollectionModal);
             return;
@@ -519,6 +526,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             closeModal(addResourceModal);
             return;
         }
+        // Navigate back
         if (currentView === 'collectionDetail') {
             showCollectionsView();
         } else {
@@ -528,6 +536,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     favoritesButton.addEventListener('click', showFavoritesView);
     collectionsButton.addEventListener('click', showCollectionsView);
+
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim();
         if (query) {
@@ -577,7 +586,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         closeModal(addResourceModal);
     });
 
-    // Initialize the extension and show home view
+    // Initialize the extension and show home
     await initialize();
     showHomeView();
 });
