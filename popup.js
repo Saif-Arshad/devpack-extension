@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentView = 'home';
     let currentCategory = '';
     let currentCollection = '';
-    let allResources = {}; // Will hold resource arrays keyed by category name (fetched on demand)
+    let allResources = {}; // Will hold resource arrays keyed by category name
     let favorites = [];
     let collections = {};
 
@@ -93,6 +93,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
+    // Load all categories (for global search)
+    async function fetchAllCategories() {
+        for (const category of categories) {
+            if (!allResources[category.name]) {
+                await fetchCategoryResources(category);
+            }
+        }
+    }
+
     // Initialize: load favorites/collections from storage, render categories
     async function initialize() {
         showLoading();
@@ -120,7 +129,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Close modals when clicking outside modal content
+    // Close modals when clicking outside
     window.addEventListener('click', (e) => {
         if (e.target === newCollectionModal) {
             closeModal(newCollectionModal);
@@ -130,7 +139,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // Update favorites count in UI
+    // Update favorites count
     function updateFavoriteCount() {
         const count = favorites.length;
         favoritesCount.textContent = count;
@@ -139,7 +148,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         emptyFavorites.style.display = count > 0 ? 'none' : 'block';
     }
 
-    // Render the categories list with icon + label
+    // Render category icons/labels
     function renderCategories() {
         categoriesList.innerHTML = '';
         categories.forEach(category => {
@@ -151,10 +160,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
                 <div class="category-info">
                   <div class="category-name">${category.label}</div>
-                  <!-- We won't show resource count until loaded, or remove entirely -->
                 </div>
             `;
-            // On click, fetch the category if needed, then show category view
             li.addEventListener('click', async () => {
                 await fetchCategoryResources(category);
                 showCategoryView(category.name);
@@ -163,7 +170,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Create a resource card element
+    // Create a resource item
     function createResourceElement(resource, isFavorite = false) {
         if (!resource.name || !resource.link) return null;
         const div = document.createElement('div');
@@ -179,27 +186,29 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
             <div class="resource-actions">
                 <button class="heart-icon ${isFavorite ? 'active' : ''}">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="${isFavorite ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="${isFavorite ? 'currentColor' : 'none'}" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
                     </svg>
                 </button>
                 <button class="link-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
                         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
                     </svg>
                 </button>
             </div>
         `;
-
-        // Open resource link on main area click (not icons)
+        // Open link if user clicks outside icons
         div.addEventListener('click', (e) => {
             if (!e.target.closest('.heart-icon') && !e.target.closest('.link-icon') && !e.target.closest('.remove-icon')) {
                 chrome.tabs.create({ url: resource.link });
             }
         });
-
-        // Toggle favorite
+        // Heart icon => toggle favorite
         const heartIcon = div.querySelector('.heart-icon');
         heartIcon.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -210,18 +219,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             svg.setAttribute('fill', heartIcon.classList.contains('active') ? 'currentColor' : 'none');
             setTimeout(() => { heartIcon.classList.remove('animate'); }, 300);
         });
-
-        // Open link on link icon
+        // Link icon => open link
         const linkIcon = div.querySelector('.link-icon');
         linkIcon.addEventListener('click', (e) => {
             e.stopPropagation();
             chrome.tabs.create({ url: resource.link });
         });
-
         return div;
     }
 
-    // Create resource element with remove button for collections
+    // Resource element with remove button for collections
     function createCollectionResourceElement(resource, collectionName) {
         const element = createResourceElement(resource, isResourceInFavorites(resource));
         if (!element) return null;
@@ -229,8 +236,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         const removeButton = document.createElement('button');
         removeButton.className = 'remove-icon';
         removeButton.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 6h18"/>
                 <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>
                 <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
@@ -244,7 +252,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return element;
     }
 
-    // Toggle favorite for a resource
+    // Toggle favorite
     function toggleFavorite(resource) {
         const index = favorites.findIndex(fav => fav.link === resource.link);
         if (index === -1) {
@@ -258,12 +266,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Check if a resource is in favorites
+    // Check if resource is favorite
     function isResourceInFavorites(resource) {
         return favorites.some(fav => fav.link === resource.link);
     }
 
-    // Add resource to a collection
+    // Collections
     function addToCollection(resource, collectionName) {
         if (!collections[collectionName]) {
             collections[collectionName] = [];
@@ -278,7 +286,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // Remove resource from a collection
     function removeFromCollection(resource, collectionName) {
         if (!collections[collectionName]) return;
         const index = collections[collectionName].findIndex(r => r.link === resource.link);
@@ -290,7 +297,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // Create a new collection
     function createCollection(name) {
         if (!collections[name]) {
             collections[name] = [];
@@ -300,7 +306,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // Delete a collection
     function deleteCollection(name) {
         if (collections[name]) {
             delete collections[name];
@@ -398,7 +403,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         scrollToTop();
     }
 
-    // Rendering functions
+    // Rendering
     function renderCategoryResources(categoryName) {
         categoryResources.innerHTML = '';
         const resources = allResources[categoryName] || [];
@@ -491,12 +496,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Search functionality
-    function performSearch(query) {
+    // **Updated** performSearch: fetch all categories, then search
+    async function performSearch(query) {
         if (!query.trim()) {
             showHomeView();
             return;
         }
+
+        // 1. Fetch any categories not already fetched
+        await fetchAllCategories();
+
+        // 2. Now search in allResources
         const results = [];
         const lowerQuery = query.toLowerCase();
         Object.values(allResources).forEach(catResources => {
@@ -512,12 +522,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             });
         });
+
+        // 3. Show results
         showSearchResultsView(query, results);
     }
 
     // Event Listeners
     backButton.addEventListener('click', () => {
-        // Close modal if open
         if (!newCollectionModal.classList.contains('hidden')) {
             closeModal(newCollectionModal);
             return;
@@ -537,16 +548,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     favoritesButton.addEventListener('click', showFavoritesView);
     collectionsButton.addEventListener('click', showCollectionsView);
 
-    searchInput.addEventListener('input', (e) => {
+    // **Make this listener async** to await performSearch
+    searchInput.addEventListener('input', async (e) => {
         const query = e.target.value.trim();
         if (query) {
-            performSearch(query);
+            await performSearch(query);
         } else {
             showHomeView();
         }
     });
 
-    // Collection Create Modal events
+    // Collection Create Modal
     createCollectionBtn.addEventListener('click', () => {
         newCollectionName.value = '';
         newCollectionModal.classList.remove('hidden');
@@ -564,7 +576,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         closeModal(newCollectionModal);
     });
 
-    // Add Resource Modal events
+    // Add Resource Modal
     addResourceBtn.addEventListener('click', () => {
         currentCollectionName.textContent = currentCollection;
         newResourceName.value = '';
@@ -586,7 +598,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         closeModal(addResourceModal);
     });
 
-    // Initialize the extension and show home
+    // Init + show home
     await initialize();
     showHomeView();
 });
