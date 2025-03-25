@@ -1,0 +1,320 @@
+[
+
+    {
+        "name": "ImageMap",
+        "link": "https://imagemap.org",
+        "tags": [
+            "imagemap",
+            "image",
+            "mapping"
+        ]
+    },
+  
+    {
+        "name": "Google Alerts",
+        "link": "https://www.google.com/alerts?ref=buffer.com",
+        "tags": [
+            "alerts",
+            "monitoring",
+            "google"
+        ]
+    },
+    {
+        "name": "Google Ads",
+        "link": "https://ads.google.com/aw/home?ocid=1227469167&euid=843061851&__u=8886066499&uscid=1227469167&__c=6071257783&authuser=0&workspaceId=0&subid=pk-en-et-g-aw-c-home-awhp_xin1_signin!o2-awhp-hv-01-22",
+        "tags": [
+            "ads",
+            "google",
+            "marketing"
+        ]
+    },
+    {
+        "name": "Google Trends",
+        "link": "https://trends.google.com/home",
+        "tags": [
+            "trends",
+            "google",
+            "seo"
+        ]
+    },
+    {
+        "name": "SEO Review Tools Keyword Density Checker",
+        "link": "https://www.seoreviewtools.com/keyword-density-checker/?text-input",
+        "tags": [
+            "keyword",
+            "density",
+            "seo"
+        ]
+    },
+    {
+        "name": "KeySearch LSI Keywords Generator",
+        "link": "https://www.keysearch.co/tools/lsi-keywords-generator",
+        "tags": [
+            "keyword",
+            "lsi",
+            "seo"
+        ]
+    },
+    {
+        "name": "Answer The Public",
+        "link": "https://answerthepublic.com/yhuhda/member/searches",
+        "tags": [
+            "keyword",
+            "questions",
+            "seo"
+        ]
+    },
+    {
+        "name": "SEMrush",
+        "link": "https://www.semrush.com/projects/",
+        "tags": [
+            "seo",
+            "marketing",
+            "tools"
+        ]
+    },
+    {
+        "name": "UberSuggest",
+        "link": "https://app.neilpatel.com/en/dashboard",
+        "tags": [
+            "keyword",
+            "seo",
+            "analysis"
+        ]
+    },
+    {
+        "name": "The Hoth Google Keyword Planner",
+        "link": "https://thehoth.com/google-keyword-planner/",
+        "tags": [
+            "keyword",
+            "seo",
+            "planner"
+        ]
+    },
+    {
+        "name": "SEO Site Checkup",
+        "link": "https://seositecheckup.com/",
+        "tags": [
+            "seo",
+            "audit",
+            "analysis"
+        ]
+    },
+    {
+        "name": "SeOptimer",
+        "link": "https://www.seoptimer.com/",
+        "tags": [
+            "seo",
+            "audit",
+            "website"
+        ]
+    },
+    {
+        "name": "SERP Checker",
+        "link": "https://whatsmyserp.com/serp-check",
+        "tags": [
+            "serp",
+            "seo",
+            "ranking"
+        ]
+    },
+    {
+        "name": "Image Resizer",
+        "link": "https://imageresizer.com/",
+        "tags": [
+            "image",
+            "resize",
+            "tools"
+        ]
+    },
+    {
+        "name": "SERP Snippet Optimizer",
+        "link": "https://www.highervisibility.com/seo/tools/serp-snippet-optimizer/old/",
+        "tags": [
+            "seo",
+            "snippet",
+            "optimizer"
+        ]
+    },
+    {
+        "name": "To The Web Title Meta Tester",
+        "link": "https://totheweb.com/learning_center/tool-test-google-title-meta-description-lengths/",
+        "tags": [
+            "seo",
+            "meta",
+            "title"
+        ]
+    },
+    {
+        "name": "Small SEO Tools",
+        "link": "https://smallseotools.com/",
+        "tags": [
+            "seo",
+            "tools",
+            "analysis"
+        ]
+    },
+    {
+        "name": "Moz",
+        "link": "https://moz.com/",
+        "tags": [
+            "seo",
+            "analysis",
+            "tools"
+        ]
+    },
+    {
+        "name": "Free Web Submission",
+        "link": "https://www.freewebsubmission.com/",
+        "tags": [
+            "seo",
+            "submission",
+            "links"
+        ]
+    },
+    {
+        "name": "XML Sitemaps",
+        "link": "https://www.xml-sitemaps.com/",
+        "tags": [
+            "sitemap",
+            "xml",
+            "seo"
+        ]
+    },
+    {
+        "name": "TechnicalSEO Schema Markup Generator",
+        "link": "https://technicalseo.com/tools/schema-markup-generator/",
+        "tags": [
+            "schema",
+            "markup",
+            "seo"
+        ]
+    },
+    {
+        "name": "HTML Sitemap Generator",
+        "link": "https://www.mysitemapgenerator.com/start/free.str.html",
+        "tags": [
+            "sitemap",
+            "html",
+            "seo"
+        ]
+    },
+    {
+        "name": "Broken Link Checker",
+        "link": "https://www.brokenlinkcheck.com/broken-links.php#status",
+        "tags": [
+            "links",
+            "broken",
+            "seo"
+        ]
+    },
+    {
+        "name": "Open Graph Generator",
+        "link": "https://smallseotools.com/open-graph-generator/",
+        "tags": [
+            "open graph",
+            "meta",
+            "seo"
+        ]
+    },
+    {
+        "name": "Twitter Card Generator",
+        "link": "https://wtools.io/twitter-card-generator",
+        "tags": [
+            "twitter",
+            "card",
+            "seo"
+        ]
+    },
+    {
+        "name": "GTMetrix",
+        "link": "https://gtmetrix.com/",
+        "tags": [
+            "performance",
+            "speed",
+            "seo"
+        ]
+    },
+    {
+        "name": "Google PageSpeed Insights",
+        "link": "https://pagespeed.web.dev/",
+        "tags": [
+            "speed",
+            "performance",
+            "seo"
+        ]
+    },
+    {
+        "name": "Google Mobile-Friendly Test",
+        "link": "https://search.google.com/test/mobile-friendly",
+        "tags": [
+            "mobile",
+            "responsive",
+            "seo"
+        ]
+    },
+    {
+        "name": "AMP Validator",
+        "link": "https://validator.ampproject.org/",
+        "tags": [
+            "amp",
+            "validator",
+            "seo"
+        ]
+    },
+    {
+        "name": "W3C HTML Validator",
+        "link": "https://validator.w3.org/#validate_by_uri+with_options",
+        "tags": [
+            "html",
+            "validator",
+            "seo"
+        ]
+    },
+    {
+        "name": "Robots.txt Generator",
+        "link": "https://www.seoptimer.com/robots-txt-generator",
+        "tags": [
+            "robots.txt",
+            "seo",
+            "generator"
+        ]
+    },
+
+    {
+        "name": "Screaming Frog SEO Spider",
+        "link": "https://www.screamingfrog.co.uk/seo-spider/",
+        "tags": [
+            "seo",
+            "crawler",
+            "spider"
+        ]
+    },
+    {
+        "name": "Ahrefs",
+        "link": "https://ahrefs.com",
+        "tags": [
+            "seo",
+            "backlinks",
+            "analysis"
+        ]
+    },
+    {
+        "name": "Majestic SEO",
+        "link": "https://majestic.com",
+        "tags": [
+            "seo",
+            "backlinks",
+            "analysis"
+        ]
+    },
+    {
+        "name": "Serpstat",
+        "link": "https://serpstat.com",
+        "tags": [
+            "seo",
+            "analysis",
+            "keywords"
+        ]
+    }
+]

@@ -11,8 +11,32 @@ export const categories = [
         label: 'Free Web Templates',
         filePath: 'Resources/web-templates.json',
         background: "#E74C3C",
-        icon: `<img src="./Assets/web.svg" alt="icons" />`,
+        icon: `<img src="./Assets/ai.svg" alt="icons" />`,
+
     },
+    {
+        name: 'components',
+        label: 'Components Libraries',
+        filePath: 'Resources/components.json',
+        background: "#F1C40F",
+        icon: `<img src="./Assets/components.svg" alt="components" />`,
+    },
+    {
+        name: 'seo',
+        label: 'SEO Tools',
+        filePath: 'Resources/seo.json',
+        background: "#27AE60",
+        icon: `<img src="./Assets/web.svg" alt="seo" />`,
+
+    },
+    {
+        name: 'tools',
+        label: 'Development Tools',
+        filePath: 'Resources/tools.json',
+        background: "#C0392B",
+        icon: `<img src="./Assets/tools.svg" alt="tools" />`,
+    },
+  
     {
         name: 'icons',
         label: 'Icons',
@@ -48,13 +72,7 @@ export const categories = [
         background: "#E74C3C",
         icon: `<img src="./Assets/colors.svg" alt="colors" />`,
     },
-    {
-        name: 'components',
-        label: 'Components Libraries',
-        filePath: 'Resources/components.json',
-        background: "#F1C40F",
-        icon: `<img src="./Assets/components.svg" alt="components" />`,
-    },
+
     {
         name: 'illustrations',
         label: 'Illustrations',
@@ -76,13 +94,7 @@ export const categories = [
         background: "#8E44AD",
         icon: `<img src="./Assets/photos.svg" alt="photos" />`,
     },
-    {
-        name: 'tools',
-        label: 'Tools',
-        filePath: 'Resources/tools.json',
-        background: "#C0392B",
-        icon: `<img src="./Assets/tools.svg" alt="tools" />`,
-    },
+
     {
         name: 'font',
         label: 'Fonts',
