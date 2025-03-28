@@ -366,5 +366,98 @@
             "web-development",
             "css-framework"
         ]
+    },
+    {
+        "name": "TailwindCSS Snippets",
+        "link": "https://snippets.alexandru.so/",
+        "tags": [
+            "tailwind",
+            "ui",
+            "frontend",
+            "responsive",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "name": "TWBlocks.com",
+        "link": "https://www.twblocks.com/",
+        "tags": [
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "name": "Syntax UI",
+        "link": "https://syntaxui.com/",
+        "tags": [
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "name": "Shapex UI",
+        "link": "https://www.shapexui.site/",
+        "tags": [
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "name": "Hero UI",
+        "link": "https://www.heroui.com/",
+        "tags": [
+            "admin",
+            "dashboard",
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "admin-panel",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "name": "Stunning UI",
+        "link": "https://www.stunningui.design/",
+        "tags": [
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "web-development",
+            "css-framework"
+        ]
+    },
+    {
+        "name": "Artifact UI",
+        "link": "https://artifactui.in/",
+        "tags": [
+            "tailwind",
+            "template",
+            "ui",
+            "frontend",
+            "responsive",
+            "web-development",
+            "css-framework"
+        ]
     }
 ]
