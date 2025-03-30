@@ -225,6 +225,32 @@ document.addEventListener('DOMContentLoaded', async () => {
             e.stopPropagation();
             chrome.tabs.create({ url: resource.link });
         });
+
+        // Custom Tooltip Logic
+        if (resource.description) {
+            div.addEventListener('mouseenter', (e) => {
+                // Set tooltip content
+                resourceTooltip.textContent = resource.description;
+                
+                // Get element position
+                const rect = div.getBoundingClientRect();
+                
+                // Position tooltip centered horizontally relative to hovered element
+                // And positioned above it
+                resourceTooltip.style.left = `${rect.left + (rect.width / 2)}px`;
+                resourceTooltip.style.top = `${rect.top - 10}px`; // 10px offset from element
+                
+                // Show tooltip
+                resourceTooltip.classList.remove('hidden');
+                resourceTooltip.classList.add('visible');
+            });
+
+            div.addEventListener('mouseleave', () => {
+                resourceTooltip.classList.remove('visible');
+                resourceTooltip.classList.add('hidden');
+            });
+        }
+
         return div;
     }
 

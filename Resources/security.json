@@ -1,0 +1,104 @@
+[
+  {
+    "name": "OWASP Top 10",
+    "link": "https://owasp.org/www-project-top-ten/",
+    "tags": ["owasp", "vulnerabilities", "checklist", "standards", "guide"],
+    "description": "The standard awareness document representing a broad consensus about the most critical security risks to web applications."
+  },
+  {
+    "name": "OWASP Cheat Sheet Series",
+    "link": "https://cheatsheetseries.owasp.org/",
+    "tags": ["owasp", "guide", "best-practices", "code", "defense"],
+    "description": "Concise collection of high value information on specific application security topics."
+  },
+  {
+    "name": "Snyk",
+    "link": "https://snyk.io/",
+    "tags": ["tool", "vulnerability-scanning", "dependencies", "code", "sca", "sast"],
+    "description": "Find and fix vulnerabilities in your code, open source dependencies, containers, and infrastructure as code."
+  },
+  {
+    "name": "Mozilla Observatory",
+    "link": "https://observatory.mozilla.org/",
+    "tags": ["tool", "scanner", "headers", "tls", "best-practices"],
+    "description": "A tool designed to help developers, system administrators, and security professionals configure their sites safely and securely."
+  },
+  {
+    "name": "Security Headers",
+    "link": "https://securityheaders.com/",
+    "tags": ["tool", "scanner", "http-headers", "best-practices"],
+    "description": "Quickly and easily scan your website for security enhancing HTTP headers."
+  },
+  {
+    "name": "MDN Web Security Docs",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/Security",
+    "tags": ["documentation", "learning", "guide", "concepts", "browser"],
+    "description": "Mozilla Developer Network documentation covering web security concepts and practices."
+  },
+  {
+    "name": "CSP Evaluator (Google)",
+    "link": "https://csp-evaluator.withgoogle.com/",
+    "tags": ["tool", "csp", "content-security-policy", "validator"],
+    "description": "Evaluates the effectiveness of Content Security Policies (CSP) against bypass techniques."
+  },
+  {
+    "name": "ImmuniWeb Security Checkers",
+    "link": "https://www.immuniweb.com/websec/",
+    "tags": ["tool", "scanner", "ssl", "tls", "website", "mobile"],
+    "description": "Free checkers for website security, SSL/TLS configuration, and mobile app security."
+  },
+  {
+    "name": "Burp Suite Community Edition",
+    "link": "https://portswigger.net/burp/community",
+    "tags": ["tool", "pentesting", "proxy", "scanner", "web-application", "dast"],
+    "description": "Free edition of the leading toolkit for web application security testing (manual proxy/repeater included)."
+  },
+  {
+    "name": "Semgrep",
+    "link": "https://semgrep.dev/",
+    "tags": ["tool", "sast", "static-analysis", "code", "security", "open-source"],
+    "description": "Lightweight static analysis tool for finding bugs and enforcing code standards, including security."
+  },
+  {
+    "name": "SSL Labs Test (Qualys)",
+    "link": "https://www.ssllabs.com/ssltest/",
+    "tags": ["tool", "scanner", "ssl", "tls", "configuration", "https"],
+    "description": "Performs a deep analysis of the configuration of any SSL/TLS web server on the public Internet."
+  },
+  {
+    "name": "Trivy",
+    "link": "https://github.com/aquasecurity/trivy",
+    "tags": ["tool", "scanner", "vulnerability", "container", "docker", "kubernetes", "open-source", "dependencies"],
+    "description": "Simple and comprehensive vulnerability scanner for containers and other artifacts."
+  },
+  {
+    "name": "OWASP ZAP",
+    "link": "https://www.zaproxy.org/",
+    "tags": ["tool", "owasp", "pentesting", "proxy", "scanner", "web-application", "dast", "open-source"],
+    "description": "Open-source web application security scanner and proxy. Easy to use integrated penetration testing tool."
+  },
+  {
+    "name": "Retire.js",
+    "link": "https://retirejs.github.io/retire.js/",
+    "tags": ["tool", "scanner", "javascript", "dependencies", "vulnerability", "browser-extension", "cli"],
+    "description": "Scanner to find JavaScript libraries with known vulnerabilities."
+  },
+  {
+    "name": "SonarLint",
+    "link": "https://www.sonarlint.org/",
+    "tags": ["tool", "ide-extension", "static-analysis", "code-quality", "security", "sast"],
+    "description": "IDE extension that helps you detect and fix quality issues as you write code."
+  },
+  {
+    "name": "npm audit / yarn audit",
+    "link": "https://docs.npmjs.com/cli/v10/commands/npm-audit",
+    "tags": ["tool", "cli", "dependencies", "vulnerability", "npm", "yarn", "node"],
+    "description": "Built-in command in npm/yarn to scan your project for vulnerabilities in dependencies."
+  },
+  {
+    "name": "OWASP Dependency-Check",
+    "link": "https://owasp.org/www-project-dependency-check/",
+    "tags": ["tool", "owasp", "dependencies", "vulnerability", "sca", "cli", "maven", "gradle"],
+    "description": "Attempts to detect publicly disclosed vulnerabilities contained within a project's dependencies."
+  }
+] 
