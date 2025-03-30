@@ -1,0 +1,67 @@
+[
+  {
+    "name": "WCAG 2.1",
+    "link": "https://www.w3.org/TR/WCAG21/",
+    "tags": ["guidelines", "standards", "w3c", "accessibility"]
+  },
+  {
+    "name": "WAI-ARIA Authoring Practices",
+    "link": "https://www.w3.org/WAI/ARIA/apg/",
+    "tags": ["guidelines", "aria", "widgets", "w3c", "accessibility"]
+  },
+  {
+    "name": "axe DevTools",
+    "link": "https://www.deque.com/axe/devtools/",
+    "tags": ["tool", "browser-extension", "testing", "automated", "accessibility"]
+  },
+  {
+    "name": "Lighthouse",
+    "link": "https://developer.chrome.com/docs/lighthouse/",
+    "tags": ["tool", "chrome-devtools", "testing", "automated", "performance", "seo", "accessibility"]
+  },
+  {
+    "name": "WAVE Evaluation Tool",
+    "link": "https://wave.webaim.org/extension/",
+    "tags": ["tool", "browser-extension", "testing", "visual", "accessibility"]
+  },
+  {
+    "name": "NVDA Screen Reader",
+    "link": "https://www.nvaccess.org/",
+    "tags": ["tool", "screen-reader", "testing", "windows", "assistive-technology", "accessibility"]
+  },
+  {
+    "name": "JAWS Screen Reader",
+    "link": "https://www.freedomscientific.com/products/software/jaws/",
+    "tags": ["tool", "screen-reader", "testing", "windows", "assistive-technology", "accessibility"]
+  },
+  {
+    "name": "VoiceOver Screen Reader",
+    "link": "https://www.apple.com/voiceover/info/guide/_1121.html",
+    "tags": ["tool", "screen-reader", "testing", "macos", "ios", "assistive-technology", "accessibility"]
+  },
+  {
+    "name": "WebAIM Contrast Checker",
+    "link": "https://webaim.org/resources/contrastchecker/",
+    "tags": ["tool", "color", "contrast", "testing", "accessibility"]
+  },
+  {
+    "name": "MDN Web Docs - Accessibility",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
+    "tags": ["learning", "documentation", "guides", "accessibility"]
+  },
+  {
+    "name": "WebAIM",
+    "link": "https://webaim.org/",
+    "tags": ["learning", "articles", "resources", "community", "accessibility"]
+  },
+  {
+    "name": "The A11Y Project",
+    "link": "https://www.a11yproject.com/",
+    "tags": ["learning", "community", "articles", "resources", "checklist", "accessibility"]
+  },
+  {
+    "name": "Stark",
+    "link": "https://www.getstark.co/",
+    "tags": ["tool", "design", "figma", "sketch", "adobe-xd", "contrast", "simulation", "accessibility"]
+  }
+] 

@@ -192,5 +192,12 @@ export const categories = [
 
 
     },
+    {
+        name: 'accessibility',
+        label: 'Accessibility',
+        filePath: 'Resources/accessibility.json',
+        background: "#E75480",
+        icon: `<img src="./Assets/tools.svg" alt="accessibility" />`,
+    },
 
 ];
