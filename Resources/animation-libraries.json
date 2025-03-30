@@ -118,5 +118,55 @@
             "animation Libraries",
             "Web Development"
         ]
+    },
+    {
+        "name": "GSAP (GreenSock)",
+        "link": "https://greensock.com/gsap/",
+        "tags": ["animation", "javascript", "performance", "svg", "css", "webgl"]
+    },
+    {
+        "name": "Framer Motion",
+        "link": "https://www.framer.com/motion/",
+        "tags": ["animation", "react", "declarative", "gestures", "ui"]
+    },
+    {
+        "name": "Anime.js",
+        "link": "https://animejs.com/",
+        "tags": ["animation", "javascript", "lightweight", "svg", "css"]
+    },
+    {
+        "name": "React Spring",
+        "link": "https://www.react-spring.dev/",
+        "tags": ["animation", "react", "physics", "springs", "ui"]
+    },
+    {
+        "name": "Lottie",
+        "link": "https://airbnb.io/lottie/#/",
+        "tags": ["animation", "vector", "json", "after-effects", "svg", "performance"]
+    },
+    {
+        "name": "Three.js",
+        "link": "https://threejs.org/",
+        "tags": ["animation", "3d", "webgl", "javascript", "graphics"]
+    },
+    {
+        "name": "Popmotion",
+        "link": "https://popmotion.io/",
+        "tags": ["animation", "javascript", "motion", "low-level", "ui"]
+    },
+    {
+        "name": "Velocity.js",
+        "link": "http://velocityjs.org/",
+        "tags": ["animation", "javascript", "performance", "jquery-alternative"]
+    },
+    {
+        "name": "Theatre.js",
+        "link": "https://www.theatrejs.com/",
+        "tags": ["animation", "motion-design", "editor", "javascript", "timeline"]
+    },
+    {
+        "name": "AutoAnimate",
+        "link": "https://auto-animate.formkit.com/",
+        "tags": ["animation", "javascript", "utility", "zero-config", "css"]
     }
 ]

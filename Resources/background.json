@@ -86,8 +86,6 @@
         "link": "https://fffuel.co/"
     },
     {
-    },
-    {
         "name": "Tabbied",
         "link": "https://tabbied.com/"
     },
@@ -115,6 +113,7 @@
     },
     {
         "name": "Magic UI",
+        "link": "https://magicui.design/",
         "tags": [
             "Tailwind"
         ]
@@ -146,5 +145,55 @@
         "tags": [
             "Inspiration"
         ]
+    },
+    {
+        "name": "Get Waves",
+        "link": "https://getwaves.io/",
+        "tags": ["svg", "waves", "generator"]
+    },
+    {
+        "name": "Blobmaker",
+        "link": "https://www.blobmaker.app/",
+        "tags": ["svg", "blob", "generator", "organic"]
+    },
+    {
+        "name": "Trianglify.io",
+        "link": "https://trianglify.io/",
+        "tags": ["svg", "low-poly", "generator", "background"]
+    },
+    {
+        "name": "SVGeez!",
+        "link": "https://svggee.com/",
+        "tags": ["svg", "patterns", "simple"]
+    },
+    {
+        "name": "Noisy Texture Generator",
+        "link": "https://danielbrok.github.io/noisy-texture-generator/",
+        "tags": ["noise", "texture", "png", "svg", "generator"]
+    },
+    {
+        "name": "Mesh Gradients (meshgradient.com)",
+        "link": "https://meshgradient.com/",
+        "tags": ["mesh", "gradient", "generator", "css"]
+    },
+    {
+        "name": "Whatamesh",
+        "link": "https://whatamesh.vercel.app/",
+        "tags": ["mesh", "gradient", "animated", "generator", "css"]
+    },
+    {
+        "name": "Faux Pa",
+        "link": "https://fauxpa.io/",
+        "tags": ["pattern", "seamless", "generator"]
+    },
+    {
+        "name": "SVG Pattern Generator (P. Davis)",
+        "link": "https://philipdavis.dev/svg-pattern-generator/",
+        "tags": ["svg", "pattern", "simple", "generator"]
+    },
+    {
+        "name": "Grainy Gradients Playground",
+        "link": "https://grainy-gradients.vercel.app/",
+        "tags": ["gradient", "grainy", "noise", "css", "generator"]
     }
 ]
