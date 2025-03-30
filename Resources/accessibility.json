@@ -2,66 +2,79 @@
   {
     "name": "WCAG 2.1",
     "link": "https://www.w3.org/TR/WCAG21/",
-    "tags": ["guidelines", "standards", "w3c", "accessibility"]
+    "tags": ["guidelines", "standards", "w3c", "accessibility"],
+    "description": "Web Content Accessibility Guidelines (WCAG) 2.1 covers a wide range of recommendations for making web content more accessible."
   },
   {
     "name": "WAI-ARIA Authoring Practices",
     "link": "https://www.w3.org/WAI/ARIA/apg/",
-    "tags": ["guidelines", "aria", "widgets", "w3c", "accessibility"]
+    "tags": ["guidelines", "aria", "widgets", "w3c", "accessibility"],
+    "description": "Provides readers guidance on how to use WAI-ARIA to create accessible rich internet applications."
   },
   {
     "name": "axe DevTools",
     "link": "https://www.deque.com/axe/devtools/",
-    "tags": ["tool", "browser-extension", "testing", "automated", "accessibility"]
+    "tags": ["tool", "browser-extension", "testing", "automated", "accessibility"],
+    "description": "Browser extension for automated accessibility testing during development."
   },
   {
     "name": "Lighthouse",
     "link": "https://developer.chrome.com/docs/lighthouse/",
-    "tags": ["tool", "chrome-devtools", "testing", "automated", "performance", "seo", "accessibility"]
+    "tags": ["tool", "chrome-devtools", "testing", "automated", "performance", "seo", "accessibility"],
+    "description": "Open-source, automated tool for improving the quality of web pages (includes accessibility audits)."
   },
   {
     "name": "WAVE Evaluation Tool",
     "link": "https://wave.webaim.org/extension/",
-    "tags": ["tool", "browser-extension", "testing", "visual", "accessibility"]
+    "tags": ["tool", "browser-extension", "testing", "visual", "accessibility"],
+    "description": "Browser extension to help evaluate web accessibility by injecting icons and indicators into your page."
   },
   {
     "name": "NVDA Screen Reader",
     "link": "https://www.nvaccess.org/",
-    "tags": ["tool", "screen-reader", "testing", "windows", "assistive-technology", "accessibility"]
+    "tags": ["tool", "screen-reader", "testing", "windows", "assistive-technology", "accessibility"],
+    "description": "Free, open-source screen reader for Microsoft Windows."
   },
   {
     "name": "JAWS Screen Reader",
     "link": "https://www.freedomscientific.com/products/software/jaws/",
-    "tags": ["tool", "screen-reader", "testing", "windows", "assistive-technology", "accessibility"]
+    "tags": ["tool", "screen-reader", "testing", "windows", "assistive-technology", "accessibility"],
+    "description": "Popular commercial screen reader for Microsoft Windows (Job Access With Speech)."
   },
   {
     "name": "VoiceOver Screen Reader",
     "link": "https://www.apple.com/voiceover/info/guide/_1121.html",
-    "tags": ["tool", "screen-reader", "testing", "macos", "ios", "assistive-technology", "accessibility"]
+    "tags": ["tool", "screen-reader", "testing", "macos", "ios", "assistive-technology", "accessibility"],
+    "description": "Built-in screen reader for Apple macOS, iOS, iPadOS, watchOS, and tvOS."
   },
   {
     "name": "WebAIM Contrast Checker",
     "link": "https://webaim.org/resources/contrastchecker/",
-    "tags": ["tool", "color", "contrast", "testing", "accessibility"]
+    "tags": ["tool", "color", "contrast", "testing", "accessibility"],
+    "description": "Online tool to check color contrast ratios based on WCAG guidelines."
   },
   {
     "name": "MDN Web Docs - Accessibility",
     "link": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
-    "tags": ["learning", "documentation", "guides", "accessibility"]
+    "tags": ["learning", "documentation", "guides", "accessibility"],
+    "description": "Mozilla Developer Network documentation covering web accessibility concepts and practices."
   },
   {
     "name": "WebAIM",
     "link": "https://webaim.org/",
-    "tags": ["learning", "articles", "resources", "community", "accessibility"]
+    "tags": ["learning", "articles", "resources", "community", "accessibility"],
+    "description": "Web Accessibility In Mind - Provides resources, articles, training, and tools."
   },
   {
     "name": "The A11Y Project",
     "link": "https://www.a11yproject.com/",
-    "tags": ["learning", "community", "articles", "resources", "checklist", "accessibility"]
+    "tags": ["learning", "community", "articles", "resources", "checklist", "accessibility"],
+    "description": "A community-driven effort to make digital accessibility easier."
   },
   {
     "name": "Stark",
     "link": "https://www.getstark.co/",
-    "tags": ["tool", "design", "figma", "sketch", "adobe-xd", "contrast", "simulation", "accessibility"]
+    "tags": ["tool", "design", "figma", "sketch", "adobe-xd", "contrast", "simulation", "accessibility"],
+    "description": "Integrated suite of accessibility tools for software teams (design plugins, browser extensions)."
   }
 ] 
