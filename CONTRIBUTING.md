@@ -63,6 +63,8 @@ When adding a new resource, please follow this structure:
   The URL of the resource.  
 - **tags** (array of strings)  
   Keywords that describe the resource, for example: *IA*, *React*, *Library*, *Loaders*, etc.
+- **description** (string; optional)  
+  A brief description of the resource, shown as a tooltip on hover.
 
 ### Example JSON entry
 
@@ -70,7 +72,8 @@ When adding a new resource, please follow this structure:
 {
   "name": "Resource Name",
   "link": "https://resource.com",
-  "tags": ["IA", "React", "Library", "3D"]
+  "tags": ["IA", "React", "Library", "3D"],
+  "description": "This is a brief description for the tooltip."
 }
 
    

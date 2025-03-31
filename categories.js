@@ -199,5 +199,12 @@ export const categories = [
         background: "#E75480",
         icon: `<img src="./Assets/accessibility.svg" alt="accessibility" />`,
     },
+    {
+        name: 'security',
+        label: 'Web Security',
+        filePath: 'Resources/security.json',
+        background: "#F39C12",
+        icon: `<img src="./Assets/security.svg" alt="security" />`,
+    },
 
 ];

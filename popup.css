@@ -558,3 +558,40 @@ body {
 .modal.hidden {
     display: none;
 }
+
+/* Custom Tooltip Styles */
+.tooltip {
+    position: fixed;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.4;
+    z-index: 10000;
+    max-width: 280px;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -100%);  /* Center horizontally and position above */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease;
+    border: 1px solid #333333;
+}
+
+.tooltip:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #000000;
+}
+
+.tooltip.visible {
+    opacity: 1;
+}
