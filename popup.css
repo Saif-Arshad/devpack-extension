@@ -569,11 +569,12 @@ body {
     font-size: 12px;
     line-height: 1.4;
     z-index: 10000;
-    max-width: 280px;
+    max-width: 320px;
     text-align: center;
     pointer-events: none;
     opacity: 0;
-    transform: translate(-50%, -100%);  /* Center horizontally and position above */
+    transform: translate(-50%, -100%);
+    /* Center horizontally and position above */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: opacity 0.2s ease;
     border: 1px solid #333333;
