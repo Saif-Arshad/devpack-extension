@@ -53,6 +53,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Loading indicator
     const loadingIndicator = document.getElementById('loadingIndicator');
 
+    const resourceTooltip = document.createElement('div');
+    resourceTooltip.className = 'tooltip hidden';
+    document.body.appendChild(resourceTooltip);
+
+
+
     // State variables
     let currentView = 'home';
     let currentCategory = '';
@@ -160,6 +166,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
                 <div class="category-info">
                   <div class="category-name">${category.label}</div>
+                  <p class="category-discription">
+                  ${category.description}
+                  </p>
                 </div>
             `;
             li.addEventListener('click', async () => {
@@ -170,20 +179,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Create a resource item
     function createResourceElement(resource, isFavorite = false) {
         if (!resource.name || !resource.link) return null;
         const div = document.createElement('div');
         div.className = 'resource-item';
         const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain_url=${resource.link}`;
         div.innerHTML = `
-            <div class="resource-favicon">
-                <img src="${faviconUrl}" alt="${resource.name}" onerror="this.src='assets/placeholder.svg'">
-            </div>
-            <div class="resource-info">
-                <div class="resource-name">${resource.name}</div>
-                <div class="resource-link">${resource.link}</div>
-            </div>
+        <div class="resource-favicon">
+            <img src="${faviconUrl}" alt="${resource.name}" onerror="this.src='assets/placeholder.svg'">
+        </div>
+        <div class="resource-info">
+        <div class="resource-title">
+            <div class="resource-name">${resource.name}</div>
             <div class="resource-actions">
                 <button class="heart-icon ${isFavorite ? 'active' : ''}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -192,22 +199,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
                     </svg>
                 </button>
-                <button class="link-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-                    </svg>
-                </button>
+                
             </div>
-        `;
-        // Open link if user clicks outside icons
+            </div>
+            <div class="resource-link">${resource.link}</div>
+        </div>
+    `;
+
+        // Open link when clicking outside icons
         div.addEventListener('click', (e) => {
-            if (!e.target.closest('.heart-icon') && !e.target.closest('.link-icon') && !e.target.closest('.remove-icon')) {
+            if (!e.target.closest('.heart-icon') && !e.target.closest('.link-icon') && !e.target.closest('.info-icon') && !e.target.closest('.remove-icon')) {
                 chrome.tabs.create({ url: resource.link });
             }
         });
+
         // Heart icon => toggle favorite
         const heartIcon = div.querySelector('.heart-icon');
         heartIcon.addEventListener('click', (e) => {
@@ -219,33 +224,44 @@ document.addEventListener('DOMContentLoaded', async () => {
             svg.setAttribute('fill', heartIcon.classList.contains('active') ? 'currentColor' : 'none');
             setTimeout(() => { heartIcon.classList.remove('animate'); }, 300);
         });
-        // Link icon => open link
-        const linkIcon = div.querySelector('.link-icon');
-        linkIcon.addEventListener('click', (e) => {
-            e.stopPropagation();
-            chrome.tabs.create({ url: resource.link });
-        });
 
-        // Custom Tooltip Logic
+
+
         if (resource.description) {
-            div.addEventListener('mouseenter', (e) => {
-                // Set tooltip content
+            const infoIcon = document.createElement('button');
+            infoIcon.className = 'info-icon';
+            infoIcon.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+        `;
+            // Append the info icon to the actions container
+            const actionsContainer = div.querySelector('.resource-actions');
+            actionsContainer.appendChild(infoIcon);
+
+            infoIcon.addEventListener('mouseenter', (e) => {
                 resourceTooltip.textContent = resource.description;
-                
-                // Get element position
-                const rect = div.getBoundingClientRect();
-                
-                // Position tooltip centered horizontally relative to hovered element
-                // And positioned above it
-                resourceTooltip.style.left = `${rect.left + (rect.width / 2)}px`;
-                resourceTooltip.style.top = `${rect.top - 10}px`; // 10px offset from element
-                
-                // Show tooltip
+
+                // Get the dimensions of the parent resource element
+                const resourceRect = div.getBoundingClientRect();
+
+                // Set the tooltip width to match the resource element's width
+                resourceTooltip.style.width = `${resourceRect.width}px`;
+
+                // Position the tooltip centered relative to the resource element and above it
+                resourceTooltip.style.left = `${resourceRect.left + resourceRect.width / 2}px`;
+                resourceTooltip.style.top = `${resourceRect.top - 10}px`; // 10px above the element
+
                 resourceTooltip.classList.remove('hidden');
                 resourceTooltip.classList.add('visible');
             });
 
-            div.addEventListener('mouseleave', () => {
+            // Hide tooltip when mouse leaves the info icon
+            infoIcon.addEventListener('mouseleave', (e) => {
                 resourceTooltip.classList.remove('visible');
                 resourceTooltip.classList.add('hidden');
             });
