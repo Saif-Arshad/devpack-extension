@@ -5,7 +5,8 @@
         "tags": [
             "No-Code",
             "Web Development"
-        ]
+        ],
+        "description": "Bubble is a no‑code platform that lets you build interactive, multi‑user apps for desktop and mobile web browsers without coding."
     },
     {
         "name": "Webflow",
@@ -14,7 +15,8 @@
             "No-Code",
             "Design",
             "CMS"
-        ]
+        ],
+        "description": "Webflow is a no‑code web design tool and CMS that enables designers to build responsive websites visually."
     },
     {
         "name": "Adalo",
@@ -22,7 +24,8 @@
         "tags": [
             "No-Code",
             "Mobile Apps"
-        ]
+        ],
+        "description": "Adalo is a no‑code platform for creating fully‑functional mobile apps with drag‑and‑drop simplicity."
     },
     {
         "name": "Airtable",
@@ -31,7 +34,8 @@
             "No-Code",
             "Database",
             "Collaboration"
-        ]
+        ],
+        "description": "Airtable combines the simplicity of spreadsheets with a powerful database to help you organize and collaborate on projects."
     },
     {
         "name": "Zapier",
@@ -39,13 +43,15 @@
         "tags": [
             "No-Code",
             "Automation"
-        ]
+        ],
+        "description": "Zapier automates workflows by connecting your favorite apps and services without requiring any code."
     },
     {
         "tags": [
             "No-Code",
             "Mobile Apps"
-        ]
+        ],
+        "description": "This resource has unspecified details but is related to no‑code mobile app development."
     },
     {
         "name": "OutSystems",
@@ -53,7 +59,8 @@
         "tags": [
             "Low-Code",
             "Enterprise"
-        ]
+        ],
+        "description": "OutSystems is a low‑code platform that enables enterprises to rapidly build and deploy scalable applications."
     },
     {
         "name": "Mendix",
@@ -61,7 +68,8 @@
         "tags": [
             "Low-Code",
             "Enterprise"
-        ]
+        ],
+        "description": "Mendix is a robust low‑code platform designed for building enterprise‑grade applications quickly and efficiently."
     },
     {
         "name": "Betty Blocks",
@@ -69,7 +77,8 @@
         "tags": [
             "No-Code",
             "Enterprise"
-        ]
+        ],
+        "description": "Betty Blocks is a no‑code platform that empowers enterprises to build custom applications without writing code."
     },
     {
         "name": "Microsoft PowerApps",
@@ -78,7 +87,8 @@
             "Low-Code",
             "Enterprise",
             "Microsoft"
-        ]
+        ],
+        "description": "Microsoft PowerApps is a low‑code development platform that allows you to create custom business applications integrated with Microsoft services."
     },
     {
         "name": "AppGyver",
@@ -87,7 +97,8 @@
             "No-Code",
             "Mobile",
             "Web"
-        ]
+        ],
+        "description": "AppGyver is a no‑code platform for building professional mobile and web applications with a visual builder."
     },
     {
         "name": "Wappler",
@@ -96,7 +107,8 @@
             "Low-Code",
             "Web",
             "Desktop"
-        ]
+        ],
+        "description": "Wappler is a low‑code tool that provides full control over building web and desktop applications using visual development."
     },
     {
         "name": "Unqork",
@@ -104,7 +116,8 @@
         "tags": [
             "No-Code",
             "Enterprise"
-        ]
+        ],
+        "description": "Unqork is a no‑code enterprise platform that simplifies the development of complex, scalable applications."
     },
     {
         "name": "Quick Base",
@@ -113,7 +126,8 @@
             "Low-Code",
             "Database",
             "Enterprise"
-        ]
+        ],
+        "description": "Quick Base is a low‑code platform that enables businesses to create custom applications and databases with ease."
     },
     {
         "name": "Parabola",
@@ -121,7 +135,8 @@
         "tags": [
             "No-Code",
             "Automation"
-        ]
+        ],
+        "description": "Parabola is a no‑code automation tool that helps you build and streamline data workflows without writing code."
     },
     {
         "name": "Knack",
@@ -129,7 +144,8 @@
         "tags": [
             "No-Code",
             "Database"
-        ]
+        ],
+        "description": "Knack is a no‑code platform for building custom online databases and web applications without extensive programming."
     },
     {
         "name": "Zoho Creator",
@@ -137,7 +153,8 @@
         "tags": [
             "Low-Code",
             "Business"
-        ]
+        ],
+        "description": "Zoho Creator is a low‑code platform that helps businesses develop custom apps and automate workflows with minimal coding."
     },
     {
         "name": "Caspio",
@@ -145,7 +162,8 @@
         "tags": [
             "Low-Code",
             "Database"
-        ]
+        ],
+        "description": "Caspio is a low‑code platform for building and deploying custom database applications quickly and efficiently."
     },
     {
         "name": "BuildFire",
@@ -153,6 +171,7 @@
         "tags": [
             "No-Code",
             "Mobile Apps"
-        ]
+        ],
+        "description": "BuildFire is a no‑code mobile app development platform that simplifies the creation of professional mobile applications."
     }
 ]

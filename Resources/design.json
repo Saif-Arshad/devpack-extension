@@ -6,7 +6,8 @@
             "Design",
             "Inspiration",
             "Community"
-        ]
+        ],
+        "description": "Dribbble is a vibrant community where designers share their work and find creative inspiration."
     },
     {
         "name": "Behance",
@@ -15,7 +16,8 @@
             "Portfolio",
             "Design",
             "Inspiration"
-        ]
+        ],
+        "description": "Behance is a platform for creative professionals to showcase portfolios and discover innovative design projects."
     },
     {
         "name": "Awwwards",
@@ -24,7 +26,8 @@
             "Web Design",
             "Awards",
             "Inspiration"
-        ]
+        ],
+        "description": "Awwwards recognizes and celebrates exceptional web design, inspiring creativity and innovation."
     },
     {
         "name": "Designspiration",
@@ -33,7 +36,8 @@
             "Design",
             "Inspiration",
             "Moodboard"
-        ]
+        ],
+        "description": "Designspiration offers a curated collection of design visuals and mood boards to spark new ideas."
     },
     {
         "name": "SiteInspire",
@@ -42,7 +46,8 @@
             "Web Design",
             "Inspiration",
             "Gallery"
-        ]
+        ],
+        "description": "SiteInspire features a gallery of beautifully designed websites to inspire your next project."
     },
     {
         "name": "Pinterest",
@@ -51,7 +56,8 @@
             "Inspiration",
             "Design",
             "Moodboard"
-        ]
+        ],
+        "description": "Pinterest is a visual discovery platform that offers endless design inspiration and creative ideas."
     },
     {
         "name": "Muzli",
@@ -60,7 +66,8 @@
             "Design",
             "Trends",
             "Inspiration"
-        ]
+        ],
+        "description": "Muzli curates the latest design trends and inspiration from across the web in one dynamic feed."
     },
     {
         "name": "CSS Design Awards",
@@ -69,7 +76,8 @@
             "Web Design",
             "Awards",
             "Inspiration"
-        ]
+        ],
+        "description": "CSS Design Awards showcases outstanding web design projects and celebrates creative excellence."
     },
     {
         "name": "Page Flows",
@@ -78,7 +86,8 @@
             "Web Design",
             "Awards",
             "Inspiration"
-        ]
+        ],
+        "description": "Page Flows offers innovative web design flows and case studies to inspire engaging user experiences."
     },
     {
         "name": "Pretty Folio",
@@ -87,7 +96,8 @@
             "Web Design",
             "Portfolio design",
             "Inspiration"
-        ]
+        ],
+        "description": "Pretty Folio provides elegant portfolio design inspiration for creative professionals."
     },
     {
         "name": "Landing Gallery",
@@ -96,7 +106,8 @@
             "Web Design",
             "Portfolio design",
             "Inspiration"
-        ]
+        ],
+        "description": "Landing Gallery is a curated showcase of high‑impact landing pages to boost your design ideas."
     },
     {
         "name": "Footer Design",
@@ -105,7 +116,8 @@
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "Footer Design highlights creative footer layouts to complete and enhance your website designs."
     },
     {
         "name": "Designs Spells",
@@ -114,7 +126,8 @@
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "Designs Spells features unique web design elements and footer inspirations for modern websites."
     },
     {
         "name": "SaaS Web Design",
@@ -123,7 +136,8 @@
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "SaaS Web Design offers creative inspiration for designing effective websites for SaaS products."
     },
     {
         "name": "Checklist Design",
@@ -132,7 +146,8 @@
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "Checklist Design provides practical inspiration and guidelines for building user‑friendly web interfaces."
     },
     {
         "name": "Landing Folio",
@@ -141,7 +156,8 @@
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "Landing Folio showcases a diverse range of landing page designs to inspire conversion‑focused websites."
     },
     {
         "name": "Dark Mode Design",
@@ -150,14 +166,16 @@
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "Dark Mode Design features sleek and modern dark‑themed web designs to inspire your next project."
     },
     {
         "tags": [
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "A curated collection of web and footer design inspirations for creative project ideas."
     },
     {
         "name": "Call to Inspiration",
@@ -166,7 +184,8 @@
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "Call to Inspiration curates creative design ideas to spark innovative web projects."
     },
     {
         "name": "Website Hero Section",
@@ -175,7 +194,8 @@
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "Website Hero Section showcases impactful hero section designs that make a powerful first impression."
     },
     {
         "name": "Landing Page",
@@ -184,6 +204,7 @@
             "Web Design",
             "Footer design",
             "Inspiration"
-        ]
+        ],
+        "description": "Landing Page offers a collection of high‑quality landing page designs for maximum visual impact."
     }
 ]

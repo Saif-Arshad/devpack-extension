@@ -13,7 +13,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "TailAdmin is a comprehensive admin dashboard template built with Tailwind CSS for responsive web development."
     },
     {
         "name": "TailBlocks",
@@ -29,7 +30,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "TailBlocks provides ready‑to‑use Tailwind CSS templates to quickly build modern web interfaces and dashboards."
     },
     {
         "name": "Creative Tim",
@@ -45,7 +47,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Creative Tim offers premium Tailwind-based UI components and templates to accelerate modern web development."
     },
     {
         "name": "Tailwind templates",
@@ -61,7 +64,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Tailwind templates features a curated collection of Tailwind CSS design templates for creating responsive websites and admin panels."
     },
     {
         "name": "Tailwind Elements",
@@ -77,7 +81,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Tailwind Elements delivers a set of fully‑responsive UI components and templates built with Tailwind CSS to streamline development."
     },
     {
         "name": "Headless Ui",
@@ -93,7 +98,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Headless UI provides unstyled, accessible UI primitives for building custom design systems with Tailwind CSS."
     },
     {
         "name": "Tailwind Flex",
@@ -109,7 +115,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Tailwind Flex offers flexible Tailwind CSS templates and components for responsive web design and dashboard interfaces."
     },
     {
         "name": "Dev UI",
@@ -125,7 +132,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Dev UI is a collection of Tailwind CSS‑based UI components and templates designed for modern admin interfaces."
     },
     {
         "name": "ReadyMade UI",
@@ -141,7 +149,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "ReadyMade UI provides a set of pre‑designed, responsive Tailwind CSS templates for efficient web development."
     },
     {
         "name": "Flowbite UI",
@@ -157,7 +166,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Flowbite UI offers a comprehensive collection of Tailwind CSS blocks and templates for building responsive dashboards and websites."
     },
     {
         "name": "Float UI",
@@ -173,7 +183,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Float UI delivers an extensive library of Tailwind CSS templates and components for modern web and admin panel development."
     },
     {
         "name": "Tailus UI",
@@ -189,7 +200,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Tailus UI features a range of Tailwind CSS‑based blocks to quickly prototype responsive websites and admin panels."
     },
     {
         "name": "Oxbow UI",
@@ -205,7 +217,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Oxbow UI provides a curated collection of responsive Tailwind CSS templates for building clean and modern dashboards."
     },
     {
         "name": "Meraki UI",
@@ -221,7 +234,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Meraki UI offers beautifully designed Tailwind CSS components and templates to accelerate web development."
     },
     {
         "name": "Tailbits UI",
@@ -237,7 +251,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Tailbits UI features unique Tailwind CSS kits for building engaging web experiences and admin panels."
     },
     {
         "name": "Mamba UI",
@@ -253,7 +268,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Mamba UI provides a modern collection of Tailwind CSS components and templates for building responsive admin interfaces."
     },
     {
         "name": "Mamba UI",
@@ -269,7 +285,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Mamba UI offers a duplicate collection of modern Tailwind CSS components for streamlined admin panel design."
     },
     {
         "name": "Devdojo UI",
@@ -285,7 +302,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Devdojo UI features Tailwind CSS components, such as custom buttons, to enhance your front‑end development workflow."
     },
     {
         "name": "Pines UI",
@@ -301,7 +319,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Pines UI delivers comprehensive documentation and components built with Tailwind CSS for modern admin dashboards."
     },
     {
         "name": "Pagedone UI",
@@ -317,7 +336,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Pagedone UI is a Tailwind CSS‑based admin dashboard template designed for responsive and efficient web development."
     },
     {
         "name": "Flash UI",
@@ -333,7 +353,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Flash UI provides dynamic Tailwind CSS blocks and templates to quickly build modern admin interfaces."
     },
     {
         "name": "Components.work UI",
@@ -349,7 +370,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Components.work UI offers a curated library of reusable Tailwind CSS components for efficient web development."
     },
     {
         "name": "Componets Land UI",
@@ -365,7 +387,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Componets Land UI features a collection of Tailwind CSS‑based UI components and templates to streamline your development process."
     },
     {
         "name": "TailwindCSS Snippets",
@@ -377,7 +400,8 @@
             "responsive",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "TailwindCSS Snippets provides handy code snippets and UI components built with Tailwind CSS for rapid prototyping."
     },
     {
         "name": "TWBlocks.com",
@@ -390,7 +414,8 @@
             "responsive",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "TWBlocks.com offers a variety of free Tailwind CSS templates and components for modern web design."
     },
     {
         "name": "Syntax UI",
@@ -403,7 +428,8 @@
             "responsive",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Syntax UI delivers a clean collection of Tailwind CSS components and templates to accelerate responsive design."
     },
     {
         "name": "Shapex UI",
@@ -416,7 +442,8 @@
             "responsive",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Shapex UI offers a curated collection of Tailwind CSS templates and UI components for building modern interfaces."
     },
     {
         "name": "Hero UI",
@@ -432,7 +459,8 @@
             "admin-panel",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Hero UI provides a robust collection of admin and dashboard templates built with Tailwind CSS for efficient web development."
     },
     {
         "name": "Stunning UI",
@@ -445,7 +473,8 @@
             "responsive",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Stunning UI offers visually striking Tailwind CSS templates for creating modern and responsive web interfaces."
     },
     {
         "name": "Artifact UI",
@@ -458,6 +487,7 @@
             "responsive",
             "web-development",
             "css-framework"
-        ]
+        ],
+        "description": "Artifact UI provides a creative collection of responsive Tailwind CSS templates to accelerate your web development workflow."
     }
 ]

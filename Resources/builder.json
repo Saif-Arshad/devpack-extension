@@ -6,15 +6,18 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Wix ADI uses AI to create custom websites quickly and effortlessly."
     },
     {
+        "name": "Bookmark AI Website Builder",
         "link": "https://www.bookmark.com/ai-website-builder",
         "tags": [
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Bookmark's AI-powered builder generates personalized websites based on your content."
     },
     {
         "name": "Zyro AI Website Builder",
@@ -23,7 +26,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Zyro's AI website builder offers an intuitive platform for fast, professional site creation."
     },
     {
         "name": "Firedrop",
@@ -32,7 +36,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Firedrop harnesses AI to help you design visually appealing websites with ease."
     },
     {
         "name": "Jimdo Dolphin",
@@ -41,7 +46,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Jimdo Dolphin is an AI-powered website builder designed for fast and simple site creation."
     },
     {
         "name": "SITE123",
@@ -50,9 +56,9 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "SITE123 offers an easy-to-use platform that leverages AI for quick website setup."
     },
-
     {
         "name": "Claude",
         "link": "https://claude.ai/",
@@ -60,7 +66,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Claude uses artificial intelligence to streamline the website building process."
     },
     {
         "name": "ChatGBT",
@@ -69,7 +76,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "ChatGBT provides an interactive AI experience for generating website content and designs."
     },
     {
         "name": "V0",
@@ -78,7 +86,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "V0 leverages advanced AI to help you design, build, and launch custom websites rapidly."
     },
     {
         "name": "UI Builder",
@@ -87,7 +96,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "UI Builder is an AI-powered tool for creating intuitive user interfaces and websites."
     },
     {
         "name": "Fly.dev",
@@ -96,7 +106,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Fly.dev offers an innovative, AI-driven approach to designing and developing websites."
     },
     {
         "name": "Bolt.new",
@@ -105,7 +116,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Bolt.new streamlines website creation with its fast, AI-based builder for rapid design."
     },
     {
         "name": "Napkin.AI",
@@ -114,7 +126,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Napkin.AI provides a smart platform that uses AI to design and launch custom websites."
     },
     {
         "name": "Uizard.IO",
@@ -123,7 +136,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Uizard.IO transforms sketches into digital designs using powerful AI tools."
     },
     {
         "name": "Reweb.SO",
@@ -132,7 +146,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Reweb.SO utilizes AI to help you build modern, responsive websites effortlessly."
     },
     {
         "name": "Uizard.IO",
@@ -141,7 +156,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Uizard.IO offers an intuitive interface that converts your ideas into polished web designs."
     },
     {
         "name": "llamacoder",
@@ -150,7 +166,8 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Llamacoder provides an AI-driven environment for coding and building feature-rich websites."
     },
     {
         "name": "Deepseek",
@@ -159,6 +176,7 @@
             "free",
             "AI",
             "website builder"
-        ]
+        ],
+        "description": "Deepseek leverages AI to deliver smart website building solutions with interactive design tools."
     }
 ]

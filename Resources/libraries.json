@@ -4,7 +4,8 @@
         "link": "https://brm.io/matter-js/",
         "tags": [
             "Physics"
-        ]
+        ],
+        "description": "Matter.js is a powerful 2D physics engine for creating realistic simulations in the browser."
     },
     {
         "name": "react-magic-motion",
@@ -12,28 +13,32 @@
         "tags": [
             "Animation",
             "React"
-        ]
+        ],
+        "description": "react-magic-motion provides elegant animation transitions for React components with minimal effort."
     },
     {
         "name": "useHooks",
         "link": "https://usehooks.com",
         "tags": [
             "Hooks"
-        ]
+        ],
+        "description": "useHooks is a curated collection of custom React hooks with practical examples for everyday development."
     },
     {
         "name": "AutoAnimate",
         "link": "https://auto-animate.formkit.com",
         "tags": [
             "Animations"
-        ]
+        ],
+        "description": "AutoAnimate automatically animates layout changes, making UI transitions smooth and effortless."
     },
     {
         "name": "Mousetrap",
         "link": "https://craig.is/killing/mice",
         "tags": [
             "Keyboard shortcuts"
-        ]
+        ],
+        "description": "Mousetrap is a lightweight library for handling keyboard shortcuts in web applications."
     },
     {
         "name": "next-video",
@@ -41,7 +46,8 @@
         "tags": [
             "Video",
             "Next.js"
-        ]
+        ],
+        "description": "next-video provides an optimized way to embed and stream videos within Next.js applications."
     },
     {
         "name": "Luxon",
@@ -49,239 +55,272 @@
         "tags": [
             "Time",
             "Dates"
-        ]
+        ],
+        "description": "Luxon is a modern library for working with dates and times in JavaScript, offering a powerful API for formatting and manipulation."
     },
     {
         "name": "GSAP",
         "link": "https://gsap.com",
         "tags": [
             "Animations"
-        ]
+        ],
+        "description": "GSAP is a robust animation library that enables high‑performance animations for web interfaces."
     },
     {
         "name": "Animate On Scroll",
         "link": "https://michalsnik.github.io/aos/",
         "tags": [
             "Animations"
-        ]
+        ],
+        "description": "Animate On Scroll (AOS) animates elements as you scroll, adding dynamic visual interest to your page."
     },
     {
         "name": "Sweet Alert",
         "link": "https://sweetalert2.github.io/",
         "tags": [
             "alert"
-        ]
+        ],
+        "description": "Sweet Alert provides beautiful, customizable alert messages to replace standard browser alerts."
     },
     {
         "name": "Minimamente",
         "link": "https://www.minimamente.com/project/magic/",
         "tags": [
             "alert"
-        ]
+        ],
+        "description": "Minimamente offers a magical alert system that enhances user interactions with stylish notifications."
     },
     {
         "name": "Minimamente",
         "link": "https://www.minimamente.com/project/magic/",
         "tags": [
             "alert"
-        ]
+        ],
+        "description": "Minimamente delivers sleek, animated alerts to make user notifications engaging and modern."
     },
     {
         "name": "Langchain",
         "link": "https://www.langchain.com/",
         "tags": [
             "ai"
-        ]
+        ],
+        "description": "Langchain is an AI toolkit that simplifies building applications powered by large language models."
     },
     {
         "name": "Autoprefixer",
         "link": "https://autoprefixer.github.io/",
         "tags": [
             "Autoprefixer"
-        ]
+        ],
+        "description": "Autoprefixer automatically adds vendor prefixes to your CSS, ensuring cross‑browser compatibility."
     },
     {
         "name": "SheryJS",
         "link": "https://github.com/sheryianscodingschool/sheryjs",
         "tags": [
             "Animation"
-        ]
+        ],
+        "description": "SheryJS is an animation library that helps you easily integrate dynamic motion effects into your web projects."
     },
     {
         "name": "React Konva",
         "link": "https://konvajs.org/react-konva/",
         "tags": [
             "canva base"
-        ]
+        ],
+        "description": "React Konva is a React wrapper for the Konva canvas library, simplifying 2D drawing and animations."
     },
     {
         "name": "Full Page",
         "link": "https://alvarotrigo.com/fullPage/",
         "tags": [
             "Animation"
-        ]
+        ],
+        "description": "Full Page enables smooth full‑page scrolling and transitions for immersive website experiences."
     },
     {
         "name": "Next Auth",
         "link": "https://next-auth.js.org/",
         "tags": [
             "authentication"
-        ]
+        ],
+        "description": "Next Auth provides robust authentication solutions for Next.js applications with easy configuration."
     },
     {
         "name": "Next Auth",
         "link": "https://next-auth.js.org/",
         "tags": [
             "authentication"
-        ]
+        ],
+        "description": "Next Auth simplifies adding authentication to Next.js apps with flexible, secure integration."
     },
     {
         "name": "Tanstack",
         "link": "https://tanstack.com/",
         "tags": [
             "authentication"
-        ]
+        ],
+        "description": "Tanstack offers a suite of modern libraries that streamline state management and data fetching in web apps."
     },
     {
         "name": "Embla Carousel",
         "link": "https://www.embla-carousel.com/",
         "tags": [
             "carousel"
-        ]
+        ],
+        "description": "Embla Carousel is a lightweight, customizable carousel library for creating smooth, responsive sliders."
     },
     {
         "name": "React Email",
         "link": "https://react.email/",
         "tags": [
             "Email"
-        ]
+        ],
+        "description": "React Email provides components and templates to build dynamic, responsive email designs using React."
     },
     {
         "name": "Cal.com",
         "link": "https://cal.com/",
         "tags": [
             "calling"
-        ]
+        ],
+        "description": "Cal.com is an open‑source scheduling platform that streamlines appointment booking and virtual meetings."
     },
     {
         "name": "lightweight Charts",
         "link": "https://www.tradingview.com/lightweight-charts/",
         "tags": [
             "charts"
-        ]
+        ],
+        "description": "lightweight Charts is a high‑performance charting library designed for interactive data visualizations."
     },
     {
         "name": "Magic Motion",
         "link": "https://www.react-magic-motion.com/",
         "tags": [
             "Animation"
-        ]
+        ],
+        "description": "Magic Motion brings fluid, physics‑based animations to your React projects with ease."
     },
     {
         "name": "Auto Animate",
         "link": "https://auto-animate.formkit.com/",
         "tags": [
             "Animation"
-        ]
+        ],
+        "description": "Auto Animate automatically handles layout transitions, making UI changes smooth and visually appealing."
     },
     {
         "name": "DND Kit",
         "link": "https://drag-and-drop.formkit.com/",
         "tags": [
             "drag"
-        ]
+        ],
+        "description": "DND Kit provides a powerful, customizable drag‑and‑drop framework for building interactive interfaces."
     },
     {
         "name": "Swapy",
         "link": "https://swapy.tahazsh.com/",
         "tags": [
             "drag"
-        ]
+        ],
+        "description": "Swapy simplifies drag‑and‑drop interactions with a lightweight, intuitive API for modern web apps."
     },
     {
         "name": "Apexcharts",
         "link": "https://apexcharts.com/",
         "tags": [
             "charts"
-        ]
+        ],
+        "description": "Apexcharts is a modern charting library that delivers interactive, responsive charts for data visualization."
     },
     {
         "name": "Polotno",
         "link": "https://polotno.com/",
         "tags": [
             "graphic"
-        ]
+        ],
+        "description": "Polotno is a web‑based graphic editor that enables you to design custom visuals quickly and intuitively."
     },
     {
         "name": "Lenis",
         "link": "https://lenis.darkroom.engineering/",
         "tags": [
             "aos"
-        ]
+        ],
+        "description": "Lenis offers smooth scrolling effects to enhance the user experience on modern websites."
     },
     {
         "name": "Plate JS",
         "link": "https://platejs.org/",
         "tags": [
             "Editor"
-        ]
+        ],
+        "description": "Plate JS is a block‑based rich text editor that provides a flexible and customizable editing experience."
     },
-    
     {
         "name": "Upload JS",
         "link": "https://github.com/pqina/filepond?tab=readme-ov-file",
         "tags": [
             "upload"
-        ]
+        ],
+        "description": "Upload JS (FilePond) is a versatile file upload library that offers a sleek UI and robust features."
     },
     {
         "name": "Shots",
         "link": "https://shots.so/",
         "tags": [
             "mockups"
-        ]
+        ],
+        "description": "Shots provides realistic device mockups to showcase your projects in a professional light."
     },
     {
         "name": "Intercom",
         "link": "https://www.intercom.com/",
         "tags": [
             "intercom"
-        ]
+        ],
+        "description": "Intercom is a customer messaging platform that helps businesses engage and support users effectively."
     },
     {
         "name": "Mail Trap",
         "link": "https://mailtrap.io/",
         "tags": [
             "mail"
-        ]
+        ],
+        "description": "Mail Trap creates a safe testing environment to capture and inspect emails sent from your applications."
     },
     {
         "name": "TensoFlow",
         "link": "https://www.tensorflow.org/",
         "tags": [
             "ai"
-        ]
+        ],
+        "description": "TensorFlow is a powerful open‑source machine learning framework for building and deploying AI models."
     },
     {
         "name": "Splide Js",
         "link": "https://splidejs.com/",
         "tags": [
             "slider"
-        ]
+        ],
+        "description": "Splide Js is a lightweight slider library that offers smooth transitions and responsive design for modern interfaces."
     },
     {
         "name": "Next Js Video",
         "link": "https://next-video.dev/",
         "tags": [
             "video"
-        ]
+        ],
+        "description": "Next Js Video provides an optimized solution for embedding and streaming videos within Next.js applications."
     },
     {
         "name": "Zod",
         "link": "https://zod.dev/",
         "tags": [
             "authentication"
-        ]
+        ],
+        "description": "Zod is a TypeScript-first schema validation library that simplifies data parsing and error handling."
     },
     {
         "name": "react-spring",
@@ -289,14 +328,16 @@
         "tags": [
             "Animations",
             "React"
-        ]
+        ],
+        "description": "react-spring brings physics‑based animations to React applications for smooth, natural transitions."
     },
     {
         "name": "Locomotive Scroll",
         "link": "https://locomotivemtl.github.io/locomotive-scroll/",
         "tags": [
             "Scroll"
-        ]
+        ],
+        "description": "Locomotive Scroll provides smooth scrolling and parallax effects to create immersive web experiences."
     },
     {
         "name": "Vaul",
@@ -304,21 +345,24 @@
         "tags": [
             "Drawer",
             "React"
-        ]
+        ],
+        "description": "Vaul offers an elegant React drawer component for building off‑canvas navigation and side panels."
     },
     {
         "name": "Atropos",
         "link": "https://atroposjs.com",
         "tags": [
             "Parallax"
-        ]
+        ],
+        "description": "Atropos adds immersive parallax hover effects to create engaging and interactive UI experiences."
     },
     {
         "name": "Sandpack",
         "link": "https://sandpack.codesandbox.io",
         "tags": [
             "Live coding"
-        ]
+        ],
+        "description": "Sandpack provides a live, in‑browser coding environment to build and preview web projects seamlessly."
     },
     {
         "name": "Framer Motion",
@@ -326,49 +370,56 @@
         "tags": [
             "Animations",
             "React"
-        ]
+        ],
+        "description": "Framer Motion offers a declarative API for building complex animations and transitions in React."
     },
     {
         "name": "RoughNotation",
         "link": "https://roughnotation.com",
         "tags": [
             "Annotations"
-        ]
+        ],
+        "description": "RoughNotation lets you add playful, hand‑drawn annotations to your web content for added emphasis."
     },
     {
         "name": "lightGallery",
         "link": "https://www.lightgalleryjs.com",
         "tags": [
             "Image gallery"
-        ]
+        ],
+        "description": "lightGallery is a feature‑rich, responsive image gallery library for displaying media with style."
     },
     {
         "name": "PhotoSwipe",
         "link": "https://photoswipe.com",
         "tags": [
             "Image gallery"
-        ]
+        ],
+        "description": "PhotoSwipe offers a mobile‑friendly, customizable image gallery solution with smooth touch interactions."
     },
     {
         "name": "Plyr",
         "link": "https://plyr.io",
         "tags": [
             "Media player"
-        ]
+        ],
+        "description": "Plyr is a simple, customizable media player that supports video, audio, and third‑party integrations."
     },
     {
         "name": "FilePond",
         "link": "https://pqina.nl/filepond/",
         "tags": [
             "Uploads"
-        ]
+        ],
+        "description": "FilePond is an elegant file upload library that offers a sleek interface and robust features for handling uploads."
     },
     {
         "name": "yup",
         "link": "https://github.com/jquense/yup",
         "tags": [
             "Form validation"
-        ]
+        ],
+        "description": "yup is a powerful schema builder for value parsing and validation in JavaScript applications."
     },
     {
         "name": "Tempo",
@@ -376,84 +427,96 @@
         "tags": [
             "Time",
             "Dates"
-        ]
+        ],
+        "description": "Tempo provides an intuitive API for managing and formatting dates and times in web applications."
     },
     {
         "name": "Editor.js",
         "link": "https://editorjs.io",
         "tags": [
             "Block-style editor"
-        ]
+        ],
+        "description": "Editor.js is a block‑style editor that uses a modular approach for a flexible content creation experience."
     },
     {
         "name": "tldraw SDK",
         "link": "https://editorjs.io",
         "tags": [
             "Infinite canvas"
-        ]
+        ],
+        "description": "tldraw SDK offers tools for building interactive, infinite canvas drawing applications."
     },
     {
         "name": "Driver.js",
         "link": "https://driverjs.com",
         "tags": [
             "Drive user's focus"
-        ]
+        ],
+        "description": "Driver.js creates guided tours and highlights to direct user focus through interactive walkthroughs."
     },
     {
         "name": "Tilt",
         "link": "https://jdion.xyz/tilt",
         "tags": [
             "Parallax"
-        ]
+        ],
+        "description": "Tilt adds subtle parallax tilt effects to elements for a dynamic, engaging visual experience."
     },
     {
         "name": "swup",
         "link": "https://swup.js.org/",
         "tags": [
             "Transitions for server-rendered pages"
-        ]
+        ],
+        "description": "swup enables smooth, AJAX‑powered page transitions on traditional server‑rendered websites."
     },
     {
         "name": "React Google Maps",
         "link": "https://visgl.github.io/react-google-maps/",
         "tags": [
             "Maps"
-        ]
+        ],
+        "description": "React Google Maps offers a declarative API to integrate Google Maps into your React applications effortlessly."
     },
     {
         "name": "Mapbox",
         "link": "https://www.mapbox.com/",
         "tags": [
             "Maps"
-        ]
+        ],
+        "description": "Mapbox provides powerful APIs and tools to build custom, interactive maps for web and mobile applications."
     },
     {
         "name": "Draggable JS",
         "link": "https://shopify.github.io/draggable/",
         "tags": [
             "Drag and drop"
-        ]
+        ],
+        "description": "Draggable JS is a modular, accessible library that enables intuitive drag‑and‑drop interactions for web interfaces."
     },
     {
         "name": "ipad-cursor",
         "link": "https://cursor.oooo.so/",
         "tags": [
             "iPad's mouse effect"
-        ]
+        ],
+        "description": "ipad-cursor adds an iPad‑like cursor effect to your website, enhancing interactive touch experiences."
     },
     {
         "name": "PDFSlick",
         "link": "https://pdfslick.dev/",
         "tags": [
             "View and Interact with PDFs"
-        ]
+        ],
+        "description": "PDFSlick provides a sleek interface for viewing and interacting with PDF documents online."
     },
     {
         "name": "Swiper",
         "link": "https://swiperjs.com/",
         "tags": [
             "Sliders"
-        ]
+        ],
+        "description": "Swiper is a modern, mobile‑friendly slider library that delivers smooth transitions and responsive layouts."
     },
     {
         "name": "Haiku",
@@ -462,34 +525,39 @@
             "React",
             "Hooks",
             "Utilities"
-        ]
+        ],
+        "description": "Haiku offers a collection of React hooks and utilities to streamline animations and state management."
     },
     {
         "name": "COBE",
         "link": "https://cobe.vercel.app/",
         "tags": [
             "WebGL globe"
-        ]
+        ],
+        "description": "COBE enables you to create stunning, interactive WebGL globes with minimal configuration."
     },
     {
         "name": "MotionNumber for Framer Motion",
         "link": "https://motion-number.barvian.me/",
         "tags": [
             "Transition, format, and localize numbers"
-        ]
+        ],
+        "description": "MotionNumber for Framer Motion provides smooth number transitions, formatting, and localization for dynamic data displays."
     },
     {
         "name": "Tweakpane",
         "link": "https://tweakpane.github.io/docs/",
         "tags": [
             "GUI"
-        ]
+        ],
+        "description": "Tweakpane is a lightweight GUI library for creating customizable control panels and real‑time editors."
     },
     {
         "name": "Yoopta-Editor",
         "link": "https://yoopta.dev/",
         "tags": [
             "Rich-text editor"
-        ]
+        ],
+        "description": "Yoopta-Editor is a modern, customizable rich‑text editor designed for seamless content creation experiences."
     }
 ]

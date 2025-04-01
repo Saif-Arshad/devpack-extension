@@ -6,14 +6,16 @@
             "HDRIs",
             "Textures",
             "Models"
-        ]
+        ],
+        "description": "High-quality HDRIs, textures, and 3D models for your projects."
     },
     {
         "name": "Itchio",
         "link": "https://itch.io/game-assets/free",
         "tags": [
             "Store"
-        ]
+        ],
+        "description": "A platform offering free game assets and indie game resources."
     },
     {
         "name": "Kenney",
@@ -21,7 +23,8 @@
         "tags": [
             "Models",
             "Textures"
-        ]
+        ],
+        "description": "Provides a wide range of free 2D and 3D game assets."
     },
     {
         "name": "ambientCG",
@@ -30,7 +33,8 @@
             "HDRIs",
             "Textures",
             "Models"
-        ]
+        ],
+        "description": "Free high-resolution textures, HDRIs, and models for 3D artists."
     },
     {
         "name": "Share Textures",
@@ -39,7 +43,8 @@
             "Atlases",
             "Textures",
             "Models"
-        ]
+        ],
+        "description": "A community-driven site for free texture atlases and 3D models."
     },
     {
         "name": "BlenderKit",
@@ -49,14 +54,16 @@
             "Models",
             "HDRIs",
             "Brushes"
-        ]
+        ],
+        "description": "An extensive resource of free Blender assets including textures, models, HDRIs, and brushes."
     },
     {
         "name": "CG Bookcase",
         "link": "https://www.cgbookcase.com",
         "tags": [
             "Textures"
-        ]
+        ],
+        "description": "Offers a large collection of free textures for 3D projects."
     },
     {
         "name": "3Dassets.one",
@@ -65,21 +72,24 @@
             "HDRIs",
             "Textures",
             "Models"
-        ]
+        ],
+        "description": "A hub for high-quality HDRIs, textures, and 3D models."
     },
     {
         "name": "Quaternius",
         "link": "https://quaternius.com/",
         "tags": [
             "Models"
-        ]
+        ],
+        "description": "Specializes in free 3D models for various creative projects."
     },
     {
         "name": "Turbosquid",
         "link": "https://www.turbosquid.com/",
         "tags": [
             "Models"
-        ]
+        ],
+        "description": "A marketplace for high-quality 3D models, including free options."
     },
     {
         "name": "Game Art 2D",
@@ -88,14 +98,16 @@
             "Sprites",
             "Tileset",
             "GUI"
-        ]
+        ],
+        "description": "Free 2D game art assets including sprites, tilesets, and GUI elements."
     },
     {
         "name": "textures.com",
         "link": "https://www.textures.com/free",
         "tags": [
             "Textures"
-        ]
+        ],
+        "description": "A comprehensive library of free textures for digital artists."
     },
     {
         "name": "Quixel",
@@ -104,7 +116,8 @@
             "Decals",
             "Textures",
             "Models"
-        ]
+        ],
+        "description": "Offers free access to a vast collection of textures, decals, and 3D assets."
     },
     {
         "name": "Poliigon",
@@ -113,63 +126,72 @@
             "HDRIs",
             "Textures",
             "Models"
-        ]
+        ],
+        "description": "A resource for free high-quality HDRIs, textures, and 3D models."
     },
     {
         "name": "CGTrader",
         "link": "https://www.cgtrader.com/free-3d-models",
         "tags": [
             "Models"
-        ]
+        ],
+        "description": "A platform offering both free and premium 3D models for various projects."
     },
     {
         "name": "3DExport",
         "link": "https://3dexport.com/",
         "tags": [
             "Models"
-        ]
+        ],
+        "description": "A marketplace for 3D models, featuring a selection of free assets."
     },
     {
         "name": "ArtStation Marketplace",
         "link": "https://www.artstation.com/marketplace/game-dev?section=trending&price_to=0",
         "tags": [
             "Store"
-        ]
+        ],
+        "description": "A curated marketplace featuring free game development assets."
     },
     {
         "name": "Sketchfab",
         "link": "https://sketchfab.com/features/free-3d-models",
         "tags": [
             "Store"
-        ]
+        ],
+        "description": "Discover free 3D models and assets shared by a global community."
     },
     {
         "name": "NormalMap-Online",
         "link": "https://cpetry.github.io/NormalMap-Online/",
         "tags": [
             "Tool"
-        ]
+        ],
+        "description": "An online tool to generate normal maps from your images."
     },
     {
         "name": "Online 3D Viewer",
         "link": "https://3dviewer.net/",
         "tags": [
             "Tool"
-        ]
+        ],
+        "description": "A web-based tool for viewing and sharing 3D models."
     },
     {
         "name": "3dsky",
         "link": "https://3dsky.org/3dmodels?types=free",
         "tags": [
             "Store"
-        ]
+        ],
+        "description": "Offers a diverse collection of free 3D models across various categories."
     },
     {
         "name": "Dimensiva",
         "link": "https://dimensiva.com/free-3d-models/",
         "tags": [
             "Models"
-        ]
+        ],
+        "description": "A resource for free 3D models with a focus on quality assets."
     },
     {
         "name": "3D model collection",
@@ -177,13 +199,15 @@
         "tags": [
             "Models",
             "Heritage"
-        ]
+        ],
+        "description": "A curated collection of free 3D models available on Sketchfab."
     },
     {
         "name": "Blend Swap",
         "link": "https://www.blendswap.com/",
         "tags": [
             "Models"
-        ]
+        ],
+        "description": "A community-driven platform for sharing free Blender assets."
     }
 ]

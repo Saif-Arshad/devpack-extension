@@ -5,7 +5,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "A curated platform showcasing innovative animated web development resources."
     },
     {
         "name": "UI-SNIPPETS",
@@ -13,7 +14,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "Offers ready-to-use UI snippets with smooth animations for modern websites."
     },
     {
         "name": "Magic UI",
@@ -21,7 +23,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "Provides dynamic UI components with eye-catching animations for web projects."
     },
     {
         "name": "Eldora UI",
@@ -29,7 +32,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "A creative UI resource delivering unique animated elements for web design."
     },
     {
         "name": "Aceternity UI",
@@ -37,7 +41,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "Features a collection of animated UI components tailored for modern web apps."
     },
     {
         "name": "Bossadizenith UI",
@@ -45,7 +50,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "Offers engaging animated UI elements to enhance user experiences on the web."
     },
     {
         "name": "C UI",
@@ -53,7 +59,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "A minimalist UI resource that blends clean design with subtle animations."
     },
     {
         "name": "Bits UI",
@@ -61,7 +68,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "A React-based collection of UI snippets enriched with fluid animations."
     },
     {
         "name": "Vanta UI",
@@ -69,7 +77,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "Showcases dynamic animated backgrounds and interactive UI components for web projects."
     },
     {
         "name": "UI Layouts",
@@ -77,7 +86,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "Provides pre-designed UI layouts featuring modern animations for engaging interfaces."
     },
     {
         "name": "Motion Primitives",
@@ -85,7 +95,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "Essential building blocks to create smooth, high-quality web animations."
     },
     {
         "name": "Dyna UI",
@@ -93,7 +104,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "A design resource offering dynamic and animated UI components for web applications."
     },
     {
         "name": "Universe UI",
@@ -101,7 +113,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "A futuristic resource for UI components with captivating, cosmic animations."
     },
     {
         "name": "Rombo",
@@ -109,7 +122,8 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "A unique UI library that blends Tailwind CSS with creative animated elements."
     },
     {
         "name": "Varient Valtd",
@@ -117,56 +131,128 @@
         "tags": [
             "animation Libraries",
             "Web Development"
-        ]
+        ],
+        "description": "Offers a vault of variant UI components featuring innovative animations for modern sites."
     },
     {
         "name": "GSAP (GreenSock)",
         "link": "https://greensock.com/gsap/",
-        "tags": ["animation", "javascript", "performance", "svg", "css", "webgl"]
+        "tags": [
+            "animation",
+            "javascript",
+            "performance",
+            "svg",
+            "css",
+            "webgl"
+        ],
+        "description": "A powerful JavaScript library for creating high-performance animations."
     },
     {
         "name": "Framer Motion",
         "link": "https://www.framer.com/motion/",
-        "tags": ["animation", "react", "declarative", "gestures", "ui"]
+        "tags": [
+            "animation",
+            "react",
+            "declarative",
+            "gestures",
+            "ui"
+        ],
+        "description": "A React library for declarative, interactive animations and gesture handling."
     },
     {
         "name": "Anime.js",
         "link": "https://animejs.com/",
-        "tags": ["animation", "javascript", "lightweight", "svg", "css"]
+        "tags": [
+            "animation",
+            "javascript",
+            "lightweight",
+            "svg",
+            "css"
+        ],
+        "description": "A lightweight and flexible JavaScript animation library with robust features."
     },
     {
         "name": "React Spring",
         "link": "https://www.react-spring.dev/",
-        "tags": ["animation", "react", "physics", "springs", "ui"]
+        "tags": [
+            "animation",
+            "react",
+            "physics",
+            "springs",
+            "ui"
+        ],
+        "description": "A spring-physics based animation library for creating smooth and natural React animations."
     },
     {
         "name": "Lottie",
         "link": "https://airbnb.io/lottie/#/",
-        "tags": ["animation", "vector", "json", "after-effects", "svg", "performance"]
+        "tags": [
+            "animation",
+            "vector",
+            "json",
+            "after-effects",
+            "svg",
+            "performance"
+        ],
+        "description": "Renders Adobe After Effects animations as lightweight JSON for use on the web."
     },
     {
         "name": "Three.js",
         "link": "https://threejs.org/",
-        "tags": ["animation", "3d", "webgl", "javascript", "graphics"]
+        "tags": [
+            "animation",
+            "3d",
+            "webgl",
+            "javascript",
+            "graphics"
+        ],
+        "description": "A JavaScript library for creating and displaying animated 3D graphics using WebGL."
     },
     {
         "name": "Popmotion",
         "link": "https://popmotion.io/",
-        "tags": ["animation", "javascript", "motion", "low-level", "ui"]
+        "tags": [
+            "animation",
+            "javascript",
+            "motion",
+            "low-level",
+            "ui"
+        ],
+        "description": "A low-level JavaScript motion library for crafting smooth and performant animations."
     },
     {
         "name": "Velocity.js",
         "link": "http://velocityjs.org/",
-        "tags": ["animation", "javascript", "performance", "jquery-alternative"]
+        "tags": [
+            "animation",
+            "javascript",
+            "performance",
+            "jquery-alternative"
+        ],
+        "description": "A fast and feature-rich animation engine that serves as a jQuery alternative."
     },
     {
         "name": "Theatre.js",
         "link": "https://www.theatrejs.com/",
-        "tags": ["animation", "motion-design", "editor", "javascript", "timeline"]
+        "tags": [
+            "animation",
+            "motion-design",
+            "editor",
+            "javascript",
+            "timeline"
+        ],
+        "description": "A timeline-based library for creating interactive and expressive motion designs."
     },
     {
         "name": "AutoAnimate",
         "link": "https://auto-animate.formkit.com/",
-        "tags": ["animation", "javascript", "utility", "zero-config", "css"]
+        "tags": [
+            "animation",
+            "javascript",
+            "utility",
+            "zero-config",
+            "css"
+        ],
+        "description": "A zero-configuration library that automatically animates layout changes for smooth transitions."
     }
 ]

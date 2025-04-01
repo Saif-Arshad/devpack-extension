@@ -5,7 +5,8 @@
         "tags": [
             "icons",
             "framework"
-        ]
+        ],
+        "description": "Iconify is a comprehensive framework that aggregates thousands of icons from multiple libraries in one place."
     },
     {
         "name": "Google icons",
@@ -13,7 +14,8 @@
         "tags": [
             "icons",
             "material design"
-        ]
+        ],
+        "description": "Google icons offers a collection of Material Design icons optimized for web and mobile interfaces."
     },
     {
         "name": "Simple Icons",
@@ -21,7 +23,8 @@
         "tags": [
             "icons",
             "brands"
-        ]
+        ],
+        "description": "Simple Icons provides vector icons for popular brands in a consistent, flat style."
     },
     {
         "name": "Tabler icons",
@@ -29,7 +32,8 @@
         "tags": [
             "icons",
             "SVG"
-        ]
+        ],
+        "description": "Tabler icons are free, open‑source SVG icons designed for modern and minimalist user interfaces."
     },
     {
         "name": "SVG Repo",
@@ -37,7 +41,8 @@
         "tags": [
             "icons",
             "SVG"
-        ]
+        ],
+        "description": "SVG Repo hosts a large library of free SVG icons and illustrations for designers and developers."
     },
     {
         "name": "Reshot",
@@ -45,7 +50,8 @@
         "tags": [
             "icons",
             "SVG"
-        ]
+        ],
+        "description": "Reshot offers a curated collection of free SVG icons for creative projects."
     },
     {
         "name": "Radix Icons",
@@ -53,7 +59,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Radix Icons provides a set of customizable icon components as part of the Radix UI library."
     },
     {
         "name": "Iconoir",
@@ -61,7 +68,8 @@
         "tags": [
             "icons",
             "open-source"
-        ]
+        ],
+        "description": "Iconoir is an open‑source icon library featuring modern, minimal designs for diverse applications."
     },
     {
         "name": "Hero Icons",
@@ -69,7 +77,8 @@
         "tags": [
             "icons",
             "SVG"
-        ]
+        ],
+        "description": "Hero Icons delivers a collection of hand‑crafted SVG icons ideal for web interfaces and React projects."
     },
     {
         "name": "Lucide",
@@ -77,7 +86,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Lucide is a fork of Feather icons offering a set of simple, customizable, and modern icons."
     },
     {
         "name": "Phosphor",
@@ -85,7 +95,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Phosphor is a flexible icon family featuring multiple weights and styles to suit any project."
     },
     {
         "name": "React Icons",
@@ -94,7 +105,8 @@
             "icons",
             "package",
             "React"
-        ]
+        ],
+        "description": "React Icons provides popular icon packs as ready‑to‑use React components for seamless integration."
     },
     {
         "name": "Remix Icon",
@@ -102,7 +114,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Remix Icon offers a clean, modern icon set that’s easy to integrate into web and mobile projects."
     },
     {
         "name": "Feather Icons",
@@ -110,7 +123,8 @@
         "tags": [
             "icons",
             "open-source"
-        ]
+        ],
+        "description": "Feather Icons is a collection of lightweight, open‑source SVG icons with a minimalist design."
     },
     {
         "name": "Ionicons",
@@ -118,7 +132,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Ionicons offers a rich set of icons designed specifically for Ionic and mobile applications."
     },
     {
         "name": "Eva Icons",
@@ -126,7 +141,8 @@
         "tags": [
             "icons",
             "open-source"
-        ]
+        ],
+        "description": "Eva Icons is an open‑source icon pack that provides a consistent and stylish look for UI design."
     },
     {
         "name": "svgl",
@@ -134,7 +150,8 @@
         "tags": [
             "icons",
             "logos"
-        ]
+        ],
+        "description": "svgl is a platform for exploring creative logo icons and vector graphics."
     },
     {
         "name": "Font Awesome Icons",
@@ -142,7 +159,8 @@
         "tags": [
             "icons",
             "font awesome"
-        ]
+        ],
+        "description": "Font Awesome Icons is a widely‑used toolkit featuring thousands of icons for web and mobile projects."
     },
     {
         "name": "useAnimations",
@@ -150,7 +168,8 @@
         "tags": [
             "icons",
             "animated"
-        ]
+        ],
+        "description": "useAnimations provides a library of animated SVG icons to add dynamic visual interest to interfaces."
     },
     {
         "name": "MingCute Design",
@@ -158,7 +177,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "MingCute Design offers a unique collection of creatively designed icons for modern applications."
     },
     {
         "name": "Carbon",
@@ -166,7 +186,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Carbon Icons are part of IBM's Carbon Design System, offering a comprehensive set of icons for enterprise solutions."
     },
     {
         "name": "Iconbuddy",
@@ -174,7 +195,8 @@
         "tags": [
             "icons",
             "collection"
-        ]
+        ],
+        "description": "Iconbuddy curates a collection of high‑quality icons to inspire and streamline your design process."
     },
     {
         "name": "Animatedicons",
@@ -182,7 +204,8 @@
         "tags": [
             "icons",
             "animated"
-        ]
+        ],
+        "description": "Animatedicons provides a selection of animated icons to bring extra life to your user interfaces."
     },
     {
         "name": "CSS Icons",
@@ -190,7 +213,8 @@
         "tags": [
             "icons",
             "CSS"
-        ]
+        ],
+        "description": "CSS Icons by css.gg delivers a wide range of stylish, CSS‑based icons for modern web design."
     },
     {
         "name": "Boxicons",
@@ -198,7 +222,8 @@
         "tags": [
             "icons",
             "vector"
-        ]
+        ],
+        "description": "Boxicons offers a simple and clean set of vector icons that work well in both web and mobile projects."
     },
     {
         "name": "Ikonate",
@@ -206,7 +231,8 @@
         "tags": [
             "icons",
             "vector"
-        ]
+        ],
+        "description": "Ikonate provides customizable, high‑quality vector icons to fit a variety of design needs."
     },
     {
         "name": "ManyPixels",
@@ -214,7 +240,8 @@
         "tags": [
             "icons",
             "illustrations"
-        ]
+        ],
+        "description": "ManyPixels offers a curated gallery of free illustrations and icons to fuel your creative projects."
     },
     {
         "name": "Zondicons",
@@ -222,7 +249,8 @@
         "tags": [
             "icons",
             "SVG"
-        ]
+        ],
+        "description": "Zondicons is a set of free SVG icons designed with a modern aesthetic for versatile applications."
     },
     {
         "name": "ICONSVG",
@@ -230,7 +258,8 @@
         "tags": [
             "icons",
             "SVG"
-        ]
+        ],
+        "description": "ICONSVG provides a simple and efficient way to access a vast collection of free SVG icons."
     },
     {
         "name": "Streamline Icons",
@@ -238,7 +267,8 @@
         "tags": [
             "icons",
             "collection"
-        ]
+        ],
+        "description": "Streamline Icons offers an extensive collection of meticulously designed icons for every project."
     },
     {
         "name": "TDesign Icons",
@@ -246,7 +276,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "TDesign Icons delivers a modern icon set curated by Tencent's TDesign system for polished UI design."
     },
     {
         "name": "3D Icons",
@@ -254,7 +285,8 @@
         "tags": [
             "icons",
             "3D"
-        ]
+        ],
+        "description": "3D Icons provides a collection of three‑dimensional icons for adding depth and visual impact to designs."
     },
     {
         "name": "Mage Icons",
@@ -262,7 +294,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Mage Icons is a versatile icon package offering stylish and modern icons for web and mobile interfaces."
     },
     {
         "name": "Iconmonstr",
@@ -270,7 +303,8 @@
         "tags": [
             "icons",
             "collection"
-        ]
+        ],
+        "description": "Iconmonstr provides a free, easy‑to‑use collection of simple and clean icons for any project."
     },
     {
         "name": "Drawkit",
@@ -278,7 +312,8 @@
         "tags": [
             "icons",
             "illustrations"
-        ]
+        ],
+        "description": "Drawkit offers hand‑crafted illustrations and icons that add a creative touch to digital projects."
     },
     {
         "name": "Basicons",
@@ -286,7 +321,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Basicons is a minimal icon set that provides simple, modern symbols for web and app interfaces."
     },
     {
         "name": "Clarity",
@@ -294,7 +330,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "Clarity Icons are part of the Clarity Design System, offering a consistent iconography for enterprise applications."
     },
     {
         "name": "Core UI Icons",
@@ -302,7 +339,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Core UI Icons is a comprehensive icon library designed to complement the Core UI framework."
     },
     {
         "name": "Unicorn icons",
@@ -310,7 +348,8 @@
         "tags": [
             "icons",
             "animated"
-        ]
+        ],
+        "description": "Unicorn icons offer a playful collection of animated icons to add fun and interactivity to your design."
     },
     {
         "name": "Bootstrap Icons",
@@ -318,7 +357,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Bootstrap Icons is a free, high‑quality icon set built for Bootstrap and modern web projects."
     },
     {
         "name": "Teenyicons",
@@ -326,7 +366,8 @@
         "tags": [
             "icons",
             "minimal"
-        ]
+        ],
+        "description": "Teenyicons provides a set of minimal, crisp icons designed for clean and modern user interfaces."
     },
     {
         "name": "Sargam Icons",
@@ -334,7 +375,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "Sargam Icons delivers a unique collection of beautifully designed icons for creative projects."
     },
     {
         "name": "Keyicons",
@@ -342,7 +384,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "Keyicons offers stylish and distinctive icons that enhance the visual appeal of digital interfaces."
     },
     {
         "name": "Zwicon",
@@ -350,7 +393,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "Zwicon provides a set of modern icons with a focus on clean, contemporary design aesthetics."
     },
     {
         "name": "Notion-style Icons",
@@ -358,7 +402,8 @@
         "tags": [
             "icons",
             "scribble"
-        ]
+        ],
+        "description": "Notion-style Icons deliver a collection of hand‑drawn, scribble‑style icons inspired by Notion's design."
     },
     {
         "name": "Flagpack",
@@ -366,7 +411,8 @@
         "tags": [
             "icons",
             "flags"
-        ]
+        ],
+        "description": "Flagpack offers a complete collection of SVG flag icons for representing countries and regions."
     },
     {
         "name": "Grumpyicons",
@@ -374,7 +420,8 @@
         "tags": [
             "icons",
             "scribble"
-        ]
+        ],
+        "description": "Grumpyicons features a quirky set of hand‑drawn icons with a grumpy twist for fun design projects."
     },
     {
         "name": "Icon Freebies Glimsy",
@@ -382,7 +429,8 @@
         "tags": [
             "icons",
             "freebies"
-        ]
+        ],
+        "description": "Icon Freebies Glimsy offers a curated selection of free icons for creative and commercial use."
     },
     {
         "name": "Line Icon Pack",
@@ -390,7 +438,8 @@
         "tags": [
             "icons",
             "line"
-        ]
+        ],
+        "description": "Line Icon Pack delivers a set of elegant line icons that add subtle style to your UI designs."
     },
     {
         "name": "Tilda Icons",
@@ -398,7 +447,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "Tilda Icons provides a set of free icons designed for seamless integration with Tilda websites."
     },
     {
         "name": "Noun Project",
@@ -406,7 +456,8 @@
         "tags": [
             "icons",
             "collection"
-        ]
+        ],
+        "description": "Noun Project is a vast library of icons and symbols contributed by a global community of designers."
     },
     {
         "name": "IconaMoon",
@@ -414,7 +465,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "IconaMoon offers premium icon sets and design resources shared by the Figma community."
     },
     {
         "name": "Solar",
@@ -422,7 +474,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "Solar provides a modern collection of icons and design elements available through Figma."
     },
     {
         "name": "Icon Icons",
@@ -430,7 +483,8 @@
         "tags": [
             "icons",
             "collection"
-        ]
+        ],
+        "description": "Icon Icons is a curated collection of diverse icons designed to meet various design needs."
     },
     {
         "name": "FlatIcon",
@@ -438,7 +492,8 @@
         "tags": [
             "icons",
             "collection"
-        ]
+        ],
+        "description": "FlatIcon offers millions of free vector icons and stickers to enhance your design projects."
     },
     {
         "name": "Iconscout",
@@ -446,7 +501,8 @@
         "tags": [
             "icons",
             "collection"
-        ]
+        ],
+        "description": "Iconscout provides a vast library of icons, illustrations, and stock assets for creative projects."
     },
     {
         "name": "Untitled UI Icons",
@@ -454,7 +510,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "Untitled UI Icons offers a clean and modern set of icons crafted for intuitive user interfaces."
     },
     {
         "name": "Majesticons",
@@ -462,7 +519,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "Majesticons is a beautifully crafted icon set designed to add elegance to digital projects."
     },
     {
         "name": "Gravity UI",
@@ -471,7 +529,8 @@
             "icons",
             "package",
             "React"
-        ]
+        ],
+        "description": "Gravity UI offers a set of React‑based icons that integrate seamlessly with modern UI frameworks."
     },
     {
         "name": "Octicons",
@@ -479,7 +538,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Octicons is a scalable icon set from GitHub, perfect for modern web applications."
     },
     {
         "name": "SVG Flag Icons",
@@ -487,7 +547,8 @@
         "tags": [
             "icons",
             "flags"
-        ]
+        ],
+        "description": "SVG Flag Icons provides a comprehensive set of country flag icons in SVG format for international projects."
     },
     {
         "name": "Unicons",
@@ -495,7 +556,8 @@
         "tags": [
             "icons",
             "package"
-        ]
+        ],
+        "description": "Unicons is a versatile icon library offering a wide range of icons as React components and packages."
     },
     {
         "name": "Iconic",
@@ -503,7 +565,8 @@
         "tags": [
             "icons",
             "design"
-        ]
+        ],
+        "description": "Iconic offers a modern collection of icons designed to enhance user interfaces with style."
     },
     {
         "name": "Isocons",
@@ -511,7 +574,8 @@
         "tags": [
             "icons",
             "3D"
-        ]
+        ],
+        "description": "Isocons delivers a set of 3D icons that bring depth and visual interest to your digital designs."
     },
     {
         "name": "Icon 8",
@@ -519,6 +583,7 @@
         "tags": [
             "icons",
             "3D"
-        ]
+        ],
+        "description": "Icon 8 offers a comprehensive collection of high‑quality icons with a modern, professional design."
     }
 ]

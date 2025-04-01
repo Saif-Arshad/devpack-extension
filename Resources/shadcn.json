@@ -6,7 +6,8 @@
             "React",
             "Tailwind",
             "Chart"
-        ]
+        ],
+        "description": "shadcn/ui is a curated collection of React components styled with Tailwind CSS for building consistent modern UIs."
     },
     {
         "name": "AwesomeShadcn UI",
@@ -15,7 +16,8 @@
             "React",
             "Tailwind",
             "Chart"
-        ]
+        ],
+        "description": "AwesomeShadcn UI curates high‑quality UI components and design patterns for projects using shadcn’s design system."
     },
     {
         "name": "awesome-shadcn/ui",
@@ -24,7 +26,8 @@
             "React",
             "Tailwind",
             "Chart"
-        ]
+        ],
+        "description": "awesome-shadcn/ui is a live showcase of reusable shadcn UI components built with React and Tailwind for inspiration."
     },
     {
         "name": "Shadcn Extension",
@@ -33,7 +36,8 @@
             "React",
             "Tailwind",
             "Chart"
-        ]
+        ],
+        "description": "Shadcn Extension enhances your workflow by integrating extra shadcn UI components directly into your development environment."
     },
     {
         "name": "Shadcn additional resources",
@@ -42,7 +46,8 @@
             "React",
             "Tailwind",
             "Chart"
-        ]
+        ],
+        "description": "This Medium article shares extra shadcn UI components and practical resources to expand your design toolkit."
     },
     {
         "name": "Shadcn additional resources",
@@ -51,7 +56,8 @@
             "React",
             "Tailwind",
             "Chart"
-        ]
+        ],
+        "description": "shadcn additional resources on shadcnblocks.com provides a wide range of ready‑to‑use UI blocks for rapid prototyping."
     },
     {
         "name": "Shadcn Blocks",
@@ -60,6 +66,7 @@
             "React",
             "Tailwind",
             "Chart"
-        ]
+        ],
+        "description": "Shadcn Blocks is a repository of pre‑designed UI blocks built with shadcn's design system to accelerate React development."
     }
 ]

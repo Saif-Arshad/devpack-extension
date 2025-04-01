@@ -6,7 +6,8 @@
             "database",
             "NoSQL",
             "cloud"
-        ]
+        ],
+        "description": "MongoDB Atlas is a fully‑managed cloud service for deploying, managing, and scaling MongoDB databases globally."
     },
     {
         "name": "Firebase Realtime Database",
@@ -15,7 +16,8 @@
             "database",
             "realtime",
             "NoSQL"
-        ]
+        ],
+        "description": "Firebase Realtime Database offers a cloud‑hosted NoSQL database that synchronizes data in real‑time across clients."
     },
     {
         "name": "Amazon RDS",
@@ -24,7 +26,8 @@
             "database",
             "SQL",
             "cloud"
-        ]
+        ],
+        "description": "Amazon RDS is a managed relational database service supporting various SQL engines with scalable performance on AWS."
     },
     {
         "name": "Google Cloud SQL",
@@ -33,7 +36,8 @@
             "database",
             "SQL",
             "cloud"
-        ]
+        ],
+        "description": "Google Cloud SQL provides a fully‑managed relational database service for MySQL, PostgreSQL, and SQL Server on Google Cloud."
     },
     {
         "name": "PostgreSQL",
@@ -42,7 +46,8 @@
             "database",
             "SQL",
             "open-source"
-        ]
+        ],
+        "description": "PostgreSQL is a powerful, open‑source relational database system known for its advanced features and extensibility."
     },
     {
         "name": "MySQL",
@@ -51,7 +56,8 @@
             "database",
             "SQL",
             "open-source"
-        ]
+        ],
+        "description": "MySQL is a widely‑used open‑source relational database management system ideal for web applications."
     },
     {
         "name": "Microsoft Azure SQL Database",
@@ -60,7 +66,8 @@
             "database",
             "SQL",
             "cloud"
-        ]
+        ],
+        "description": "Microsoft Azure SQL Database is a scalable, fully‑managed relational database service on the Azure cloud platform."
     },
     {
         "name": "Oracle Database Cloud",
@@ -69,7 +76,8 @@
             "database",
             "SQL",
             "cloud"
-        ]
+        ],
+        "description": "Oracle Database Cloud delivers enterprise‑grade database solutions with high performance, security, and scalability."
     },
     {
         "name": "Redis Enterprise",
@@ -78,7 +86,8 @@
             "database",
             "NoSQL",
             "in-memory"
-        ]
+        ],
+        "description": "Redis Enterprise is a fully‑managed in‑memory database service designed for real‑time data processing and caching."
     },
     {
         "name": "Couchbase",
@@ -87,6 +96,7 @@
             "database",
             "NoSQL",
             "cloud"
-        ]
+        ],
+        "description": "Couchbase is a high‑performance NoSQL database that offers flexible data models and scalable cloud deployments."
     }
 ]

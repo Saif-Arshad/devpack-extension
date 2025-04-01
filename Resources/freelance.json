@@ -6,7 +6,8 @@
             "freelance",
             "jobs",
             "remote"
-        ]
+        ],
+        "description": "Upwork is a leading freelance platform connecting professionals with remote job opportunities."
     },
     {
         "name": "Freelancer",
@@ -15,7 +16,8 @@
             "freelance",
             "jobs",
             "projects"
-        ]
+        ],
+        "description": "Freelancer is a global marketplace where businesses and professionals collaborate on diverse projects."
     },
     {
         "name": "Fiverr",
@@ -24,7 +26,8 @@
             "freelance",
             "gigs",
             "services"
-        ]
+        ],
+        "description": "Fiverr offers freelance gigs and creative services starting at just $5."
     },
     {
         "name": "Guru",
@@ -33,7 +36,8 @@
             "freelance",
             "jobs",
             "platform"
-        ]
+        ],
+        "description": "Guru is an online platform connecting businesses with expert freelancers for various projects."
     },
     {
         "name": "PeoplePerHour",
@@ -42,7 +46,8 @@
             "freelance",
             "jobs",
             "remote"
-        ]
+        ],
+        "description": "PeoplePerHour offers freelance job opportunities and remote work for skilled professionals worldwide."
     },
     {
         "name": "Toptal",
@@ -51,7 +56,8 @@
             "freelance",
             "tech",
             "talent"
-        ]
+        ],
+        "description": "Toptal connects top freelance tech talent with companies seeking high‑quality remote professionals."
     },
     {
         "name": "99designs",
@@ -60,7 +66,8 @@
             "design",
             "freelance",
             "creative"
-        ]
+        ],
+        "description": "99designs is a freelance platform specializing in creative design contests and project collaborations."
     },
     {
         "name": "Simply Hired",
@@ -69,7 +76,8 @@
             "jobs",
             "freelance",
             "platform"
-        ]
+        ],
+        "description": "Simply Hired aggregates freelance and full‑time job listings across multiple industries."
     },
     {
         "name": "FlexJobs",
@@ -78,7 +86,8 @@
             "remote",
             "freelance",
             "jobs"
-        ]
+        ],
+        "description": "FlexJobs provides remote and flexible freelance job listings with a focus on scam‑free opportunities."
     },
     {
         "name": "TaskRabbit",
@@ -87,7 +96,8 @@
             "freelance",
             "tasks",
             "local"
-        ]
+        ],
+        "description": "TaskRabbit connects local freelancers with individuals and businesses for task‑based services."
     },
     {
         "name": "FreelancerMap",
@@ -96,14 +106,17 @@
             "IT",
             "freelance",
             "jobs"
-        ]
+        ],
+        "description": "FreelancerMap focuses on IT freelance job opportunities and technical project collaborations."
     },
     {
+        "name": "Curated Freelance Gigs",
         "tags": [
             "freelance",
             "gigs",
             "curated"
-        ]
+        ],
+        "description": "A curated collection of freelance gigs across various fields to inspire your next project."
     },
     {
         "name": "Bark",
@@ -112,7 +125,8 @@
             "services",
             "freelance",
             "local"
-        ]
+        ],
+        "description": "Bark connects service providers with local freelance opportunities in a wide range of industries."
     },
     {
         "name": "Crowded",
@@ -121,7 +135,8 @@
             "freelance",
             "aggregator",
             "jobs"
-        ]
+        ],
+        "description": "Crowded aggregates freelance job listings from multiple sources to simplify your search."
     },
     {
         "name": "Worksome",
@@ -130,7 +145,8 @@
             "freelance",
             "tech",
             "jobs"
-        ]
+        ],
+        "description": "Worksome connects freelance tech professionals with high‑quality job opportunities."
     },
     {
         "name": "We Work Remotely",
@@ -139,7 +155,8 @@
             "remote",
             "jobs",
             "freelance"
-        ]
+        ],
+        "description": "We Work Remotely is a job board specializing in remote freelance opportunities and telecommuting roles."
     },
     {
         "name": "Remote OK",
@@ -148,7 +165,8 @@
             "remote",
             "jobs",
             "freelance"
-        ]
+        ],
+        "description": "Remote OK aggregates remote and freelance job listings for digital professionals worldwide."
     },
     {
         "name": "AngelList",
@@ -157,7 +175,8 @@
             "startups",
             "freelance",
             "tech"
-        ]
+        ],
+        "description": "AngelList connects startups with freelance and full‑time talent in the tech industry."
     },
     {
         "name": "Hirable",
@@ -166,7 +185,8 @@
             "freelance",
             "jobs",
             "tech"
-        ]
+        ],
+        "description": "Hirable is a platform where freelancers and companies connect for tech and creative projects."
     },
     {
         "name": "Moonlighting",
@@ -175,7 +195,8 @@
             "freelance",
             "jobs",
             "part-time"
-        ]
+        ],
+        "description": "Moonlighting offers freelance and part‑time job opportunities for professionals seeking extra income."
     },
     {
         "name": "Gigster",
@@ -184,7 +205,8 @@
             "freelance",
             "tech",
             "projects"
-        ]
+        ],
+        "description": "Gigster connects freelance tech experts with project‑based opportunities in the digital space."
     },
     {
         "name": "CloudPeeps",
@@ -193,7 +215,8 @@
             "freelance",
             "community",
             "jobs"
-        ]
+        ],
+        "description": "CloudPeeps is a community‑driven platform connecting freelancers with short‑term and project‑based gigs."
     },
     {
         "name": "Codeable",
@@ -202,7 +225,8 @@
             "WordPress",
             "freelance",
             "development"
-        ]
+        ],
+        "description": "Codeable specializes in connecting WordPress experts with clients for freelance development projects."
     },
     {
         "name": "DesignCrowd",
@@ -211,7 +235,8 @@
             "design",
             "freelance",
             "creative"
-        ]
+        ],
+        "description": "DesignCrowd is a creative freelance marketplace for design contests and collaborative projects."
     },
     {
         "name": "Envato Studio",
@@ -220,7 +245,8 @@
             "creative",
             "freelance",
             "design"
-        ]
+        ],
+        "description": "Envato Studio offers a curated marketplace for freelance design and creative services."
     },
     {
         "name": "Catalant",
@@ -229,7 +255,8 @@
             "consulting",
             "freelance",
             "projects"
-        ]
+        ],
+        "description": "Catalant connects freelance consultants with businesses for strategic project engagements."
     },
     {
         "name": "Outsourcely",
@@ -238,7 +265,8 @@
             "remote",
             "freelance",
             "jobs"
-        ]
+        ],
+        "description": "Outsourcely is a platform for remote freelance work, connecting businesses with international talent."
     },
     {
         "name": "Hubstaff Talent",
@@ -247,7 +275,8 @@
             "freelance",
             "remote",
             "jobs"
-        ]
+        ],
+        "description": "Hubstaff Talent is a free resource for finding remote freelance jobs and top talent across industries."
     },
     {
         "name": "Remotive",
@@ -256,7 +285,8 @@
             "remote",
             "jobs",
             "freelance"
-        ]
+        ],
+        "description": "Remotive aggregates remote and freelance job opportunities for digital professionals and creatives."
     },
     {
         "name": "ProBlogger",
@@ -265,7 +295,8 @@
             "writing",
             "freelance",
             "jobs"
-        ]
+        ],
+        "description": "ProBlogger is a job board focused on freelance writing and blogging opportunities for content creators."
     },
     {
         "name": "Freelance Writing Gigs",
@@ -274,7 +305,8 @@
             "writing",
             "freelance",
             "jobs"
-        ]
+        ],
+        "description": "Freelance Writing Gigs curates freelance writing job listings for bloggers and content professionals."
     },
     {
         "name": "TaskShift",
@@ -283,7 +315,8 @@
             "tasks",
             "freelance",
             "jobs"
-        ]
+        ],
+        "description": "TaskShift connects freelancers with task‑based job opportunities and short‑term projects."
     },
     {
         "name": "ClearVoice",
@@ -292,7 +325,8 @@
             "content",
             "freelance",
             "writing"
-        ]
+        ],
+        "description": "ClearVoice is a content marketing platform that connects freelance writers with businesses in need of quality content."
     },
     {
         "name": "Project4Hire",
@@ -301,7 +335,8 @@
             "freelance",
             "jobs",
             "projects"
-        ]
+        ],
+        "description": "Project4Hire is a freelance platform that matches professionals with project‑based job opportunities."
     },
     {
         "name": "Zeerk",
@@ -310,7 +345,8 @@
             "micro-jobs",
             "freelance",
             "gigs"
-        ]
+        ],
+        "description": "Zeerk offers micro‑jobs and freelance gigs, making it easy to earn through small, task‑based assignments."
     },
     {
         "name": "Truelancer",
@@ -319,7 +355,8 @@
             "freelance",
             "jobs",
             "projects"
-        ]
+        ],
+        "description": "Truelancer is a freelance marketplace where professionals can find a variety of job opportunities and projects."
     },
     {
         "name": "Workana",
@@ -328,14 +365,17 @@
             "freelance",
             "jobs",
             "latam"
-        ]
+        ],
+        "description": "Workana is a leading freelance platform in Latin America, connecting local talent with global projects."
     },
     {
+        "name": "Local Freelance Services",
         "tags": [
             "services",
             "freelance",
             "local"
-        ]
+        ],
+        "description": "A curated collection of local freelance services for on‑demand project needs."
     },
     {
         "name": "FreelanceMyWay",
@@ -344,7 +384,8 @@
             "freelance",
             "jobs",
             "design"
-        ]
+        ],
+        "description": "FreelanceMyWay is a platform offering job listings and project opportunities across various creative fields."
     },
     {
         "name": "DesignContest",
@@ -353,6 +394,7 @@
             "design",
             "freelance",
             "contest"
-        ]
+        ],
+        "description": "DesignContest is a freelance design contest platform where creatives compete for projects and recognition."
     }
 ]

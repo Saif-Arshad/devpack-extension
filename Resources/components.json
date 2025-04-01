@@ -4,63 +4,72 @@
         "link": "https://www.radix-ui.com",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Radix UI offers unstyled, accessible React components to build custom design systems."
     },
     {
         "name": "FLyon UI",
         "link": "https://flyonui.com/",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "FLyon UI provides modern, responsive React components for streamlined web development."
     },
     {
         "name": "prismane UI",
         "link": "https://www.prismane.io/docs/getting-started/introduction",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Prismane UI delivers elegant React components focused on design consistency and usability."
     },
     {
         "name": "Ant Design",
         "link": "https://ant.design/",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Ant Design is a comprehensive React UI library featuring a rich set of high-quality components."
     },
     {
         "name": "Semantic Ui",
         "link": "https://react.semantic-ui.com/",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Semantic UI for React offers intuitive, responsive components for building modern interfaces."
     },
     {
         "name": "Blueprintjs Ui",
         "link": "https://blueprintjs.com/",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Blueprintjs UI is a React toolkit ideal for creating complex, data‑dense desktop applications."
     },
     {
         "name": "Ripple Ui",
         "link": "https://www.ripple-ui.com/",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Ripple Ui provides a collection of engaging React components designed for modern user experiences."
     },
     {
         "name": "Grommet Ui",
         "link": "https://v2.grommet.io/",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Grommet UI offers accessible and responsive React components for building versatile applications."
     },
     {
         "name": "Atlassian Ui",
         "link": "https://atlassian.design/components",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Atlassian UI provides robust, enterprise‑grade React components for cohesive design systems."
     },
     {
         "name": "NextUI",
@@ -68,7 +77,8 @@
         "tags": [
             "Tailwind",
             "React"
-        ]
+        ],
+        "description": "NextUI is a fast and modern React UI library built with Tailwind for customizable interfaces."
     },
     {
         "name": "Float UI",
@@ -80,7 +90,8 @@
             "Svelte",
             "HTML",
             "Alpine"
-        ]
+        ],
+        "description": "Float UI delivers versatile UI components across multiple frameworks, styled with Tailwind."
     },
     {
         "name": "Tailblocks",
@@ -88,19 +99,22 @@
         "tags": [
             "Tailwind",
             "HTML"
-        ]
+        ],
+        "description": "Tailblocks provides a set of free, open‑source Tailwind CSS blocks and HTML templates."
     },
     {
         "name": "Component Gallery",
         "link": "https://component.gallery/components/",
-        "tags": []
+        "tags": [],
+        "description": "Component Gallery is a curated collection of UI components for design inspiration."
     },
     {
         "name": "Mantine UI",
         "link": "https://ui.mantine.dev",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Mantine UI is a React component library focused on usability, accessibility, and customization."
     },
     {
         "name": "Tailus UI",
@@ -108,7 +122,8 @@
         "tags": [
             "Tailwind",
             "HTML"
-        ]
+        ],
+        "description": "Tailus UI offers beautifully designed, responsive Tailwind and HTML components for modern sites."
     },
     {
         "name": "Rewind-UI",
@@ -116,7 +131,8 @@
         "tags": [
             "React",
             "Tailwind"
-        ]
+        ],
+        "description": "Rewind-UI combines React and Tailwind to deliver sleek, intuitive components for rapid development."
     },
     {
         "name": "Preline UI",
@@ -126,7 +142,8 @@
             "HTML",
             "React",
             "Vue"
-        ]
+        ],
+        "description": "Preline UI provides versatile components built with Tailwind, HTML, React, and Vue for rapid prototyping."
     },
     {
         "name": "HyperUI",
@@ -134,7 +151,8 @@
         "tags": [
             "Tailwind",
             "HTML"
-        ]
+        ],
+        "description": "HyperUI offers a collection of free Tailwind and HTML components for modern, responsive design."
     },
     {
         "name": "LangUI",
@@ -142,7 +160,8 @@
         "tags": [
             "HTML",
             "Tailwind"
-        ]
+        ],
+        "description": "LangUI provides customizable HTML and Tailwind components to streamline your development workflow."
     },
     {
         "name": "Shadcn for Vue",
@@ -150,7 +169,8 @@
         "tags": [
             "Vue",
             "Tailwind"
-        ]
+        ],
+        "description": "Shadcn for Vue delivers elegant Vue components styled with Tailwind for seamless UI design."
     },
     {
         "name": "daisyUI",
@@ -158,7 +178,8 @@
         "tags": [
             "Tailwind",
             "HTML"
-        ]
+        ],
+        "description": "daisyUI is a plugin for Tailwind CSS offering a wide range of accessible, themed UI components."
     },
     {
         "name": "Windstatic",
@@ -166,21 +187,24 @@
         "tags": [
             "Tailwind",
             "Alpine"
-        ]
+        ],
+        "description": "Windstatic combines Tailwind and Alpine to deliver lightweight, dynamic web components."
     },
     {
         "name": "UIverse",
         "link": "https://uiverse.io",
         "tags": [
             "HTML"
-        ]
+        ],
+        "description": "UIverse is a curated collection of responsive HTML components for modern web design."
     },
     {
         "name": "Material UI",
         "link": "https://mui.com/material-ui/",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Material UI is a popular React library implementing Google’s Material Design for a modern look."
     },
     {
         "name": "Material Tailwind",
@@ -191,7 +215,8 @@
             "Remix",
             "Gatsby",
             "Tailwind"
-        ]
+        ],
+        "description": "Material Tailwind merges Material Design principles with Tailwind CSS for beautiful, responsive components."
     },
     {
         "name": "Ark UI",
@@ -201,7 +226,8 @@
             "React",
             "Solid",
             "Vue"
-        ]
+        ],
+        "description": "Ark UI offers headless, customizable UI primitives for React, Solid, and Vue applications."
     },
     {
         "name": "Park UI",
@@ -211,14 +237,16 @@
             "Solid",
             "Panda",
             "Tailwind"
-        ]
+        ],
+        "description": "Park UI provides a diverse collection of components across React, Solid, Panda, and Tailwind for creative designs."
     },
     {
         "name": "Wedges",
         "link": "https://www.lemonsqueezy.com/wedges",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Wedges offers a set of modern React components available through a streamlined commerce platform."
     },
     {
         "name": "Melt UI",
@@ -226,7 +254,8 @@
         "tags": [
             "Svelte",
             "Accessible"
-        ]
+        ],
+        "description": "Melt UI is a Svelte component library focused on accessibility and sleek design."
     },
     {
         "name": "Tremor",
@@ -234,14 +263,16 @@
         "tags": [
             "Chart",
             "React"
-        ]
+        ],
+        "description": "Tremor is a React charting library designed for interactive and visually appealing data visualizations."
     },
     {
         "name": "Vuesax",
         "link": "https://vuesax.com",
         "tags": [
             "Vue"
-        ]
+        ],
+        "description": "Vuesax is a progressive Vue.js UI framework that emphasizes simplicity and elegant design."
     },
     {
         "name": "Chart.js",
@@ -252,7 +283,8 @@
             "Vue",
             "Svelte",
             "Angular"
-        ]
+        ],
+        "description": "Chart.js is a versatile charting library that works with multiple frameworks to create stunning graphs."
     },
     {
         "name": "Sonner",
@@ -260,7 +292,8 @@
         "tags": [
             "Toast",
             "React"
-        ]
+        ],
+        "description": "Sonner is a React-based toast notification library offering elegant and accessible alerts."
     },
     {
         "name": "LayerChart",
@@ -268,7 +301,8 @@
         "tags": [
             "Svelte",
             "Chart"
-        ]
+        ],
+        "description": "LayerChart is a Svelte chart library that delivers visually appealing and responsive data charts."
     },
     {
         "name": "Bits UI",
@@ -276,21 +310,24 @@
         "tags": [
             "Svelte",
             "Headless"
-        ]
+        ],
+        "description": "Bits UI is a Svelte‑based component library focusing on headless design for flexible UI building."
     },
     {
         "name": "Angular Material",
         "link": "https://material.angular.io",
         "tags": [
             "Angular"
-        ]
+        ],
+        "description": "Angular Material provides a rich set of UI components based on Material Design for Angular apps."
     },
     {
         "name": "Svelte UX",
         "link": "https://svelte-ux.techniq.dev",
         "tags": [
             "Svelte"
-        ]
+        ],
+        "description": "Svelte UX offers a curated collection of Svelte components to enhance user experience design."
     },
     {
         "name": "buttons.ibelick",
@@ -299,7 +336,8 @@
             "Buttons",
             "Tailwind",
             "HTML"
-        ]
+        ],
+        "description": "buttons.ibelick features creative button designs built with Tailwind CSS and HTML for modern UIs."
     },
     {
         "name": "3D buttons",
@@ -308,7 +346,8 @@
             "3D",
             "Buttons",
             "HTML"
-        ]
+        ],
+        "description": "3D buttons showcases innovative 3D button designs using CSS for enhanced interactivity."
     },
     {
         "name": "Zag",
@@ -317,14 +356,16 @@
             "React",
             "Vue",
             "Solid"
-        ]
+        ],
+        "description": "Zag provides cross‑framework UI primitives to build consistent and accessible components."
     },
     {
         "name": "Chakra UI",
         "link": "https://chakra-ui.com",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "Chakra UI is a modular, accessible React component library that simplifies building modern UIs."
     },
     {
         "name": "Pines",
@@ -332,14 +373,16 @@
         "tags": [
             "Tailwind",
             "Alpine"
-        ]
+        ],
+        "description": "Pines offers sleek Tailwind and Alpine components designed for fast and intuitive front‑end development."
     },
     {
         "name": "TW Elements",
         "link": "https://tw-elements.com",
         "tags": [
             "Tailwind"
-        ]
+        ],
+        "description": "TW Elements provides pre‑built Tailwind CSS components to accelerate your web development workflow."
     },
     {
         "name": "CSS checkboxes",
@@ -347,7 +390,8 @@
         "tags": [
             "HTML",
             "Checkboxes"
-        ]
+        ],
+        "description": "CSS checkboxes showcases a variety of custom HTML checkbox designs for modern interfaces."
     },
     {
         "name": "CSS box-shadow",
@@ -355,7 +399,8 @@
         "tags": [
             "HTML",
             "Shadows"
-        ]
+        ],
+        "description": "CSS box-shadow offers a collection of inspiring box-shadow effects to enhance your UI design."
     },
     {
         "name": "LoaderShip",
@@ -363,14 +408,16 @@
         "tags": [
             "Loaders",
             "HTML"
-        ]
+        ],
+        "description": "LoaderShip provides a curated collection of HTML loaders to improve user experience during wait times."
     },
     {
         "name": "Lightweight charts",
         "link": "https://www.tradingview.com/lightweight-charts/",
         "tags": [
             "Chart"
-        ]
+        ],
+        "description": "Lightweight charts is a fast, responsive charting library for interactive data visualization."
     },
     {
         "name": "Toggles",
@@ -378,7 +425,8 @@
         "tags": [
             "Toggles",
             "HTML"
-        ]
+        ],
+        "description": "Toggles offers a set of simple, customizable HTML toggle switches for modern web interfaces."
     },
     {
         "name": "tailwindUI",
@@ -388,7 +436,8 @@
             "HTML",
             "React",
             "Vue"
-        ]
+        ],
+        "description": "tailwindUI is a premium collection of Tailwind CSS components and templates for dynamic websites."
     },
     {
         "name": "Tailwind UI KIT",
@@ -396,28 +445,32 @@
         "tags": [
             "Tailwind",
             "HTML"
-        ]
+        ],
+        "description": "Tailwind UI KIT offers a comprehensive collection of free Tailwind CSS components and layouts."
     },
     {
         "name": "Hola svg",
         "link": "https://loaders.holasvg.com",
         "tags": [
             "Loaders"
-        ]
+        ],
+        "description": "Hola svg provides a variety of creative SVG loader animations to enhance website aesthetics."
     },
     {
         "name": "LDRS",
         "link": "https://uiball.com/loaders/",
         "tags": [
             "Loaders"
-        ]
+        ],
+        "description": "LDRS offers a selection of innovative SVG loaders to add a modern touch to your web projects."
     },
     {
         "name": "10015 Tools",
         "link": "https://10015.io/tools/css-loader-generator",
         "tags": [
             "Loaders"
-        ]
+        ],
+        "description": "10015 Tools features a CSS loader generator to quickly create custom loading animations."
     },
     {
         "name": "React Responsive Pagination",
@@ -425,28 +478,32 @@
         "tags": [
             "Pagination",
             "React"
-        ]
+        ],
+        "description": "React Responsive Pagination delivers a customizable pagination component for responsive React apps."
     },
     {
         "name": "SVG Loaders",
         "link": "https://samherbert.net/svg-loaders/",
         "tags": [
             "Loaders"
-        ]
+        ],
+        "description": "SVG Loaders is a collection of simple, effective SVG loader animations for web design."
     },
     {
         "name": "CSS loaders",
         "link": "https://css-loaders.com",
         "tags": [
             "Loaders"
-        ]
+        ],
+        "description": "CSS loaders provides a variety of pure CSS loader animations to enhance your user interfaces."
     },
     {
         "name": "CSS loaders and spinners",
         "link": "https://cssloaders.github.io",
         "tags": [
             "Loaders"
-        ]
+        ],
+        "description": "CSS loaders and spinners is a comprehensive resource showcasing various CSS‑based loading animations."
     },
     {
         "name": "ui.ibelick",
@@ -455,7 +512,8 @@
             "Effects",
             "React",
             "Tailwind"
-        ]
+        ],
+        "description": "ui.ibelick offers creative UI effects and components built with React and Tailwind for dynamic web experiences."
     },
     {
         "name": "Lobe UI",
@@ -463,21 +521,24 @@
         "tags": [
             "Tailwind",
             "React"
-        ]
+        ],
+        "description": "Lobe UI provides a collection of sleek React components styled with Tailwind for modern interfaces."
     },
     {
         "name": "Drams",
         "link": "https://drams.framer.website",
         "tags": [
             "Framer"
-        ]
+        ],
+        "description": "Drams is a Framer‑based interactive design tool for creating engaging web animations."
     },
     {
         "name": "enhanced-button",
         "link": "https://enhanced-button.vercel.app/",
         "tags": [
             "Buttons"
-        ]
+        ],
+        "description": "enhanced-button offers creatively styled button components to add flair to your web projects."
     },
     {
         "name": "Variant Vault",
@@ -486,14 +547,16 @@
             "Animations",
             "Framer",
             "Texts"
-        ]
+        ],
+        "description": "Variant Vault provides a curated selection of animated components and text effects using Framer."
     },
     {
         "name": "PrimeReact",
         "link": "https://primereact.org/",
         "tags": [
             "React"
-        ]
+        ],
+        "description": "PrimeReact is a comprehensive React UI library featuring a rich collection of high‑quality components."
     },
     {
         "name": "cult/ui",
@@ -501,7 +564,8 @@
         "tags": [
             "Tailwind",
             "React"
-        ]
+        ],
+        "description": "cult/ui delivers modern, responsive UI components built with Tailwind and React for seamless development."
     },
     {
         "name": "AnimatiSS",
@@ -509,7 +573,8 @@
         "tags": [
             "Animations",
             "CSS"
-        ]
+        ],
+        "description": "AnimatiSS showcases creative CSS animations for dynamic and engaging web experiences."
     },
     {
         "name": "Codrops",
@@ -517,7 +582,8 @@
         "tags": [
             "Three.js",
             "Webgl"
-        ]
+        ],
+        "description": "Codrops offers inspiring demos and tutorials for advanced web design techniques including Three.js and WebGL."
     },
     {
         "name": "Three Js",
@@ -525,7 +591,8 @@
         "tags": [
             "Three.js",
             "Webgl"
-        ]
+        ],
+        "description": "Three Js is a popular JavaScript library for creating interactive 3D graphics on the web."
     },
     {
         "name": "Particles Js",
@@ -533,7 +600,8 @@
         "tags": [
             "Three.js",
             "Webgl"
-        ]
+        ],
+        "description": "Particles Js is a lightweight library for creating stunning particle effects for web applications."
     },
     {
         "name": "Just D",
@@ -543,7 +611,8 @@
             "Aria",
             "React",
             "Tailwind"
-        ]
+        ],
+        "description": "Just D offers accessible React components with Tailwind styling, focusing on ARIA standards and usability."
     },
     {
         "name": "React Bits",
@@ -551,7 +620,8 @@
         "tags": [
             "React",
             "Animations"
-        ]
+        ],
+        "description": "React Bits provides a collection of creative, reusable React components with engaging animations."
     },
     {
         "name": "React Keep",
@@ -559,7 +629,8 @@
         "tags": [
             "React",
             "Animations"
-        ]
+        ],
+        "description": "React Keep delivers a set of React components designed to enhance interactive user experiences."
     },
     {
         "name": "Justd",
@@ -569,7 +640,8 @@
             "React",
             "Accessible",
             "Aria"
-        ]
+        ],
+        "description": "Justd offers accessible UI components built with Tailwind and React, focusing on simplicity and usability."
     },
     {
         "name": "TW Components",
@@ -577,7 +649,8 @@
         "tags": [
             "Tailwind",
             "HTML"
-        ]
+        ],
+        "description": "TW Components provides a curated selection of Tailwind CSS components and templates for rapid development."
     },
     {
         "name": "React Hot Toast",
@@ -585,7 +658,8 @@
         "tags": [
             "React",
             "Toast"
-        ]
+        ],
+        "description": "React Hot Toast offers a simple and customizable toast notification system for React applications."
     },
     {
         "name": "Motion-Primitives",
@@ -593,14 +667,16 @@
         "tags": [
             "Framer",
             "React"
-        ]
+        ],
+        "description": "Motion-Primitives offers fundamental Framer-based animation components to enhance React projects."
     },
     {
         "name": "Fulldev UI",
         "link": "https://ui.full.dev",
         "tags": [
             "Astro"
-        ]
+        ],
+        "description": "Fulldev UI provides a collection of Astro components designed to accelerate modern web development."
     },
     {
         "name": "Origin UI",
@@ -610,7 +686,8 @@
             "Tailwind",
             "Next.js",
             "HTML"
-        ]
+        ],
+        "description": "Origin UI is a React‑based component library built with Tailwind and Next.js for scalable web apps."
     },
     {
         "name": "Fancy Components",
@@ -620,6 +697,7 @@
             "Tailwind",
             "TypeScript",
             "Motion"
-        ]
+        ],
+        "description": "Fancy Components offers beautifully designed React components with Tailwind and TypeScript support for dynamic UIs."
     }
 ]

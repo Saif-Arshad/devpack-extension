@@ -2,61 +2,73 @@
     {
         "name": "Pixabay",
         "link": "https://pixabay.com/videos/",
-        "tags": []
+        "tags": [],
+        "description": "Pixabay Videos offers a vast collection of free, high‑quality stock video clips for creative projects."
     },
     {
         "name": "Pexels",
         "link": "https://www.pexels.com/videos/",
-        "tags": []
+        "tags": [],
+        "description": "Pexels Videos provides a curated selection of free stock videos to enhance your multimedia content."
     },
     {
         "name": "Coverr",
         "link": "https://coverr.co",
-        "tags": []
+        "tags": [],
+        "description": "Coverr delivers free, high‑quality stock video footage for websites and digital projects."
     },
     {
         "name": "ISO Republic",
         "link": "https://isorepublic.com",
-        "tags": []
+        "tags": [],
+        "description": "ISO Republic features a wide range of free stock videos and photos for creative and commercial use."
     },
     {
         "name": "Focastock",
         "link": "https://focastock.com/videos/",
-        "tags": []
+        "tags": [],
+        "description": "Focastock Videos offers a collection of free, professional stock video clips to elevate your visual storytelling."
     },
     {
         "name": "Videezy",
         "link": "https://www.videezy.com",
-        "tags": []
+        "tags": [],
+        "description": "Videezy provides thousands of free and premium stock videos for filmmakers and content creators."
     },
     {
         "name": "Mixkit",
         "link": "https://mixkit.co/free-stock-video/",
-        "tags": []
+        "tags": [],
+        "description": "Mixkit features a diverse library of free stock videos and cinematic clips for creative projects."
     },
     {
         "name": "Vidsplay",
         "link": "https://www.vidsplay.com/",
-        "tags": []
+        "tags": [],
+        "description": "Vidsplay offers a collection of free stock videos that are perfect for enhancing your web and multimedia projects."
     },
     {
         "name": "Dareful",
         "link": "https://dareful.com",
-        "tags": []
+        "tags": [],
+        "description": "Dareful provides unique and creative free stock videos designed to inspire and captivate your audience."
     },
     {
         "name": "Mazwai",
         "link": "https://mazwai.com",
-        "tags": []
+        "tags": [],
+        "description": "Mazwai curates artistic, free stock videos with a focus on high‑quality visuals and creative storytelling."
     },
     {
         "name": "Vimeo",
         "link": "https://vimeo.com/groups/freehd/",
-        "tags": []
+        "tags": [],
+        "description": "Vimeo's Free HD group offers a community‑curated selection of high‑definition stock videos available for free."
     },
     {
         "name": "Videvo",
         "link": "https://www.videvo.net",
-        "tags": []
+        "tags": [],
+        "description": "Videvo provides a wide array of free stock video footage and motion graphics for creative projects."
     }
 ]

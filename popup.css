@@ -222,7 +222,8 @@ body {
 }
 
 .category-discription {
-    font-size: 10px;
+    font-size: 11px;
+    color: var(--text-secondary);
     margin-top: 4px;
 }
 
@@ -252,8 +253,8 @@ body {
 }
 
 .category-icon img {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     filter: brightness(0) invert(1);
 }
 

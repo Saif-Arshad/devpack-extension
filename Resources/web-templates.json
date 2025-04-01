@@ -6,7 +6,8 @@
             "free templates",
             "html",
             "css"
-        ]
+        ],
+        "description": "Template Mo offers a collection of free HTML and CSS templates for various web projects."
     },
     {
         "name": "Start Bootstrap",
@@ -16,7 +17,8 @@
             "bootstrap",
             "html",
             "css"
-        ]
+        ],
+        "description": "Start Bootstrap provides a variety of free Bootstrap templates and themes to jumpstart your web designs."
     },
     {
         "name": "HTML5 UP",
@@ -26,7 +28,8 @@
             "responsive",
             "html5",
             "css"
-        ]
+        ],
+        "description": "HTML5 UP delivers modern, fully responsive HTML5 and CSS3 templates with a creative edge."
     },
     {
         "name": "BootstrapMade",
@@ -36,7 +39,8 @@
             "bootstrap",
             "html",
             "css"
-        ]
+        ],
+        "description": "BootstrapMade offers a wide selection of free Bootstrap templates and website themes for quick development."
     },
     {
         "name": "Colorlib",
@@ -46,7 +50,8 @@
             "wordpress",
             "html",
             "css"
-        ]
+        ],
+        "description": "Colorlib provides a range of free website templates and WordPress themes with modern design trends."
     },
     {
         "name": "Free Css",
@@ -56,7 +61,8 @@
             "wordpress",
             "html",
             "css"
-        ]
+        ],
+        "description": "Free Css features a curated library of free HTML and CSS templates, including options for WordPress."
     },
     {
         "name": "GetNextJs Themes",
@@ -66,7 +72,8 @@
             "wordpress",
             "html",
             "css"
-        ]
+        ],
+        "description": "GetNextJs Themes offers a curated selection of free Next.js templates to accelerate your web development."
     },
     {
         "name": "Tailwind CSS Templates",
@@ -76,7 +83,8 @@
             "wordpress",
             "html",
             "css"
-        ]
+        ],
+        "description": "Tailwind CSS Templates provides a variety of free templates built with Tailwind CSS for fast, responsive design."
     },
     {
         "name": "ZenUI Templates",
@@ -85,7 +93,8 @@
             "free templates",
             "html",
             "css"
-        ]
+        ],
+        "description": "ZenUI Templates offers a collection of clean and elegant HTML and CSS templates for modern web projects."
     },
     {
         "name": "React Templates",
@@ -93,16 +102,18 @@
             "free templates",
             "html",
             "css"
-        ]
+        ],
+        "description": "React Templates offers free, customizable templates based on React to accelerate your front‑end development."
     },
     {
-        "name": "ShadCN Templates",
+        "name": "Shadcn Templates",
         "link": "https://shadcnui-templates.com/",
         "tags": [
             "free templates",
             "html",
             "css"
-        ]
+        ],
+        "description": "Shadcn Templates provides free UI templates built with shadcn’s design system to inspire modern React development."
     },
     {
         "name": "Free Frontend",
@@ -111,7 +122,8 @@
             "free templates",
             "html",
             "css"
-        ]
+        ],
+        "description": "Free Frontend is a resource for discovering free HTML, CSS, and JavaScript templates and UI components."
     },
     {
         "name": "HTML templates",
@@ -120,7 +132,8 @@
             "free templates",
             "html",
             "css"
-        ]
+        ],
+        "description": "HTML templates offers a variety of free, responsive HTML templates suitable for any type of website."
     },
     {
         "name": "Nuxt templates",
@@ -129,7 +142,8 @@
             "free templates",
             "html",
             "css"
-        ]
+        ],
+        "description": "Nuxt templates provides free Next.js/Nuxt.js templates to help you build performant, server‑rendered web applications."
     },
     {
         "name": "Next Js Starters",
@@ -138,7 +152,8 @@
             "free templates",
             "html",
             "css"
-        ]
+        ],
+        "description": "Next Js Starters offers a collection of free starter templates for Next.js projects to jumpstart your development."
     },
     {
         "name": "Template0",
@@ -147,6 +162,7 @@
             "free templates",
             "html",
             "css"
-        ]
+        ],
+        "description": "Template0 provides a diverse range of free HTML and CSS templates for creative and professional web design."
     }
 ]

@@ -6,7 +6,8 @@
             "learning",
             "coding",
             "free"
-        ]
+        ],
+        "description": "freeCodeCamp offers a comprehensive, free curriculum for learning web development and coding through hands‑on projects."
     },
     {
         "name": "Codecademy",
@@ -15,7 +16,8 @@
             "learning",
             "interactive",
             "coding"
-        ]
+        ],
+        "description": "Codecademy provides interactive coding lessons to help you learn programming languages and build projects."
     },
     {
         "name": "Coursera",
@@ -24,7 +26,8 @@
             "learning",
             "courses",
             "MOOC"
-        ]
+        ],
+        "description": "Coursera offers online courses from top universities and companies covering a broad range of subjects."
     },
     {
         "name": "Udemy",
@@ -33,7 +36,8 @@
             "learning",
             "courses",
             "video"
-        ]
+        ],
+        "description": "Udemy features a vast library of video courses on technology, business, and creative skills at affordable prices."
     },
     {
         "name": "edX",
@@ -42,7 +46,8 @@
             "learning",
             "courses",
             "MOOC"
-        ]
+        ],
+        "description": "edX provides high‑quality online courses and professional certifications from prestigious institutions worldwide."
     },
     {
         "name": "Pluralsight",
@@ -51,7 +56,8 @@
             "learning",
             "technology",
             "courses"
-        ]
+        ],
+        "description": "Pluralsight offers technology‑focused courses and skill assessments to help professionals advance their tech careers."
     },
     {
         "name": "Khan Academy",
@@ -60,7 +66,8 @@
             "learning",
             "free",
             "courses"
-        ]
+        ],
+        "description": "Khan Academy provides free educational resources and interactive lessons across a wide range of subjects."
     },
     {
         "name": "MIT OpenCourseWare",
@@ -69,7 +76,8 @@
             "learning",
             "courses",
             "free"
-        ]
+        ],
+        "description": "MIT OpenCourseWare offers free access to course materials from a wide range of MIT’s academic programs."
     },
     {
         "name": "The Odin Project",
@@ -78,7 +86,8 @@
             "learning",
             "web development",
             "free"
-        ]
+        ],
+        "description": "The Odin Project provides a free, comprehensive curriculum for learning full‑stack web development."
     },
     {
         "name": "W3Schools",
@@ -87,7 +96,8 @@
             "learning",
             "web development",
             "tutorials"
-        ]
+        ],
+        "description": "W3Schools offers easy‑to‑follow tutorials and references on web development technologies."
     },
     {
         "name": "MDN Web Docs",
@@ -96,7 +106,8 @@
             "learning",
             "documentation",
             "web development"
-        ]
+        ],
+        "description": "MDN Web Docs is an authoritative resource for learning web technologies and standards."
     },
     {
         "name": "Udacity",
@@ -105,7 +116,8 @@
             "learning",
             "nanodegree",
             "tech"
-        ]
+        ],
+        "description": "Udacity offers industry‑focused nanodegree programs and courses to build in‑demand tech skills."
     },
     {
         "name": "Code.org",
@@ -114,7 +126,8 @@
             "learning",
             "coding",
             "education"
-        ]
+        ],
+        "description": "Code.org is dedicated to expanding access to computer science education through free coding lessons and resources."
     },
     {
         "name": "Treehouse",
@@ -123,7 +136,8 @@
             "learning",
             "tech",
             "video"
-        ]
+        ],
+        "description": "Treehouse offers video‑based tutorials and courses designed to help beginners learn web and mobile development."
     },
     {
         "name": "LeetCode",
@@ -132,7 +146,8 @@
             "learning",
             "coding challenges",
             "algorithms"
-        ]
+        ],
+        "description": "LeetCode provides coding challenges and interview preparation to help improve your algorithm and problem‑solving skills."
     },
     {
         "name": "HackerRank",
@@ -141,7 +156,8 @@
             "learning",
             "coding challenges",
             "algorithms"
-        ]
+        ],
+        "description": "HackerRank offers coding challenges and competitions to help you practice and demonstrate your programming abilities."
     },
     {
         "name": "Exercism",
@@ -150,7 +166,8 @@
             "learning",
             "practice",
             "coding"
-        ]
+        ],
+        "description": "Exercism provides hands‑on coding exercises and mentorship to help you improve your programming skills."
     },
     {
         "name": "Codewars",
@@ -159,7 +176,8 @@
             "learning",
             "coding challenges",
             "practice"
-        ]
+        ],
+        "description": "Codewars challenges you with coding puzzles to sharpen your skills through practice and community solutions."
     },
     {
         "name": "GeeksforGeeks",
@@ -168,7 +186,8 @@
             "learning",
             "programming",
             "tutorials"
-        ]
+        ],
+        "description": "GeeksforGeeks offers tutorials, articles, and coding examples to help you learn programming and prepare for interviews."
     },
     {
         "name": "TutorialsPoint",
@@ -177,7 +196,8 @@
             "learning",
             "tutorials",
             "programming"
-        ]
+        ],
+        "description": "TutorialsPoint provides comprehensive tutorials and learning resources on a wide range of programming topics."
     },
     {
         "name": "SoloLearn",
@@ -186,7 +206,8 @@
             "learning",
             "mobile",
             "coding"
-        ]
+        ],
+        "description": "SoloLearn offers bite‑sized coding lessons and interactive challenges through a mobile‑friendly platform."
     },
     {
         "name": "Scrimba",
@@ -195,7 +216,8 @@
             "learning",
             "interactive",
             "coding"
-        ]
+        ],
+        "description": "Scrimba provides interactive screencasts that let you code along and learn front‑end development in real‑time."
     },
     {
         "name": "LinkedIn Learning",
@@ -204,7 +226,8 @@
             "learning",
             "video",
             "courses"
-        ]
+        ],
+        "description": "LinkedIn Learning offers a vast library of video courses on business, tech, and creative skills."
     },
     {
         "name": "GitHub Learning Lab",
@@ -213,7 +236,8 @@
             "learning",
             "GitHub",
             "code"
-        ]
+        ],
+        "description": "GitHub Learning Lab provides interactive projects and tutorials to help you master GitHub and open‑source development."
     },
     {
         "name": "Google Developers Training",
@@ -222,7 +246,8 @@
             "learning",
             "developers",
             "training"
-        ]
+        ],
+        "description": "Google Developers Training offers courses and tutorials to help you build modern web and mobile applications."
     },
     {
         "name": "Microsoft Learn",
@@ -231,7 +256,8 @@
             "learning",
             "developers",
             "training"
-        ]
+        ],
+        "description": "Microsoft Learn provides free, interactive learning paths and modules to help you master Microsoft technologies."
     },
     {
         "name": "IBM Developer",
@@ -240,7 +266,8 @@
             "learning",
             "developers",
             "resources"
-        ]
+        ],
+        "description": "IBM Developer offers tutorials, tools, and resources to help you innovate with IBM’s cutting‑edge technologies."
     },
     {
         "name": "edabit",
@@ -249,7 +276,8 @@
             "learning",
             "coding challenges",
             "practice"
-        ]
+        ],
+        "description": "edabit provides bite‑sized coding challenges to help you practice programming in a fun and engaging way."
     },
     {
         "name": "CodeSignal",
@@ -258,7 +286,8 @@
             "learning",
             "coding challenges",
             "assessment"
-        ]
+        ],
+        "description": "CodeSignal offers coding assessments and challenges to help you prepare for technical interviews."
     },
     {
         "name": "Frontend Mentor",
@@ -267,7 +296,8 @@
             "learning",
             "web development",
             "challenges"
-        ]
+        ],
+        "description": "Frontend Mentor provides real‑world web design challenges to help you improve your front‑end development skills."
     },
     {
         "name": "Real Python",
@@ -276,7 +306,8 @@
             "learning",
             "python",
             "tutorials"
-        ]
+        ],
+        "description": "Real Python offers in‑depth tutorials and articles to help you master Python programming."
     },
     {
         "name": "Dev.to",
@@ -285,7 +316,8 @@
             "learning",
             "community",
             "blog"
-        ]
+        ],
+        "description": "Dev.to is a community‑driven platform where developers share insights, tutorials, and experiences about coding."
     },
     {
         "name": "CodeProject",
@@ -294,7 +326,8 @@
             "learning",
             "articles",
             "development"
-        ]
+        ],
+        "description": "CodeProject features articles, tutorials, and code samples to help developers solve real‑world programming challenges."
     },
     {
         "name": "Ray Wenderlich",
@@ -303,7 +336,8 @@
             "learning",
             "mobile development",
             "tutorials"
-        ]
+        ],
+        "description": "Ray Wenderlich offers high‑quality tutorials and courses focused on mobile app development and game programming."
     },
     {
         "name": "CodeNewbie",
@@ -312,7 +346,8 @@
             "learning",
             "community",
             "beginners"
-        ]
+        ],
+        "description": "CodeNewbie is a welcoming community that supports beginner programmers with resources, stories, and advice."
     },
     {
         "name": "Hackr.io",
@@ -321,7 +356,8 @@
             "learning",
             "reviews",
             "courses"
-        ]
+        ],
+        "description": "Hackr.io curates user‑reviewed recommendations for online coding courses to help you choose the best learning path."
     },
     {
         "name": "Educative.io",
@@ -330,7 +366,8 @@
             "learning",
             "interactive",
             "coding"
-        ]
+        ],
+        "description": "Educative.io offers interactive, text‑based coding courses designed to help you learn at your own pace."
     },
     {
         "name": "Class Central",
@@ -339,7 +376,8 @@
             "learning",
             "interactive",
             "coding"
-        ]
+        ],
+        "description": "Class Central aggregates free and paid online courses from top institutions to help you find the best learning opportunities."
     },
     {
         "name": "CodeChef",
@@ -348,7 +386,8 @@
             "learning",
             "coding challenges",
             "competitive programming"
-        ]
+        ],
+        "description": "CodeChef hosts competitive programming contests and challenges to help you sharpen your algorithm skills."
     },
     {
         "name": "HackerEarth",
@@ -357,7 +396,8 @@
             "learning",
             "coding challenges",
             "competitions"
-        ]
+        ],
+        "description": "HackerEarth provides coding challenges, hackathons, and competitions for developers to test their skills."
     },
     {
         "name": "Programiz",
@@ -366,6 +406,7 @@
             "learning",
             "tutorials",
             "programming"
-        ]
+        ],
+        "description": "Programiz offers beginner‑friendly tutorials and interactive examples to help you learn programming fundamentals."
     }
 ]

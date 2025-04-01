@@ -2,32 +2,38 @@
     {
         "name": "Pexels",
         "link": "https://www.pexels.com",
-        "tags": []
+        "tags": [],
+        "description": "Pexels provides high‑quality, free stock photos contributed by a global community of photographers."
     },
     {
         "name": "PixaBay",
         "link": "https://pixabay.com/photos/",
-        "tags": []
+        "tags": [],
+        "description": "Pixabay offers a vast library of free stock photos, illustrations, and videos for personal and commercial use."
     },
     {
         "name": "Unsplash",
         "link": "https://unsplash.com",
-        "tags": []
+        "tags": [],
+        "description": "Unsplash features a curated collection of high‑resolution, free photos to inspire creative projects."
     },
     {
         "name": "Picography",
         "link": "https://picography.co",
-        "tags": []
+        "tags": [],
+        "description": "Picography offers unique and artistic free stock photos to add creative flair to your designs."
     },
     {
         "name": "BURST",
         "link": "https://www.shopify.com/stock-photos",
-        "tags": []
+        "tags": [],
+        "description": "BURST by Shopify provides a wide range of free stock photos curated especially for entrepreneurs and designers."
     },
     {
         "name": "ISO Republic",
         "link": "https://isorepublic.com",
-        "tags": []
+        "tags": [],
+        "description": "ISO Republic delivers high‑quality free stock photos and videos, perfect for creative projects."
     },
     {
         "name": "Foodiesfeed",
@@ -35,103 +41,121 @@
         "tags": [
             "Food",
             "IA"
-        ]
+        ],
+        "description": "Foodiesfeed offers a mouth‑watering collection of free food photos that capture culinary inspiration."
     },
     {
         "name": "Foca stock",
         "link": "https://focastock.com",
-        "tags": []
+        "tags": [],
+        "description": "Foca Stock provides high‑quality free stock images ideal for enhancing your creative projects."
     },
     {
         "name": "Librestock",
         "link": "https://librestock.com/",
-        "tags": []
+        "tags": [],
+        "description": "Librestock aggregates free stock photos from various sources, making it easy to find quality visuals."
     },
     {
         "name": "StockSnap",
         "link": "https://stocksnap.io",
-        "tags": []
+        "tags": [],
+        "description": "StockSnap offers a large selection of free high‑resolution stock photos, updated regularly with fresh content."
     },
     {
         "name": "Little Visuals",
         "link": "https://littlevisuals.co",
-        "tags": []
+        "tags": [],
+        "description": "Little Visuals provides a hand‑picked collection of free, beautiful stock photos for creative projects."
     },
     {
         "name": "Barnimages",
         "link": "https://barnimages.com",
-        "tags": []
+        "tags": [],
+        "description": "Barnimages offers a diverse collection of high‑quality free stock images for various design needs."
     },
     {
         "name": "Shotstash",
         "link": "https://shotstash.com",
-        "tags": []
+        "tags": [],
+        "description": "Shotstash provides a curated selection of free stock photos ideal for elevating your visual projects."
     },
     {
         "name": "Nappy",
         "link": "https://nappy.co",
-        "tags": []
+        "tags": [],
+        "description": "Nappy offers diverse and inclusive free stock photos that reflect real‑world diversity."
     },
     {
         "name": "Gratisography",
         "link": "https://gratisography.com",
         "tags": [
             "IA"
-        ]
+        ],
+        "description": "Gratisography features a quirky collection of free, high‑resolution photos with a unique creative twist."
     },
     {
         "name": "Picjumbo",
         "link": "https://picjumbo.com/",
-        "tags": []
+        "tags": [],
+        "description": "Picjumbo offers a wide range of free stock photos that are perfect for both personal and commercial projects."
     },
     {
         "name": "Noun Project",
         "link": "https://thenounproject.com/photos/",
         "tags": [
             "Placeholder logos"
-        ]
+        ],
+        "description": "Noun Project’s photo section provides high‑quality placeholder images and logos for quick design mockups."
     },
     {
         "name": "Openverse",
         "link": "https://openverse.org",
-        "tags": []
+        "tags": [],
+        "description": "Openverse is an open‑source search engine for finding free‑to‑use images, illustrations, and media assets."
     },
     {
         "name": "Lummi Photos",
         "link": "https://www.lummi.ai/",
         "tags": [
             "AI"
-        ]
+        ],
+        "description": "Lummi Photos uses AI to curate and generate stunning stock images tailored for creative projects."
     },
     {
         "name": "Neurascapes",
         "link": "https://www.neurascapes.com",
         "tags": [
             "AI"
-        ]
+        ],
+        "description": "Neurascapes offers AI‑powered image generation and a collection of futuristic visuals for inspiration."
     },
     {
         "name": "Skitterphoto",
         "link": "https://skitterphoto.com",
-        "tags": []
+        "tags": [],
+        "description": "Skitterphoto provides a collection of free, high‑quality stock photos with a focus on artistic imagery."
     },
     {
         "name": "Freepik",
         "link": "https://www.freepik.com/",
-        "tags": []
+        "tags": [],
+        "description": "Freepik offers millions of free graphic resources, including photos, vectors, and PSD files for designers."
     },
     {
         "name": "Public Work by Cosmos",
         "link": "https://public.work/",
         "tags": [
             "Vintage"
-        ]
+        ],
+        "description": "Public Work by Cosmos provides a curated selection of vintage‑style stock photos to evoke classic aesthetics."
     },
     {
         "name": "Canva",
         "link": "https://www.canva.com/",
         "tags": [
             "Vintage"
-        ]
+        ],
+        "description": "Canva offers an extensive library of free stock photos and design elements to enhance your creative projects."
     }
 ]

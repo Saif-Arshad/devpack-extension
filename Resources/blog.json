@@ -4,33 +4,38 @@
         "link": "https://www.joshwcomeau.com",
         "tags": [
             "Web"
-        ]
+        ],
+        "description": "A creative resource by Josh Comeau sharing insights on web development and design."
     },
     {
         "name": "DEV",
         "link": "https://dev.to",
-        "tags": []
+        "tags": [],
+        "description": "A vibrant community platform where developers share articles, tutorials, and insights."
     },
     {
         "name": "Modern CSS",
         "link": "https://moderncss.dev",
         "tags": [
             "CSS"
-        ]
+        ],
+        "description": "A dedicated resource for exploring modern CSS techniques and design trends."
     },
     {
         "name": "Medium",
         "link": "https://www.medium.com",
         "tags": [
             "Community"
-        ]
+        ],
+        "description": "A popular publishing platform featuring diverse articles on technology, design, and more."
     },
     {
         "name": "Rauno Craft",
         "link": "https://rauno.me/craft",
         "tags": [
             "UI"
-        ]
+        ],
+        "description": "A blog by Rauno Craft that focuses on UI design and creative front-end development."
     },
     {
         "name": "Not a Number",
@@ -38,7 +43,8 @@
         "tags": [
             "Animation",
             "SVG"
-        ]
+        ],
+        "description": "A unique resource exploring creative animation and SVG design concepts."
     },
     {
         "name": "Maximeheckel",
@@ -47,7 +53,8 @@
             "Three.js",
             "React",
             "3D"
-        ]
+        ],
+        "description": "A blog by Maxime Heckel offering insights on 3D design, Three.js, and modern web development."
     },
     {
         "name": "Varun Vachhar",
@@ -55,7 +62,8 @@
         "tags": [
             "Three.js",
             "3D"
-        ]
+        ],
+        "description": "A personal blog sharing in-depth articles on Three.js and 3D web design."
     },
     {
         "name": "Overreacted",
@@ -63,78 +71,90 @@
         "tags": [
             "React",
             "JavaScript"
-        ]
+        ],
+        "description": "Dan Abramov’s blog providing deep dives into React, JavaScript, and front-end development."
     },
     {
         "name": "CSS-Tricks",
         "link": "https://css-tricks.com",
         "tags": [
             "CSS"
-        ]
+        ],
+        "description": "A comprehensive guide and resource hub for CSS tips, tricks, and front-end techniques."
     },
     {
         "name": "Smashing Magazine",
         "link": "https://www.smashingmagazine.com",
-        "tags": []
+        "tags": [],
+        "description": "A renowned online publication offering articles on web design, development, and UX."
     },
     {
         "name": "web.dev",
         "link": "https://web.dev/blog",
-        "tags": []
+        "tags": [],
+        "description": "A resource from Google providing best practices, tutorials, and insights into modern web development."
     },
     {
         "name": "Design Systems",
         "link": "https://www.designsystems.com",
         "tags": [
             "Design system"
-        ]
+        ],
+        "description": "A platform dedicated to showcasing and exploring effective design systems for cohesive UI."
     },
     {
         "name": "Hashnode",
         "link": "https://www.hashnode.com",
         "tags": [
             "Community"
-        ]
+        ],
+        "description": "A developer-focused community where tech enthusiasts share blogs, articles, and tutorials."
     },
     {
         "name": "Design good practices",
         "link": "https://goodpractices.design",
         "tags": [
             "UI/UX"
-        ]
+        ],
+        "description": "A resource offering practical guidelines and best practices for effective UI/UX design."
     },
     {
         "name": "Paul Scanlon Articles",
         "link": "https://www.paulie.dev/articles/",
         "tags": [
             "Three.js"
-        ]
+        ],
+        "description": "A blog by Paul Scanlon featuring in-depth articles on Three.js and creative web development."
     },
     {
         "name": "Patterns.dev",
         "link": "https://www.patterns.dev",
         "tags": [
             "Patterns"
-        ]
+        ],
+        "description": "A platform for learning and exploring reusable design patterns for modern web development."
     },
     {
         "name": "A List Apart",
         "link": "https://www.alistapart.com",
         "tags": [
             "Community"
-        ]
+        ],
+        "description": "A respected publication offering thoughtful articles on web standards, design, and development."
     },
     {
         "name": "Sitepoint",
         "link": "https://www.sitepoint.com",
         "tags": [
             "Learning"
-        ]
+        ],
+        "description": "A comprehensive platform for tutorials, articles, and resources on web development and design."
     },
     {
         "name": "Delba Blog",
         "link": "https://delba.dev/blog",
-        "tags": []
+        "tags": [],
+        "description": "A personal blog sharing insights, tutorials, and experiences in web development and design."
     },
     {
         "name": "Zajno Digital Studio",
@@ -142,7 +162,8 @@
         "tags": [
             "Animation",
             "Design"
-        ]
+        ],
+        "description": "A digital studio showcasing creative animation and design projects for inspiration."
     },
     {
         "name": "Emil Kowalski",
@@ -150,7 +171,8 @@
         "tags": [
             "Animation",
             "Design"
-        ]
+        ],
+        "description": "A portfolio and blog by Emil Kowalski featuring creative projects in animation and design."
     },
     {
         "name": "Codrops",
@@ -158,7 +180,8 @@
         "tags": [
             "Three.js",
             "WebGL"
-        ]
+        ],
+        "description": "A resource offering innovative web design demos, tutorials, and inspirational front-end techniques."
     },
     {
         "name": "The Shape of AI",
@@ -166,6 +189,7 @@
         "tags": [
             "AI",
             "Patterns"
-        ]
+        ],
+        "description": "A unique resource exploring how AI influences design trends and creative patterns."
     }
 ]

@@ -4,168 +4,192 @@
         "link": "https://squoosh.app",
         "tags": [
             "Image optimizer"
-        ]
+        ],
+        "description": "Squoosh is a powerful online image compressor that optimizes images for faster web performance."
     },
     {
         "name": "Shots",
         "link": "https://shots.so",
         "tags": [
             "Mockups"
-        ]
+        ],
+        "description": "Shots provides realistic device mockups to showcase your designs in a professional context."
     },
     {
         "name": "Layoutit Grid",
         "link": "https://grid.layoutit.com",
         "tags": [
             "Grid generator"
-        ]
+        ],
+        "description": "Layoutit Grid is an intuitive tool for generating responsive grid layouts quickly."
     },
     {
         "name": "Monkeytype",
         "link": "https://monkeytype.com",
         "tags": [
             "Typing test"
-        ]
+        ],
+        "description": "Monkeytype is an interactive typing test platform designed to improve your speed and accuracy."
     },
     {
         "name": "RapidAPI",
         "link": "https://rapidapi.com/collections",
         "tags": [
             "API Collections"
-        ]
+        ],
+        "description": "RapidAPI Collections curates APIs from various providers to simplify integration into your projects."
     },
     {
         "name": "JS Benchmark",
         "link": "https://jsbenchmark.com",
         "tags": [
             "Benchmark"
-        ]
+        ],
+        "description": "JS Benchmark allows you to test and compare the performance of JavaScript code snippets online."
     },
     {
         "name": "Chalk.ist",
         "link": "https://chalk.ist",
         "tags": [
             "Code screenshots"
-        ]
+        ],
+        "description": "Chalk.ist helps you create stylish code screenshots with customizable syntax highlighting."
     },
     {
         "name": "CodeImage",
         "link": "https://app.codeimage.dev",
         "tags": [
             "Code screenshots"
-        ]
+        ],
+        "description": "CodeImage transforms your code snippets into visually appealing images perfect for sharing."
     },
     {
         "name": "Excalidraw",
         "link": "https://excalidraw.com",
         "tags": [
             "Whiteboard"
-        ]
+        ],
+        "description": "Excalidraw is a collaborative whiteboard tool for sketching ideas and diagrams in real‑time."
     },
     {
         "name": "Tally",
         "link": "https://tally.so",
         "tags": [
             "Forms"
-        ]
+        ],
+        "description": "Tally is a no‑code form builder that makes creating beautiful online forms simple and fast."
     },
     {
         "name": "Component Party",
         "link": "https://component-party.dev",
         "tags": [
             "Framework comparator"
-        ]
+        ],
+        "description": "Component Party lets you compare UI frameworks side‑by‑side to make informed design decisions."
     },
     {
         "name": "React Skeleton",
         "link": "https://skeletonreact.com",
         "tags": [
             "Skeleton loader"
-        ]
+        ],
+        "description": "React Skeleton provides lightweight skeleton loader components to enhance perceived performance in React apps."
     },
     {
         "name": "Slidev",
         "link": "https://sli.dev",
         "tags": [
             "Code to slides"
-        ]
+        ],
+        "description": "Slidev converts your code into interactive slide presentations for seamless technical storytelling."
     },
     {
         "name": "Glyphy",
         "link": "https://glyphy.io",
         "tags": [
             "Font generator"
-        ]
+        ],
+        "description": "Glyphy is a creative tool for generating custom fonts and experimenting with unique typographic styles."
     },
     {
         "name": "CSS Code Quality",
         "link": "https://www.projectwallace.com/css-code-quality",
         "tags": [
             "CSS analyzer"
-        ]
+        ],
+        "description": "CSS Code Quality analyzes your CSS code to ensure best practices and optimize performance."
     },
     {
         "name": "Transform tools",
         "link": "https://transform.tools/",
         "tags": [
             "Transform data"
-        ]
+        ],
+        "description": "Transform tools help convert and format data between different formats and units effortlessly."
     },
     {
         "name": "Favicon Generator",
         "link": "https://www.favicon-generator.org/",
         "tags": [
             "Favicon generator"
-        ]
+        ],
+        "description": "Favicon Generator creates custom favicons for your website to enhance brand recognition."
     },
     {
         "name": "Real Favicon Generator",
         "link": "https://realfavicongenerator.net/",
         "tags": [
             "Favicon generator"
-        ]
+        ],
+        "description": "Real Favicon Generator produces cross‑browser favicons and provides the necessary HTML code for integration."
     },
     {
         "name": "readme.so",
         "link": "https://readme.so/",
         "tags": [
             "Readme generator"
-        ]
+        ],
+        "description": "readme.so is a simple tool that helps you quickly generate professional README files for your projects."
     },
     {
         "name": "eraser.io",
         "link": "https://www.eraser.io/",
         "tags": [
             "Canvas"
-        ]
+        ],
+        "description": "eraser.io provides an interactive canvas for digital drawing and creative design exploration."
     },
     {
         "name": "draw.io",
         "link": "https://www.draw.io/",
         "tags": [
             "Flowcharts"
-        ]
+        ],
+        "description": "draw.io is a versatile diagramming tool for creating flowcharts, mind maps, and other visual diagrams."
     },
     {
         "name": "SVGOMG",
         "link": "https://svgomg.net/",
         "tags": [
             "SVG optimizer"
-        ]
+        ],
+        "description": "SVGOMG is an online optimizer that compresses and cleans up your SVG files for improved performance."
     },
     {
         "name": "Freeter",
         "link": "https://freeter.io/",
         "tags": [
             "Organizer"
-        ]
+        ],
+        "description": "Freeter is an organizer tool designed to help you manage and curate your creative assets efficiently."
     },
     {
         "name": "ray.so",
         "link": "https://ray.so",
         "tags": [
             "Code screenshots"
-        ]
+        ],
+        "description": "ray.so converts code snippets into beautifully rendered screenshots for easy sharing."
     },
     {
         "name": "Responsively App",
@@ -173,7 +197,8 @@
         "tags": [
             "Responsive design",
             "App"
-        ]
+        ],
+        "description": "Responsively App lets you preview your website across multiple devices simultaneously for responsive design testing."
     },
     {
         "name": "Facncy Border Radius",
@@ -181,7 +206,8 @@
         "tags": [
             "Responsive design",
             "App"
-        ]
+        ],
+        "description": "Facncy Border Radius is an interactive tool for generating creative CSS border radius values."
     },
     {
         "name": "Get Waves",
@@ -189,7 +215,8 @@
         "tags": [
             "Responsive design",
             "App"
-        ]
+        ],
+        "description": "Get Waves generates customizable SVG wave patterns to create engaging background designs."
     },
     {
         "name": "Clippy",
@@ -197,69 +224,79 @@
         "tags": [
             "Responsive design",
             "App"
-        ]
+        ],
+        "description": "Clippy is a visual tool for creating CSS clip-path shapes to craft custom element masks."
     },
     {
         "name": "Box Shadows",
         "link": "https://getcssscan.com/css-box-shadow-examples",
         "tags": [
             "App"
-        ]
+        ],
+        "description": "Box Shadows showcases a collection of inspiring CSS box-shadow examples for modern UI design."
     },
     {
         "name": "SVGator",
         "link": "https://www.svgator.com/",
         "tags": [
             "App"
-        ]
+        ],
+        "description": "SVGator is a web‑based tool that allows you to create and animate SVG graphics without writing code."
     },
     {
         "name": "HTTP Pie",
         "link": "https://httpie.io/app",
         "tags": [
             "App"
-        ]
+        ],
+        "description": "HTTP Pie provides an intuitive interface for testing and interacting with HTTP APIs."
     },
     {
         "name": "COde SandBox",
         "link": "https://codesandbox.io/",
         "tags": [
             "App"
-        ]
+        ],
+        "description": "COde SandBox is an online IDE that enables rapid prototyping and collaborative coding in the browser."
     },
     {
         "name": "Readme",
         "link": "https://readme.so/",
         "tags": [
             "App"
-        ]
+        ],
+        "description": "Readme (readme.so) simplifies the process of creating professional README files for your projects."
     },
     {
         "name": "UptoSite",
         "link": "https://upto.site/",
         "tags": [
             "Link shortener"
-        ]
+        ],
+        "description": "UptoSite is a fast link shortener that helps you create concise URLs for easy sharing."
     },
     {
         "name": "imgto.xyz",
         "link": "https://imgto.xyz/",
         "tags": [
             "Image optimizer"
-        ]
+        ],
+        "description": "imgto.xyz optimizes images for the web, reducing file size while maintaining quality."
     },
     {
         "name": "og.new",
         "link": "https://og.new/",
         "tags": [
             "Generate Open Graph images"
-        ]
+        ],
+        "description": "og.new allows you to quickly generate custom Open Graph images to enhance social sharing."
     },
     {
         "name": "gleam.so",
         "link": "https://gleam.so/",
         "tags": [
             "Generate Open Graph images"
-        ]
+        ],
+        "description": "gleam.so generates visually appealing Open Graph images to improve your content’s social presence."
     }
 ]

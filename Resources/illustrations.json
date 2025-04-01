@@ -2,64 +2,76 @@
     {
         "name": "transhumans",
         "link": "https://www.transhumans.xyz",
-        "tags": []
+        "tags": [],
+        "description": "Transhumans features futuristic illustrations and digital artwork exploring post‑human themes."
     },
     {
         "name": "Open Doodles",
         "link": "https://www.opendoodles.com",
-        "tags": []
+        "tags": [],
+        "description": "Open Doodles provides free, hand‑drawn illustrations that add a playful, creative touch to your projects."
     },
     {
         "name": "Open Peeps",
         "link": "https://www.openpeeps.com",
-        "tags": []
+        "tags": [],
+        "description": "Open Peeps is a hand‑drawn illustration library of people, perfect for creating custom characters and scenes."
     },
     {
         "name": "Reshot",
         "link": "https://www.reshot.com/free-vector-illustrations/",
-        "tags": []
+        "tags": [],
+        "description": "Reshot offers a curated collection of free vector illustrations to enhance your creative designs."
     },
     {
         "name": "IllustrationKit",
         "link": "https://illustrationkit.com",
-        "tags": []
+        "tags": [],
+        "description": "IllustrationKit provides high‑quality, customizable illustrations ideal for web and mobile projects."
     },
     {
         "name": "Humaaans",
         "link": "https://www.humaaans.com/",
-        "tags": []
+        "tags": [],
+        "description": "Humaaans delivers a diverse library of modular illustrations of people for creative and professional use."
     },
     {
         "name": "CocoMaterial",
         "link": "https://cocomaterial.com",
-        "tags": []
+        "tags": [],
+        "description": "CocoMaterial offers material‑inspired illustrations and design assets to elevate your visual projects."
     },
     {
         "name": "DrawKit",
         "link": "https://www.drawkit.com/?pricing-type=Free",
-        "tags": []
+        "tags": [],
+        "description": "DrawKit provides free, hand‑crafted illustrations that add charm and personality to your digital designs."
     },
     {
         "name": "Iradesign",
         "link": "https://iradesign.io",
-        "tags": []
+        "tags": [],
+        "description": "Iradesign features modern illustrations and design resources to inspire creative projects."
     },
     {
         "name": "SVG Repo",
         "link": "https://www.svgrepo.com",
-        "tags": []
+        "tags": [],
+        "description": "SVG Repo hosts a vast collection of free SVG illustrations and icons for designers and developers."
     },
     {
         "name": "Scribbles",
         "link": "https://illustrations.run",
         "tags": [
             "Doodles"
-        ]
+        ],
+        "description": "Scribbles offers playful doodle‑style illustrations to bring a creative, hand‑drawn vibe to your work."
     },
     {
         "name": "Illlustrations",
         "link": "https://illlustrations.co/",
-        "tags": []
+        "tags": [],
+        "description": "Illlustrations curates creative and modern illustrations to spark visual inspiration."
     },
     {
         "name": "Big Heads",
@@ -67,239 +79,280 @@
         "tags": [
             "Avatars",
             "Package"
-        ]
+        ],
+        "description": "Big Heads provides a customizable library of avatar illustrations to add personality to digital profiles."
     },
     {
         "name": "Notion Avatar Maker",
         "link": "https://notion-avatar.vercel.app",
         "tags": [
             "Avatars"
-        ]
+        ],
+        "description": "Notion Avatar Maker lets you create unique, customizable avatars for personal or professional use."
     },
     {
         "name": "Pixabay",
         "link": "https://pixabay.com/illustrations/",
-        "tags": []
+        "tags": [],
+        "description": "Pixabay offers a vast collection of free illustrations and images to support your creative projects."
     },
     {
         "name": "Pixelsmarket",
         "link": "https://pixels.market/",
-        "tags": []
+        "tags": [],
+        "description": "Pixelsmarket provides a marketplace for high‑quality illustrations and creative design assets."
     },
     {
         "name": "Shapes",
         "link": "https://shapes.framer.website",
         "tags": [
             "Logos"
-        ]
+        ],
+        "description": "Shapes offers dynamic logo designs and abstract shapes to enhance modern branding projects."
     },
     {
         "name": "Freeillustrations",
         "link": "https://www.freeillustrations.club",
-        "tags": []
+        "tags": [],
+        "description": "Freeillustrations curates a diverse collection of free illustrations to boost your creative designs."
     },
     {
         "name": "Doodle Ipsum",
         "link": "https://doodleipsum.com",
         "tags": [
             "Doodles"
-        ]
+        ],
+        "description": "Doodle Ipsum generates fun, hand‑drawn doodle illustrations to add a creative twist to your layouts."
     },
     {
         "name": "Flexiple illustrations",
         "link": "https://flexiple.com/illustrations/",
-        "tags": []
+        "tags": [],
+        "description": "Flexiple Illustrations offers a curated selection of high‑quality illustrations to inspire creative projects."
     },
     {
         "name": "unDraw",
         "link": "https://undraw.co/illustrations",
-        "tags": []
+        "tags": [],
+        "description": "unDraw provides an ever‑growing collection of open‑source illustrations for effortless integration into any project."
     },
     {
         "name": "Theme Isle",
         "link": "https://themeisle.com/illustrations/",
-        "tags": []
+        "tags": [],
+        "description": "Theme Isle offers a selection of high‑quality illustrations that complement modern web designs."
     },
     {
         "name": "Surface Pack",
         "link": "https://www.figma.com/community/file/883778082594341562",
-        "tags": []
+        "tags": [],
+        "description": "Surface Pack is a Figma community resource featuring unique surface textures and illustrations."
     },
     {
         "name": "Ultima",
         "link": "https://ultima.storytale.io",
-        "tags": []
+        "tags": [],
+        "description": "Ultima provides a collection of innovative illustrations that push creative boundaries."
     },
     {
         "name": "Heritage Library",
         "link": "https://www.heritagetype.com/pages/free-vintage-illustrations",
         "tags": [
             "Vintage"
-        ]
+        ],
+        "description": "Heritage Library offers free vintage illustrations to add a nostalgic touch to your designs."
     },
     {
         "name": "Svg Doodle",
         "link": "https://svgicon.net",
         "tags": [
             "Doodles"
-        ]
+        ],
+        "description": "Svg Doodle provides playful SVG doodle illustrations to bring whimsy to your creative projects."
     },
     {
         "name": "Open Stickers",
         "link": "https://openstickers.craftwork.design/",
-        "tags": []
+        "tags": [],
+        "description": "Open Stickers offers a collection of free, customizable stickers for creative digital communication."
     },
     {
         "name": "Highlights",
         "link": "https://www.highlights.design",
         "tags": [
             "Vintage"
-        ]
+        ],
+        "description": "Highlights features vintage‑inspired illustrations that evoke a sense of timeless design."
     },
     {
         "name": "Comic Book Illustrations",
         "link": "https://oblikstudio.gumroad.com/l/lmYSZ",
         "tags": [
             "Comic"
-        ]
+        ],
+        "description": "Comic Book Illustrations delivers bold, comic‑style graphics perfect for creative storytelling."
     },
     {
         "name": "Illustrations vol.1",
         "link": "https://petrbilek.gumroad.com/l/illustrations-vol-1",
-        "tags": []
+        "tags": [],
+        "description": "Illustrations vol.1 offers a curated set of free illustrations to inspire your next creative project."
     },
     {
         "name": "Halftone Illustrations",
         "link": "https://oblikstudio.gumroad.com/l/QZlSv",
-        "tags": []
+        "tags": [],
+        "description": "Halftone Illustrations provides unique halftone‑styled graphics that add a retro vibe to your designs."
     },
     {
         "name": "404 Illustrations",
         "link": "https://error404.fun/",
-        "tags": []
+        "tags": [],
+        "description": "404 Illustrations offers creative and humorous visuals designed specifically for error pages."
     },
     {
         "name": "LottieFiles",
         "link": "https://lottiefiles.com/featured",
         "tags": [
             "Animated"
-        ]
+        ],
+        "description": "LottieFiles features a vast library of animated illustrations and Lottie animations for engaging UIs."
     },
     {
         "name": "Public Work by Cosmos",
         "link": "https://public.work/",
         "tags": [
             "Vintage"
-        ]
+        ],
+        "description": "Public Work by Cosmos provides vintage‑style illustrations that evoke a classic, nostalgic feel."
     },
     {
         "name": "Remote Work Illustrations",
         "link": "https://oblikstudio.gumroad.com/l/remote-work-illustrations-by-oblik-studio",
-        "tags": []
+        "tags": [],
+        "description": "Remote Work Illustrations features visuals that capture the modern remote work lifestyle."
     },
     {
         "name": "Sneakers Vector Set",
         "link": "https://oblikstudio.gumroad.com/l/sneakers-vector-set",
-        "tags": []
+        "tags": [],
+        "description": "Sneakers Vector Set offers a stylish collection of vector illustrations focused on sneaker designs."
     },
     {
         "name": "Avatar U",
         "link": "https://avatar-u.webflow.io",
         "tags": [
             "Avatars"
-        ]
+        ],
+        "description": "Avatar U provides a creative platform to generate unique avatars for digital profiles."
     },
     {
         "name": "Flower Patterns",
         "link": "https://www.figma.com/community/file/998877405686984862",
-        "tags": []
+        "tags": [],
+        "description": "Flower Patterns delivers elegant, floral‑inspired patterns ideal for decorative design projects."
     },
     {
         "name": "SVG DOODLES",
         "link": "https://svgdoodles.com",
         "tags": [
             "Doodles"
-        ]
+        ],
+        "description": "SVG DOODLES offers a fun collection of doodle‑style SVG illustrations to add a playful vibe."
     },
     {
         "name": "Fresh Folk",
         "link": "https://kapustinco.gumroad.com/l/IRkNK",
-        "tags": []
+        "tags": [],
+        "description": "Fresh Folk provides a unique set of modern illustrations with a fresh, creative aesthetic."
     },
     {
         "name": "Humanities",
         "link": "https://levinunnink.gumroad.com/l/humanities-illustrations",
-        "tags": []
+        "tags": [],
+        "description": "Humanities offers illustrations that celebrate cultural diversity and creative expression."
     },
     {
         "name": "Logoipsum",
         "link": "https://logoipsum.com/",
         "tags": [
             "Placeholder logos"
-        ]
+        ],
+        "description": "Logoipsum provides placeholder logos to help quickly generate branding concepts during design."
     },
     {
         "name": "Sketchvalley",
         "link": "https://sketchvalley.com",
-        "tags": []
+        "tags": [],
+        "description": "Sketchvalley offers a curated collection of hand‑drawn illustrations and design assets for inspiration."
     },
     {
         "name": "Designs AI",
         "link": "https://designs.ai/graphicmaker",
-        "tags": []
+        "tags": [],
+        "description": "Designs AI uses artificial intelligence to generate creative graphic designs and illustrations."
     },
     {
         "name": "Iconfinder",
         "link": "https://www.iconfinder.com/search?q=&price=free",
-        "tags": []
+        "tags": [],
+        "description": "Iconfinder is a search engine and marketplace offering millions of free and premium icons."
     },
     {
         "name": "Streamline Illustrations",
         "link": "https://www.streamlinehq.com/illustrations",
-        "tags": []
+        "tags": [],
+        "description": "Streamline Illustrations features a diverse collection of high‑quality illustrations for creative projects."
     },
     {
         "name": "Cartoon Hands",
         "link": "https://www.figma.com/community/file/990218169140929445",
-        "tags": []
+        "tags": [],
+        "description": "Cartoon Hands provides quirky, hand‑drawn illustrations of hands for playful design projects."
     },
     {
         "name": "Porto Illustrations",
         "link": "https://kapustinco.gumroad.com/l/xHIbD",
-        "tags": []
+        "tags": [],
+        "description": "Porto Illustrations offers a stylish collection of illustrations perfect for modern digital design."
     },
     {
         "name": "Notion Avatar",
         "link": "https://www.figma.com/community/file/1159777445438667306",
         "tags": [
             "Avatars"
-        ]
+        ],
+        "description": "Notion Avatar lets you create unique, customizable avatars to represent your personal or professional brand."
     },
     {
         "name": "Lifestyle Illustrations",
         "link": "https://kapustinco.gumroad.com/l/IRkNK",
-        "tags": []
+        "tags": [],
+        "description": "Lifestyle Illustrations delivers engaging visuals that capture modern living and work environments."
     },
     {
         "name": "Storyset",
         "link": "https://storyset.com",
         "tags": [],
         "license": "Free with attribution.",
-        "licenseLink": "https://storyset.com/faqs"
+        "licenseLink": "https://storyset.com/faqs",
+        "description": "Storyset offers a wide range of free, customizable illustrations focused on storytelling."
     },
     {
         "name": "SVG Hub",
         "link": "https://svghub.vercel.app",
         "tags": [
             "Doodles"
-        ]
+        ],
+        "description": "SVG Hub is a curated resource of SVG doodles and illustrations for creative design projects."
     },
     {
         "name": "Free Userpics Pack",
         "link": "https://userpics.craftwork.design/",
         "tags": [
             "Avatars"
-        ]
+        ],
+        "description": "Free Userpics Pack provides a collection of free avatar images to enhance your digital projects."
     },
     {
         "name": "Memojis",
@@ -307,14 +360,16 @@
         "tags": [
             "Avatars",
             "3D"
-        ]
+        ],
+        "description": "Memojis offers a creative tool for generating personalized 3D avatars with a fun twist."
     },
     {
         "name": "Shapefest",
         "link": "https://www.shapefest.com",
         "tags": [
             "3D"
-        ]
+        ],
+        "description": "Shapefest is a resource for 3D icons and illustrations that add depth and dynamism to your designs."
     },
     {
         "name": "Items.Design",
@@ -322,34 +377,40 @@
         "tags": [
             "3D",
             "IA"
-        ]
+        ],
+        "description": "Items.Design offers a curated collection of 3D and AI‑generated illustrations for modern digital projects."
     },
     {
         "name": "LukaszAdam Illustrations",
         "link": "https://lukaszadam.com/illustrations",
-        "tags": []
+        "tags": [],
+        "description": "LukaszAdam Illustrations features a portfolio of creative, hand‑crafted illustrations for diverse projects."
     },
     {
         "name": "Personas by Draftbit",
         "link": "https://personas.draftbit.com/",
-        "tags": []
+        "tags": [],
+        "description": "Personas by Draftbit offers illustrations designed to represent diverse user personas in a creative way."
     },
     {
         "name": "Khagwal 3D",
         "link": "https://3d.khagwal.com/",
-        "tags": []
+        "tags": [],
+        "description": "Khagwal 3D provides a selection of 3D illustrations and assets to add visual depth to your designs."
     },
     {
         "name": "GEE! ME",
         "link": "https://geeme.vercel.app/",
-        "tags": []
+        "tags": [],
+        "description": "GEE! ME is a creative resource featuring unique illustrations and design assets for modern projects."
     },
     {
         "name": "Kapwing",
         "link": "https://www.kapwing.com/404-illustrations",
         "tags": [
             "404"
-        ]
+        ],
+        "description": "Kapwing offers creative 404 illustrations and design tools to enhance error pages and digital experiences."
     },
     {
         "name": "coolshapes",
@@ -357,25 +418,29 @@
         "tags": [
             "Package",
             "Logos"
-        ]
+        ],
+        "description": "coolshapes provides a package of creative logo shapes and abstract forms for innovative branding."
     },
     {
         "name": "uilogos",
         "link": "https://www.uilogos.co/",
         "tags": [
             "Placeholder logos"
-        ]
+        ],
+        "description": "uilogos offers a collection of placeholder logos to quickly prototype branding and design concepts."
     },
     {
         "name": "illustrations universe",
         "link": "https://illustrationsuniverse.com/",
         "tags": [
             "Inspiration"
-        ]
+        ],
+        "description": "illustrations universe offers an expansive collection of inspiring illustrations for creative projects."
     },
     {
         "name": "Hand Drawn Arrows",
         "link": "https://handyarrows.com/",
-        "tags": []
+        "tags": [],
+        "description": "Hand Drawn Arrows provides a set of custom, hand‑drawn arrow illustrations for creative navigation design."
     }
 ]

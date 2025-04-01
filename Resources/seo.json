@@ -1,5 +1,4 @@
 [
-
     {
         "name": "ImageMap",
         "link": "https://imagemap.org",
@@ -7,9 +6,9 @@
             "imagemap",
             "image",
             "mapping"
-        ]
+        ],
+        "description": "ImageMap is a tool for creating interactive image maps to link different areas of an image."
     },
-  
     {
         "name": "Google Alerts",
         "link": "https://www.google.com/alerts?ref=buffer.com",
@@ -17,7 +16,8 @@
             "alerts",
             "monitoring",
             "google"
-        ]
+        ],
+        "description": "Google Alerts monitors the web for new content matching your keywords and sends email notifications."
     },
     {
         "name": "Google Ads",
@@ -26,7 +26,8 @@
             "ads",
             "google",
             "marketing"
-        ]
+        ],
+        "description": "Google Ads is an advertising platform for creating, managing, and optimizing online ad campaigns."
     },
     {
         "name": "Google Trends",
@@ -35,7 +36,8 @@
             "trends",
             "google",
             "seo"
-        ]
+        ],
+        "description": "Google Trends provides real‑time data on search trends and keyword popularity to inform SEO strategy."
     },
     {
         "name": "SEO Review Tools Keyword Density Checker",
@@ -44,7 +46,8 @@
             "keyword",
             "density",
             "seo"
-        ]
+        ],
+        "description": "This tool analyzes text to determine keyword density and help optimize your content for SEO."
     },
     {
         "name": "KeySearch LSI Keywords Generator",
@@ -53,7 +56,8 @@
             "keyword",
             "lsi",
             "seo"
-        ]
+        ],
+        "description": "KeySearch LSI Keywords Generator helps you discover related keywords to enhance your SEO content."
     },
     {
         "name": "Answer The Public",
@@ -62,7 +66,8 @@
             "keyword",
             "questions",
             "seo"
-        ]
+        ],
+        "description": "Answer The Public visualizes search queries and questions to inspire content ideas and SEO strategies."
     },
     {
         "name": "SEMrush",
@@ -71,7 +76,8 @@
             "seo",
             "marketing",
             "tools"
-        ]
+        ],
+        "description": "SEMrush is a comprehensive SEO toolkit for keyword research, competitor analysis, and site audits."
     },
     {
         "name": "UberSuggest",
@@ -80,7 +86,8 @@
             "keyword",
             "seo",
             "analysis"
-        ]
+        ],
+        "description": "UberSuggest provides keyword suggestions and SEO analysis to improve your website’s search rankings."
     },
     {
         "name": "The Hoth Google Keyword Planner",
@@ -89,7 +96,8 @@
             "keyword",
             "seo",
             "planner"
-        ]
+        ],
+        "description": "The Hoth Google Keyword Planner generates keyword ideas and insights to boost your SEO efforts."
     },
     {
         "name": "SEO Site Checkup",
@@ -98,7 +106,8 @@
             "seo",
             "audit",
             "analysis"
-        ]
+        ],
+        "description": "SEO Site Checkup performs comprehensive website audits to identify SEO issues and suggest improvements."
     },
     {
         "name": "SeOptimer",
@@ -107,7 +116,8 @@
             "seo",
             "audit",
             "website"
-        ]
+        ],
+        "description": "SeOptimer is an SEO audit tool that evaluates your website’s performance and provides actionable recommendations."
     },
     {
         "name": "SERP Checker",
@@ -116,7 +126,8 @@
             "serp",
             "seo",
             "ranking"
-        ]
+        ],
+        "description": "SERP Checker monitors your website’s search engine ranking and provides insights into keyword performance."
     },
     {
         "name": "Image Resizer",
@@ -125,7 +136,8 @@
             "image",
             "resize",
             "tools"
-        ]
+        ],
+        "description": "Image Resizer helps optimize images by resizing them for faster load times and improved SEO."
     },
     {
         "name": "SERP Snippet Optimizer",
@@ -134,7 +146,8 @@
             "seo",
             "snippet",
             "optimizer"
-        ]
+        ],
+        "description": "SERP Snippet Optimizer refines your meta titles and descriptions to boost click‑through rates in search results."
     },
     {
         "name": "To The Web Title Meta Tester",
@@ -143,7 +156,8 @@
             "seo",
             "meta",
             "title"
-        ]
+        ],
+        "description": "This tool tests your page title and meta description lengths to ensure they are optimized for search engines."
     },
     {
         "name": "Small SEO Tools",
@@ -152,7 +166,8 @@
             "seo",
             "tools",
             "analysis"
-        ]
+        ],
+        "description": "Small SEO Tools offers a variety of free SEO tools for content analysis, backlink checks, and website audits."
     },
     {
         "name": "Moz",
@@ -161,7 +176,8 @@
             "seo",
             "analysis",
             "tools"
-        ]
+        ],
+        "description": "Moz provides advanced SEO analytics and tools to help improve your search engine visibility and rankings."
     },
     {
         "name": "Free Web Submission",
@@ -170,7 +186,8 @@
             "seo",
             "submission",
             "links"
-        ]
+        ],
+        "description": "Free Web Submission allows you to submit your website to search engines and directories for increased exposure."
     },
     {
         "name": "XML Sitemaps",
@@ -179,7 +196,8 @@
             "sitemap",
             "xml",
             "seo"
-        ]
+        ],
+        "description": "XML Sitemaps generates sitemap files to help search engines efficiently index your website's pages."
     },
     {
         "name": "TechnicalSEO Schema Markup Generator",
@@ -188,7 +206,8 @@
             "schema",
             "markup",
             "seo"
-        ]
+        ],
+        "description": "This generator creates schema markup code to help search engines better understand your site's content."
     },
     {
         "name": "HTML Sitemap Generator",
@@ -197,7 +216,8 @@
             "sitemap",
             "html",
             "seo"
-        ]
+        ],
+        "description": "HTML Sitemap Generator creates a user‑friendly sitemap to improve website navigation and SEO."
     },
     {
         "name": "Broken Link Checker",
@@ -206,7 +226,8 @@
             "links",
             "broken",
             "seo"
-        ]
+        ],
+        "description": "Broken Link Checker scans your website for broken links, helping you maintain a healthy SEO profile."
     },
     {
         "name": "Open Graph Generator",
@@ -215,7 +236,8 @@
             "open graph",
             "meta",
             "seo"
-        ]
+        ],
+        "description": "Open Graph Generator creates meta tags to optimize how your content is displayed on social media platforms."
     },
     {
         "name": "Twitter Card Generator",
@@ -224,7 +246,8 @@
             "twitter",
             "card",
             "seo"
-        ]
+        ],
+        "description": "Twitter Card Generator helps you create meta tags that enhance the appearance of your content on Twitter."
     },
     {
         "name": "GTMetrix",
@@ -233,7 +256,8 @@
             "performance",
             "speed",
             "seo"
-        ]
+        ],
+        "description": "GTMetrix analyzes your website’s performance and provides insights to improve speed and overall SEO."
     },
     {
         "name": "Google PageSpeed Insights",
@@ -242,7 +266,8 @@
             "speed",
             "performance",
             "seo"
-        ]
+        ],
+        "description": "Google PageSpeed Insights measures your site’s performance and suggests optimizations to enhance load times."
     },
     {
         "name": "Google Mobile-Friendly Test",
@@ -251,7 +276,8 @@
             "mobile",
             "responsive",
             "seo"
-        ]
+        ],
+        "description": "Google Mobile-Friendly Test checks if your website is optimized for mobile devices to improve user experience and SEO."
     },
     {
         "name": "AMP Validator",
@@ -260,7 +286,8 @@
             "amp",
             "validator",
             "seo"
-        ]
+        ],
+        "description": "AMP Validator verifies that your Accelerated Mobile Pages (AMP) adhere to Google's guidelines for fast mobile experiences."
     },
     {
         "name": "W3C HTML Validator",
@@ -269,7 +296,8 @@
             "html",
             "validator",
             "seo"
-        ]
+        ],
+        "description": "W3C HTML Validator checks your web pages for valid HTML and adherence to web standards, supporting better SEO."
     },
     {
         "name": "Robots.txt Generator",
@@ -278,9 +306,9 @@
             "robots.txt",
             "seo",
             "generator"
-        ]
+        ],
+        "description": "Robots.txt Generator creates a robots.txt file to guide search engine crawlers on how to index your site."
     },
-
     {
         "name": "Screaming Frog SEO Spider",
         "link": "https://www.screamingfrog.co.uk/seo-spider/",
@@ -288,7 +316,8 @@
             "seo",
             "crawler",
             "spider"
-        ]
+        ],
+        "description": "Screaming Frog SEO Spider is a desktop tool that crawls websites to identify SEO issues and opportunities."
     },
     {
         "name": "Ahrefs",
@@ -297,7 +326,8 @@
             "seo",
             "backlinks",
             "analysis"
-        ]
+        ],
+        "description": "Ahrefs offers robust SEO tools for backlink analysis, keyword research, and competitive intelligence."
     },
     {
         "name": "Majestic SEO",
@@ -306,7 +336,8 @@
             "seo",
             "backlinks",
             "analysis"
-        ]
+        ],
+        "description": "Majestic SEO specializes in backlink analysis, providing detailed insights into your site's link profile."
     },
     {
         "name": "Serpstat",
@@ -315,6 +346,7 @@
             "seo",
             "analysis",
             "keywords"
-        ]
+        ],
+        "description": "Serpstat is an all‑in‑one SEO platform offering keyword research, competitor analysis, and site auditing tools."
     }
 ]

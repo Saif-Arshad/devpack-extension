@@ -4,7 +4,8 @@
         "link": "https://www.realtimecolors.com",
         "tags": [
             "Preview"
-        ]
+        ],
+        "description": "Realtime Colors lets you live-preview color palettes for instant design inspiration."
     },
     {
         "name": "AI Colors",
@@ -12,202 +13,236 @@
         "tags": [
             "AI",
             "Preview"
-        ]
+        ],
+        "description": "AI Colors leverages artificial intelligence to generate and preview innovative color schemes."
     },
     {
         "name": "Color selector",
         "link": "https://www.color-selector.com",
         "tags": [
             "Catalogue"
-        ]
+        ],
+        "description": "Color selector offers a comprehensive catalogue to help you choose and compare colors."
     },
     {
         "name": "Coolors",
         "link": "https://coolors.co",
         "tags": [
             "Image"
-        ]
+        ],
+        "description": "Coolors is a popular tool for generating beautiful, shareable color palettes."
     },
     {
         "name": "Grabient",
         "link": "https://www.grabient.com",
         "tags": [
             "Gradients"
-        ]
+        ],
+        "description": "Grabient provides a curated collection of stunning gradients for creative design projects."
     },
     {
         "name": "hue.tools",
         "link": "https://hue.tools/",
-        "tags": []
+        "tags": [],
+        "description": "Hue.tools offers a suite of interactive color tools to mix, match, and generate palettes."
     },
     {
         "name": "Picular",
         "link": "https://picular.co",
-        "tags": []
+        "tags": [],
+        "description": "Picular is a visual search engine that finds color inspiration from images across the web."
     },
     {
         "name": "Color Leap",
         "link": "https://colorleap.app/",
-        "tags": []
+        "tags": [],
+        "description": "Color Leap allows you to experiment with and preview custom color palettes on the fly."
     },
     {
         "name": "Pigment",
         "link": "https://pigment.shapefactory.co",
-        "tags": []
+        "tags": [],
+        "description": "Pigment provides a dynamic interface for generating and refining your perfect color palette."
     },
     {
         "name": "Colormind",
         "link": "http://colormind.io/",
-        "tags": []
+        "tags": [],
+        "description": "Colormind uses deep learning to generate color palettes that suit your design needs."
     },
     {
         "name": "Werner",
         "link": "https://www.c82.net/werner/",
         "tags": [
             "Catalogue"
-        ]
+        ],
+        "description": "Werner is a curated catalogue of color palettes to spark creative design ideas."
     },
     {
         "name": "HueSnap",
         "link": "https://www.huesnap.com",
         "tags": [
             "Image"
-        ]
+        ],
+        "description": "HueSnap offers image-based color palettes to inspire your next design project."
     },
     {
         "name": "Adobe Color",
         "link": "https://color.adobe.com/es/create/color-wheel",
         "tags": [
             "Images"
-        ]
+        ],
+        "description": "Adobe Color provides powerful tools for creating, exploring, and sharing color palettes."
     },
     {
         "name": "Palette Maker",
         "link": "https://palettemaker.com/app",
         "tags": [
             "Preview"
-        ]
+        ],
+        "description": "Palette Maker enables you to quickly generate and preview custom color palettes."
     },
     {
         "name": "Randoma11y",
         "link": "https://randoma11y.com",
-        "tags": []
+        "tags": [],
+        "description": "Randoma11y offers randomly generated color palettes to inspire accessible design choices."
     },
     {
         "name": "WebGradients",
         "link": "https://webgradients.com",
         "tags": [
             "Gradients"
-        ]
+        ],
+        "description": "WebGradients provides a collection of beautiful gradient backgrounds for modern web design."
     },
     {
         "name": "Palette",
         "link": "https://palettte.app/",
-        "tags": []
+        "tags": [],
+        "description": "Palette is a modern tool for exploring and experimenting with diverse color combinations."
     },
     {
         "name": "Flat UI Colors",
         "link": "https://flatuicolors.com",
-        "tags": []
+        "tags": [],
+        "description": "Flat UI Colors offers a simple collection of flat color palettes for contemporary design."
     },
     {
         "name": "Material UI",
         "link": "https://materialui.co/colors",
-        "tags": []
+        "tags": [],
+        "description": "Material UI provides a comprehensive color tool inspired by Google’s Material Design system."
     },
     {
         "name": "Happy Hues",
         "link": "https://www.happyhues.co",
-        "tags": []
+        "tags": [],
+        "description": "Happy Hues offers curated, ready-to-use color palettes to brighten your web projects."
     },
     {
         "name": "tints.dev",
         "link": "https://www.tints.dev/brand/8C1AE5",
-        "tags": []
+        "tags": [],
+        "description": "tints.dev allows you to preview and generate custom tints and shades for brand colors."
     },
     {
         "name": "Color Hunt",
         "link": "https://colorhunt.co",
-        "tags": []
+        "tags": [],
+        "description": "Color Hunt is a community-driven collection of trendy and inspiring color palettes."
     },
     {
         "name": "Shaper",
         "link": "https://hihayk.github.io/shaper/",
-        "tags": []
+        "tags": [],
+        "description": "Shaper is a simple tool for creating geometric patterns and experimenting with color shapes."
     },
     {
         "name": "Toptal",
         "link": "https://www.toptal.com/designers/colourcode/freebuild-color-builder",
-        "tags": []
+        "tags": [],
+        "description": "Toptal’s Colour Code is a free interactive tool to build and customize color schemes."
     },
     {
         "name": "UI Colors",
         "link": "https://uicolors.app/create",
         "tags": [
             "Preview"
-        ]
+        ],
+        "description": "UI Colors lets you create and preview custom color schemes for user interfaces."
     },
     {
         "name": "Poline",
         "link": "https://meodai.github.io/poline/",
         "tags": [
             "Library"
-        ]
+        ],
+        "description": "Poline is a library offering a collection of creative color palettes for designers."
     },
     {
         "name": "Khroma",
         "link": "https://www.khroma.co",
-        "tags": []
+        "tags": [],
+        "description": "Khroma uses AI to generate personalized color palettes based on your design tastes."
     },
     {
         "name": "Paletton",
         "link": "https://www.paletton.com",
-        "tags": []
+        "tags": [],
+        "description": "Paletton is an interactive color scheme designer that helps you build harmonious palettes."
     },
     {
         "name": "M.D. Palette Generator",
         "link": "https://materialpalettes.com",
-        "tags": []
+        "tags": [],
+        "description": "M.D. Palette Generator quickly creates material design-inspired color palettes."
     },
     {
         "name": "Scale",
         "link": "https://hihayk.github.io/scale/",
-        "tags": []
+        "tags": [],
+        "description": "Scale helps you visualize and adjust color scales to maintain consistency in your design."
     },
     {
         "name": "uiGradients",
         "link": "https://uigradients.com/",
         "tags": [
             "Gradients"
-        ]
+        ],
+        "description": "uiGradients offers a curated collection of vibrant gradients for creative web backgrounds."
     },
     {
         "name": "Inspotype",
         "link": "https://www.inspotype.com",
         "tags": [
             "Preview"
-        ]
+        ],
+        "description": "Inspotype provides inspirational previews of color palettes and typography for designers."
     },
     {
         "name": "CSS Gradient",
         "link": "https://cssgradient.io",
         "tags": [
             "Gradients"
-        ]
+        ],
+        "description": "CSS Gradient is an intuitive tool for generating custom CSS gradient code with live previews."
     },
     {
         "name": "Colorable",
         "link": "https://colorable.jxnblk.com",
         "tags": [
             "Preview"
-        ]
+        ],
+        "description": "Colorable helps you test color contrast ratios to ensure accessible design standards."
     },
     {
         "name": "Culrs",
         "link": "https://culrs.com",
         "tags": [
             "Palettes"
-        ]
+        ],
+        "description": "Culrs is a creative tool for generating and exploring unique color palettes."
     },
     {
         "name": "Cool Contrast",
@@ -215,19 +250,22 @@
         "tags": [
             "Preview",
             "Contrast"
-        ]
+        ],
+        "description": "Cool Contrast lets you preview and fine-tune color contrast for accessible designs."
     },
     {
         "name": "ColorBeta",
         "link": "https://colorbeta.com/",
         "tags": [
             "Gradients"
-        ]
+        ],
+        "description": "ColorBeta offers a modern interface to generate and explore trendy gradient schemes."
     },
     {
         "name": "ColorHexa",
         "link": "https://www.colorhexa.com/",
-        "tags": []
+        "tags": [],
+        "description": "ColorHexa is a detailed color encyclopedia providing color conversions, palettes, and information."
     },
     {
         "name": "ColorMagic",
@@ -235,7 +273,8 @@
         "tags": [
             "Generator",
             "AI"
-        ]
+        ],
+        "description": "ColorMagic uses AI to generate creative color palettes and unlock magical design combinations."
     },
     {
         "name": "Material Theme Builder",
@@ -245,7 +284,8 @@
             "Preview"
         ],
         "license": "Apache V2.0",
-        "licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE"
+        "licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE",
+        "description": "Material Theme Builder helps you generate custom themes inspired by Material Design."
     },
     {
         "name": "Hypercolor",
@@ -256,7 +296,8 @@
             "Tailwind"
         ],
         "license": "MIT",
-        "licenseLink": "https://github.com/jordihales/hypercolor/blob/main/LICENSE"
+        "licenseLink": "https://github.com/jordihales/hypercolor/blob/main/LICENSE",
+        "description": "Hypercolor offers an interactive gradient generator tailored for Tailwind CSS projects."
     },
     {
         "name": "SheCode Gradient",
@@ -265,6 +306,7 @@
             "Generator",
             "Gradients",
             "Tailwind"
-        ]
+        ],
+        "description": "SheCode Gradient provides a stylish gradient generator designed for modern web applications."
     }
 ]

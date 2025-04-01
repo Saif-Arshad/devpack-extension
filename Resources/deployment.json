@@ -6,7 +6,8 @@
             "deployment",
             "serverless",
             "frontend"
-        ]
+        ],
+        "description": "Vercel is a cutting‑edge deployment platform for frontend frameworks and static sites with built‑in serverless support."
     },
     {
         "name": "Netlify",
@@ -15,7 +16,8 @@
             "deployment",
             "jamstack",
             "serverless"
-        ]
+        ],
+        "description": "Netlify offers an all‑in‑one platform for deploying JAMstack sites with continuous integration and serverless functions."
     },
     {
         "name": "Coolify",
@@ -24,7 +26,8 @@
             "deployment",
             "selfhost",
             "serverless"
-        ]
+        ],
+        "description": "Coolify is a self‑hosted deployment platform that simplifies managing serverless applications and containerized workloads."
     },
     {
         "name": "Heroku",
@@ -33,7 +36,8 @@
             "deployment",
             "paas",
             "cloud"
-        ]
+        ],
+        "description": "Heroku is a cloud‑based PaaS that makes it easy to deploy, manage, and scale web applications with minimal setup."
     },
     {
         "name": "AWS Amplify",
@@ -42,7 +46,8 @@
             "deployment",
             "cloud",
             "mobile"
-        ]
+        ],
+        "description": "AWS Amplify provides a full‑stack cloud solution for building and deploying mobile and web applications quickly."
     },
     {
         "name": "Firebase",
@@ -51,7 +56,8 @@
             "deployment",
             "backend",
             "realtime"
-        ]
+        ],
+        "description": "Firebase offers a suite of cloud services for deploying realtime backends and static web applications with ease."
     },
     {
         "name": "GitHub Pages",
@@ -60,7 +66,8 @@
             "deployment",
             "static",
             "free"
-        ]
+        ],
+        "description": "GitHub Pages allows you to host static websites for free directly from your GitHub repositories."
     },
     {
         "name": "Surge",
@@ -69,7 +76,8 @@
             "deployment",
             "static",
             "cli"
-        ]
+        ],
+        "description": "Surge is a simple, CLI‑driven platform for deploying static websites and web projects effortlessly."
     },
     {
         "name": "DigitalOcean App Platform",
@@ -78,7 +86,8 @@
             "deployment",
             "cloud",
             "scalable"
-        ]
+        ],
+        "description": "DigitalOcean App Platform is a scalable cloud service that streamlines the deployment and scaling of applications."
     },
     {
         "name": "Render",
@@ -87,7 +96,8 @@
             "deployment",
             "cloud",
             "serverless"
-        ]
+        ],
+        "description": "Render is a modern cloud platform that simplifies deploying web apps and static sites with serverless functions."
     },
     {
         "name": "Google Cloud Platform",
@@ -96,6 +106,7 @@
             "deployment",
             "cloud",
             "infrastructure"
-        ]
+        ],
+        "description": "Google Cloud Platform provides robust cloud infrastructure and deployment tools for enterprise‑scale applications."
     }
 ]

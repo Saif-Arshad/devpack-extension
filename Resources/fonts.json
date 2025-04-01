@@ -2,143 +2,167 @@
     {
         "name": "Google fonts",
         "link": "https://fonts.google.com/",
-        "tags": []
+        "tags": [],
+        "description": "Google Fonts offers a vast, free library of web‑optimized fonts for designers and developers."
     },
     {
         "name": "Fontsource",
         "link": "https://fontsource.org",
-        "tags": []
+        "tags": [],
+        "description": "Fontsource provides self‑hosted, open‑source fonts for modern web projects with easy integration."
     },
     {
         "name": "Typewolf",
         "link": "https://www.typewolf.com/",
         "tags": [
             "Inspiration"
-        ]
+        ],
+        "description": "Typewolf is a curated resource for trending typography and font inspiration across various projects."
     },
     {
         "name": "Typo/graphic",
         "link": "https://www.typographicposters.com",
         "tags": [
             "Inspiration"
-        ]
+        ],
+        "description": "Typo/graphic showcases creative typographic posters and design inspiration for typography enthusiasts."
     },
     {
         "name": "Fontshare",
         "link": "https://www.fontshare.com",
-        "tags": []
+        "tags": [],
+        "description": "Fontshare offers a collection of free, high‑quality fonts designed for modern web and graphic projects."
     },
     {
         "name": "Fontpair",
         "link": "https://www.fontpair.co",
-        "tags": []
+        "tags": [],
+        "description": "Fontpair helps you effortlessly find and experiment with perfect font pairings for your designs."
     },
     {
         "name": "Free Faces",
         "link": "https://www.freefaces.gallery",
-        "tags": []
+        "tags": [],
+        "description": "Free Faces features a curated gallery of free typefaces to spark creativity in your design work."
     },
     {
         "name": "Font Meme",
         "link": "https://fontmeme.com",
-        "tags": []
+        "tags": [],
+        "description": "Font Meme is a fun resource to explore, generate, and share creative font-based graphics."
     },
     {
         "name": "Fontjoy",
         "link": "https://fontjoy.com",
         "tags": [
             "Tool"
-        ]
+        ],
+        "description": "Fontjoy is an interactive tool that generates harmonious font pairings to enhance your designs."
     },
     {
         "name": "Font style matcher",
         "link": "https://meowni.ca/font-style-matcher/",
         "tags": [
             "Tool"
-        ]
+        ],
+        "description": "Font style matcher analyzes fonts and suggests similar styles to help you refine your typography choices."
     },
     {
         "name": "Fonts In Use",
         "link": "https://fontsinuse.com",
-        "tags": []
+        "tags": [],
+        "description": "Fonts In Use showcases real‑world examples of fonts in design, providing inspiration and case studies."
     },
     {
         "name": "Fluid typography",
         "link": "https://modern-fluid-typography.vercel.app",
         "tags": [
             "Tool"
-        ]
+        ],
+        "description": "Fluid typography is a tool that helps create responsive, scalable type for modern web design."
     },
     {
         "name": "DaFont",
         "link": "https://www.dafont.com",
-        "tags": []
+        "tags": [],
+        "description": "DaFont offers a huge collection of free fonts for personal and commercial design projects."
     },
     {
         "name": "OnlineWebFonts.COM",
         "link": "https://www.onlinewebfonts.com/fonts",
-        "tags": []
+        "tags": [],
+        "description": "OnlineWebFonts.COM provides an extensive catalog of web fonts available for download."
     },
     {
         "name": "UNCUT.wtf",
         "link": "https://uncut.wtf/",
-        "tags": []
+        "tags": [],
+        "description": "UNCUT.wtf is a quirky resource featuring a collection of unique and experimental fonts."
     },
     {
         "name": "Beautiful web type",
         "link": "https://beautifulwebtype.com/",
         "tags": [
             "Inspiration"
-        ]
+        ],
+        "description": "Beautiful web type curates inspiring examples of web typography and modern font usage."
     },
     {
         "name": "Font Brief",
         "link": "https://www.fontbrief.com/home",
         "tags": [
             "Tool"
-        ]
+        ],
+        "description": "Font Brief provides quick insights and live previews for a wide variety of fonts."
     },
     {
         "name": "Font Pairings",
         "link": "https://fontpairings.bypeople.com/",
         "tags": [
             "Tool"
-        ]
+        ],
+        "description": "Font Pairings helps designers discover and experiment with complementary font combinations."
     },
     {
         "name": "Fonts in the Wild",
         "link": "https://www.fontsinthewild.com/free",
-        "tags": []
+        "tags": [],
+        "description": "Fonts in the Wild showcases free fonts used in real‑world projects for practical design inspiration."
     },
     {
         "name": "Archetype",
         "link": "https://archetypeapp.com/",
         "tags": [
             "Tool"
-        ]
+        ],
+        "description": "Archetype is an innovative tool to explore and test different font styles and pairings."
     },
     {
         "name": "Typescale",
         "link": "https://typescale.io/",
         "tags": [
             "Plugin"
-        ]
+        ],
+        "description": "Typescale is a plugin that assists in creating harmonious, responsive typographic scales."
     },
     {
         "name": "Font.Download",
         "link": "https://font.download/",
-        "tags": []
+        "tags": [],
+        "description": "Font.Download offers a simple interface to browse and download a variety of free fonts."
     },
     {
         "name": "Modern Font Stacks",
         "link": "https://modernfontstacks.com/",
         "tags": [
             "CSS"
-        ]
+        ],
+        "description": "Modern Font Stacks offers a curated collection of modern CSS font stack recommendations."
     },
     {
         "name": "Typefaces.today",
         "link": "https://typefaces.today/",
-        "tags": []
+        "tags": [],
+        "description": "Typefaces.today is a resource for discovering trending fonts and typographic inspiration."
     }
 ]
