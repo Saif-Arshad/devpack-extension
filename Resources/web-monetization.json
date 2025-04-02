@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Memberful",
+    "link": "https://memberful.com/",
+    "tags": ["membership", "subscription", "monetization", "payments"],
+    "description": "All-in-one membership platform for creators to monetize their passion with recurring subscriptions, gated content, and membership benefits."
+  },
+  {
+    "name": "Patreon",
+    "link": "https://www.patreon.com/",
+    "tags": ["membership", "subscription", "creators", "monetization"],
+    "description": "Platform for creators to run a subscription service with tiered membership levels, exclusive content, and community features."
+  },
+  {
+    "name": "Substack",
+    "link": "https://substack.com/",
+    "tags": ["newsletter", "subscription", "writers", "monetization"],
+    "description": "Publishing platform that combines newsletters, podcasts and community features with paid subscription models for writers."
+  },
+  {
+    "name": "Ghost",
+    "link": "https://ghost.org/",
+    "tags": ["membership", "subscription", "newsletter", "publishing"],
+    "description": "Independent publishing platform with built-in membership and subscription tools for professional publishers and creators."
+  },
+  {
+    "name": "Ko-fi",
+    "link": "https://ko-fi.com/",
+    "tags": ["donations", "tips", "creators", "membership"],
+    "description": "Platform for creators to receive support through one-time donations, memberships, and selling digital products with 0-5% platform fees."
+  },
+  {
+    "name": "Buy Me A Coffee",
+    "link": "https://www.buymeacoffee.com/",
+    "tags": ["donations", "tips", "creators", "monetization"],
+    "description": "Simple way for creators to accept support and tips from fans without requiring account creation, with a flat 5% fee on transactions."
+  },
+  {
+    "name": "Gumroad",
+    "link": "https://gumroad.com/",
+    "tags": ["digital products", "membership", "creators", "sales"],
+    "description": "Platform for creators to sell digital products, subscriptions, and memberships directly to their audience."
+  },
+  {
+    "name": "Setupad",
+    "link": "https://setupad.com/",
+    "tags": ["ad management", "monetization", "publishers", "programmatic"],
+    "description": "Analytics-driven monetization platform that helps publishers maximize ad revenue with header bidding technology and premium demand partners."
+  },
+  {
+    "name": "Google AdSense",
+    "link": "https://www.google.com/adsense/",
+    "tags": ["ad network", "monetization", "publishers"],
+    "description": "Google's ad network that allows publishers to monetize their websites by displaying targeted ads to visitors."
+  },
+  {
+    "name": "Ezoic",
+    "link": "https://www.ezoic.com/",
+    "tags": ["ad management", "monetization", "publishers", "optimization"],
+    "description": "AI-driven platform that optimizes ad placements and settings to maximize revenue for publishers with website testing and analytics."
+  },
+  {
+    "name": "Media.net",
+    "link": "https://www.media.net/",
+    "tags": ["ad network", "contextual ads", "monetization"],
+    "description": "Contextual advertising network that provides high-quality ads from Yahoo! Bing Network with competitive CPMs for publishers."
+  },
+  {
+    "name": "AdPushup",
+    "link": "https://www.adpushup.com/",
+    "tags": ["ad management", "revenue optimization", "publishers"],
+    "description": "Ad revenue optimization platform with AI-powered tools for layout testing, header bidding, and adblock recovery for publishers."
+  },
+  {
+    "name": "Mediavine",
+    "link": "https://www.mediavine.com/",
+    "tags": ["ad management", "publishers", "blogs", "monetization"],
+    "description": "Full-service ad management for content creators and lifestyle publishers with premium ad partners and high RPMs."
+  },
+  {
+    "name": "Amazon Associates",
+    "link": "https://affiliate-program.amazon.com/",
+    "tags": ["affiliate", "marketing", "monetization"],
+    "description": "Amazon's affiliate program that allows creators to earn commissions by promoting products from the world's largest online retailer."
+  },
+  {
+    "name": "ShareASale",
+    "link": "https://www.shareasale.com/",
+    "tags": ["affiliate", "network", "marketing", "monetization"],
+    "description": "Affiliate marketing network connecting publishers with thousands of merchants across various niches for commission-based partnerships."
+  },
+  {
+    "name": "CJ Affiliate",
+    "link": "https://www.cj.com/",
+    "tags": ["affiliate", "network", "marketing", "monetization"],
+    "description": "Large affiliate marketing network (formerly Commission Junction) with access to major brands and detailed performance analytics."
+  },
+  {
+    "name": "Awin",
+    "link": "https://www.awin.com/",
+    "tags": ["affiliate", "network", "global", "monetization"],
+    "description": "Global affiliate marketing network with over 15,000 brands, particularly strong for publishers with international audiences."
+  },
+  {
+    "name": "PartnerStack",
+    "link": "https://partnerstack.com/",
+    "tags": ["affiliate", "SaaS", "B2B", "partnerships"],
+    "description": "Partnership platform specifically designed for SaaS and B2B companies with high commission rates for digital products."
+  },
+  {
+    "name": "ClickBank",
+    "link": "https://www.clickbank.com/",
+    "tags": ["affiliate", "digital products", "marketing"],
+    "description": "Marketplace for digital product creators and affiliates with a focus on info products, courses, and software."
+  },
+  {
+    "name": "Rakuten Advertising",
+    "link": "https://rakutenadvertising.com/",
+    "tags": ["affiliate", "network", "global", "monetization"],
+    "description": "Global affiliate marketing network with strong relationships with luxury and high-end retail brands."
+  },
+  {
+    "name": "FlexOffers",
+    "link": "https://www.flexoffers.com/",
+    "tags": ["affiliate", "network", "marketing", "monetization"],
+    "description": "Affiliate marketing network with over 12,000 advertisers and flexible payment options for publishers of all sizes."
+  },
+  {
+    "name": "Impact",
+    "link": "https://impact.com/",
+    "tags": ["partnerships", "affiliate", "automation", "monetization"],
+    "description": "Partnership management platform for automating and scaling affiliate, influencer, and strategic business partnerships."
+  },
+  {
+    "name": "Skimlinks",
+    "link": "https://skimlinks.com/",
+    "tags": ["affiliate", "monetization", "content", "publishers"],
+    "description": "Automated affiliate marketing tool that converts normal links into affiliate links without manual effort from publishers."
+  },
+  {
+    "name": "LTK (formerly RewardStyle)",
+    "link": "https://www.shopltk.com/",
+    "tags": ["influencer", "affiliate", "shopping", "monetization"],
+    "description": "Influencer marketing and shopping platform focused on lifestyle, fashion, and home verticals with mobile app integration."
+  }
+] 

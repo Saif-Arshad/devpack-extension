@@ -215,4 +215,12 @@ export const categories = [
         background: "#F39C12",
         icon: `<img src="./Assets/security.svg" alt="security" />`,
     },
+    {
+        name: 'web-monetization',
+        label: 'Web Monetization',
+        description: "Platforms and tools to monetize your web content and generate revenue.",
+        filePath: 'Resources/web-monetization.json',
+        background: "#3498DB",
+        icon: `<img src="./Resources/web-monetization-icon.svg" alt="web monetization" />`,
+    },
 ];
