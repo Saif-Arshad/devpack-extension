@@ -225,9 +225,31 @@ document.addEventListener('DOMContentLoaded', async () => {
             setTimeout(() => { heartIcon.classList.remove('animate'); }, 300);
         });
 
-
-
+        // Add tooltip functionality to the entire resource element
         if (resource.description) {
+            div.addEventListener('mouseenter', (e) => {
+                resourceTooltip.textContent = resource.description;
+
+                // Get the dimensions of the resource element
+                const resourceRect = div.getBoundingClientRect();
+
+                // Set the tooltip width to match the resource element's width
+                resourceTooltip.style.width = `${resourceRect.width}px`;
+
+                // Position the tooltip centered relative to the resource element and above it
+                resourceTooltip.style.left = `${resourceRect.left + resourceRect.width / 2}px`;
+                resourceTooltip.style.top = `${resourceRect.top - 10}px`; // 10px above the element
+
+                resourceTooltip.classList.remove('hidden');
+                resourceTooltip.classList.add('visible');
+            });
+
+            div.addEventListener('mouseleave', (e) => {
+                resourceTooltip.classList.remove('visible');
+                resourceTooltip.classList.add('hidden');
+            });
+
+            // Still add the info icon for visual indication
             const infoIcon = document.createElement('button');
             infoIcon.className = 'info-icon';
             infoIcon.innerHTML = `
@@ -243,27 +265,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             const actionsContainer = div.querySelector('.resource-actions');
             actionsContainer.appendChild(infoIcon);
 
-            infoIcon.addEventListener('mouseenter', (e) => {
-                resourceTooltip.textContent = resource.description;
-
-                // Get the dimensions of the parent resource element
-                const resourceRect = div.getBoundingClientRect();
-
-                // Set the tooltip width to match the resource element's width
-                resourceTooltip.style.width = `${resourceRect.width}px`;
-
-                // Position the tooltip centered relative to the resource element and above it
-                resourceTooltip.style.left = `${resourceRect.left + resourceRect.width / 2}px`;
-                resourceTooltip.style.top = `${resourceRect.top - 10}px`; // 10px above the element
-
-                resourceTooltip.classList.remove('hidden');
-                resourceTooltip.classList.add('visible');
-            });
-
-            // Hide tooltip when mouse leaves the info icon
-            infoIcon.addEventListener('mouseleave', (e) => {
-                resourceTooltip.classList.remove('visible');
-                resourceTooltip.classList.add('hidden');
+            // Prevent the info icon from triggering the link
+            infoIcon.addEventListener('click', (e) => {
+                e.stopPropagation();
             });
         }
 
