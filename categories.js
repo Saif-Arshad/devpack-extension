@@ -231,4 +231,12 @@ export const categories = [
         background: "#33e84e",
         icon: `<img src="./Resources/analytics.svg" alt="web analytics" />`,
     },
+    {
+        name: 'headless_cms',
+        label: 'Headless CMS',
+        description: "Headless CMS platforms.",
+        filePath: 'Resources/headless-cms.json',
+        background: "#c79e2c",
+        icon: `<img src="./Resources/headlessCMS.svg" alt="headless cms" />`,
+    },
 ];

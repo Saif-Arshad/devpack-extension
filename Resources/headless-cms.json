@@ -1,0 +1,102 @@
+[
+    {
+        "name": "BCMS",
+        "link": "https://thebcms.com/",
+        "tags": [
+            "headless CMS",
+            "Next.js",
+            "Content Management"
+        ],
+        "description": "BCMS provides flexible content modeling for creative projects."
+    },
+    {
+        "name": "Contentful",
+        "link": "https://www.contentful.com/",
+        "tags": [
+            "headless CMS",
+            "Next.js",
+            "Content Management"
+        ],
+        "description": "Content that scales. Experiences that convert."
+    },
+    {
+        "name": "Strapi",
+        "link": "https://strapi.io/",
+        "tags": [
+            "headless CMS",
+            "Next.js",
+            "Content Management"
+        ],
+        "description": "Build modern websites with the most customizable Headless CMS."
+    },
+    {
+        "name": "Sanity",
+        "link": "https://www.sanity.io/",
+        "tags": [
+            "headless CMS",
+            "Next.js",
+            "Content Management"
+        ],
+        "description": "The Content Operating System."
+    },
+    {
+        "name": "Hygraph",
+        "link": "https://hygraph.com/",
+        "tags": [
+            "headless CMS",
+            "Next.js",
+            "GraphQL"
+        ],
+        "description": "Enterprise-ready solutions, engineered for scale."
+    },
+    {
+        "name": "Storyblok",
+        "link": "https://www.storyblok.com/",
+        "tags": [
+            "headless CMS",
+            "Next.js",
+            "API"
+        ],
+        "description": "Make bigger, faster market impact with the CMS that gets out of your way."
+    },
+    {
+        "name": "Prismic",
+        "link": "https://prismic.io/",
+        "tags": [
+            "headless CMS",
+            "Next.js",
+            "Visual Page Builder"
+        ],
+        "description": "Build a website that grows."
+    },
+    {
+        "name": "ButterCMS",
+        "link": "https://buttercms.com/",
+        "tags": [
+            "headless CMS",
+            "Next.js",
+            "API"
+        ],
+        "description": "Build career sites faster & easier with Butter."
+    },
+    {
+        "name": "Ghost",
+        "link": "https://ghost.org/",
+        "tags": [
+            "headless CMS",
+            "Bloggers",
+            "Content Creator"
+        ],
+        "description": "Independent technology for modern publishing."
+    },
+    {
+        "name": "DatoCMS",
+        "link": "https://www.datocms.com/",
+        "tags": [
+            "headless CMS",
+            "Next.js",
+            "API"
+        ],
+        "description": "It's the headless CMS for the modern web."
+    }
+]
