@@ -1,0 +1,72 @@
+[
+    {
+        "name": "DataFast",
+        "link": "https://datafa.st/",
+        "tags": [
+            "web analytics",
+            "data",
+            "serp"
+        ],
+        "description": "Actionable analytics tool for founders."
+    },
+    {
+        "name": "Google Analytics",
+        "link": "https://developers.google.com/analytics",
+        "tags": [
+            "web analytics",
+            "digital analysts",
+            "free"
+        ],
+        "description": "Analytics for beginners and small businesses."
+    },
+    {
+        "name": "Similarweb",
+        "link": "https://www.similarweb.com/",
+        "tags": [
+            "web intelligence",
+            "digital analysts",
+            "web analytics"
+        ],
+        "description": "Effortlessly Analyze Your Competitive Landscape."
+    },
+    {
+        "name": "Matomo",
+        "link": "https://matomo.org/",
+        "tags": [
+            "web analytics",
+            "privacy",
+            "free trial"
+        ],
+        "description": "Google Analytics alternative that protects your data and your customers' privacy."
+    },
+    {
+        "name": "Mixpanel",
+        "link": "https://mixpanel.com/",
+        "tags": [
+            "web analytics",
+            "digital analysts",
+            "free demo"
+        ],
+        "description": "Analytics that makes it easy to get answers and make decisions."
+    },
+    {
+        "name": "Hotjar",
+        "link": "https://www.hotjar.com/",
+        "tags": [
+            "web analytics",
+            "digital analysts",
+            "free demo"
+        ],
+        "description": "Everything you ever wanted to know about your website or app."
+    },
+    {
+        "name": "Adobe Analytics",
+        "link": "https://business.adobe.com/products/adobe-analytics.html",
+        "tags": [
+            "web analytics",
+            "digital analysts",
+            "marketing-suite"
+        ],
+        "description": "Advanced analytics solution was purpose-built to evaluate exceptional customer experiences."
+    }
+]
