@@ -20,14 +20,13 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     // Add to Favorites
     if (info.menuItemId === "devpackAddFavorite") {
         chrome.storage.sync.get(['favorites'], (res) => {
-            let favorites = res.favorites || [];
-            const exists = favorites.some(item => item.link === urlToAdd);
-            if (!exists) {
+            let favorites = res.favorites || {};
+            if (!favorites[urlToAdd]) {
                 const newFav = {
                     name: extractResourceName(urlToAdd),
                     link: urlToAdd
                 };
-                favorites.push(newFav);
+                favorites[urlToAdd] = newFav;
                 chrome.storage.sync.set({ favorites }, () => {
                     console.log(`Added to DevPack Favorites: ${urlToAdd}`);
                     chrome.notifications.create({
@@ -61,10 +60,9 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
         chrome.storage.sync.get(['collections'], (res) => {
             let collections = res.collections || {};
-            if (!collections[collectionName]) collections[collectionName] = [];
-            const exists = collections[collectionName].some(item => item.link === urlToAdd);
-            if (!exists) {
-                collections[collectionName].push(resourceObj);
+            if (!collections[collectionName]) collections[collectionName] = {};
+            if (!collections[collectionName][urlToAdd]) {
+                collections[collectionName][urlToAdd] = resourceObj;
                 chrome.storage.sync.set({ collections }, () => {
                     console.log(`Added to collection "${collectionName}": ${urlToAdd}`);
                     chrome.notifications.create({
@@ -141,9 +139,8 @@ chrome.bookmarks.onCreated.addListener((id, bookmark) => {
     const exactLink = bookmark.url;
 
     chrome.storage.sync.get(['favorites'], (res) => {
-        let favorites = res.favorites || [];
-        const exists = favorites.some(item => item.link === exactLink);
-        if (!exists) {
+        let favorites = res.favorites || {};
+        if (!favorites[exactLink]) {
             chrome.storage.local.set({ lastBookmarkedLink: exactLink }, () => {
                 chrome.notifications.create('devpack-bookmark-notification', {
                     type: 'basic',
@@ -162,18 +159,17 @@ chrome.bookmarks.onCreated.addListener((id, bookmark) => {
 chrome.notifications.onButtonClicked.addListener((notifId, btnIdx) => {
     if (notifId === 'devpack-bookmark-notification') {
         if (btnIdx === 0) { // Yes
-            chrome.storage.local.get(['lastBookmarkedLink'], (res) => {
-                const exactLink = res.lastBookmarkedLink;
+            chrome.storage.local.get(['lastBookmarkedLink'], (resLocal) => {
+                const exactLink = resLocal.lastBookmarkedLink;
                 if (!exactLink) return;
 
-                chrome.storage.sync.get(['favorites'], (res) => {
-                    let favorites = res.favorites || [];
-                    const exists = favorites.some(item => item.link === exactLink);
-                    if (!exists) {
-                        favorites.push({
+                chrome.storage.sync.get(['favorites'], (resSync) => {
+                    let favorites = resSync.favorites || {};
+                    if (!favorites[exactLink]) {
+                        favorites[exactLink] = {
                             name: extractResourceName(exactLink),
                             link: exactLink
-                        });
+                        };
                         chrome.storage.sync.set({ favorites }, () => {
                             chrome.notifications.create({
                                 type: 'basic',
@@ -182,10 +178,15 @@ chrome.notifications.onButtonClicked.addListener((notifId, btnIdx) => {
                                 message: `Added to DevPack Favorites:\n${exactLink}`,
                                 priority: 1
                             });
+                            chrome.storage.local.remove('lastBookmarkedLink');
                         });
+                    } else {
+                        chrome.storage.local.remove('lastBookmarkedLink');
                     }
                 });
             });
+        } else { // No or closed notification
+            chrome.storage.local.remove('lastBookmarkedLink');
         }
     }
 });
