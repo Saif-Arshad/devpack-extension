@@ -221,7 +221,7 @@ export const categories = [
         description: "Platforms and tools to monetize your web content and generate revenue.",
         filePath: 'Resources/web-monetization.json',
         background: "#3498DB",
-        icon: `<img src="./Resources/web-monetization-icon.svg" alt="web monetization" />`,
+        icon: `<img src="./Assets/web.svg" alt="web monetization" />`,
     },
     {
         name: 'analytics',
@@ -229,7 +229,7 @@ export const categories = [
         description: "Analyze your traffic.",
         filePath: 'Resources/analytics.json',
         background: "#33e84e",
-        icon: `<img src="./Resources/analytics.svg" alt="web analytics" />`,
+        icon: `<img src="./Assets/analytics.svg" alt="web analytics" />`,
     },
     {
         name: 'headless_cms',
@@ -237,6 +237,6 @@ export const categories = [
         description: "Headless CMS platforms.",
         filePath: 'Resources/headless-cms.json',
         background: "#c79e2c",
-        icon: `<img src="./Resources/headlessCMS.svg" alt="headless cms" />`,
+        icon: `<img src="./Assets/headlessCMS.svg" alt="headless cms" />`,
     },
 ];

@@ -125,10 +125,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         hideLoading();
     }
 
-
-
-
-
     // Close a modal
     function closeModal(modal) {
         modal.classList.add('hidden');
@@ -138,51 +134,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-
-    // Helper function to show tooltip
-    function showTooltip(element, text) {
-        // Get the dimensions of the element
-        const elementRect = element.getBoundingClientRect();
-
-        // Reset any previous width setting
-        resourceTooltip.style.width = 'auto';
-        resourceTooltip.style.maxWidth = '220px';
-        resourceTooltip.textContent = text;
-
-        // Make the tooltip visible but with opacity 0 to measure its width
-        resourceTooltip.classList.remove('hidden');
-        resourceTooltip.style.opacity = '0';
-        resourceTooltip.style.pointerEvents = 'none';
-
-        // Get the tooltip dimensions
-        const tooltipRect = resourceTooltip.getBoundingClientRect();
-
-        // Calculate the centered position
-        const left = elementRect.left + (elementRect.width / 2) - (tooltipRect.width / 2);
-
-        // Get the scroll position
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-        // Position the tooltip centered above the element with a 10px gap
-        // Use fixed positioning to avoid scroll issues
-        resourceTooltip.style.position = 'fixed';
-        resourceTooltip.style.left = `${Math.max(10, left)}px`;
-        resourceTooltip.style.top = `${elementRect.top - tooltipRect.height - 10}px`;
-
-        // Make the tooltip fully visible
-        resourceTooltip.style.opacity = '';
-        resourceTooltip.classList.add('visible');
-    }
-
-    // Helper function to hide tooltip
-    function hideTooltip() {
-        resourceTooltip.classList.remove('visible');
-        resourceTooltip.classList.add('hidden');
-    }
-
-
-
-
 
     // Close modals when clicking outside
     window.addEventListener('click', (e) => {
@@ -209,55 +160,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         categories.forEach(category => {
             const li = document.createElement('li');
             li.className = 'category-item';
-
-            // Create the category card structure
-            const card = document.createElement('div');
-            card.className = 'category-card';
-
-            // Create the icon container
-            const iconContainer = document.createElement('div');
-            iconContainer.className = 'category-icon';
-
-            // Create the icon element - either use SVG or load from file
-            if (category.icon.includes('<svg')) {
-                iconContainer.innerHTML = category.icon;
-            } else {
-                // For image icons, create an img element with proper sizing
-                const img = document.createElement('img');
-                img.src = category.icon.includes('src="')
-                    ? category.icon.match(/src="([^"]+)"/)[1]
-                    : category.icon;
-                img.alt = category.label;
-                img.style.width = '24px';
-                img.style.height = '24px';
-                iconContainer.appendChild(img);
-            }
-
-            // Create the title element
-            const title = document.createElement('div');
-            title.className = 'category-title';
-            title.textContent = category.label;
-
-            // Create the description element
-            const description = document.createElement('p');
-            description.className = 'category-description';
-            description.textContent = category.description;
-            description.style.fontSize = '12px';
-            description.style.color = 'var(--text-light)';
-            description.style.margin = '4px 0 0 0';
-
-            // Assemble the card
-            card.appendChild(iconContainer);
-            card.appendChild(title);
-            card.appendChild(description);
-            li.appendChild(card);
-
-            // Add click event
+            li.innerHTML = `
+                <div class="category-icon" style="background-color: ${category.background};">
+                  ${category.icon}
+                </div>
+                <div class="category-info">
+                  <div class="category-name">${category.label}</div>
+                  <p class="category-discription">
+                  ${category.description}
+                  </p>
+                </div>
+            `;
             li.addEventListener('click', async () => {
                 await fetchCategoryResources(category);
                 showCategoryView(category.name);
             });
-
             categoriesList.appendChild(li);
         });
     }
@@ -276,13 +193,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="resource-name">${resource.name}</div>
             <div class="resource-actions">
                 <button class="heart-icon ${isFavorite ? 'active' : ''}">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                         viewBox="0 0 24 24" fill="${isFavorite ? 'currentColor' : 'none'}" stroke="currentColor"
                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
                     </svg>
                 </button>
-
+                
             </div>
             </div>
             <div class="resource-link">${resource.link}</div>
@@ -298,21 +215,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Heart icon => toggle favorite
         const heartIcon = div.querySelector('.heart-icon');
-
-        // Add tooltip to the heart icon
-        heartIcon.addEventListener('mouseenter', (e) => {
-            e.stopPropagation(); // Prevent triggering the parent's mouseenter
-            const tooltipText = heartIcon.classList.contains('active')
-                ? "Remove from favorites"
-                : "Add to favorites";
-            showTooltip(heartIcon, tooltipText);
-        });
-
-        heartIcon.addEventListener('mouseleave', (e) => {
-            e.stopPropagation(); // Prevent triggering the parent's mouseleave
-            hideTooltip();
-        });
-
         heartIcon.addEventListener('click', (e) => {
             e.stopPropagation();
             toggleFavorite(resource);
@@ -323,24 +225,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             setTimeout(() => { heartIcon.classList.remove('animate'); }, 300);
         });
 
-        // Add tooltip functionality to the entire resource element
+
+
         if (resource.description) {
-            div.addEventListener('mouseenter', (e) => {
-                // Only show tooltip if not hovering over an icon
-                if (!e.target.closest('.heart-icon') && !e.target.closest('.info-icon') && !e.target.closest('.remove-icon')) {
-                    showTooltip(div, resource.description);
-                }
-            });
-
-            div.addEventListener('mouseleave', (e) => {
-                hideTooltip();
-            });
-
-            // Still add the info icon for visual indication
             const infoIcon = document.createElement('button');
             infoIcon.className = 'info-icon';
             infoIcon.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
@@ -352,20 +243,27 @@ document.addEventListener('DOMContentLoaded', async () => {
             const actionsContainer = div.querySelector('.resource-actions');
             actionsContainer.appendChild(infoIcon);
 
-            // Add tooltip to the info icon
             infoIcon.addEventListener('mouseenter', (e) => {
-                e.stopPropagation(); // Prevent triggering the parent's mouseenter
-                showTooltip(infoIcon, "Hover over the resource to see details");
+                resourceTooltip.textContent = resource.description;
+
+                // Get the dimensions of the parent resource element
+                const resourceRect = div.getBoundingClientRect();
+
+                // Set the tooltip width to match the resource element's width
+                resourceTooltip.style.width = `${resourceRect.width}px`;
+
+                // Position the tooltip centered relative to the resource element and above it
+                resourceTooltip.style.left = `${resourceRect.left + resourceRect.width / 2}px`;
+                resourceTooltip.style.top = `${resourceRect.top - 10}px`; // 10px above the element
+
+                resourceTooltip.classList.remove('hidden');
+                resourceTooltip.classList.add('visible');
             });
 
+            // Hide tooltip when mouse leaves the info icon
             infoIcon.addEventListener('mouseleave', (e) => {
-                e.stopPropagation(); // Prevent triggering the parent's mouseleave
-                hideTooltip();
-            });
-
-            // Prevent the info icon from triggering the link
-            infoIcon.addEventListener('click', (e) => {
-                e.stopPropagation();
+                resourceTooltip.classList.remove('visible');
+                resourceTooltip.classList.add('hidden');
             });
         }
 
@@ -380,7 +278,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const removeButton = document.createElement('button');
         removeButton.className = 'remove-icon';
         removeButton.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 6h18"/>
@@ -388,17 +286,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
             </svg>
         `;
-        // Add tooltip to the remove button
-        removeButton.addEventListener('mouseenter', (e) => {
-            e.stopPropagation(); // Prevent triggering the parent's mouseenter
-            showTooltip(removeButton, "Remove from collection");
-        });
-
-        removeButton.addEventListener('mouseleave', (e) => {
-            e.stopPropagation(); // Prevent triggering the parent's mouseleave
-            hideTooltip();
-        });
-
         removeButton.addEventListener('click', (e) => {
             e.stopPropagation();
             removeFromCollection(resource, collectionName);
@@ -588,7 +475,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             collectionsList.appendChild(emptyMsg);
             return;
         }
-        const bgColors = ["#4361ee", "#f72585", "#4cc9f0", "#3f37c9", "#4895ef", "#560bad", "#7209b7", "#b5179e"];
+        const bgColors = ["#5548EB", "#FF45A9", "#32CD6B", "#C22246", "#F97316", "#E79B1C", "#1F8B26", "#FF006E"];
         collectionNames.forEach((name, index) => {
             const resources = collections[name] || [];
             const bgColor = bgColors[index % bgColors.length];
@@ -604,7 +491,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
                 <div class="collection-actions">
                     <button class="remove-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M3 6h18"/>
@@ -620,18 +507,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             });
             const deleteBtn = li.querySelector('.remove-icon');
-
-            // Add tooltip to the collection delete button
-            deleteBtn.addEventListener('mouseenter', (e) => {
-                e.stopPropagation(); // Prevent triggering the parent's mouseenter
-                showTooltip(deleteBtn, "Delete collection");
-            });
-
-            deleteBtn.addEventListener('mouseleave', (e) => {
-                e.stopPropagation(); // Prevent triggering the parent's mouseleave
-                hideTooltip();
-            });
-
             deleteBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 if (confirm(`Delete collection "${name}"?`)) {
@@ -695,7 +570,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // Event Listeners
-
     backButton.addEventListener('click', () => {
         if (!newCollectionModal.classList.contains('hidden')) {
             closeModal(newCollectionModal);
