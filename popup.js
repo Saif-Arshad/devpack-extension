@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentCategory = '';
     let currentCollection = '';
     let allResources = {}; // Will hold resource arrays keyed by category name
-    let favorites = [];
+    let favorites = {}; // Changed from array to object
     let collections = {};
 
     // Show loading indicator
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         showLoading();
         // Load favorites
         chrome.storage.sync.get(['favorites'], (result) => {
-            favorites = result.favorites || [];
+            favorites = result.favorites || {};
             updateFavoriteCount();
         });
         // Load collections
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Update favorites count
     function updateFavoriteCount() {
-        const count = favorites.length;
+        const count = Object.keys(favorites).length;
         favoritesCount.textContent = count;
         favCount.textContent = count;
         favoritesTotal.textContent = count;
@@ -296,11 +296,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Toggle favorite
     function toggleFavorite(resource) {
-        const index = favorites.findIndex(fav => fav.link === resource.link);
-        if (index === -1) {
-            favorites.push(resource);
+        if (favorites[resource.link]) {
+            delete favorites[resource.link];
         } else {
-            favorites.splice(index, 1);
+            favorites[resource.link] = resource;
         }
         chrome.storage.sync.set({ favorites }, () => {
             updateFavoriteCount();
@@ -310,7 +309,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Check if resource is favorite
     function isResourceInFavorites(resource) {
-        return favorites.some(fav => fav.link === resource.link);
+        return !!favorites[resource.link];
     }
 
     // Collections
@@ -458,11 +457,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function renderFavorites() {
         favoritesList.innerHTML = '';
-        favorites.forEach(resource => {
+        Object.values(favorites).forEach(resource => {
             const element = createResourceElement(resource, true);
             if (element) favoritesList.appendChild(element);
         });
-        emptyFavorites.style.display = favorites.length > 0 ? 'none' : 'block';
+        emptyFavorites.style.display = Object.keys(favorites).length > 0 ? 'none' : 'block';
     }
 
     function renderCollections() {

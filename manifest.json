@@ -18,8 +18,6 @@
     "storage",
     "contextMenus",
     "sidePanel",
-    "bookmarks",
-    "notifications",
     "activeTab"
   ],
   "host_permissions": [
